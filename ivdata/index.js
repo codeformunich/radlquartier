@@ -14,7 +14,7 @@ program
     .command('xml2json', 'converts xml to json: ivdata xml2json < input.xml > output.json' )
     .command('extractplace', 'extracts palce element from json: ivdata extractplace < input.json > output.json')
     .command('adddate <date>', 'extends the place json objects with a date: ivdata adddate "date" < input.json > output.json' )
-    .command('station', 'extracts only the stations from all places: ivdata station < input.json > output.json' )
+    // .command('station', 'extracts only the stations from all places: ivdata station < input.json > output.json' )
     .parse(process.argv);
 
 // if program was called with no arguments, show help.
