@@ -1,0 +1,17 @@
+{
+  "name": "ivdata",
+  "version": "0.0.1",
+  "description": "A command-line tool to exract data from the mvg data",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manuel Hartmann",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "ivdata": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0"
+  }
+}
