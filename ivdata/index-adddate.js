@@ -8,7 +8,7 @@ program.parse(process.argv);
 
 var arg = program.args[0].split('.')[0];
 
-var date = moment(arg, 'YYYY-MM-DDT hh/mm/ss');
+var date = arg.replace('/', ':');
 // console.log(program.args[0]);
 // console.log(date);
 
@@ -65,7 +65,7 @@ process.stdin.on('end', function() {
         }
 
         if(!json[i].date) {
-            json[i].date = date;
+            json[i].date = { "$date": date };
             // console.log(json[i]);
         }
     }

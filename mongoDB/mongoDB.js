@@ -9,7 +9,13 @@
 // cursor = db.features.find( { "properties.bike_numbers": 96570 }, { _id: 0 } );
 
 // all stations
-cursor = db.features.find( { "properties.spot": 1, "properties.date" : "2016-06-20T22:00:00.000Z" }, { _id: 0 } );
+cursor = db.features.find( { 
+        "properties.spot": 1,
+        "properties.date": { "$gte": new Date("2016-06-20T06:00:00Z") }
+    }, { 
+        _id: 0
+    }
+);
 
 
 
