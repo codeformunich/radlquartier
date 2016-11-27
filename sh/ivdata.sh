@@ -1,41 +1,50 @@
 #! /bin/zsh
 
-# for xml in ../*.xml
-# do
-#   xmlname=$(basename "$xml")
-#   xmlshort="${xmlname%.*}"
+echo "convert XML to JSON"
+for xml in ./*.xml
+do
+  xmlname=$(basename "$xml")
+  xmlshort="${xmlname%.*}"
+  
+  echo "converting ${xmlname}"
+  node ../ivdata/index.js xml2json < ${xml} > ${xmlshort}.rjson
+done
 
-#   node ../ivdata/index.js xml2json < ${xml} > ${xmlshort}.rjson
-# done
+echo "extract place elements"
+for rjson in ./*.rjson
+do
+  rjsonname=$(basename "$rjson")
+  rjsonshort="${rjsonname%.*}"
 
-# for rjson in ./*.rjson
-# do
-#   rjsonname=$(basename "$rjson")
-#   rjsonshort"${rjsonname%.*}"
+  echo "extracting ${rjsonname}"
+  node ../ivdata/index.js extractplace < ${rjson} > ${rjsonshort}.pjson
+done
 
-#   node ../ivdata/index.js extractplace < $rjson > ${rjsonshort}.pjson
-# done
+echo "extende place elements with date from file name"
+for pjson in ./*.pjson
+do
+  pjsonname=$(basename "$pjson")
+  pjsonshort="${pjsonname%.*}"
 
-# for pjson in ./*.pjson
-# do
-#   pjsonname=$(basename "$pjson")
-#   pjsonshort="${pjsonname%.*}"
+  echo "extending ${pjsonname}"
+  node ../ivdata/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.djson
+done
 
-#   node ../ivdata/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.djson
-# done
-
+echo "transform place elements to geojson feature elements"
 for djson in ./*.djson
 do
   djsonname=$(basename "$djson")
   djsonshort="${djsonname%.*}"
 
-  node ../ivdata/index.js geojson < ${djson} > ${djsonshort}.json
+  echo "transforming ${djsonname}"
+  node ../ivdata/index.js geojson < ${djson} > ${djsonshort}.gjson
 done
 
-# for json in ./*.json
-# do
-#   jsonname=$(basename "$json")
-#   jsonshort="${jsonname%.*}"
+echo "import geojson into mongoDB"
+for json in ./*.gjson
+do
+  jsonname=$(basename "$json")
+  jsonshort="${jsonname%.*}"
 
-#   mongoimport --db infovis --collection place --type json --file $json --jsonArray
-# done
+  mongoimport --db infovis --collection features --type json --file $json --jsonArray
+done
