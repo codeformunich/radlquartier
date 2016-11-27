@@ -15,6 +15,7 @@ program
     .command('extractplace', 'extracts palce element from json: ivdata extractplace < input.json > output.json')
     .command('adddate <date>', 'extends the place json objects with a date: ivdata adddate "date" < input.json > output.json' )
     // .command('station', 'extracts only the stations from all places: ivdata station < input.json > output.json' )
+    .command('geojson', 'transforms place elments in a geojson file')
     .parse(process.argv);
 
 // if program was called with no arguments, show help.

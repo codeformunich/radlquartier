@@ -19,15 +19,23 @@
 # for pjson in ./*.pjson
 # do
 #   pjsonname=$(basename "$pjson")
-#   pjsonshort="${nameplace%.*}"
+#   pjsonshort="${pjsonname%.*}"
 
-#   node ../ivdata/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.json
+#   node ../ivdata/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.djson
 # done
 
-for json in ./*.json
+for djson in ./*.djson
 do
-  jsonname=$(basename "$json")
-  jsonshort="${nameplace%.*}"
+  djsonname=$(basename "$djson")
+  djsonshort="${djsonname%.*}"
 
-  mongoimport --db infovis --collection place --type json --file $json --jsonArray
+  node ../ivdata/index.js geojson < ${djson} > ${djsonshort}.json
 done
+
+# for json in ./*.json
+# do
+#   jsonname=$(basename "$json")
+#   jsonshort="${jsonname%.*}"
+
+#   mongoimport --db infovis --collection place --type json --file $json --jsonArray
+# done
