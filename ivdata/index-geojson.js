@@ -22,15 +22,18 @@ process.stdin.on('end', function() {
     placeCount = json.length;
     // console.log(placeCount);
 
-    geojson = {
-        "type": "FeatureCollection",
-        "features": []
-    };
+    // geojson = {
+    //     "type": "FeatureCollection",
+    //     "features": []
+    // };
+
+    geojson = [];
 
     for (var i = 0; i < placeCount; i++) {
         var place = json[i];
 
-        geojson.features[geojson.features.length] = {
+        // geojson.features[geojson.features.length] = {
+        geojson[geojson.length] = {
             "type": "Feature",
             "geometry": {
                 "type": "Point",
