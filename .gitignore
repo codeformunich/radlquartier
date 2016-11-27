@@ -1,3 +1,5 @@
 *.rjson
 *.pjson
 *.djson
+*.zip
+test
