@@ -10,14 +10,12 @@
 
 // all stations
 cursor = db.features.find( { 
-        "properties.spot": 1,
-        "properties.date": { "$gte": new Date("2016-06-20T06:00:00Z") }
+        "properties.date": { "$eq": new Date("2016-06-22T06:00:00") },
+        "properties.spot": 1
     }, { 
-        _id: 0
+        type: 1, geometry: 1, "properties.name": 1, _id: 0
     }
 );
-
-
 
 printjson( cursor.toArray() );
 
