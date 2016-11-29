@@ -3,3 +3,5 @@
 *.djson
 *.zip
 test
+out.json
+out2.json

@@ -23,6 +23,9 @@ cursor = db.features.find( {
 //         type: 1, geometry: 1, "properties.name": 1, _id: 0
 //     }
 // );
+// all bike numbers
+//cursor = db.features.distinct( "properties.bike_numbers", { "properties.bike": 1 } );
+cursor = db.features.distinct( "properties.name", { properties: { bike: 1 }  } );
 
 printjson( cursor.toArray() );
 
