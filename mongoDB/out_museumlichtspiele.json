@@ -1,0 +1,32 @@
+MongoDB shell version: 3.2.10
+connecting to: infovis
+[
+	{
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.587732,
+				48.130871
+			]
+		},
+		"properties" : {
+			"name" : "Museum Lichtspiele",
+			"bike_numbers" : 96111
+		}
+	},
+	{
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.587732,
+				48.130871
+			]
+		},
+		"properties" : {
+			"name" : "Museum Lichtspiele",
+			"bike_numbers" : 96111
+		}
+	}
+]

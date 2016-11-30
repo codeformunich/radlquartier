@@ -17,6 +17,18 @@
 // printjson( cursor.toArray() );
 
 
+// // all features where bike_numbers is or contains 96570
+cursor = db.features.find( { 
+         // "properties.date": { "$gt": new Date("2016-06-22T00:00:00") },
+         // "properties.date": { "$lt": new Date("2016-06-23T00:00:00") },
+         "properties.bike_numbers": 96111 
+    }, { 
+         type: 1, geometry: 1, "properties.name": 1, "properties.bike_numbers": 1, _id: 0
+    } 
+);
+printjson( cursor.toArray() );
+
+
 // // all stations
 // cursor = db.features.find( { 
 //         "properties.date": { "$eq": new Date("2016-06-22T06:00:00") },
@@ -45,7 +57,7 @@
 
 
 // // all bikes by bike_numbers
-printjson( db.features.distinct( "properties.bike_numbers", { "properties.bike": 1 } ) );
+// printjson( db.features.distinct( "properties.bike_numbers", { "properties.bike": 1 } ) );
 
 
 
