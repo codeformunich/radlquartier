@@ -1,0 +1,6 @@
+MongoDB shell version: 3.2.11
+connecting to: infovis
+2016-11-29T17:28:23.362+0100 E QUERY    [thread1] TypeError: cursor.toArray is not a function :
+@mongoDB.js:31:12
+
+failed to load: mongoDB.js
