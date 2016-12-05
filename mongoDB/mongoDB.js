@@ -21,7 +21,8 @@
 cursor = db.features.find( { 
          "properties.date": { "$gt": new Date("2016-08-01T00:00:00") },
          "properties.date": { "$lt": new Date("2016-08-31T00:00:00") },
-         "properties.bike_numbers": 96111 
+         "properties.bike_numbers": 96111,
+         "properties.spot": 1
     }, { 
          type: 1, geometry: 1, "properties.name": 1, "properties.bike_numbers": 1, _id: 0
     } 
