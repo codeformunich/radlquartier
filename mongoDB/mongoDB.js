@@ -19,8 +19,8 @@
 
 // // all features where bike_numbers is or contains 96570
 cursor = db.features.find( { 
-         // "properties.date": { "$gt": new Date("2016-06-22T00:00:00") },
-         // "properties.date": { "$lt": new Date("2016-06-23T00:00:00") },
+         "properties.date": { "$gt": new Date("2016-08-01T00:00:00") },
+         "properties.date": { "$lt": new Date("2016-08-31T00:00:00") },
          "properties.bike_numbers": 96111 
     }, { 
          type: 1, geometry: 1, "properties.name": 1, "properties.bike_numbers": 1, _id: 0
