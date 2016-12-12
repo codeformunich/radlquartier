@@ -1,0 +1,9125 @@
+MongoDB shell version: 3.2.10
+connecting to: infovis
+[
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a6b6c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T22:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a6e1b"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T22:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a70cf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T22:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a7382"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T22:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a762d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T22:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a78e0"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T22:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a7b8b"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T23:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a7e3c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T23:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a80f1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T23:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a83a1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 2,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-20T23:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a8655"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-20T23:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a314a5ad65ce2a8903"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-20T23:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a8bb7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T00:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a8e66"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T00:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a9119"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T00:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a93c5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T00:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a9676"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T00:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a9925"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T00:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a9bd5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T01:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2a9e88"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T01:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2aa13c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T01:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2aa3ee"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T01:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2aa6a3"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T01:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2aa950"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T01:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2aac0e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T02:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2aaeb6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T02:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2ab167"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T02:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2ab417"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T02:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2ab6ca"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T02:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2ab980"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T02:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2abc2f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T03:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a414a5ad65ce2abedf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T03:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ac191"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T03:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ac441"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T03:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ac6f6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T03:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ac9a4"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T03:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2acc53"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T04:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2acf0e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T04:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ad1aa"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T04:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ad44c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T04:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ad6f0"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T04:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ad992"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T04:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2adc36"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T05:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2aded6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T05:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ae17e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97075,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T05:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ae421"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "4",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":4}",
+			"date" : ISODate("2016-06-21T05:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ae6b4"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "4",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":4}",
+			"date" : ISODate("2016-06-21T05:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2ae955"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "4",
+			"bike_racks" : 10,
+			"free_racks" : 4,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570,
+				96321
+			],
+			"bike_types" : "{\"15\":4}",
+			"date" : ISODate("2016-06-21T05:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2aebf1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 4,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T06:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2aee84"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T06:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2af115"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T06:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2af3a0"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T06:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a514a5ad65ce2af62d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T06:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2af8bc"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T06:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2afb50"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T07:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2afdcf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T07:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b0061"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T07:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b02f2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T07:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b0586"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T07:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b0821"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T07:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b0abe"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T08:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b0d5a"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "3",
+			"bike_racks" : 10,
+			"free_racks" : 5,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96570
+			],
+			"bike_types" : "{\"15\":3}",
+			"date" : ISODate("2016-06-21T08:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b0ff1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97174,
+				97062,
+				96613,
+				96570,
+				96229
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T08:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b128c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T08:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b1523"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T08:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b17bf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T08:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b1a5c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T09:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b1cf3"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T09:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b1f88"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T09:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b2220"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 3,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":5}",
+			"date" : ISODate("2016-06-21T09:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b24ad"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T09:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b273f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T09:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b29c1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T10:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b2c43"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T10:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b2ec5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T10:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a614a5ad65ce2b314e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T10:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b33d9"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T10:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b3665"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T10:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b38ed"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T11:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b3b72"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.566763,
+				48.155143
+			]
+		},
+		"properties" : {
+			"uid" : 361810,
+			"lat" : 48.155143,
+			"lng" : 11.566763,
+			"name" : "Josephsplatz",
+			"spot" : 1,
+			"number" : 8917,
+			"bikes" : "5+",
+			"bike_racks" : 10,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				97062,
+				96613,
+				96570,
+				96229,
+				97298
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T11:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b42dd"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T11:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b4560"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T11:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b47e1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T12:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b4a67"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T12:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b4cec"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T12:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b4f77"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T12:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b5205"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T12:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b5498"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T12:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b5729"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T13:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b59ba"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T13:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b5c4d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T13:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b5ed9"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T13:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b6165"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T13:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b63f2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T13:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b6682"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T14:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b690f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T14:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b6ba1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T14:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a714a5ad65ce2b6e31"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T14:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b70bf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T14:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b734b"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T14:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b75d9"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T15:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b785d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T15:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b7aec"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T15:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b7d6d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T15:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b7ff1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T15:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b8272"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T15:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b84f2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T16:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b877d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T16:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b8a21"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T16:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b8cd1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T16:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b8f8f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T16:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b924e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T16:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b9512"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T17:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b97ce"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T17:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b9a8d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T17:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2b9d4c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T17:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2ba015"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T17:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2ba2dc"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T17:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2ba59d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T18:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2ba864"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T18:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a814a5ad65ce2bab11"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T18:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2badb8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 0,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":7}",
+			"date" : ISODate("2016-06-21T18:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bb064"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T18:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bb311"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T18:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bb5bd"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T19:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bb86c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T19:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bbb20"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T19:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bbdd6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T19:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bc08c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T19:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bc340"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T19:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bc5f5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T20:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bc8ae"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T20:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bcb68"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T20:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bce30"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T20:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bd0f8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T20:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bd3c7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T20:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bd698"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T21:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bd96a"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T21:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bdc3e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T21:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2bdf0d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T21:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2be1d6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T21:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2be49c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T21:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20a914a5ad65ce2be761"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T22:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2bea2c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T22:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2becfc"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T22:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2befce"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T22:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2bf2a1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T22:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2bf576"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T22:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2bf84a"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T23:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2bfb1d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T23:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2bfded"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T23:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c00b9"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T23:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c0386"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T23:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c0659"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-21T23:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c092c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T00:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c0bfe"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T00:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c0ed2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T00:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c11ab"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T00:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c1482"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T00:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c1757"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T00:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c1a31"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T01:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c1d06"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T01:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20aa14a5ad65ce2c1fdf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T01:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c22b7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T01:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c258c"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T01:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c2863"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T01:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c2b3d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T02:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c2e10"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T02:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c30e8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T02:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c33c1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T02:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c3697"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T02:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c3971"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T02:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c3c4a"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T03:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c3f23"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T03:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c41ff"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T03:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c44d8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T03:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c47b2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T03:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c4a8b"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T03:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c4d66"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T04:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c5040"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T04:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c5313"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T04:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c55e6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T04:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c58ba"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T04:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c5b8d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T04:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ab14a5ad65ce2c5e61"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T05:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c6134"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T05:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c6408"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T05:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c66d5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T05:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c69a4"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T05:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c6c71"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T05:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c6f39"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T06:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c71fc"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T06:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c74c7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T06:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c7789"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T06:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c7a49"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T06:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c7d13"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T06:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c7fdf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T07:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c82ac"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T07:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c857d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T07:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c884d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T07:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c8b20"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T07:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c8df8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T07:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c90d3"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T08:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c93a7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T08:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c967e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T08:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c995f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T08:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ac14a5ad65ce2c9c46"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T08:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2c9f1f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T08:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2ca1fe"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T09:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2ca4d7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T09:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2ca7b3"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T09:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2caa98"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T09:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cad72"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T09:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cb047"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T09:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cb31f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T10:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cb5f7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T10:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cb8c8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T10:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cbb93"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T10:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cbe5f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T10:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cc128"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T10:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cc3f2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T11:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cc6b8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T11:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cc97d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T11:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2ccc47"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T11:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2ccf12"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T11:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cd1d8"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T11:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cd4a7"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T12:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cd777"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T12:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ad14a5ad65ce2cda47"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T12:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cdd16"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T12:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cdfea"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T12:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2ce2bd"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T12:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2ce590"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T13:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2ce868"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T13:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2ceb46"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T13:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cee27"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T13:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cf0fe"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T13:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cf3d9"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T13:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cf6b5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T14:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cf989"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T14:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cfc62"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T14:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2cff38"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T14:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d0211"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T14:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d04ec"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T14:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d07c6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T15:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d0a97"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T15:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d0d69"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T15:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d1036"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T15:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d12f4"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T15:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d15bb"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T15:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20ae14a5ad65ce2d1880"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T16:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d1b44"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T16:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d1e06"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T16:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d20c6"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T16:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d238d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T16:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d2666"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T16:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d292a"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T17:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d2bfc"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T17:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d2ed2"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T17:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d31ac"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T17:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d3481"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T17:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d3757"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T17:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d3a37"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T18:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d3d17"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T18:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d3ff5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T18:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d42cb"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T18:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d45a0"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T18:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d4874"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T18:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d4b49"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T19:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d4e28"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T19:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d5104"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T19:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d53e1"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T19:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20af14a5ad65ce2d56b5"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T19:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d598e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T19:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d5c5d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T20:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d5f2e"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T20:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d61fe"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T20:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d64ce"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T20:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d679d"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T20:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d6a64"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T20:50:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d6d2f"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T21:00:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d6ff4"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T21:10:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d72bf"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T21:20:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d7582"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T21:30:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d7845"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T21:40:00Z")
+		}
+	},
+	{
+		"_id" : ObjectId("583c20b014a5ad65ce2d7b01"),
+		"type" : "Feature",
+		"geometry" : {
+			"type" : "Point",
+			"coordinates" : [
+				11.493183,
+				48.165279
+			]
+		},
+		"properties" : {
+			"uid" : 341048,
+			"lat" : 48.165279,
+			"lng" : 11.493183,
+			"name" : "Amalienburgstraße",
+			"spot" : 1,
+			"number" : 8853,
+			"bikes" : "5+",
+			"bike_racks" : 15,
+			"free_racks" : 8,
+			"terminal_type" : "7inch",
+			"bike_numbers" : [
+				96590,
+				96570,
+				96166,
+				96134,
+				97265
+			],
+			"bike_types" : "{\"15\":6}",
+			"date" : ISODate("2016-06-22T21:50:00Z")
+		}
+	}
+]
