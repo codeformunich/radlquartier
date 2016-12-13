@@ -3,7 +3,7 @@
 <title>Bewegung der Bikes zwischen den Uni-Standorten</title>
 <style>
 
-@import url(style.css);
+@import url(css/style.css);
  
 #circle circle {
 fill: none;
@@ -66,8 +66,8 @@ var svg = d3.select("body").append("svg")
 svg.append("circle")
 .attr("r", outerRadius);
  
-d3.csv("teams.csv", function(cities) {
-d3.json("matrix.json", function(matrix) {
+d3.csv("data/teams.csv", function(cities) {
+d3.json("data/matrix.json", function(matrix) {
  
 // Compute the chord layout.
 layout.matrix(matrix);
