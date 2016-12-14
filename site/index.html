@@ -38,14 +38,6 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="images/favicon.png">
-    
-  
-  <link 
-          rel="stylesheet" 
-          href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
-      />
-  
-  
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -55,6 +47,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.cyan-light_blue.min.css">
+    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"> -->
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
     #view-source {
@@ -145,8 +139,8 @@
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
     <script>
       var map = L.map('map').setView([48.1374300, 11.5754900], 13);
-      mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      mapLink = '<a href="https ://openstreetmap.org">OpenStreetMap</a>';
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
           attribution: '&copy; ' + mapLink + ' Contributors',
           maxZoom: 18,
         }).addTo(map);
