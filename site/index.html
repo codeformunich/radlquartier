@@ -38,14 +38,14 @@
     <meta name="msapplication-TileColor" content="#3372DF">
 
     <link rel="shortcut icon" href="images/favicon.png">
-		
-	
-	<link 
-	        rel="stylesheet" 
-	        href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
-	    />
-	
-	
+    
+  
+  <link 
+          rel="stylesheet" 
+          href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"
+      />
+  
+  
 
     <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
     <!--
@@ -111,240 +111,95 @@
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
- <p>Hier erfährst du welche Strecke dein Bike in der letzten Woche, in den letzten Wochen oder 	Monaten zurückgelegt hat! </p>
+            <p>Hier erfährst du welche Strecke dein Bike in der letzten Woche, in den letzten Wochen oder Monaten zurückgelegt hat! </p>
        
-       <form action="#">
-	    <div class="mdl-textfield mdl-js-textfield">
-			      <input class="mdl-textfield__input" type="text" id="sample1">
-			      <label class="mdl-textfield__label" for="sample1">Bike...</label>
-			    </div>
-			  </form>
-			  <!-- Numeric Textfield -->
-			  <form action="#">
-			    <div class="mdl-textfield mdl-js-textfield">
-			      <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-			      <label class="mdl-textfield__label" for="sample2">Tage...</label>
-			      <span class="mdl-textfield__error">Du hast keine Zahl eingegeben</span>
-			    </div>
-			  </form>
-			  
-			  <button class="mdl-button mdl-js-button" disabled>
-			    Suche!
-			  </button>
-			  </div>
-			  
-			  
-			  
-			  
-			  <div id="map" style="width: 600px; height: 400px"></div>
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample1">
+                <label class="mdl-textfield__label" for="sample1">Bike...</label>
+              </div>
+            </form>
+            <!-- Numeric Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                <label class="mdl-textfield__label" for="sample2">Tage...</label>
+                <span class="mdl-textfield__error">Du hast keine Zahl eingegeben</span>
+              </div>
+            </form>
+            
+            <button class="mdl-button mdl-js-button" disabled>
+              Suche!
+            </button>
 
-			  	<script src="http://d3js.org/d3.v3.min.js"></script>
-
-			      <script
-			          src="http://cdn.leafletjs.com/leaflet-0.7/leaflet.js">
-			      </script>
-
-			      <script>
-	
-			          var map = L.map('map').setView([48.1374300, 11.5754900], 13);
-			          mapLink = 
-			              '<a href="http://openstreetmap.org">OpenStreetMap</a>';
-			          L.tileLayer(
-			              'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			              attribution: '&copy; ' + mapLink + ' Contributors',
-			              maxZoom: 18,
-			              }).addTo(map);
-
-			  		// Add an SVG element to Leaflet’s overlay pane
-			  		var svg = d3.select(map.getPanes().overlayPane).append("svg"),
-			  			g = svg.append("g").attr("class", "leaflet-zoom-hide");
-			
-			  		d3.json("rectangle.json", function(geoShape) {
-		
-			  		//  create a d3.geo.path to convert GeoJSON to SVG
-			  		var transform = d3.geo.transform({point: projectPoint}),
-			              	path = d3.geo.path().projection(transform);
- 
-			  		// create path elements for each of the features
-			  		d3_features = g.selectAll("path")
-			  			.data(geoShape.features)
-			  			.enter().append("path");
-
-			  		map.on("viewreset", reset);
-
-			  		reset();
-
-			  		// fit the SVG element to leaflet's map layer
-			  		function reset() {
-        
-			  			bounds = path.bounds(geoShape);
-
-			  			var topLeft = bounds[0],
-			  				bottomRight = bounds[1];
-
-			  			svg .attr("width", bottomRight[0] - topLeft[0])
-			  				.attr("height", bottomRight[1] - topLeft[1])
-			  				.style("left", topLeft[0] + "px")
-			  				.style("top", topLeft[1] + "px");
-
-			  			g .attr("transform", "translate(" + -topLeft[0] + "," 
-			  			                                  + -topLeft[1] + ")");
-
-			  			// initialize the path data	
-			  			d3_features.attr("d", path)
-			  				.style("fill-opacity", 0.7)
-			  				.attr('fill','blue');
-			  		} 
-
-			  		// Use Leaflet to implement a D3 geometric transformation.
-			  		function projectPoint(x, y) {
-			  			var point = map.latLngToLayerPoint(new L.LatLng(y, x));
-			  			this.stream.point(point.x, point.y);
-			  		}
-
-			  	})
-        
-			      </script>
-		  
-		
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-		  
-          <!-- <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan font-size="0.2" dy="-0.07">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
-            <svg fill="currentColor" width="200px" height="200px" viewBox="0 0 1 1" class="demo-chart mdl-cell mdl-cell--4-col mdl-cell--3-col-desktop">
-              <use xlink:href="#piechart" mask="url(#piemask)" />
-              <text x="0.5" y="0.5" font-family="Roboto" font-size="0.3" fill="#888" text-anchor="middle" dy="0.1">82<tspan dy="-0.07" font-size="0.2">%</tspan></text>
-            </svg>
+            <div id="map" style="width: 950px; height: 950px"></div>
           </div>
-          <div class="demo-graphs mdl-shadow--2dp mdl-color--white mdl-cell mdl-cell--8-col">
-            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-              <use xlink:href="#chart" />
-            </svg>
-            <svg fill="currentColor" viewBox="0 0 500 250" class="demo-graph">
-              <use xlink:href="#chart" />
-            </svg>
-          </div>
-          <div class="demo-cards mdl-cell mdl-cell--4-col mdl-cell--8-col-tablet mdl-grid mdl-grid--no-spacing">
-            <div class="demo-updates mdl-card mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--4-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__title mdl-card--expand mdl-color--teal-300">
-                <h2 class="mdl-card__title-text">Updates</h2>
-              </div>
-              <div class="mdl-card__supporting-text mdl-color-text--grey-600">
-                Non dolore elit adipisicing ea reprehenderit consectetur culpa.
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect">Read More</a>
-              </div>
-            </div>
-            <div class="demo-separator mdl-cell--1-col"></div>
-            <div class="demo-options mdl-card mdl-color--deep-purple-500 mdl-shadow--2dp mdl-cell mdl-cell--4-col mdl-cell--3-col-tablet mdl-cell--12-col-desktop">
-              <div class="mdl-card__supporting-text mdl-color-text--blue-grey-50">
-                <h3>View options</h3>
-                <ul>
-                  <li>
-                    <label for="chkbox1" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox1" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Click per object</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="chkbox2" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox2" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Views per object</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="chkbox3" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox3" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Objects selected</span>
-                    </label>
-                  </li>
-                  <li>
-                    <label for="chkbox4" class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect">
-                      <input type="checkbox" id="chkbox4" class="mdl-checkbox__input">
-                      <span class="mdl-checkbox__label">Objects viewed</span>
-                    </label>
-                  </li>
-                </ul>
-              </div>
-              <div class="mdl-card__actions mdl-card--border">
-                <a href="#" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-color-text--blue-grey-50">Change location</a>
-                <div class="mdl-layout-spacer"></div>
-                <i class="material-icons">location_on</i>
-              </div>
-            </div>
-          </div> -->
         </div>
       </main>
     </div>
-      <!-- <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <mask id="piemask" maskContentUnits="objectBoundingBox">
-            <circle cx=0.5 cy=0.5 r=0.49 fill="white" />
-            <circle cx=0.5 cy=0.5 r=0.40 fill="black" />
-          </mask>
-          <g id="piechart">
-            <circle cx=0.5 cy=0.5 r=0.5 />
-            <path d="M 0.5 0.5 0.5 0 A 0.5 0.5 0 0 1 0.95 0.28 z" stroke="none" fill="rgba(255, 255, 255, 0.75)" />
-          </g>
-        </defs>
-      </svg> -->
-      <!-- <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 500 250" style="position: fixed; left: -1000px; height: -1000px;">
-        <defs>
-          <g id="chart">
-            <g id="Gridlines">
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="27.3" x2="468.3" y2="27.3" />
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="66.7" x2="468.3" y2="66.7" />
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="105.3" x2="468.3" y2="105.3" />
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="144.7" x2="468.3" y2="144.7" />
-              <line fill="#888888" stroke="#888888" stroke-miterlimit="10" x1="0" y1="184.3" x2="468.3" y2="184.3" />
-            </g>
-            <g id="Numbers">
-              <text transform="matrix(1 0 0 1 485 29.3333)" fill="#888888" font-family="'Roboto'" font-size="9">500</text>
-              <text transform="matrix(1 0 0 1 485 69)" fill="#888888" font-family="'Roboto'" font-size="9">400</text>
-              <text transform="matrix(1 0 0 1 485 109.3333)" fill="#888888" font-family="'Roboto'" font-size="9">300</text>
-              <text transform="matrix(1 0 0 1 485 149)" fill="#888888" font-family="'Roboto'" font-size="9">200</text>
-              <text transform="matrix(1 0 0 1 485 188.3333)" fill="#888888" font-family="'Roboto'" font-size="9">100</text>
-              <text transform="matrix(1 0 0 1 0 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">1</text>
-              <text transform="matrix(1 0 0 1 78 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">2</text>
-              <text transform="matrix(1 0 0 1 154.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">3</text>
-              <text transform="matrix(1 0 0 1 232.1667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">4</text>
-              <text transform="matrix(1 0 0 1 309 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">5</text>
-              <text transform="matrix(1 0 0 1 386.6667 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">6</text>
-              <text transform="matrix(1 0 0 1 464.3333 249.0003)" fill="#888888" font-family="'Roboto'" font-size="9">7</text>
-            </g>
-            <g id="Layer_5">
-              <polygon opacity="0.36" stroke-miterlimit="10" points="0,223.3 48,138.5 154.7,169 211,88.5
-              294.5,80.5 380,165.2 437,75.5 469.5,223.3 	"/>
-            </g>
-            <g id="Layer_4">
-              <polygon stroke-miterlimit="10" points="469.3,222.7 1,222.7 48.7,166.7 155.7,188.3 212,132.7
-              296.7,128 380.7,184.3 436.7,125 	"/>
-            </g>
-          </g>
-        </defs>
-      </svg> -->
-      <!-- <a href="https://github.com/google/material-design-lite/blob/mdl-1.x/templates/dashboard/" target="_blank" id="view-source" class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--colored mdl-color-text--white">View Source</a> -->
-    <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <!-- <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script> -->
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script>
+      var map = L.map('map').setView([48.1374300, 11.5754900], 13);
+      mapLink = '<a href="http://openstreetmap.org">OpenStreetMap</a>';
+      L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; ' + mapLink + ' Contributors',
+          maxZoom: 18,
+        }).addTo(map);
+
+      // Add an SVG element to Leaflet’s overlay pane
+      var svg = d3.select(map.getPanes().overlayPane).append("svg"),
+        g = svg.append("g").attr("class", "leaflet-zoom-hide");
+  
+      d3.json("rectangle.json", function(geoShape) {
+
+        //  create a d3.geo.path to convert GeoJSON to SVG
+        var transform = d3.geo.transform({point: projectPoint}),
+          path = d3.geo.path().projection(transform);
+
+        // create path elements for each of the features
+        d3_features = g.selectAll("path")
+          .data(geoShape.features)
+          .enter().append("path");
+
+        map.on("viewreset", reset);
+
+        reset();
+
+        // fit the SVG element to leaflet's map layer
+        function reset() {
+    
+          bounds = path.bounds(geoShape);
+
+          var topLeft = bounds[0],
+            bottomRight = bounds[1];
+
+          svg .attr("width", bottomRight[0] - topLeft[0])
+            .attr("height", bottomRight[1] - topLeft[1])
+            .style("left", topLeft[0] + "px")
+            .style("top", topLeft[1] + "px");
+
+          g .attr("transform", "translate(" + -topLeft[0] + "," 
+                                            + -topLeft[1] + ")");
+
+          // initialize the path data 
+          d3_features.attr("d", path)
+            .style("fill-opacity", 0.7)
+            .attr('fill','blue');
+        } 
+
+        // Use Leaflet to implement a D3 geometric transformation.
+        function projectPoint(x, y) {
+          var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+          this.stream.point(point.x, point.y);
+        }
+
+      });
+    
+    </script>
   </body>
 </html>
