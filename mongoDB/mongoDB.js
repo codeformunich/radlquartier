@@ -64,17 +64,23 @@
 // 	 ])
 // );
 
-printjson(
-	db.features.aggregate(
-		[ 
-		    { "$project" : { "name" : "$properties.name" , "_id" : "$_id"}},
-		    { "$unwind" : "$properties"},
-		    { "$sort" : { "$properties.name": 1 } },
-		    { "$project" : { "_id" : 0 , "texts" : 1}} 
-		]
-	)
-);
+// printjson(
+// 	db.features.aggregate(
+// 		[ 
+// 		    { "$project" : { "name" : "$properties.name" , "_id" : "$_id"}},
+// 		    { "$unwind" : "$properties"},
+// 		    { "$sort" : { "$properties.name": 1 } },
+// 		    { "$project" : { "_id" : 0 , "texts" : 1}} 
+// 		]
+// 	)
+// );
 
+printjson(
+	db.places.aggregate( [
+	   	{ $match: { bike_numbers: 97252 } },
+	   	{ $group: { _id: { bike_numbers: "$bike_numbers", lat: "$lat", lng: "$lng" }, count: { $sum: 1 } } }
+	] )
+);
 
 // // // all bikes by name
 // printjson( db.features.distinct( "properties.name", { "properties.bike": 1 } ) );

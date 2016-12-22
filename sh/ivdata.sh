@@ -30,18 +30,18 @@ do
   node ../ivdata/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.djson
 done
 
-echo "transform place elements to geojson feature elements"
-for djson in ./*.djson
-do
-  djsonname=$(basename "$djson")
-  djsonshort="${djsonname%.*}"
+# echo "transform place elements to geojson feature elements"
+# for djson in ./*.djson
+# do
+#   djsonname=$(basename "$djson")
+#   djsonshort="${djsonname%.*}"
 
-  echo "transforming ${djsonname}"
-  node ../ivdata/index.js geojson < ${djson} > ${djsonshort}.gjson
-done
+#   echo "transforming ${djsonname}"
+#   node ../ivdata/index.js geojson < ${djson} > ${djsonshort}.gjson
+# done
 
 echo "import geojson into mongoDB"
-for json in ./*.gjson
+for json in ./*.djson
 do
   jsonname=$(basename "$json")
   jsonshort="${jsonname%.*}"
