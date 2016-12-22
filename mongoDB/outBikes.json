@@ -1,0 +1,9362 @@
+MongoDB shell version: 3.2.11
+connecting to: infovis
+[
+	{
+		"_id" : {
+			"bike_numbers" : 96383
+		},
+		"name" : [
+			"BIKE 96383"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97275
+		},
+		"name" : [
+			"BIKE 97275"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96289
+		},
+		"name" : [
+			"BIKE 96289"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96562
+		},
+		"name" : [
+			"BIKE 96562"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96153
+		},
+		"name" : [
+			"Adalberstr./Arcisstr.",
+			"Königsplatz 3",
+			"BIKE 96153"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96154
+		},
+		"name" : [
+			"BIKE 96154"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96240
+		},
+		"name" : [
+			"BIKE 96240"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96900
+		},
+		"name" : [
+			"BIKE 96900"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96691
+		},
+		"name" : [
+			"BIKE 96691"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96457
+		},
+		"name" : [
+			"BIKE 96457"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96196
+		},
+		"name" : [
+			"BIKE 96196"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97211
+		},
+		"name" : [
+			"BIKE 97211",
+			"Renatastr. 13-15 im Innenhof "
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96227
+		},
+		"name" : [
+			"BIKE 96227"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97093
+		},
+		"name" : [
+			"Knorrstr. 90",
+			"München - Petra-Kelly/Lissy-Kaeser"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96645
+		},
+		"name" : [
+			"BIKE 96645"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96710
+		},
+		"name" : [
+			"48.126534, 11.597328",
+			"BIKE 96710"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97078
+		},
+		"name" : [
+			"BIKE 97078"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97222
+		},
+		"name" : [
+			"BIKE 97222"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97148
+		},
+		"name" : [
+			"Landwehrstraße 73",
+			"BIKE 97148"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97326
+		},
+		"name" : [
+			"Müllerstr. 46",
+			"BIKE 97326"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96787
+		},
+		"name" : [
+			"BIKE 96787"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96516
+		},
+		"name" : [
+			"Ungererstr. / Mittlerering",
+			"BIKE 96516"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97059
+		},
+		"name" : [
+			"BIKE 97059"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96977
+		},
+		"name" : [
+			"BIKE 96977"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96692
+		},
+		"name" : [
+			"BIKE 96692"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96386
+		},
+		"name" : [
+			"BIKE 96386"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96186
+		},
+		"name" : [
+			"BIKE 96186"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96265
+		},
+		"name" : [
+			"BIKE 96265"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96770
+		},
+		"name" : [
+			"München - Laimer Platz ",
+			"BIKE 96770"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96620
+		},
+		"name" : [
+			"BIKE 96620"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96678
+		},
+		"name" : [
+			"BIKE 96678"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97336
+		},
+		"name" : [
+			"BIKE 97336"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96451
+		},
+		"name" : [
+			"BIKE 96451"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97156
+		},
+		"name" : [
+			"BIKE 97156"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97016
+		},
+		"name" : [
+			"BIKE 97016"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96204
+		},
+		"name" : [
+			"BIKE 96204"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96192
+		},
+		"name" : [
+			"BIKE 96192"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96737
+		},
+		"name" : [
+			"Edelweißstr. 14",
+			"Giesinger Bahnhofplatz 1",
+			"BIKE 96737"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96795
+		},
+		"name" : [
+			"BIKE 96795"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96533
+		},
+		"name" : [
+			"BIKE 96533"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96655
+		},
+		"name" : [
+			"BIKE 96655"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96380
+		},
+		"name" : [
+			"BIKE 96380"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97037
+		},
+		"name" : [
+			"BIKE 97037",
+			"Hofmannstr. 23"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97252
+		},
+		"name" : [
+			"München - Barer Str. 27",
+			"BIKE 97252"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97128
+		},
+		"name" : [
+			"BIKE 97128"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97107
+		},
+		"name" : [
+			"BIKE 97107"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96430
+		},
+		"name" : [
+			"Oberländerstraße 5",
+			"BIKE 96430"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96201
+		},
+		"name" : [
+			"BIKE 96201"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97238
+		},
+		"name" : [
+			"BIKE 97238"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97277
+		},
+		"name" : [
+			"BIKE 97277",
+			"Clemensstraße 5",
+			"Riesenfeldstraße 71"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96126
+		},
+		"name" : [
+			"BIKE 96126"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96414
+		},
+		"name" : [
+			"München - Akademiestr. 1",
+			"BIKE 96414"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96820
+		},
+		"name" : [
+			"Zeppelinstr. 83",
+			"48.099775, 11.529084",
+			"BIKE 96820"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96292
+		},
+		"name" : [
+			"BIKE 96292"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96935
+		},
+		"name" : [
+			"Alte Heide 18",
+			"BIKE 96935"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97317
+		},
+		"name" : [
+			"BIKE 97317"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96830
+		},
+		"name" : [
+			"BIKE 96830"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96969
+		},
+		"name" : [
+			"48.135328, 11.581968",
+			"BIKE 96969"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97146
+		},
+		"name" : [
+			"97146",
+			"Einhornallee 40",
+			"BIKE 97146"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97330
+		},
+		"name" : [
+			"BIKE 97330"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97256
+		},
+		"name" : [
+			"BIKE 97256"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : null
+		},
+		"name" : [
+			"München - Eintrachtstr. 1"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96471
+		},
+		"name" : [
+			"Eisnergutbogen ",
+			"BIKE 96471"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97083
+		},
+		"name" : [
+			"BIKE 97083"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96241
+		},
+		"name" : [
+			"BIKE 96241"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96043
+		},
+		"name" : [
+			"BIKE 96043"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96028
+		},
+		"name" : [
+			"BIKE 96028"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96709
+		},
+		"name" : [
+			"U-Bahn Olympiazentrum",
+			"BIKE 96709"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96797
+		},
+		"name" : [
+			"BIKE 96797"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96681
+		},
+		"name" : [
+			"BIKE 96681",
+			"Helene-Mayer-Ring 4A"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96565
+		},
+		"name" : [
+			"BIKE 96565"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96805
+		},
+		"name" : [
+			"BIKE 96805"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97221
+		},
+		"name" : [
+			"BIKE 97221",
+			"Dillingerstraße 4"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97119
+		},
+		"name" : [
+			"Nymphenburger Str. / Maillingerstr.",
+			"BIKE 97119"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97160
+		},
+		"name" : [
+			"München - Müllerstr. 46",
+			"BIKE 97160"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96623
+		},
+		"name" : [
+			"BIKE 96623"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96530
+		},
+		"name" : [
+			"BIKE 96530"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97196
+		},
+		"name" : [
+			"Thersienwiese / Oktoberfesteingang",
+			"BIKE 97196"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97073
+		},
+		"name" : [
+			"BIKE 97073"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96913
+		},
+		"name" : [
+			"BIKE 96913"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97209
+		},
+		"name" : [
+			"BIKE 97209"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97123
+		},
+		"name" : [
+			"BIKE 97123"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96237
+		},
+		"name" : [
+			"Grasmeierstr. 23",
+			"BIKE 96237"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96456
+		},
+		"name" : [
+			"Schönstraße 23",
+			"BIKE 96456"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96895
+		},
+		"name" : [
+			"BIKE 96895"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96477
+		},
+		"name" : [
+			"BIKE 96477"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96917
+		},
+		"name" : [
+			"Chinesischer Turm, Englischer Garten",
+			"Belgradstrasse 18",
+			"BIKE 96917"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97198
+		},
+		"name" : [
+			"BIKE 97198"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96884
+		},
+		"name" : [
+			"BIKE 96884"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96734
+		},
+		"name" : [
+			"BIKE 96734"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97142
+		},
+		"name" : [
+			"BIKE 97142"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97125
+		},
+		"name" : [
+			"Lehrchenauerstr. 174  ",
+			"BIKE 97125"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97243
+		},
+		"name" : [
+			"BIKE 97243",
+			"Einsteinstr. 130 an dem Fahrradbereich"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96918
+		},
+		"name" : [
+			"Klenzestr. 86 ",
+			"BIKE 96918"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97004
+		},
+		"name" : [
+			"München - Nymphenburger Str. 108",
+			"BIKE 97004"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96879
+		},
+		"name" : [
+			"BIKE 96879"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96739
+		},
+		"name" : [
+			"BIKE 96739"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96745
+		},
+		"name" : [
+			"BIKE 96745",
+			"Bushaltestelle Schellingstraße",
+			"Schellingstraße/Barer Straße"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96325
+		},
+		"name" : [
+			"Illungshofstr. 21",
+			"BIKE 96325"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96753
+		},
+		"name" : [
+			"Schillerstraße 19"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97187
+		},
+		"name" : [
+			"BIKE 97187"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96425
+		},
+		"name" : [
+			"BIKE 96425"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97085
+		},
+		"name" : [
+			"BIKE 97085"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96663
+		},
+		"name" : [
+			"Chiemgaustr. 138a",
+			"Otl-Aicher-Str. 36",
+			"BIKE 96663"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96984
+		},
+		"name" : [
+			"BIKE 96984"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96321
+		},
+		"name" : [
+			"BIKE 96321"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96515
+		},
+		"name" : [
+			"BIKE 96515"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96843
+		},
+		"name" : [
+			"Mühlhofstr. 15 ",
+			"Ohlmüllerstraße 20",
+			"BIKE 96843"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96868
+		},
+		"name" : [
+			"BIKE 96868"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96572
+		},
+		"name" : [
+			"BIKE 96572"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97045
+		},
+		"name" : [
+			"BIKE 97045",
+			"Fernpaßstr. 25"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96675
+		},
+		"name" : [
+			"Dachauer Str./Lazarettstr.",
+			"BIKE 96675"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96942
+		},
+		"name" : [
+			"BIKE 96942"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96723
+		},
+		"name" : [
+			"Chinesischer Turm",
+			"BIKE 96723"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96230
+		},
+		"name" : [
+			"Gern U-Bahn-Haltestelle",
+			"Hüpnerstr. 15",
+			"München - Bayerstraße, Eingang Hauptbahnhof",
+			"BIKE 96230"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96748
+		},
+		"name" : [
+			"BIKE 96748"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96275
+		},
+		"name" : [
+			"BIKE 96275"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96330
+		},
+		"name" : [
+			"BIKE 96330"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96813
+		},
+		"name" : [
+			"BIKE 96813"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96523
+		},
+		"name" : [
+			"Heimeranstraße 35",
+			"BIKE 96523"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96674
+		},
+		"name" : [
+			"BIKE 96674"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96188
+		},
+		"name" : [
+			"BIKE 96188"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96920
+		},
+		"name" : [
+			"U-Bahn-Haltestelle Poccistr.",
+			"Fernpaßstr. 25",
+			"BIKE 96920"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96556
+		},
+		"name" : [
+			"BIKE 96556",
+			"Am Tombasi"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96105
+		},
+		"name" : [
+			"Max josephStrasse 5",
+			"BIKE 96105"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96252
+		},
+		"name" : [
+			"BIKE 96252"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96508
+		},
+		"name" : [
+			"Theresienstraße 79",
+			"Kidlerstr. 19 in München Sendling",
+			"BIKE 96508"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96602
+		},
+		"name" : [
+			"BIKE 96602"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96262
+		},
+		"name" : [
+			"Balanstraße 218",
+			"BIKE 96262"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96754
+		},
+		"name" : [
+			"Seidlstr. 26",
+			"BIKE 96754"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97096
+		},
+		"name" : [
+			"Roßmarkt/An der Hauptfeuerwache",
+			"BIKE 97096"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96576
+		},
+		"name" : [
+			"BIKE 96576"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97340
+		},
+		"name" : [
+			"BIKE 97340"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97110
+		},
+		"name" : [
+			"BIKE 97110"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96996
+		},
+		"name" : [
+			"BIKE 96996"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97008
+		},
+		"name" : [
+			"Zw. Schwabinger Bach u. See",
+			"BIKE 97008"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96497
+		},
+		"name" : [
+			"BIKE 96497"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96536
+		},
+		"name" : [
+			"BIKE 96536"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96339
+		},
+		"name" : [
+			"BIKE 96339"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96833
+		},
+		"name" : [
+			"BIKE 96833"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96345
+		},
+		"name" : [
+			"Schleißheimer Straße",
+			"BIKE 96345"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96389
+		},
+		"name" : [
+			"BIKE 96389"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96412
+		},
+		"name" : [
+			"BIKE 96412"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96492
+		},
+		"name" : [
+			"Hofgartenstraße 2",
+			"BIKE 96492"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96570
+		},
+		"name" : [
+			"BIKE 96570"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96911
+		},
+		"name" : [
+			"BIKE 96911",
+			"Ebenauer Str. 3"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96808
+		},
+		"name" : [
+			"BIKE 96808"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96907
+		},
+		"name" : [
+			"BIKE 96907",
+			"Frauenlobstr. 28"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97204
+		},
+		"name" : [
+			"Guerickestrasse 87",
+			"BIKE 97204"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96149
+		},
+		"name" : [
+			"München - Bruderhofstr./Urbanstr.",
+			"BIKE 96149",
+			"Albert-Roßhaupter-Str. 123"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96310
+		},
+		"name" : [
+			"BIKE 96310"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96698
+		},
+		"name" : [
+			"BIKE 96698"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96500
+		},
+		"name" : [
+			"BIKE 96500"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96244
+		},
+		"name" : [
+			"Lierstraße  / Rüdigerstraße",
+			"BIKE 96244"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96460
+		},
+		"name" : [
+			"Prinzregentenstr./Wagmüllerstr. ",
+			"BIKE 96460"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96987
+		},
+		"name" : [
+			"Kirchenstraße / Grillparzerstraße",
+			"48.139421, 11.560763",
+			"BIKE 96987"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96738
+		},
+		"name" : [
+			"BIKE 96738"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97213
+		},
+		"name" : [
+			"BIKE 97213"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96448
+		},
+		"name" : [
+			"BIKE 96448"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96401
+		},
+		"name" : [
+			"BIKE 96401"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96440
+		},
+		"name" : [
+			"BIKE 96440"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97023
+		},
+		"name" : [
+			"BIKE 97023"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96124
+		},
+		"name" : [
+			"Plinganserstr. 19 ",
+			"BIKE 96124"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97050
+		},
+		"name" : [
+			"Rosenheimer Str. 108",
+			"BIKE 97050"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97255
+		},
+		"name" : [
+			"BIKE 97255"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96610
+		},
+		"name" : [
+			"BIKE 96610"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97092
+		},
+		"name" : [
+			"BIKE 97092"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96367
+		},
+		"name" : [
+			"München - Dachauer Str. 38",
+			"BIKE 96367"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96758
+		},
+		"name" : [
+			"München - Waldeckstr. 8"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97047
+		},
+		"name" : [
+			"BIKE 97047"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96233
+		},
+		"name" : [
+			"BIKE 96233"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97344
+		},
+		"name" : [
+			"BIKE 97344"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97343
+		},
+		"name" : [
+			"BIKE 97343"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96120
+		},
+		"name" : [
+			"Hornstr. 11",
+			"BIKE 96120"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96180
+		},
+		"name" : [
+			"Wendl-Dietrich-Str. 20",
+			"BIKE 96180"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96213
+		},
+		"name" : [
+			"BIKE 96213"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96847
+		},
+		"name" : [
+			"BIKE 96847"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97173
+		},
+		"name" : [
+			"BIKE 97173"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96679
+		},
+		"name" : [
+			"Ehrwalder Straße 2",
+			"BIKE 96679"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96633
+		},
+		"name" : [
+			"BIKE 96633"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96371
+		},
+		"name" : [
+			"BIKE 96371",
+			"Olympia-Alm"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96929
+		},
+		"name" : [
+			"BIKE 96929"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97247
+		},
+		"name" : [
+			"BIKE 97247"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97063
+		},
+		"name" : [
+			"Targo Bank am Harras ",
+			"BIKE 97063"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96608
+		},
+		"name" : [
+			"Müllerstr. 26",
+			"Maximilianstr. / Marstallplatz",
+			"BIKE 96608"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96896
+		},
+		"name" : [
+			"BIKE 96896"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96333
+		},
+		"name" : [
+			"BIKE 96333"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96688
+		},
+		"name" : [
+			"BIKE 96688"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96311
+		},
+		"name" : [
+			"BIKE 96311"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96786
+		},
+		"name" : [
+			"BIKE 96786"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96283
+		},
+		"name" : [
+			"BIKE 96283"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96846
+		},
+		"name" : [
+			"München - Urbanstr. 4",
+			"BIKE 96846"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97039
+		},
+		"name" : [
+			"Am Chinesischen Turm",
+			"St.-Martins-Straße 53",
+			"BIKE 97039"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96287
+		},
+		"name" : [
+			"Paul-Heyse-Str. 29 ",
+			"Bushaltestelle Von-der-Tann-Straße",
+			"Cafe Königin",
+			"BIKE 96287"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96394
+		},
+		"name" : [
+			"BIKE 96394"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96302
+		},
+		"name" : [
+			"BIKE 96302"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97332
+		},
+		"name" : [
+			"Mailingerstr. 17",
+			"BIKE 97332"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96382
+		},
+		"name" : [
+			"BIKE 96382"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96534
+		},
+		"name" : [
+			"BIKE 96534"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96960
+		},
+		"name" : [
+			"BIKE 96960"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97081
+		},
+		"name" : [
+			"Destouchesstr. 42",
+			"BIKE 97081"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97099
+		},
+		"name" : [
+			"Sadlerstr. 2A",
+			"Erzgießereistr. 28",
+			"U- Bahn- Haltestelle Harras",
+			"BIKE 97099",
+			"Distelhofweg 54",
+			"Zum Flaucher Biergarten",
+			"Sendlinger Str. 21"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96447
+		},
+		"name" : [
+			"BIKE 96447"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96526
+		},
+		"name" : [
+			"BIKE 96526"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96113
+		},
+		"name" : [
+			"BIKE 96113"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96801
+		},
+		"name" : [
+			"BIKE 96801"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96155
+		},
+		"name" : [
+			"BIKE 96155"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96318
+		},
+		"name" : [
+			"BIKE 96318"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96160
+		},
+		"name" : [
+			"BIKE 96160"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96749
+		},
+		"name" : [
+			"Frühlingsanlagen",
+			"Bayerstr. 10a",
+			"BIKE 96749"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97116
+		},
+		"name" : [
+			"BIKE 97116"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96656
+		},
+		"name" : [
+			"Schönfeldstraße",
+			"BIKE 96656"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96567
+		},
+		"name" : [
+			"BIKE 96567"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96870
+		},
+		"name" : [
+			"Winzererstraße 130",
+			"BIKE 96870"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96238
+		},
+		"name" : [
+			"Englischer Garten",
+			"BIKE 96238"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96828
+		},
+		"name" : [
+			"BIKE 96828"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96856
+		},
+		"name" : [
+			"BIKE 96856"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97297
+		},
+		"name" : [
+			"BIKE 97297"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96474
+		},
+		"name" : [
+			"BIKE 96474"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96138
+		},
+		"name" : [
+			"BIKE 96138"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97233
+		},
+		"name" : [
+			"BIKE 97233"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96985
+		},
+		"name" : [
+			"BIKE 96985"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97329
+		},
+		"name" : [
+			"BIKE 97329"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96266
+		},
+		"name" : [
+			"BIKE 96266"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96993
+		},
+		"name" : [
+			"BIKE 96993"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97220
+		},
+		"name" : [
+			"BIKE 97220"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96392
+		},
+		"name" : [
+			"BIKE 96392"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96132
+		},
+		"name" : [
+			"Haimhauser Str 1",
+			"BIKE 96132"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96145
+		},
+		"name" : [
+			"BIKE 96145"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96313
+		},
+		"name" : [
+			"BIKE 96313"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96208
+		},
+		"name" : [
+			"U.-Bhf. Studentenstadt",
+			"BIKE 96208"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96229
+		},
+		"name" : [
+			"BIKE 96229"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96413
+		},
+		"name" : [
+			"BIKE 96413"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96357
+		},
+		"name" : [
+			"BIKE 96357"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96940
+		},
+		"name" : [
+			"Cosimastr. 218",
+			"BIKE 96940"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96288
+		},
+		"name" : [
+			"BIKE 96288"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96949
+		},
+		"name" : [
+			"BIKE 96949"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96780
+		},
+		"name" : [
+			"BIKE 96780"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96718
+		},
+		"name" : [
+			"BIKE 96718"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96385
+		},
+		"name" : [
+			"BIKE 96385"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96598
+		},
+		"name" : [
+			"BIKE 96598"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96128
+		},
+		"name" : [
+			"BIKE 96128"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96297
+		},
+		"name" : [
+			"München - Orpheusstr.",
+			"BIKE 96297"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96796
+		},
+		"name" : [
+			"BIKE 96796"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97064
+		},
+		"name" : [
+			"BIKE 97064"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96478
+		},
+		"name" : [
+			"BIKE 96478",
+			"Bismarckstr 26"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97162
+		},
+		"name" : [
+			"Herzogstraße / Wilhelmstraße",
+			"Menzinger Straße 44",
+			"BIKE 97162",
+			"München - Astallerstr. 13"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97025
+		},
+		"name" : [
+			"Zellstraße",
+			"BIKE 97025"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96270
+		},
+		"name" : [
+			"BIKE 96270"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96775
+		},
+		"name" : [
+			"BIKE 96775"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97104
+		},
+		"name" : [
+			"BIKE 97104"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96365
+		},
+		"name" : [
+			"BIKE 96365"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97113
+		},
+		"name" : [
+			"BIKE 97113"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96397
+		},
+		"name" : [
+			"BIKE 96397"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96284
+		},
+		"name" : [
+			"BIKE 96284"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96995
+		},
+		"name" : [
+			"BIKE 96995",
+			"Zarmdorferstraße 100"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96116
+		},
+		"name" : [
+			"BIKE 96116"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96612
+		},
+		"name" : [
+			"BIKE 96612"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96590
+		},
+		"name" : [
+			"Isarwinkel 16",
+			"48.147173, 11.502573",
+			"BIKE 96590"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96892
+		},
+		"name" : [
+			"BIKE 96892"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97147
+		},
+		"name" : [
+			"BIKE 97147"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96449
+		},
+		"name" : [
+			"BIKE 96449",
+			"München - Blutenburgstr. 31"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97249
+		},
+		"name" : [
+			"BIKE 97249"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96672
+		},
+		"name" : [
+			"BIKE 96672"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97129
+		},
+		"name" : [
+			"BIKE 97129"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96962
+		},
+		"name" : [
+			"BIKE 96962"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97089
+		},
+		"name" : [
+			"BIKE 97089"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97086
+		},
+		"name" : [
+			"Bavariaring / Pettenkoferstr.",
+			"Schellingstr. 141",
+			"BIKE 97086"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96511
+		},
+		"name" : [
+			"BIKE 96511"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97273
+		},
+		"name" : [
+			"Flößergasse/Tölzerstr.",
+			"BIKE 97273"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96963
+		},
+		"name" : [
+			"BIKE 96963"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97171
+		},
+		"name" : [
+			"BIKE 97171"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96707
+		},
+		"name" : [
+			"Stiglmaierplatz",
+			"München - Am Kosttor 3",
+			"BIKE 96707"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96209
+		},
+		"name" : [
+			"BIKE 96209"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96684
+		},
+		"name" : [
+			"BIKE 96684"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96342
+		},
+		"name" : [
+			"Werinherstraße / Severinstraße",
+			"BIKE 96342"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97174
+		},
+		"name" : [
+			"BIKE 97174"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97259
+		},
+		"name" : [
+			"Erich-Kästner-Str./ Herzogstr. ",
+			"München - Baumstr 17",
+			"BIKE 97259"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97264
+		},
+		"name" : [
+			"BIKE 97264"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97323
+		},
+		"name" : [
+			"BIKE 97323"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96898
+		},
+		"name" : [
+			"BIKE 96898"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96641
+		},
+		"name" : [
+			"BIKE 96641"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96639
+		},
+		"name" : [
+			"BIKE 96639"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96862
+		},
+		"name" : [
+			"BIKE 96862"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97176
+		},
+		"name" : [
+			"Maxvorstadt",
+			"BIKE 97176"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96593
+		},
+		"name" : [
+			"BIKE 96593"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96517
+		},
+		"name" : [
+			"BIKE 96517"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96991
+		},
+		"name" : [
+			"BIKE 96991"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97058
+		},
+		"name" : [
+			"BIKE 97058"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96110
+		},
+		"name" : [
+			"München - Brehmstr. 2",
+			"BIKE 96110"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96630
+		},
+		"name" : [
+			"Martiusstraße / Leopoldstraß",
+			"BIKE 96630"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96979
+		},
+		"name" : [
+			"Keferloher Str. / Hirschkäfer Weg",
+			"BIKE 96979"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96855
+		},
+		"name" : [
+			"Donnersbergerstr. 49",
+			"Thalkirchner Brücke 2",
+			"BIKE 96855"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96933
+		},
+		"name" : [
+			"BIKE 96933"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96218
+		},
+		"name" : [
+			"BIKE 96218"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96455
+		},
+		"name" : [
+			"BIKE 96455"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96778
+		},
+		"name" : [
+			"BIKE 96778"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96134
+		},
+		"name" : [
+			"BIKE 96134"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96937
+		},
+		"name" : [
+			"Ludwigstr. 22",
+			"BIKE 96937"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96944
+		},
+		"name" : [
+			"BIKE 96944"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96789
+		},
+		"name" : [
+			"Frankfurter Ring",
+			"BIKE 96789"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96552
+		},
+		"name" : [
+			"BIKE 96552"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96427
+		},
+		"name" : [
+			"Wallbergstr 34",
+			"BIKE 96427"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96653
+		},
+		"name" : [
+			"BIKE 96653"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97276
+		},
+		"name" : [
+			"Keferloherstr. 51a",
+			"Leopoldstraße / MCDonalds",
+			"BIKE 97276"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97205
+		},
+		"name" : [
+			"Maasstr./Seidelstr.",
+			"BIKE 97205"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96405
+		},
+		"name" : [
+			"Ridlerst. 7",
+			"BIKE 96405"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96588
+		},
+		"name" : [
+			"BIKE 96588"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96185
+		},
+		"name" : [
+			"BIKE 96185"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96701
+		},
+		"name" : [
+			"BIKE 96701"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96650
+		},
+		"name" : [
+			"BIKE 96650"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96885
+		},
+		"name" : [
+			"BIKE 96885"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96717
+		},
+		"name" : [
+			"Thalkirchner Straße",
+			"BIKE 96717"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97157
+		},
+		"name" : [
+			"München - Lehnbachplatz 7",
+			"BIKE 97157"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97084
+		},
+		"name" : [
+			"BIKE 97084"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96925
+		},
+		"name" : [
+			"Alnatura Parkplatz",
+			"BIKE 96925"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96992
+		},
+		"name" : [
+			"Martin-Greif-Str. /Schwanthalerstr.",
+			"BIKE 96992"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96353
+		},
+		"name" : [
+			"BIKE 96353"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96619
+		},
+		"name" : [
+			"BIKE 96619"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96611
+		},
+		"name" : [
+			"BIKE 96611"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97292
+		},
+		"name" : [
+			"BIKE 97292"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96410
+		},
+		"name" : [
+			"Eckehart Str./ Moosburgerstr.",
+			"BIKE 96410"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96378
+		},
+		"name" : [
+			"Spiridon-Louis-Ring 21",
+			"Gideon-Luis-Ring 21",
+			"BIKE 96378"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96849
+		},
+		"name" : [
+			"Ismaninger Straße 11",
+			"BIKE 96849"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96880
+		},
+		"name" : [
+			"Wiedmaierstr. 12",
+			"BIKE 96880",
+			"Nordfriedhof, Ungererbad, Parkplatz",
+			"Lechstr. 3"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96210
+		},
+		"name" : [
+			"Luisenstr. 37A",
+			"BIKE 96210"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96690
+		},
+		"name" : [
+			"BIKE 96690"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97022
+		},
+		"name" : [
+			"Schönstraße 23",
+			"Mozartstr / Esperantoplatz",
+			"BIKE 97022"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96566
+		},
+		"name" : [
+			"BIKE 96566"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96509
+		},
+		"name" : [
+			"Schmellerstr. 2",
+			"Bereiterangar 9",
+			"BIKE 96509"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96354
+		},
+		"name" : [
+			"S Bahn Hackerbrücke",
+			"BIKE 96354"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96829
+		},
+		"name" : [
+			"BIKE 96829"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96854
+		},
+		"name" : [
+			"BIKE 96854"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96189
+		},
+		"name" : [
+			"BIKE 96189"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96472
+		},
+		"name" : [
+			"BIKE 96472"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96793
+		},
+		"name" : [
+			"BIKE 96793"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96894
+		},
+		"name" : [
+			"BIKE 96894"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96983
+		},
+		"name" : [
+			"Arnulfstraße 108",
+			"BIKE 96983"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97242
+		},
+		"name" : [
+			"BIKE 97242"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96680
+		},
+		"name" : [
+			"BIKE 96680"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96554
+		},
+		"name" : [
+			"München - Connollystraße (Wohnheim)",
+			"BIKE 96554"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96417
+		},
+		"name" : [
+			"BIKE 96417"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97212
+		},
+		"name" : [
+			"BIKE 97212"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97132
+		},
+		"name" : [
+			"Sommerstraße 19",
+			"BIKE 97132"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96893
+		},
+		"name" : [
+			"BIKE 96893"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96316
+		},
+		"name" : [
+			"Matthias-Pschorr-Straße 4",
+			"BIKE 96316"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96712
+		},
+		"name" : [
+			"BIKE 96712"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96263
+		},
+		"name" : [
+			"Damenstiftstraße 11",
+			"Montgelasstr/ Ecke kufsteinerstr",
+			"BIKE 96263"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96522
+		},
+		"name" : [
+			"Lanserstr. 51",
+			"BIKE 96522"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96222
+		},
+		"name" : [
+			"BIKE 96222"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96762
+		},
+		"name" : [
+			"BIKE 96762",
+			"Tamdorferstraße 100"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97012
+		},
+		"name" : [
+			"BIKE 97012"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96217
+		},
+		"name" : [
+			"BIKE 96217"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96334
+		},
+		"name" : [
+			"BIKE 96334"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96231
+		},
+		"name" : [
+			"Marschstallplatz 1 ",
+			"BIKE 96231"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97151
+		},
+		"name" : [
+			"BIKE 97151"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96722
+		},
+		"name" : [
+			"Steinheilstr. 10",
+			"Prielmayerstr. / Karlspl. ",
+			"Bhf Mittersendling",
+			"BIKE 96722"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96781
+		},
+		"name" : [
+			"Riesenfeldstr. 4",
+			"Ludwigsbrücke/Deutsches Museum",
+			"BIKE 96781"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96662
+		},
+		"name" : [
+			"Mozartstr. / Kobelstr.",
+			"Zuccalistr. 19",
+			"BIKE 96662"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96670
+		},
+		"name" : [
+			"BIKE 96670"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96528
+		},
+		"name" : [
+			"BIKE 96528"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96834
+		},
+		"name" : [
+			"BIKE 96834"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96174
+		},
+		"name" : [
+			"BIKE 96174"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96877
+		},
+		"name" : [
+			"BIKE 96877"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97296
+		},
+		"name" : [
+			"St. Pauls Platz / Theresienwiese",
+			"Adelheidstr. 29",
+			"BIKE 97296"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96851
+		},
+		"name" : [
+			"BIKE 96851"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96908
+		},
+		"name" : [
+			"Werner-Friedmann-Bogen 28",
+			"BIKE 96908"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96320
+		},
+		"name" : [
+			"BIKE 96320"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96304
+		},
+		"name" : [
+			"Preziosastraße 13",
+			"Lindwurmstraße 122 ",
+			"BIKE 96304"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96407
+		},
+		"name" : [
+			"BIKE 96407"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96725
+		},
+		"name" : [
+			"Schleißheimer Str. 242",
+			"Schellingstraße 115",
+			"BIKE 96725"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97036
+		},
+		"name" : [
+			"Schwanseestraße 62",
+			"BIKE 97036"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96584
+		},
+		"name" : [
+			"Theresienwiese höhe Bavaria",
+			"BIKE 96584"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96571
+		},
+		"name" : [
+			"BIKE 96571"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96130
+		},
+		"name" : [
+			"BIKE 96130"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96651
+		},
+		"name" : [
+			"BIKE 96651"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96626
+		},
+		"name" : [
+			"BIKE 96626"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97115
+		},
+		"name" : [
+			"BIKE 97115"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97346
+		},
+		"name" : [
+			"BIKE 97346"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96551
+		},
+		"name" : [
+			"BIKE 96551"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96766
+		},
+		"name" : [
+			"BIKE 96766"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97177
+		},
+		"name" : [
+			"BIKE 97177"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97183
+		},
+		"name" : [
+			"Infanteriestr. 19",
+			"Seuffertstr. 38",
+			"SWZ "
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96545
+		},
+		"name" : [
+			"BIKE 96545"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96422
+		},
+		"name" : [
+			"BIKE 96422"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96280
+		},
+		"name" : [
+			"BIKE 96280"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96665
+		},
+		"name" : [
+			"Frundsbergstr. 62",
+			"Donnersberger Brücke",
+			"BIKE 96665"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96861
+		},
+		"name" : [
+			"BIKE 96861"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96549
+		},
+		"name" : [
+			"Arabellastr. 21",
+			"BIKE 96549"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96697
+		},
+		"name" : [
+			"BIKE 96697"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96182
+		},
+		"name" : [
+			"BIKE 96182"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96568
+		},
+		"name" : [
+			"Steigerstr.",
+			"BIKE 96568"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96704
+		},
+		"name" : [
+			"BIKE 96704"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96369
+		},
+		"name" : [
+			"BIKE 96369"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97295
+		},
+		"name" : [
+			"BIKE 97295"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96664
+		},
+		"name" : [
+			"BIKE 96664"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97161
+		},
+		"name" : [
+			"BIKE 97161"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97310
+		},
+		"name" : [
+			"BIKE 97310"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96891
+		},
+		"name" : [
+			"48.130739, 11.574417",
+			"BIKE 96891"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96667
+		},
+		"name" : [
+			"BIKE 96667"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96599
+		},
+		"name" : [
+			"BIKE 96599"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97328
+		},
+		"name" : [
+			"BIKE 97328"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96841
+		},
+		"name" : [
+			"BIKE 96841"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96264
+		},
+		"name" : [
+			"Belgraderstr./Kaisterstr.",
+			"BIKE 96264"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97067
+		},
+		"name" : [
+			"BIKE 97067"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97028
+		},
+		"name" : [
+			"BIKE 97028"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96866
+		},
+		"name" : [
+			"BIKE 96866"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96607
+		},
+		"name" : [
+			"Wittelsbacherplatz ",
+			"BIKE 96607"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96666
+		},
+		"name" : [
+			"BIKE 96666"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96812
+		},
+		"name" : [
+			"BIKE 96812"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96544
+		},
+		"name" : [
+			"BIKE 96544"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96705
+		},
+		"name" : [
+			"München - Eintrachtstr. 1",
+			"BIKE 96705"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97074
+		},
+		"name" : [
+			"BIKE 97074"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96646
+		},
+		"name" : [
+			"Türkenstr. 57",
+			"BIKE 96646"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96804
+		},
+		"name" : [
+			"BIKE 96804"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97195
+		},
+		"name" : [
+			"BIKE 97195"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96291
+		},
+		"name" : [
+			"BIKE 96291"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96553
+		},
+		"name" : [
+			"BIKE 96553"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96629
+		},
+		"name" : [
+			"BIKE 96629"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96760
+		},
+		"name" : [
+			"BIKE 96760"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97082
+		},
+		"name" : [
+			"BIKE 97082"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96278
+		},
+		"name" : [
+			"BIKE 96278"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96708
+		},
+		"name" : [
+			"BIKE 96708"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97060
+		},
+		"name" : [
+			"BIKE 97060"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96852
+		},
+		"name" : [
+			"BIKE 96852"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96606
+		},
+		"name" : [
+			"BIKE 96606"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96871
+		},
+		"name" : [
+			"BIKE 96871"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96235
+		},
+		"name" : [
+			"BIKE 96235"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96711
+		},
+		"name" : [
+			"BIKE 96711"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97103
+		},
+		"name" : [
+			"Zeppelinstr./Zenneckbrücke",
+			"BIKE 97103"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96300
+		},
+		"name" : [
+			"BIKE 96300"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96999
+		},
+		"name" : [
+			"BIKE 96999"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96484
+		},
+		"name" : [
+			"BIKE 96484"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97287
+		},
+		"name" : [
+			"BIKE 97287"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97318
+		},
+		"name" : [
+			"BIKE 97318"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97237
+		},
+		"name" : [
+			"Ernst-Curtius-Weg",
+			"BIKE 97237"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96442
+		},
+		"name" : [
+			"BIKE 96442"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97325
+		},
+		"name" : [
+			"BIKE 97325"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96974
+		},
+		"name" : [
+			"BIKE 96974"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96179
+		},
+		"name" : [
+			"Giesinger Bahnhof",
+			"BIKE 96179"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97065
+		},
+		"name" : [
+			"BIKE 97065"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96621
+		},
+		"name" : [
+			"BIKE 96621"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97166
+		},
+		"name" : [
+			"BIKE 97166"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96643
+		},
+		"name" : [
+			"BIKE 96643"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96883
+		},
+		"name" : [
+			"BIKE 96883"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97120
+		},
+		"name" : [
+			"Türkenstr. 30",
+			"BIKE 97120"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97034
+		},
+		"name" : [
+			"Heinrich Kley Str. 6 ",
+			"Marcel-Breuer-Str. 18",
+			"Englisher Garten",
+			"BIKE 97034"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96504
+		},
+		"name" : [
+			"BIKE 96504"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96827
+		},
+		"name" : [
+			"BIKE 96827"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96586
+		},
+		"name" : [
+			"BIKE 96586"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96379
+		},
+		"name" : [
+			"BIKE 96379"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96212
+		},
+		"name" : [
+			"BIKE 96212"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97015
+		},
+		"name" : [
+			"BIKE 97015"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96872
+		},
+		"name" : [
+			"Fäustlestraße 5",
+			"BIKE 96872"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96595
+		},
+		"name" : [
+			"BIKE 96595"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96309
+		},
+		"name" : [
+			"BIKE 96309"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96844
+		},
+		"name" : [
+			"Görresstraße 19",
+			"BIKE 96844"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96811
+		},
+		"name" : [
+			"Landsberger Str. 483",
+			"BIKE 96811"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96123
+		},
+		"name" : [
+			"Hofgartenstr. 1",
+			"BIKE 96123"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96324
+		},
+		"name" : [
+			"BIKE 96324"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96980
+		},
+		"name" : [
+			"Romanstr. 61",
+			"friedenheimerstr 90",
+			"Denistr. 2 ",
+			"BIKE 96980"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96577
+		},
+		"name" : [
+			"BIKE 96577"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96744
+		},
+		"name" : [
+			"BIKE 96744"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97124
+		},
+		"name" : [
+			"Franziska-Bilek-Weg 1",
+			"BIKE 97124"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96659
+		},
+		"name" : [
+			"BIKE 96659"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96531
+		},
+		"name" : [
+			"BIKE 96531"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96874
+		},
+		"name" : [
+			"Holzstraße 29",
+			"BIKE 96874"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96308
+		},
+		"name" : [
+			"BIKE 96308"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97111
+		},
+		"name" : [
+			"Maxburgstraße 4b",
+			"BIKE 97111"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96865
+		},
+		"name" : [
+			"BIKE 96865"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96597
+		},
+		"name" : [
+			"BIKE 96597"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96943
+		},
+		"name" : [
+			"Schleißheimer Str. 161",
+			"BIKE 96943"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96644
+		},
+		"name" : [
+			"BIKE 96644"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96250
+		},
+		"name" : [
+			"BIKE 96250"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96685
+		},
+		"name" : [
+			"Petuelring/Riesenfeldstr.",
+			"BIKE 96685"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96716
+		},
+		"name" : [
+			" Theresienstraße / Türkenstr. ",
+			"BIKE 96716"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96689
+		},
+		"name" : [
+			"BIKE 96689"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96391
+		},
+		"name" : [
+			"BIKE 96391"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96668
+		},
+		"name" : [
+			"BIKE 96668"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97029
+		},
+		"name" : [
+			"August - Kühn - Str. ",
+			"BIKE 97029"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96234
+		},
+		"name" : [
+			"Bavariaring 30",
+			"BIKE 96234"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97302
+		},
+		"name" : [
+			"BIKE 97302"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96507
+		},
+		"name" : [
+			"BIKE 96507"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96867
+		},
+		"name" : [
+			"BIKE 96867"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96537
+		},
+		"name" : [
+			"BIKE 96537"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96743
+		},
+		"name" : [
+			"BIKE 96743"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97208
+		},
+		"name" : [
+			"Mailinger Straße / U-Bahn",
+			"BIKE 97208"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97312
+		},
+		"name" : [
+			"BIKE 97312"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96857
+		},
+		"name" : [
+			"BIKE 96857"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97055
+		},
+		"name" : [
+			"Dachauer Straße/Pelkovenstraße",
+			"BIKE 97055"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96600
+		},
+		"name" : [
+			"BIKE 96600"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97053
+		},
+		"name" : [
+			"BIKE 97053",
+			"Flaucher Biergarten"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96258
+		},
+		"name" : [
+			"U-Bahn-Haltestelle Gern",
+			"BIKE 96258"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96404
+		},
+		"name" : [
+			"Theresienstraße / Enhuberstraße ",
+			"BIKE 96404"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97207
+		},
+		"name" : [
+			"BIKE 97207"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96628
+		},
+		"name" : [
+			"BIKE 96628"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96147
+		},
+		"name" : [
+			"BIKE 96147"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96791
+		},
+		"name" : [
+			"BIKE 96791"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97269
+		},
+		"name" : [
+			"München - Hans-Dürrmeier-Weg 12",
+			"Pflugstraße",
+			"BIKE 97269"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96605
+		},
+		"name" : [
+			"BIKE 96605"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96108
+		},
+		"name" : [
+			"BIKE 96108"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97308
+		},
+		"name" : [
+			"BIKE 97308"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96513
+		},
+		"name" : [
+			"BIKE 96513"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97189
+		},
+		"name" : [
+			"BIKE 97189"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97020
+		},
+		"name" : [
+			"München - Löwengrube 10",
+			"BIKE 97020"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96225
+		},
+		"name" : [
+			"BIKE 96225"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96202
+		},
+		"name" : [
+			"BIKE 96202"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96997
+		},
+		"name" : [
+			"BIKE 96997"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96159
+		},
+		"name" : [
+			"BIKE 96159"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96954
+		},
+		"name" : [
+			"BIKE 96954"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96890
+		},
+		"name" : [
+			"Prinzregentenstraße 149",
+			"BIKE 96890"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97184
+		},
+		"name" : [
+			"BIKE 97184"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96951
+		},
+		"name" : [
+			"BIKE 96951"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96438
+		},
+		"name" : [
+			"BIKE 96438"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97021
+		},
+		"name" : [
+			"BIKE 97021"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96794
+		},
+		"name" : [
+			"BIKE 96794"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96613
+		},
+		"name" : [
+			"BIKE 96613"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96529
+		},
+		"name" : [
+			"BIKE 96529"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96683
+		},
+		"name" : [
+			"BIKE 96683"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96421
+		},
+		"name" : [
+			"BIKE 96421"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96247
+		},
+		"name" : [
+			"BIKE 96247"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97042
+		},
+		"name" : [
+			"BIKE 97042"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96487
+		},
+		"name" : [
+			"BIKE 96487"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96408
+		},
+		"name" : [
+			"BIKE 96408"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96151
+		},
+		"name" : [
+			"BIKE 96151"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96946
+		},
+		"name" : [
+			"BIKE 96946"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96860
+		},
+		"name" : [
+			"BIKE 96860"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97054
+		},
+		"name" : [
+			"BIKE 97054"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96673
+		},
+		"name" : [
+			"BIKE 96673"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96344
+		},
+		"name" : [
+			"BIKE 96344"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97335
+		},
+		"name" : [
+			"BIKE 97335"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96532
+		},
+		"name" : [
+			"BIKE 96532"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97007
+		},
+		"name" : [
+			"BIKE 97007"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96845
+		},
+		"name" : [
+			"Fürstenrieder Str. 35",
+			"BIKE 96845"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97228
+		},
+		"name" : [
+			"BIKE 97228"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96433
+		},
+		"name" : [
+			"BIKE 96433"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97218
+		},
+		"name" : [
+			"BIKE 97218"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96527
+		},
+		"name" : [
+			"BIKE 96527"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96696
+		},
+		"name" : [
+			"BIKE 96696"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96618
+		},
+		"name" : [
+			"BIKE 96618"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96135
+		},
+		"name" : [
+			"Johanneskirchner Str. 134",
+			"BIKE 96135"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96930
+		},
+		"name" : [
+			"BIKE 96930"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96923
+		},
+		"name" : [
+			"BIKE 96923"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96784
+		},
+		"name" : [
+			"BIKE 96784"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96741
+		},
+		"name" : [
+			"BIKE 96741"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96858
+		},
+		"name" : [
+			"Kaulbachstraße",
+			"BIKE 96858"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96625
+		},
+		"name" : [
+			"BIKE 96625"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97240
+		},
+		"name" : [
+			"Schulburgstr. 12",
+			"BIKE 97240"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96445
+		},
+		"name" : [
+			"BIKE 96445"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96459
+		},
+		"name" : [
+			"BIKE 96459"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96779
+		},
+		"name" : [
+			"BIKE 96779"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97200
+		},
+		"name" : [
+			"BIKE 97200"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97181
+		},
+		"name" : [
+			"Leopoldstr. 77",
+			"Nordendstraße 43",
+			"BIKE 97181"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97056
+		},
+		"name" : [
+			"Tegernseerplatz 1",
+			"BIKE 97056"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96703
+		},
+		"name" : [
+			"Volkertstr./ Frunzbergstr.",
+			"Schleißheimerstr 46",
+			"BIKE 96703"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97345
+		},
+		"name" : [
+			"BIKE 97345"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96550
+		},
+		"name" : [
+			"BIKE 96550"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96184
+		},
+		"name" : [
+			"BIKE 96184"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96161
+		},
+		"name" : [
+			"BIKE 96161"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96956
+		},
+		"name" : [
+			"Karlstr./Luisenstr.",
+			"BIKE 96956"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96211
+		},
+		"name" : [
+			"BIKE 96211"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97006
+		},
+		"name" : [
+			"St.-Veit-Straße 15",
+			"BIKE 97006"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96764
+		},
+		"name" : [
+			"BIKE 96764"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97088
+		},
+		"name" : [
+			"BIKE 97088"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96293
+		},
+		"name" : [
+			"BIKE 96293"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96429
+		},
+		"name" : [
+			"München - Hackerbrücke",
+			"BIKE 96429"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97224
+		},
+		"name" : [
+			"BIKE 97224"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96714
+		},
+		"name" : [
+			"BIKE 96714"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96835
+		},
+		"name" : [
+			"BIKE 96835"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96746
+		},
+		"name" : [
+			"BIKE 96746"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96773
+		},
+		"name" : [
+			"St. Martin Str. 66",
+			"St.-martin-Str.66",
+			"BIKE 96773"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96103
+		},
+		"name" : [
+			"BIKE 96103"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96635
+		},
+		"name" : [
+			"Landschaftsstraße/Marienplatz",
+			"BIKE 96635"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96589
+		},
+		"name" : [
+			"BIKE 96589"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97263
+		},
+		"name" : [
+			"Prinzregentenstr. 22",
+			"Albanistraße",
+			"BIKE 97263",
+			"Patentamt",
+			"Ehrengutstraße 21",
+			"Zillertalerstr. 14"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97315
+		},
+		"name" : [
+			"BIKE 97315"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96368
+		},
+		"name" : [
+			"BIKE 96368"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96822
+		},
+		"name" : [
+			"leuchtenbergrring ",
+			"BIKE 96822"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96924
+		},
+		"name" : [
+			"BIKE 96924"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96129
+		},
+		"name" : [
+			"BIKE 96129"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96446
+		},
+		"name" : [
+			"Sendlinger Tor",
+			"BIKE 96446"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97241
+		},
+		"name" : [
+			"BIKE 97241"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96290
+		},
+		"name" : [
+			"HBF Haupteingang",
+			"BIKE 96290"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96694
+		},
+		"name" : [
+			"BIKE 96694"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96502
+		},
+		"name" : [
+			"BIKE 96502"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96916
+		},
+		"name" : [
+			"BIKE 96916"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96121
+		},
+		"name" : [
+			"Frundsbergstr. 62",
+			"BIKE 96121"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96579
+		},
+		"name" : [
+			"Dreimühlenstraße 12",
+			"München hauptbahnhof",
+			"BIKE 96579"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97135
+		},
+		"name" : [
+			"BIKE 97135"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96332
+		},
+		"name" : [
+			"BIKE 96332"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96363
+		},
+		"name" : [
+			"BIKE 96363"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96426
+		},
+		"name" : [
+			"BIKE 96426"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96190
+		},
+		"name" : [
+			"BIKE 96190"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96518
+		},
+		"name" : [
+			"Schulstraße 24",
+			"BIKE 96518"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97313
+		},
+		"name" : [
+			"BIKE 97313"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96601
+		},
+		"name" : [
+			"BIKE 96601"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96101
+		},
+		"name" : [
+			"BIKE 96101"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96286
+		},
+		"name" : [
+			"BIKE 96286"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96583
+		},
+		"name" : [
+			"S-Bahn München-Mittersendling ",
+			"BIKE 96583"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97011
+		},
+		"name" : [
+			"BIKE 97011"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96255
+		},
+		"name" : [
+			"BIKE 96255"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97319
+		},
+		"name" : [
+			"BIKE 97319"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96162
+		},
+		"name" : [
+			"St.-Quirin-Platz",
+			"BIKE 96162"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96957
+		},
+		"name" : [
+			"Buttermelcherstr. 18",
+			"BIKE 96957"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96166
+		},
+		"name" : [
+			"BIKE 96166"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96961
+		},
+		"name" : [
+			"BIKE 96961"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96443
+		},
+		"name" : [
+			"München - Josef-Führer-Str. 43",
+			"BIKE 96443"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96555
+		},
+		"name" : [
+			"BIKE 96555"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96254
+		},
+		"name" : [
+			"BIKE 96254"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97049
+		},
+		"name" : [
+			"Luisenstraße / Gabelsbergerstraße",
+			"BIKE 97049"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96167
+		},
+		"name" : [
+			"Rumfordstraße 24",
+			"BIKE 96167"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97311
+		},
+		"name" : [
+			"Menzingerstr. / Nördliche Auffahrtsalllee",
+			"Rosenheimer Platz",
+			"reichenbachbrücke",
+			"Bussingstr. 69",
+			"BIKE 97311"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96168
+		},
+		"name" : [
+			"BIKE 96168"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96971
+		},
+		"name" : [
+			"BIKE 96971"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96317
+		},
+		"name" : [
+			"BIKE 96317"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97112
+		},
+		"name" : [
+			"BIKE 97112"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96158
+		},
+		"name" : [
+			"BIKE 96158"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96953
+		},
+		"name" : [
+			"BIKE 96953"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96782
+		},
+		"name" : [
+			"Hohenzollernstraße/Schleißheimerstraße",
+			"BIKE 96782"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96352
+		},
+		"name" : [
+			"BIKE 96352"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97155
+		},
+		"name" : [
+			"BIKE 97155"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96747
+		},
+		"name" : [
+			"Blütenstraße 13",
+			"BIKE 96747"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97117
+		},
+		"name" : [
+			"BIKE 97117"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96322
+		},
+		"name" : [
+			"BIKE 96322"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96616
+		},
+		"name" : [
+			"BIKE 96616"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96647
+		},
+		"name" : [
+			"BIKE 96647"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97109
+		},
+		"name" : [
+			"BIKE 97109"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96314
+		},
+		"name" : [
+			"BIKE 96314"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96654
+		},
+		"name" : [
+			"BIKE 96654"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97215
+		},
+		"name" : [
+			"BIKE 97215"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96303
+		},
+		"name" : [
+			"BIKE 96303"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97098
+		},
+		"name" : [
+			"Residenzstraße",
+			"BIKE 97098"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96306
+		},
+		"name" : [
+			"BIKE 96306"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97101
+		},
+		"name" : [
+			"BIKE 97101"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96539
+		},
+		"name" : [
+			"BIKE 96539"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97334
+		},
+		"name" : [
+			"Dachauerstr 145",
+			"BIKE 97334"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96467
+		},
+		"name" : [
+			"BIKE 96467"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97262
+		},
+		"name" : [
+			"BIKE 97262"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96373
+		},
+		"name" : [
+			"BIKE 96373"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97168
+		},
+		"name" : [
+			"Zennerstraße/Münchenerstraße",
+			"ligsalzstraße 5",
+			"BIKE 97168"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96525
+		},
+		"name" : [
+			"Knorrstraße 36",
+			"BIKE 96525"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97320
+		},
+		"name" : [
+			"München - Leonrothplatz",
+			"BIKE 97320"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96609
+		},
+		"name" : [
+			"BIKE 96609"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97337
+		},
+		"name" : [
+			"BIKE 97337"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96542
+		},
+		"name" : [
+			"BIKE 96542"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97035
+		},
+		"name" : [
+			"BIKE 97035"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96232
+		},
+		"name" : [
+			"BIKE 96232"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97245
+		},
+		"name" : [
+			"U-Bahnhaltestelle Silberhornstr.",
+			"BIKE 97245"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96450
+		},
+		"name" : [
+			"BIKE 96450"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96358
+		},
+		"name" : [
+			"BIKE 96358"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97153
+		},
+		"name" : [
+			"BIKE 97153"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96582
+		},
+		"name" : [
+			"BIKE 96582"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96228
+		},
+		"name" : [
+			"Isabellastr. 46",
+			"BIKE 96228"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97031
+		},
+		"name" : [
+			"BIKE 97031"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97143
+		},
+		"name" : [
+			"BIKE 97143"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96785
+		},
+		"name" : [
+			"BIKE 96785"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96970
+		},
+		"name" : [
+			"Seehaus Englischer Garten",
+			"BIKE 96970"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96175
+		},
+		"name" : [
+			"Arnulfstr. 52",
+			"BIKE 96175"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96557
+		},
+		"name" : [
+			"München - Schellingstr. 22",
+			"BIKE 96557"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97191
+		},
+		"name" : [
+			"BIKE 97191"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96388
+		},
+		"name" : [
+			"BIKE 96388"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96966
+		},
+		"name" : [
+			"Moosacher Str. 81",
+			"BIKE 96966"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96171
+		},
+		"name" : [
+			"BIKE 96171"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96269
+		},
+		"name" : [
+			"BIKE 96269"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96959
+		},
+		"name" : [
+			"Schönstr. 23",
+			"BIKE 96959"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96156
+		},
+		"name" : [
+			"BIKE 96156"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96815
+		},
+		"name" : [
+			"BIKE 96815"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96420
+		},
+		"name" : [
+			"BIKE 96420"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97223
+		},
+		"name" : [
+			"Götzinger Str. 8",
+			"München - Plinganserstr. 32",
+			"Bavariaring 29",
+			"BIKE 97223"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96624
+		},
+		"name" : [
+			"BIKE 96624"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97100
+		},
+		"name" : [
+			"BIKE 97100"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96919
+		},
+		"name" : [
+			"BIKE 96919"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96519
+		},
+		"name" : [
+			"Partnachstraße 6",
+			"Frauenhofer Straße / U-Bahn",
+			"BIKE 96519"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97314
+		},
+		"name" : [
+			"BIKE 97314"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96921
+		},
+		"name" : [
+			"BIKE 96921"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96926
+		},
+		"name" : [
+			"BIKE 96926",
+			"Olympiapark "
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96131
+		},
+		"name" : [
+			"BIKE 96131"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96809
+		},
+		"name" : [
+			"BIKE 96809"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96563
+		},
+		"name" : [
+			"Herzog-Heinrich-Str. 7",
+			"BIKE 96563"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96163
+		},
+		"name" : [
+			"BIKE 96163"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96958
+		},
+		"name" : [
+			"BIKE 96958"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96838
+		},
+		"name" : [
+			"BIKE 96838"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96169
+		},
+		"name" : [
+			"BIKE 96169"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96964
+		},
+		"name" : [
+			"BIKE 96964"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96569
+		},
+		"name" : [
+			"BIKE 96569"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97257
+		},
+		"name" : [
+			"Georgenstr. 48",
+			"BIKE 97257"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96462
+		},
+		"name" : [
+			"BIKE 96462"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97152
+		},
+		"name" : [
+			"FIZ BMW ",
+			"Schenkendorfstraße 92",
+			"Arnulfstr. 2",
+			"T.U.M Innenhof ",
+			"BIKE 97152"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96362
+		},
+		"name" : [
+			"Maillingerstraße 4",
+			"BIKE 96362"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96757
+		},
+		"name" : [
+			"Humboldtstraße. / Pilgersheimerstr. ",
+			"BIKE 96757"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96416
+		},
+		"name" : [
+			"BIKE 96416"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96819
+		},
+		"name" : [
+			"BIKE 96819"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96326
+		},
+		"name" : [
+			"BIKE 96326"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97121
+		},
+		"name" : [
+			"Connollystr 13",
+			"BIKE 97121"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96726
+		},
+		"name" : [
+			"BIKE 96726"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97126
+		},
+		"name" : [
+			"BIKE 97126"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96331
+		},
+		"name" : [
+			"BIKE 96331"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97044
+		},
+		"name" : [
+			"BIKE 97044"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96249
+		},
+		"name" : [
+			"BIKE 96249"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96193
+		},
+		"name" : [
+			"BIKE 96193"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96988
+		},
+		"name" : [
+			"BIKE 96988"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96198
+		},
+		"name" : [
+			"BIKE 96198"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96219
+		},
+		"name" : [
+			"BIKE 96219"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97014
+		},
+		"name" : [
+			"BIKE 97014"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97106
+		},
+		"name" : [
+			"München - Augustenstr. 75",
+			"BIKE 97106"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97194
+		},
+		"name" : [
+			"BIKE 97194"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96399
+		},
+		"name" : [
+			"Birkerstr. 26",
+			"BIKE 96399"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97179
+		},
+		"name" : [
+			"BIKE 97179"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96381
+		},
+		"name" : [
+			"BIKE 96381"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96837
+		},
+		"name" : [
+			"Georg-Brauchle-Ring 23",
+			"Georg-Brauchle-Ring 23,",
+			"BIKE 96837"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96220
+		},
+		"name" : [
+			"BIKE 96220"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96950
+		},
+		"name" : [
+			"Riesenfeldstraße 7",
+			"BIKE 96950"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96931
+		},
+		"name" : [
+			"Georg-Brauchle-Ring 23-25",
+			"BIKE 96931"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96575
+		},
+		"name" : [
+			"BIKE 96575"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96118
+		},
+		"name" : [
+			"BIKE 96118"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96109
+		},
+		"name" : [
+			"Hugo-Troendle-Str./Nanga Parbat Str.",
+			"BIKE 96109"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96904
+		},
+		"name" : [
+			"BIKE 96904"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96909
+		},
+		"name" : [
+			"BIKE 96909"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96114
+		},
+		"name" : [
+			"Agnes-Pockels-Bogen",
+			"S-Bahn Laim",
+			"BIKE 96114"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97122
+		},
+		"name" : [
+			"BIKE 97122"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96327
+		},
+		"name" : [
+			"Landsberger Straße 272, München",
+			"BIKE 96327"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96107
+		},
+		"name" : [
+			"BIKE 96107"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96902
+		},
+		"name" : [
+			"Audi Dome",
+			"Philipp-Loewenfeld-Str. 31",
+			"BIKE 96902"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96695
+		},
+		"name" : [
+			"BIKE 96695"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96295
+		},
+		"name" : [
+			"BIKE 96295"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97090
+		},
+		"name" : [
+			"BIKE 97090"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97131
+		},
+		"name" : [
+			"Lenggrieser Straße 12",
+			"BIKE 97131"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96328
+		},
+		"name" : [
+			"BIKE 96328"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96731
+		},
+		"name" : [
+			"BIKE 96731"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96164
+		},
+		"name" : [
+			"BIKE 96164"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96967
+		},
+		"name" : [
+			"BIKE 96967"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96564
+		},
+		"name" : [
+			"BIKE 96564"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96660
+		},
+		"name" : [
+			"München - Franziskanerstr. 11",
+			"BIKE 96660"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96897
+		},
+		"name" : [
+			"BIKE 96897"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96281
+		},
+		"name" : [
+			"BIKE 96281"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97076
+		},
+		"name" : [
+			"BIKE 97076"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97268
+		},
+		"name" : [
+			"BIKE 97268",
+			"Mathildenstraße /Pettenkoferstraße",
+			"Pettenkofer Str. 8"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96473
+		},
+		"name" : [
+			"BIKE 96473"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96888
+		},
+		"name" : [
+			"Englischer Garten",
+			"Landsberger Straße / Grasserstraße",
+			"BIKE 96888"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96821
+		},
+		"name" : [
+			"BIKE 96821"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96661
+		},
+		"name" : [
+			"BIKE 96661"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96591
+		},
+		"name" : [
+			"Mühlbaurstr. / Stunzstr. ",
+			"BIKE 96591"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96191
+		},
+		"name" : [
+			"BIKE 96191"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96986
+		},
+		"name" : [
+			"Schopenhauerstraße / Knorrstraße",
+			"Freibadstraße",
+			"BIKE 96986"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96499
+		},
+		"name" : [
+			"Jachenauer Str.",
+			"48.111454, 11.534741",
+			"Leopoldstr. 157",
+			"Frankfurter Ring",
+			"Hohenlindener Str. 4",
+			"Implerstraße 53",
+			"BIKE 96499"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97294
+		},
+		"name" : [
+			"Hohenzollernstr. 11",
+			"BIKE 97294"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97299
+		},
+		"name" : [
+			"Feldmochinger Str. 53",
+			"BIKE 97299"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96496
+		},
+		"name" : [
+			"BIKE 96496"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97087
+		},
+		"name" : [
+			"BIKE 97087"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96524
+		},
+		"name" : [
+			"BIKE 96524"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97327
+		},
+		"name" : [
+			"BIKE 97327"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97227
+		},
+		"name" : [
+			"Tierparkstr. 30",
+			"BIKE 97227"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96424
+		},
+		"name" : [
+			"BIKE 96424"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96434
+		},
+		"name" : [
+			"BIKE 96434"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96932
+		},
+		"name" : [
+			"BIKE 96932"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96137
+		},
+		"name" : [
+			"München - Eintrachtstr. 1",
+			"BIKE 96137"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96253
+		},
+		"name" : [
+			"BIKE 96253"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97048
+		},
+		"name" : [
+			"BIKE 97048"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97165
+		},
+		"name" : [
+			"München - Maximilianplatz ",
+			"BIKE 97165"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96370
+		},
+		"name" : [
+			"BIKE 96370"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96887
+		},
+		"name" : [
+			"BIKE 96887",
+			"Perlacher Str."
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97201
+		},
+		"name" : [
+			"Zieblandstraße 43",
+			"BIKE 97201"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96406
+		},
+		"name" : [
+			"BIKE 96406"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97094
+		},
+		"name" : [
+			"U-Bahn Universität",
+			"Albrecht-Dürer-Strasse 14",
+			"BIKE 97094"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96299
+		},
+		"name" : [
+			"BIKE 96299"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96803
+		},
+		"name" : [
+			"Hultschiner Str. 8",
+			"BIKE 96803"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96713
+		},
+		"name" : [
+			"Stuntzstr. 2",
+			"BIKE 96713"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97108
+		},
+		"name" : [
+			"U-hlt Universität",
+			"BIKE 97108"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96100
+		},
+		"name" : [
+			"Marienplatz",
+			"BIKE 96100"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96622
+		},
+		"name" : [
+			"48.136577, 11.580037",
+			"Goetheplatz",
+			"BIKE 96622"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97316
+		},
+		"name" : [
+			"BIKE 97316"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96521
+		},
+		"name" : [
+			"BIKE 96521"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96850
+		},
+		"name" : [
+			"BIKE 96850"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96319
+		},
+		"name" : [
+			"St. -Bonifatiusstr. 5",
+			"BIKE 96319"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97114
+		},
+		"name" : [
+			"Bus-htl. Parsivalplatz",
+			"BIKE 97114"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96914
+		},
+		"name" : [
+			"BIKE 96914"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96119
+		},
+		"name" : [
+			"BIKE 96119"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97309
+		},
+		"name" : [
+			"prielmayerstraße 1",
+			"BIKE 97309",
+			"Kolumbusstr. 8 "
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96514
+		},
+		"name" : [
+			"BIKE 96514"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96546
+		},
+		"name" : [
+			"BIKE 96546"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97341
+		},
+		"name" : [
+			"BIKE 97341"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97001
+		},
+		"name" : [
+			"BIKE 97001"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96206
+		},
+		"name" : [
+			"BIKE 96206"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96558
+		},
+		"name" : [
+			"BIKE 96558"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96203
+		},
+		"name" : [
+			"BIKE 96203"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96998
+		},
+		"name" : [
+			"BIKE 96998"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96603
+		},
+		"name" : [
+			"BIKE 96603"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96200
+		},
+		"name" : [
+			"Mariahilfpl.",
+			"BIKE 96200"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97284
+		},
+		"name" : [
+			"BIKE 97284"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96489
+		},
+		"name" : [
+			"BIKE 96489"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96817
+		},
+		"name" : [
+			"BIKE 96817"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97271
+		},
+		"name" : [
+			"BIKE 97271"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96468
+		},
+		"name" : [
+			"BIKE 96468"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97266
+		},
+		"name" : [
+			"BIKE 97266"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96859
+		},
+		"name" : [
+			"Merseburger str. /  Thornerstr. ",
+			"BIKE 96859"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96873
+		},
+		"name" : [
+			"BIKE 96873"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96657
+		},
+		"name" : [
+			"BIKE 96657"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96257
+		},
+		"name" : [
+			"BIKE 96257"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97052
+		},
+		"name" : [
+			"BIKE 97052"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97305
+		},
+		"name" : [
+			"BIKE 97305"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96510
+		},
+		"name" : [
+			"Heßstraße 100",
+			"BIKE 96510"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96505
+		},
+		"name" : [
+			"Regerplatz 8",
+			"BIKE 96505"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97300
+		},
+		"name" : [
+			"BIKE 97300"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96910
+		},
+		"name" : [
+			"BIKE 96910"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96115
+		},
+		"name" : [
+			"Donnersberger Brücke",
+			"BIKE 96115"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96301
+		},
+		"name" : [
+			"BIKE 96301"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96802
+		},
+		"name" : [
+			"BIKE 96802"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96402
+		},
+		"name" : [
+			"BIKE 96402"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97197
+		},
+		"name" : [
+			"Tattenbachstr. 3",
+			"BIKE 97197"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97002
+		},
+		"name" : [
+			"BIKE 97002"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96207
+		},
+		"name" : [
+			"Hahnauer Pelkowstr.",
+			"BIKE 96207"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96826
+		},
+		"name" : [
+			"BIKE 96826"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97226
+		},
+		"name" : [
+			"BIKE 97226"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96431
+		},
+		"name" : [
+			"BIKE 96431"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96816
+		},
+		"name" : [
+			"BIKE 96816"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96806
+		},
+		"name" : [
+			"Josef-Wirth-Weg 19",
+			"BIKE 96806"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96150
+		},
+		"name" : [
+			"BIKE 96150"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96945
+		},
+		"name" : [
+			"München - Implerstr.",
+			"Hauptbahnhof Schwantalerstr. ",
+			"BIKE 96945"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96615
+		},
+		"name" : [
+			"Zamboninistr. 41",
+			"BIKE 96615"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97137
+		},
+		"name" : [
+			"BIKE 97137"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96347
+		},
+		"name" : [
+			"BIKE 96347"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96742
+		},
+		"name" : [
+			"BIKE 96742"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96454
+		},
+		"name" : [
+			"Blumenstr. 28 b ",
+			"BIKE 96454"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97244
+		},
+		"name" : [
+			"BIKE 97244"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96428
+		},
+		"name" : [
+			"Prielmayerstraße 7",
+			"BIKE 96428"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97231
+		},
+		"name" : [
+			"BIKE 97231",
+			"Friedenheimerstr.77"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96465
+		},
+		"name" : [
+			"BIKE 96465"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97260
+		},
+		"name" : [
+			"Arnulftstr. / Hauptbahnhof",
+			"BIKE 97260"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96470
+		},
+		"name" : [
+			"BIKE 96470"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97290
+		},
+		"name" : [
+			"BIKE 97290"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96840
+		},
+		"name" : [
+			"BIKE 96840"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96157
+		},
+		"name" : [
+			"Loristraße 3",
+			"BIKE 96157"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96152
+		},
+		"name" : [
+			"BIKE 96152"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96955
+		},
+		"name" : [
+			"BIKE 96955"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96464
+		},
+		"name" : [
+			"BIKE 96464"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97267
+		},
+		"name" : [
+			"BIKE 97267"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96469
+		},
+		"name" : [
+			"Luitpoldpark l Fahrradparkplatz Freibad",
+			"BIKE 96469"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96814
+		},
+		"name" : [
+			"BIKE 96814"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97214
+		},
+		"name" : [
+			"BIKE 97214"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96419
+		},
+		"name" : [
+			"Moosacher Str. 80",
+			"Türkenstraße 57, 80799 München",
+			"BIKE 96419"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96112
+		},
+		"name" : [
+			"Ungererstr./ U-bhf Stundentenstadt",
+			"BIKE 96112"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96915
+		},
+		"name" : [
+			"BIKE 96915"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96912
+		},
+		"name" : [
+			"BIKE 96912"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96117
+		},
+		"name" : [
+			"Reifenstuehlstraße 10",
+			"BIKE 96117"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97303
+		},
+		"name" : [
+			"BIKE 97303"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97167
+		},
+		"name" : [
+			"Franziskanerstr. 14 ",
+			"BIKE 97167"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96364
+		},
+		"name" : [
+			"BIKE 96364"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96652
+		},
+		"name" : [
+			"BIKE 96652"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96585
+		},
+		"name" : [
+			"BIKE 96585"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97134
+		},
+		"name" : [
+			"BIKE 97134"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97139
+		},
+		"name" : [
+			"BIKE 97139"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96336
+		},
+		"name" : [
+			"BIKE 96336"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96195
+		},
+		"name" : [
+			"Isartorplatz",
+			"BIKE 96195"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96990
+		},
+		"name" : [
+			"BIKE 96990"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96452
+		},
+		"name" : [
+			"BIKE 96452"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97188
+		},
+		"name" : [
+			"BIKE 97188"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96393
+		},
+		"name" : [
+			"BIKE 96393"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96788
+		},
+		"name" : [
+			"BIKE 96788"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96520
+		},
+		"name" : [
+			"BIKE 96520"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96125
+		},
+		"name" : [
+			"BIKE 96125"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96790
+		},
+		"name" : [
+			"BIKE 96790"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96390
+		},
+		"name" : [
+			"BIKE 96390"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97185
+		},
+		"name" : [
+			"BIKE 97185"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97190
+		},
+		"name" : [
+			"BIKE 97190"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96395
+		},
+		"name" : [
+			"BIKE 96395"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96730
+		},
+		"name" : [
+			"Ludwigstr./ U-Bhtl Universität",
+			"BIKE 96730"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96535
+		},
+		"name" : [
+			"BIKE 96535"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96338
+		},
+		"name" : [
+			"BIKE 96338"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97133
+		},
+		"name" : [
+			"Brecherspitzstr. 3",
+			"BIKE 97133"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96503
+		},
+		"name" : [
+			"BIKE 96503"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97298
+		},
+		"name" : [
+			"BIKE 97298"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97342
+		},
+		"name" : [
+			"Geyerstraße 52",
+			"Frankfurter Ring 120",
+			"BIKE 97342"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97154
+		},
+		"name" : [
+			"BIKE 97154"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96359
+		},
+		"name" : [
+			"BIKE 96359"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96491
+		},
+		"name" : [
+			"BIKE 96491"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97286
+		},
+		"name" : [
+			"Moosacher Str. 80",
+			"BIKE 97286"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97291
+		},
+		"name" : [
+			"Herzog-Willhelm Str. / Kreuzstr.",
+			"BIKE 97291"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96488
+		},
+		"name" : [
+			"BIKE 96488",
+			"München - Ernst- Penzholdtweg "
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96886
+		},
+		"name" : [
+			"Feilitzstr. / Gunezrainerstr. ",
+			"BIKE 96886"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96948
+		},
+		"name" : [
+			"BIKE 96948"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96490
+		},
+		"name" : [
+			"BIKE 96490"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97285
+		},
+		"name" : [
+			"München - Arnulfstr. 251",
+			"BIKE 97285"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96756
+		},
+		"name" : [
+			"BIKE 96756"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96356
+		},
+		"name" : [
+			"Höhenkirchen-Siegerbrunnen",
+			"BIKE 96356"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97159
+		},
+		"name" : [
+			"BIKE 97159"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96361
+		},
+		"name" : [
+			"BIKE 96361"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96836
+		},
+		"name" : [
+			"BIKE 96836"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96436
+		},
+		"name" : [
+			"BIKE 96436"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97239
+		},
+		"name" : [
+			"Geiselgasteigstraße 143",
+			"BIKE 97239"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96671
+		},
+		"name" : [
+			"BIKE 96671"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96271
+		},
+		"name" : [
+			"BIKE 96271"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97066
+		},
+		"name" : [
+			"Kaulbachstrasse 25",
+			"BIKE 97066"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97071
+		},
+		"name" : [
+			"BIKE 97071"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96268
+		},
+		"name" : [
+			"BIKE 96268"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96768
+		},
+		"name" : [
+			"BIKE 96768"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96435
+		},
+		"name" : [
+			"Hofgarten ",
+			"BIKE 96435"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97230
+		},
+		"name" : [
+			"BIKE 97230"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97235
+		},
+		"name" : [
+			"BIKE 97235"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96432
+		},
+		"name" : [
+			"BIKE 96432"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96636
+		},
+		"name" : [
+			"BIKE 96636"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97234
+		},
+		"name" : [
+			"BIKE 97234"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96839
+		},
+		"name" : [
+			"BIKE 96839"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97338
+		},
+		"name" : [
+			"BIKE 97338"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96350
+		},
+		"name" : [
+			"BIKE 96350"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97145
+		},
+		"name" : [
+			"Siegfriedstraße 17",
+			"BIKE 97145"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97150
+		},
+		"name" : [
+			"BIKE 97150"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96355
+		},
+		"name" : [
+			"Prinzregentenstraße 125",
+			"Alpenstraße 6",
+			"Neumarkterstr. 22",
+			"München - Seitzstr. 6a",
+			"BIKE 96355"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96981
+		},
+		"name" : [
+			"BIKE 96981"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96721
+		},
+		"name" : [
+			"BIKE 96721"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96260
+		},
+		"name" : [
+			"BIKE 96260"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96853
+		},
+		"name" : [
+			"Frundsbergstr. 33",
+			"BIKE 96853"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96848
+		},
+		"name" : [
+			"BIKE 96848"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97251
+		},
+		"name" : [
+			"BIKE 97251"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96658
+		},
+		"name" : [
+			"Claude-Lorrain-Str. 27",
+			"BIKE 96658"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96245
+		},
+		"name" : [
+			"BIKE 96245"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97040
+		},
+		"name" : [
+			"Pennstraße 18",
+			"BIKE 97040"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97258
+		},
+		"name" : [
+			"BIKE 97258"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96463
+		},
+		"name" : [
+			"BIKE 96463"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96458
+		},
+		"name" : [
+			"BIKE 96458"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97253
+		},
+		"name" : [
+			"Maxlrainstr. 6",
+			"BIKE 97253"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96863
+		},
+		"name" : [
+			"BIKE 96863"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96349
+		},
+		"name" : [
+			"Postillonstraße 17",
+			"BIKE 96349"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97144
+		},
+		"name" : [
+			"BIKE 97144"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96142
+		},
+		"name" : [
+			"Maistr. 44",
+			"BIKE 96142"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97070
+		},
+		"name" : [
+			"BIKE 97070"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97075
+		},
+		"name" : [
+			"Arcisstraße 36",
+			"BIKE 97075"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96272
+		},
+		"name" : [
+			"BIKE 96272"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97270
+		},
+		"name" : [
+			"BIKE 97270"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96475
+		},
+		"name" : [
+			"BIKE 96475"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96823
+		},
+		"name" : [
+			"BIKE 96823"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96374
+		},
+		"name" : [
+			"Ruffinistraße 36",
+			"Ständlerstraße",
+			"BIKE 96374"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97169
+		},
+		"name" : [
+			"Ingolstädter Str 45",
+			"Arcisstr. Mensa",
+			"BIKE 97169"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96466
+		},
+		"name" : [
+			"BIKE 96466"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97261
+		},
+		"name" : [
+			"BIKE 97261"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97289
+		},
+		"name" : [
+			"BIKE 97289"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96494
+		},
+		"name" : [
+			"BIKE 96494"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96889
+		},
+		"name" : [
+			"BIKE 96889"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96594
+		},
+		"name" : [
+			"BIKE 96594"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96994
+		},
+		"name" : [
+			"BIKE 96994"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96199
+		},
+		"name" : [
+			"BIKE 96199"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96146
+		},
+		"name" : [
+			"BIKE 96146"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97339
+		},
+		"name" : [
+			"BIKE 97339"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96141
+		},
+		"name" : [
+			"Osterwaldstr. 153",
+			"48.185234, 11.619612",
+			"Lucile-Grahn-Straße 39",
+			"BIKE 96141"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96936
+		},
+		"name" : [
+			"Oettingerstr. 67",
+			"BIKE 96936"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96736
+		},
+		"name" : [
+			"BIKE 96736"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97136
+		},
+		"name" : [
+			"BIKE 97136"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96341
+		},
+		"name" : [
+			"BIKE 96341"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96825
+		},
+		"name" : [
+			"BIKE 96825"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96122
+		},
+		"name" : [
+			"BIKE 96122"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96761
+		},
+		"name" : [
+			"BIKE 96761"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97080
+		},
+		"name" : [
+			"BIKE 97080"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96285
+		},
+		"name" : [
+			"BIKE 96285"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96144
+		},
+		"name" : [
+			"BIKE 96144"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96246
+		},
+		"name" : [
+			"BIKE 96246"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97041
+		},
+		"name" : [
+			"BIKE 97041"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97046
+		},
+		"name" : [
+			"Nusshäherstraße 33",
+			"BIKE 97046"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96251
+		},
+		"name" : [
+			"U-bhf. Giesing",
+			"BIKE 96251"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97170
+		},
+		"name" : [
+			"BIKE 97170"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96372
+		},
+		"name" : [
+			"Elisenstr.",
+			"BIKE 96372"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97175
+		},
+		"name" : [
+			"Isabellastr. 49",
+			"recording_311388",
+			"BIKE 97175"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96772
+		},
+		"name" : [
+			"BIKE 96772"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96172
+		},
+		"name" : [
+			"BIKE 96172"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96975
+		},
+		"name" : [
+			"BIKE 96975"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96642
+		},
+		"name" : [
+			"Brehmstraße 15",
+			"BIKE 96642"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96637
+		},
+		"name" : [
+			"BIKE 96637"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96242
+		},
+		"name" : [
+			"BIKE 96242"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96832
+		},
+		"name" : [
+			"BIKE 96832"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97232
+		},
+		"name" : [
+			"BIKE 97232"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96437
+		},
+		"name" : [
+			"BIKE 96437"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96682
+		},
+		"name" : [
+			"Hittmann Straße/ Hirschgartenallee",
+			"BIKE 96682"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97077
+		},
+		"name" : [
+			"BIKE 97077"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96282
+		},
+		"name" : [
+			"BIKE 96282"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96677
+		},
+		"name" : [
+			"BIKE 96677"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96277
+		},
+		"name" : [
+			"Heßstraße 89",
+			"BIKE 96277"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97072
+		},
+		"name" : [
+			"Mariahilfstr. 22a",
+			"BIKE 97072"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97279
+		},
+		"name" : [
+			"BIKE 97279"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96476
+		},
+		"name" : [
+			"BIKE 96476"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96479
+		},
+		"name" : [
+			"Stuntzstraße 31",
+			"BIKE 96479"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97274
+		},
+		"name" : [
+			"München - Heimeranplatz",
+			"BIKE 97274"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96881
+		},
+		"name" : [
+			"BIKE 96881"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97281
+		},
+		"name" : [
+			"Gabelsbergerstr. 48a",
+			"BIKE 97281"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96486
+		},
+		"name" : [
+			"Steinheilstr. 17",
+			"BIKE 96486"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96481
+		},
+		"name" : [
+			"Isartor",
+			"BIKE 96481"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96876
+		},
+		"name" : [
+			"BIKE 96876"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96676
+		},
+		"name" : [
+			"BIKE 96676"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96276
+		},
+		"name" : [
+			"BIKE 96276"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97079
+		},
+		"name" : [
+			"BIKE 97079"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96176
+		},
+		"name" : [
+			"Hanauerstr. , Olympia Einkaufszentrum",
+			"Hanauerstr. / Riesstr.",
+			"BIKE 96176"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96769
+		},
+		"name" : [
+			"Dachauerstr. / Leon-Rot-Platz",
+			"BIKE 96769"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97069
+		},
+		"name" : [
+			"BIKE 97069"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96732
+		},
+		"name" : [
+			"BIKE 96732"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96735
+		},
+		"name" : [
+			"BIKE 96735"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96335
+		},
+		"name" : [
+			"Westendstr. 250",
+			"Milchstr. 9 ",
+			"BIKE 96335"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97130
+		},
+		"name" : [
+			"BIKE 97130"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96875
+		},
+		"name" : [
+			"Schwabinger Bach",
+			"Oettingenstraße 30",
+			"BIKE 96875"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96482
+		},
+		"name" : [
+			"Rotkreuzplatz",
+			"BIKE 96482"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96343
+		},
+		"name" : [
+			"BIKE 96343"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97138
+		},
+		"name" : [
+			"BIKE 97138"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97293
+		},
+		"name" : [
+			"BIKE 97293"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96498
+		},
+		"name" : [
+			"BIKE 96498"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96493
+		},
+		"name" : [
+			"BIKE 96493"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97288
+		},
+		"name" : [
+			"BIKE 97288"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96798
+		},
+		"name" : [
+			"München - Weimarerstr.",
+			"BIKE 96798"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96398
+		},
+		"name" : [
+			"Clemensstr. 88",
+			"München - Clemensstr. 88",
+			"BIKE 96398"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97193
+		},
+		"name" : [
+			"BIKE 97193"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97062
+		},
+		"name" : [
+			"Dachauerstr. / Lotstr. ",
+			"BIKE 97062"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96267
+		},
+		"name" : [
+			"BIKE 96267"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97057
+		},
+		"name" : [
+			"BIKE 97057"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96869
+		},
+		"name" : [
+			"Bruno-Walter-Ring 12",
+			"BIKE 96869"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96298
+		},
+		"name" : [
+			"BIKE 96298"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96693
+		},
+		"name" : [
+			"BIKE 96693"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97091
+		},
+		"name" : [
+			"Donnersberger Brücke",
+			"Pelkovenstraße 57",
+			"BIKE 97091"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97033
+		},
+		"name" : [
+			"BIKE 97033"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97038
+		},
+		"name" : [
+			"Hausammerstr. / Ober-Biberger",
+			"Tegernseer Landstraße 252",
+			"BIKE 97038"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96243
+		},
+		"name" : [
+			"BIKE 96243"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96831
+		},
+		"name" : [
+			"BIKE 96831"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97043
+		},
+		"name" : [
+			"Teresienhöhe 6",
+			"BIKE 97043"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96640
+		},
+		"name" : [
+			"Mies-van-der-Rohe-Straße 4",
+			"Wilhelm-Wagenfeldstr. ,Rewe",
+			"BIKE 96640"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96396
+		},
+		"name" : [
+			"BIKE 96396"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96799
+		},
+		"name" : [
+			"BIKE 96799"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97301
+		},
+		"name" : [
+			"BIKE 97301"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96506
+		},
+		"name" : [
+			"BIKE 96506"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96106
+		},
+		"name" : [
+			"BIKE 96106"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96901
+		},
+		"name" : [
+			"BIKE 96901"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96387
+		},
+		"name" : [
+			"48.155904, 11.536195",
+			"BIKE 96387"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97182
+		},
+		"name" : [
+			"Parzivalstr. 6",
+			"BIKE 97182"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96384
+		},
+		"name" : [
+			"Rainer-Werner-Fassbinder-Platz",
+			"BIKE 96384"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97061
+		},
+		"name" : [
+			"BIKE 97061"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96133
+		},
+		"name" : [
+			"BIKE 96133"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96928
+		},
+		"name" : [
+			"BIKE 96928"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96938
+		},
+		"name" : [
+			"Isartalstraße 21",
+			"Knausstr. ",
+			"BIKE 96938"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96143
+		},
+		"name" : [
+			"BIKE 96143"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97333
+		},
+		"name" : [
+			"BIKE 97333"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96538
+		},
+		"name" : [
+			"BIKE 96538"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96733
+		},
+		"name" : [
+			"Mies-van-der-Rohe-Straße 4",
+			"BIKE 96733"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96728
+		},
+		"name" : [
+			"BIKE 96728"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97192
+		},
+		"name" : [
+			"BIKE 97192"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97102
+		},
+		"name" : [
+			"BIKE 97102"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96307
+		},
+		"name" : [
+			"BIKE 96307"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97097
+		},
+		"name" : [
+			"BIKE 97097"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96922
+		},
+		"name" : [
+			"BIKE 96922"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96127
+		},
+		"name" : [
+			"Theresienhöhe 12",
+			"BIKE 96127"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96273
+		},
+		"name" : [
+			"BIKE 96273"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96561
+		},
+		"name" : [
+			"Schäfflerstraße 1",
+			"BIKE 96561"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96759
+		},
+		"name" : [
+			"BIKE 96759"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96377
+		},
+		"name" : [
+			"BIKE 96377"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97172
+		},
+		"name" : [
+			"BIKE 97172"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96777
+		},
+		"name" : [
+			"BIKE 96777"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96972
+		},
+		"name" : [
+			"Halskestraße 28",
+			"Boschetsrieder Straße 158",
+			"BIKE 96972"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96205
+		},
+		"name" : [
+			"48.068336, 11.540569",
+			"BIKE 96205"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97000
+		},
+		"name" : [
+			"BIKE 97000"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96810
+		},
+		"name" : [
+			"BIKE 96810"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97210
+		},
+		"name" : [
+			"BIKE 97210"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96415
+		},
+		"name" : [
+			"BIKE 96415"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96699
+		},
+		"name" : [
+			"BIKE 96699"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96411
+		},
+		"name" : [
+			"BIKE 96411"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97206
+		},
+		"name" : [
+			"BIKE 97206"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96418
+		},
+		"name" : [
+			"BIKE 96418"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96194
+		},
+		"name" : [
+			"BIKE 96194"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96587
+		},
+		"name" : [
+			"BIKE 96587"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96982
+		},
+		"name" : [
+			"BIKE 96982"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97283
+		},
+		"name" : [
+			"BIKE 97283"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96480
+		},
+		"name" : [
+			"BIKE 96480"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96483
+		},
+		"name" : [
+			"BIKE 96483"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97278
+		},
+		"name" : [
+			"BIKE 97278"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96485
+		},
+		"name" : [
+			"BIKE 96485"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97280
+		},
+		"name" : [
+			"BIKE 97280"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96178
+		},
+		"name" : [
+			"48.162380, 11.586481",
+			"BIKE 96178"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96973
+		},
+		"name" : [
+			"BIKE 96973"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96139
+		},
+		"name" : [
+			"Theresienstr. / Luisenstr.",
+			"BIKE 96139"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96934
+		},
+		"name" : [
+			"BIKE 96934"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97141
+		},
+		"name" : [
+			"BIKE 97141"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96346
+		},
+		"name" : [
+			"BIKE 96346"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96763
+		},
+		"name" : [
+			"BIKE 96763"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96360
+		},
+		"name" : [
+			"BIKE 96360"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96548
+		},
+		"name" : [
+			"Oberländerstraße 6 81371 München",
+			"BIKE 96548"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96627
+		},
+		"name" : [
+			"BIKE 96627"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97027
+		},
+		"name" : [
+			"BIKE 97027"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96224
+		},
+		"name" : [
+			"BIKE 96224"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96686
+		},
+		"name" : [
+			"Theresienstr. / Augustenstr.",
+			"Martinsplatz",
+			"Esperantopl",
+			"BIKE 96686"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96632
+		},
+		"name" : [
+			"BIKE 96632"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96976
+		},
+		"name" : [
+			"S-Bhf Isartor",
+			"BIKE 96976"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96581
+		},
+		"name" : [
+			"BIKE 96581"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96323
+		},
+		"name" : [
+			"BIKE 96323"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97118
+		},
+		"name" : [
+			"BIKE 97118"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96111
+		},
+		"name" : [
+			"BIKE 96111"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96906
+		},
+		"name" : [
+			"Silberhornstr./Daisenhoferstr.",
+			"BIKE 96906"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97018
+		},
+		"name" : [
+			"München - Schellingstr. 101",
+			"BIKE 97018"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96223
+		},
+		"name" : [
+			"BIKE 96223"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97013
+		},
+		"name" : [
+			"Ruppertstraße 34",
+			"BIKE 97013"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96818
+		},
+		"name" : [
+			"Agnesstraße 35",
+			"BIKE 96818"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96409
+		},
+		"name" : [
+			"BIKE 96409"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96807
+		},
+		"name" : [
+			"BIKE 96807"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96604
+		},
+		"name" : [
+			"BIKE 96604"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96248
+		},
+		"name" : [
+			"BIKE 96248"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97051
+		},
+		"name" : [
+			"BIKE 97051"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96648
+		},
+		"name" : [
+			"BIKE 96648"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97009
+		},
+		"name" : [
+			"BIKE 97009"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97010
+		},
+		"name" : [
+			"BIKE 97010"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96215
+		},
+		"name" : [
+			"BIKE 96215"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96927
+		},
+		"name" : [
+			"Freiligrathstr. 72",
+			"Veterinärstr 15",
+			"freitlitrathstraße 72",
+			"Veterinärstraße 16",
+			"BIKE 96927"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96173
+		},
+		"name" : [
+			"Schwanseestraße",
+			"BIKE 96173"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96968
+		},
+		"name" : [
+			"Oskar-von-Miller-Ring 3",
+			"BIKE 96968",
+			"Professor-Huber-Platz"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97246
+		},
+		"name" : [
+			"BIKE 97246"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96165
+		},
+		"name" : [
+			"BIKE 96165"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96560
+		},
+		"name" : [
+			"Seidlstraße 27",
+			"BIKE 96560"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 97178
+		},
+		"name" : [
+			"Petuelring 116",
+			"BIKE 97178"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96783
+		},
+		"name" : [
+			"BIKE 96783"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96580
+		},
+		"name" : [
+			"BIKE 96580"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96183
+		},
+		"name" : [
+			"BIKE 96183"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96978
+		},
+		"name" : [
+			"BIKE 96978"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96444
+		},
+		"name" : [
+			"BIKE 96444"
+		]
+	},
+	{
+		"_id" : {
+			"bike_numbers" : 96842
+		},
+		"name" : [
+			"BIKE 96842"
+		]
+	}
+]
