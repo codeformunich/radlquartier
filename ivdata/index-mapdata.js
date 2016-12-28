@@ -22,38 +22,38 @@ var url = 'mongodb://localhost:27017/infovis';
 //   db.close();
 // });
 
-var allBikeNumbers;
+// var allBikeNumbers;
 
 
 
 var distinctBikeNumbers = function(db, callback) {
-	// var cursor = db.collection('places').find( { "bike": 1 } );
-   	
-   	// var cursor = db.collection('places').distinct( "bike_numbers", { "bike": 1 } );
+    // var cursor = db.collection('places').find( { "bike": 1 } );
+    
+    // var cursor = db.collection('places').distinct( "bike_numbers", { "bike": 1 } );
 
-	db.collection('places').distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
-		docs.sort();
-		// console.log(docs);
-		allBikeNumbers = docs;
-		callback();
-	} );
+    db.collection('places').distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
+        docs.sort();
+        // console.log(docs);
+        // allBikeNumbers = docs;
+        callback(docs);
+    } );
 
-   // 	cursor.toArray(function(err, docs) {
-   //  	assert.equal(err, null);
-   //  	console.log("Found the following records");
-   //  	console.log(docs);
-   //  	// callback(docs);
-  	// });
-	
-	// cursor.each(function(err, doc) {
-	//    assert.equal(err, null);
-	//    if (doc !== null) {
-	//       console.dir(doc);
-	//       console.log(doc);
-	//    } else {
-	//       callback();
-	//    }
-	// });
+   //   cursor.toArray(function(err, docs) {
+   //   assert.equal(err, null);
+   //   console.log("Found the following records");
+   //   console.log(docs);
+   //   // callback(docs);
+    // });
+    
+    // cursor.each(function(err, doc) {
+    //    assert.equal(err, null);
+    //    if (doc !== null) {
+    //       console.dir(doc);
+    //       console.log(doc);
+    //    } else {
+    //       callback();
+    //    }
+    // });
 };
 
 // MongoClient.connect(url, function(err, db) {
@@ -63,93 +63,120 @@ var distinctBikeNumbers = function(db, callback) {
 //   });
 // });
 
-var createForAllBikes = function(db, bikeNumbers) {
-	var bike = 0,
-		length = bikeNumbers.length;
+var createForAllBikes = function(db, bikeNumbers, callback) {
+    var bike = 0,
+        length = bikeNumbers.length;
 
-	console.log('createForAllBikes length: ', length);
+    console.log('createForAllBikes length: ', length);
 
-	for (; bike <= length; bike++) {
-		createMapDataSets(db, bikeNumbers[bike], insertData);
-	}
-
+    for (; bike <= length; bike++) {
+        createMapDataSets(db, bikeNumbers[bike], function(result) {
+            if (bike === length) {
+                callback();
+            }
+        });
+    }
+    
+    // var innerCallback = function(result) {
+    //     callback();
+    // };
 };
 
 var createMapDataSets = function(db, bike, callback) {
-	console.log('createMapDataSets for bike: ', bike);
+    if ( bike === null || bike === undefined ) {
+        return;
+    }
 
-	// var previousPlace = null;
-	var mapDatas = [];
-	var mapData = null;
-	// var bike = 97346;
+    console.log('createMapDataSets, bike: ', bike);
 
-	var cursor = db.collection('places').find( {"bike_numbers": bike } ).sort( {"date": 1} );
-	cursor.each(function(err, place) {
-	   assert.equal(err, null);
-	   if (place !== null) {
-	      
+    // var previousPlace = null;
+    var mapDatas = [];
+    var mapData = null;
+    // var bike = 97346;
+    // var count =0;
 
-	      if (mapData === null) {
-	      	mapData = createMapData(bike, place);
-	      }
-	      
-	      if (place.lat === mapData.coordinates[0] && place.lng === mapData.coordinates[1]) {
-	      	mapData.count = mapData.count + 1;
-	      }
-	      else {
-	      	// console.log('log if: ', mapData);
-	      	if (mapData) {
-	      		mapDatas.push(mapData);
-	      		// insertMapData(db, mapData);
-	      	}
-	      }
+    var cursor = db.collection('places').find( {"bike_numbers": bike } ).sort( {"date": 1} );
+    
+    
 
-	   } else {
-	   		//console.log('log else: ', mapData);
-	      	if (mapData) {
-	      		mapDatas.push(mapData);
-	      		// insertMapData(db, mapData);
-	      	}
+    cursor.each(function(err, place) {
+       assert.equal(err, null);
+       if (place !== null) {
 
-	      	callback(db, mapDatas);
-	   }
-	});
+          // count = count +1;
+          // console.log('createMapDataSets, count: ', count);
+
+          if (mapData === null) {
+            mapData = createMapData(bike, place);
+          }
+          
+          if (place.lat === mapData.coordinates[0] && place.lng === mapData.coordinates[1]) {
+            mapData.count = mapData.count + 1;
+          }
+          else {
+            if (mapData) {
+                mapDatas.push(mapData);
+
+                mapData = createMapData(bike, place);
+            }
+          }
+
+       } else {
+            //console.log('log else: ', mapData);
+            if (mapData) {
+                mapDatas.push(mapData);
+                // insertMapData(db, mapData);
+            }
+
+            insertData(db, mapDatas, function(result) {
+                console.log(result.insertedCount);
+                callback(result);
+            });
+       }
+    });
 };
 
 var createMapData = function( bike, place) {
-	console.log('createMapData for bike: ', bike);
+    var mapData = {};
 
-	var mapData = {};
+    mapData.bike = bike;
+    mapData.coordinates =  [place.lat, place.lng];
+    mapData.date = place.date;
+    mapData.count = 0;
 
-	mapData.bike = bike;
-	mapData.coordinates =  [place.lat, place.lng];
-	mapData.date = place.date;
-	mapData.count = 0;
-
-	return mapData;
+    console.log('createMapData, mapData: ', mapData.bike, mapData.coordinates);
+    return mapData;
 };
 
-var insertData = function(db, data) {
-  	console.log('insertMapDatas');
+var insertData = function(db, data, callback) {
+    console.log('insertMapDatas, data.length: ', data.length);
+    // console.log(data);
 
-  	db.collection('mapdatasets').insertMany( data, function(err, result) {
-    	// assert.equal(null, err);
-    	
-    	console.log('Inserted data into mapdatasets collection');
-  	});
+    db.collection('mapdatasets').insertMany( data, function(err, result) {
+        assert.equal(null, err);
+        
+        // console.log('Inserted data into mapdatasets collection');
+        callback(result);
+    });
 };
 
 MongoClient.connect(url, function(err, db) {
-  assert.equal(err, null);
-  
-  distinctBikeNumbers(db, function() {
-	createForAllBikes(db, allBikeNumbers);
-	// function() {
- //      db.close();
- //  	});
-  });
+    assert.equal(err, null);
+
+    // // create map data for the bike with the bike_number 97252
+    // createMapDataSets(db, 97252, function() {
+    //     db.close();
+    // } );
+
+    // creare map data for all bikes
+    distinctBikeNumbers(db, function(allBikeNumbers) {
+        createForAllBikes(db, allBikeNumbers, function() {
+            db.close();
+        });
+    });
+
 
   // insertMapDatas(db, function() {
-  // 	db.close();
+  //    db.close();
   // } );
 });
