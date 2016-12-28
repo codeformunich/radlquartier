@@ -16,6 +16,7 @@ program
     .command('adddate <date>', 'extends the place json objects with a date: ivdata adddate "date" < input.json > output.json' )
     // .command('station', 'extracts only the stations from all places: ivdata station < input.json > output.json' )
     .command('geojson', 'transforms place elments in a geojson file')
+    .command('mapdata', 'loads place data from the DB and transfroms and aggregates them to data for the map view')
     .parse(process.argv);
 
 // if program was called with no arguments, show help.
