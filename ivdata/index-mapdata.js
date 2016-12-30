@@ -95,10 +95,10 @@ var createMapDataSets = function(db, bike, callback) {
     // var bike = 97346;
     // var count =0;
 
-    var cursor = db.collection('places').find( {"bike_numbers": bike } ).sort( {"date": 1} );
-    
-    
-
+    var cursor = db.collection('places')
+        .find( {"bike_numbers": bike } )
+        .sort( {"date": 1} )
+        .addCursorFlag('noCursorTimeout', true);
     cursor.each(function(err, place) {
        assert.equal(err, null);
        if (place !== null) {
@@ -110,7 +110,7 @@ var createMapDataSets = function(db, bike, callback) {
             mapData = createMapData(bike, place);
           }
           
-          if (place.lat === mapData.coordinates[0] && place.lng === mapData.coordinates[1]) {
+          if (place.lng === mapData.coordinates[0] && place.lat === mapData.coordinates[1]) {
             mapData.count = mapData.count + 1;
           }
           else {
@@ -140,7 +140,7 @@ var createMapData = function( bike, place) {
     var mapData = {};
 
     mapData.bike = bike;
-    mapData.coordinates =  [place.lat, place.lng];
+    mapData.coordinates =  [place.lng, place.lat];
     mapData.date = place.date;
     mapData.count = 0;
 
@@ -172,6 +172,7 @@ MongoClient.connect(url, function(err, db) {
     distinctBikeNumbers(db, function(allBikeNumbers) {
         createForAllBikes(db, allBikeNumbers, function() {
             db.close();
+            console.log('... work done.');
         });
     });
 
