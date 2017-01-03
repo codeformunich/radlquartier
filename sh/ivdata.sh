@@ -46,5 +46,5 @@ do
   jsonname=$(basename "$json")
   jsonshort="${jsonname%.*}"
 
-  mongoimport --db infovis --collection features --type json --file $json --jsonArray
+  mongoimport --db infovis --collection places --type json --file $json --jsonArray
 done

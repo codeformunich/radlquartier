@@ -32,11 +32,20 @@ var distinctBikeNumbers = function(db, callback) {
     // var cursor = db.collection('places').distinct( "bike_numbers", { "bike": 1 } );
 
     db.collection('places').distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
-        docs.sort();
+        // console.log("distinctBikeNumbers, docs: ", docs);
+        docs.sort(function(a, b){return a-b});
         // console.log(docs);
         // allBikeNumbers = docs;
         callback(docs);
     } );
+
+
+    // var docs = db.collection('places').distinct( "bike_numbers", { "bike": 1 } );
+    // docs.sort();
+    // // console.log(docs);
+    // callback(docs);
+    
+
 
    //   cursor.toArray(function(err, docs) {
    //   assert.equal(err, null);

@@ -6,7 +6,7 @@ var program = require('commander');
 // load commandline arguments
 program.parse(process.argv);
 var arg = Number(program.args[0]);
-console.log("lineString called for: ", arg);
+// console.log("lineString called for: ", arg);
 
 // requiremetns for mongoDB
 var MongoClient = require('mongodb').MongoClient;
@@ -34,18 +34,26 @@ var createLineString = function(db, bike, callback) {
     if ( bike === null || bike === undefined ) {
         return;
     }
-    console.log('createLineString, bike: ', bike);
+    // console.log('createLineString, bike: ', bike);
+
+    var featureCollection = {
+                "type": "FeatureCollection",
+                "features": [ ]
+            };
 
     var lineString = {
-      "type": "Feature",
-      "geometry": {
-        "type": "LineString",
-        "coordinates": []
-      },
-      "properties": {
-        "bike": bike
-      }
+        "type": "Feature",
+        "geometry": {
+            "type": "LineString",
+            "coordinates": []
+        },
+        "properties": {
+            "bike": bike
+        }
     };
+
+    
+    featureCollection.features.push(lineString);
 
     var cursor = db.collection('mapdatasets').find( {"bike": bike } ).sort( {"date": 1} );
     cursor.each(function(err, mapdata) {
@@ -56,10 +64,27 @@ var createLineString = function(db, bike, callback) {
             coordinates.push(mapdata.coordinates[1]);
             // console.log('createMapDataSets, coordinates: ', coordinates);
 
+
             lineString.geometry.coordinates.push( coordinates );
+            
+            var point = {
+                    "type": "Feature",
+                    "geometry": {
+                        "type": "Point", 
+                        "coordinates": coordinates
+                    },
+                    "properties": {
+                        "bike": bike,
+                        "date": mapdata.date,
+                        "count": mapdata.count
+                    }
+                };
+
+            featureCollection.features.push(point);
         } else {
             //console.log('log else: ', mapData);
-            callback(lineString);
+            
+            callback(featureCollection);
         }
     });
 };
