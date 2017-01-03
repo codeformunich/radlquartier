@@ -18,6 +18,7 @@
   ],
   "dependencies": {
     "d3": "~4.4.0",
-    "bootstrap": "~3.3.7"
+    "material-design-lite": "^1.2.1",
+    "leaflet": "^1.0.2"
   }
 }

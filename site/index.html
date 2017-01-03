@@ -1,139 +1,217 @@
-<!DOCTYPE html>
-<meta charset="utf-8">
-<title>Bewegung der Bikes zwischen den Uni-Standorten</title>
-<style>
+<!doctype html>
+<!--
+  Material Design Lite
+  Copyright 2015 Google Inc. All rights reserved.
 
-@import url(css/style.css);
- 
-#circle circle {
-fill: none;
-pointer-events: all;
-}
- 
-.group path {
-fill-opacity: .5;
-}
- 
-path.chord {
-stroke: #000;
-stroke-width: .25px;
-}
- 
-#circle:hover path.fade {
-display: none;
-}
- 
-</style>
- 
-<header>
-<aside>November 30th, 2016</aside>
-</header>
- 
-<h1>Bewegung der Bikes zwischen den Uni-Standorten</h1>
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
 
- 
-<p>Built with <a href="http://d3js.org/">d3.js</a>.</aside>
- 
-<script src="http://d3js.org/d3.v2.min.js?2.8.1"></script>
-<script>
- 
-var width = 720,
-height = 720,
-outerRadius = Math.min(width, height) / 2 - 10,
-innerRadius = outerRadius - 24;
- 
-var formatPercent = d3.format(".1%");
- 
-var arc = d3.svg.arc()
-.innerRadius(innerRadius)
-.outerRadius(outerRadius);
- 
-var layout = d3.layout.chord()
-.padding(.04)
-.sortSubgroups(d3.descending)
-.sortChords(d3.ascending);
- 
-var path = d3.svg.chord()
-.radius(innerRadius);
- 
-var svg = d3.select("body").append("svg")
-.attr("width", width)
-.attr("height", height)
-.append("g")
-.attr("id", "circle")
-.attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
- 
-svg.append("circle")
-.attr("r", outerRadius);
- 
-d3.csv("data/teams.csv", function(cities) {
-d3.json("data/matrix.json", function(matrix) {
- 
-// Compute the chord layout.
-layout.matrix(matrix);
- 
-// Add a group per neighborhood.
-var group = svg.selectAll(".group")
-.data(layout.groups)
-.enter().append("g")
-.attr("class", "group")
-.on("mouseover", mouseover);
- 
-// Add a mouseover title.
-// group.append("title").text(function(d, i) {
-// return cities[i].name + ": " + formatPercent(d.value) + " of origins";
-// });
- 
-// Add the group arc.
-var groupPath = group.append("path")
-.attr("id", function(d, i) { return "group" + i; })
-.attr("d", arc)
-.style("fill", function(d, i) { return cities[i].color; });
- 
-// Add a text label.
-var groupText = group.append("text")
-.attr("x", 6)
-.attr("dy", 15);
- 
-groupText.append("textPath")
-.attr("xlink:href", function(d, i) { return "#group" + i; })
-.text(function(d, i) { return cities[i].name; });
- 
-// Remove the labels that don't fit. :(
-groupText.filter(function(d, i) { return groupPath[0][i].getTotalLength() / 2 - 16 < this.getComputedTextLength(); })
-.remove();
- 
-// Add the chords.
-var chord = svg.selectAll(".chord")
-.data(layout.chords)
-.enter().append("path")
-.attr("class", "chord")
-.style("fill", function(d) { return cities[d.source.index].color; })
-.attr("d", path);
- 
-// Add an elaborate mouseover title for each chord.
- chord.append("title").text(function(d) {
- return cities[d.source.index].name
- + " → " + cities[d.target.index].name
- + ": " + formatPercent(d.source.value)
- + "\n" + cities[d.target.index].name
- + " → " + cities[d.source.index].name
- + ": " + formatPercent(d.target.value);
- });
- 
-function mouseover(d, i) {
-chord.classed("fade", function(p) {
-return p.source.index != i
-&& p.target.index != i;
-});
-}
-});
-});
- 
-</script>
- 
- 
-<footer>
-<aside>November 30th, 2016</aside>
+      https://www.apache.org/licenses/LICENSE-2.0
 
-</footer>
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License
+-->
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+    <title>Material Design Lite</title>
+
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="images/android-desktop.png">
+
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Material Design Lite">
+    <link rel="apple-touch-icon-precomposed" href="images/ios-desktop.png">
+
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="images/touch/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#3372DF">
+
+    <link rel="shortcut icon" href="images/favicon.png">
+
+    <!-- SEO: If your mobile URL is different from the desktop URL, add a canonical link to the desktop page https://developers.google.com/webmasters/smartphone-sites/feature-phones -->
+    <!--
+    <link rel="canonical" href="http://www.example.com/">
+    -->
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.cyan-light_blue.min.css">
+    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"> -->
+    <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+    #view-source {
+      position: fixed;
+      display: block;
+      right: 0;
+      bottom: 0;
+      margin-right: 40px;
+      margin-bottom: 40px;
+      z-index: 900;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="demo-layout mdl-layout mdl-js-layout mdl-layout--fixed-drawer mdl-layout--fixed-header">
+      <header class="demo-header mdl-layout__header mdl-color--grey-100 mdl-color-text--grey-600">
+        <div class="mdl-layout__header-row">
+          <span class="mdl-layout-title">Strecke</span>
+          <div class="mdl-layout-spacer"></div>
+          <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon" id="hdrbtn">
+            <i class="material-icons">more_vert</i>
+          </button>
+          <ul class="mdl-menu mdl-js-menu mdl-js-ripple-effect mdl-menu--bottom-right" for="hdrbtn">
+            <li class="mdl-menu__item">About</li>
+            <li class="mdl-menu__item">Contact</li>
+            <li class="mdl-menu__item">Legal information</li>
+          </ul>
+        </div>
+      </header>
+      <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
+        <header class="demo-drawer-header">
+          <!-- <img src="images/user.jpg" class="demo-avatar"> -->
+          <div class="demo-avatar-dropdown">
+            <span>MVG-Bikes Project</span>
+            <div class="mdl-layout-spacer"></div>
+            <!-- <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+              <i class="material-icons" role="presentation">arrow_drop_down</i>
+              <span class="visuallyhidden">Accounts</span>
+            </button>
+            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
+              <li class="mdl-menu__item">hello@example.com</li>
+              <li class="mdl-menu__item">info@example.com</li>
+              <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
+            </ul> -->
+          </div>
+        </header>
+        <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
+          <a class="mdl-navigation__link" href="index.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">directions_bike</i>Strecke</a>
+          <a class="mdl-navigation__link" href="commuter.html"><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">person</i>Pendler</a>
+          <div class="mdl-layout-spacer"></div>
+          <a class="mdl-navigation__link" href=""><i class="mdl-color-text--blue-grey-400 material-icons" role="presentation">help_outline</i><span class="visuallyhidden">Help</span></a>
+        </nav>
+      </div>
+      <main class="mdl-layout__content mdl-color--grey-100">
+        <div class="mdl-grid demo-content">
+          <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
+            <p>Hier erfährst du welche Strecke dein Bike in der letzten Woche, in den letzten Wochen oder Monaten zurückgelegt hat! </p>
+       
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" id="sample1">
+                <label class="mdl-textfield__label" for="sample1">Bike...</label>
+              </div>
+            </form>
+            <!-- Numeric Textfield -->
+            <form action="#">
+              <div class="mdl-textfield mdl-js-textfield">
+                <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
+                <label class="mdl-textfield__label" for="sample2">Tage...</label>
+                <span class="mdl-textfield__error">Du hast keine Zahl eingegeben</span>
+              </div>
+            </form>
+            
+            <button class="mdl-button mdl-js-button" disabled>
+              Suche!
+            </button>
+
+            <div id="map" style="width: 950px; height: 950px"></div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <!-- <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script> -->
+    <script src="bower_components/material-design-lite/material.min.js"></script>
+    <script src="bower_components/d3/d3.min.js"></script>
+    <script src="bower_components/leaflet/dist/leaflet.js"></script>
+    <script>
+      var bike96111 = [{
+    "type": "LineString",
+    "coordinates": [
+        [11.518969825,48.135884185],
+        [11.53539376,48.13348341],
+        [11.589624,48.135962],
+        [11.589860000000044,48.13592999999999],
+        [11.56546544,48.15857931],
+        [11.591228495,48.137979725],
+        [11.555623525,48.16230955],
+        [11.563514,48.160399],
+        [11.58769515, 48.13082175], 
+    ]
+}];
+
+      var map = L.map('map').setView([48.1374300, 11.5754900], 13);
+      mapLink = '<a href="https ://openstreetmap.org">OpenStreetMap</a>';
+      L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; ' + mapLink + ' Contributors',
+          maxZoom: 18,
+        }).addTo(map);
+
+
+      L.geoJSON(bike96111).addTo(map);
+
+      // // Add an SVG element to Leaflet’s overlay pane
+      // var svg = d3.select(map.getPanes().overlayPane).append("svg"),
+      //   g = svg.append("g").attr("class", "leaflet-zoom-hide");
+  
+      // d3.json("rectangle.json", function(geoShape) {
+
+      //   //  create a d3.geo.path to convert GeoJSON to SVG
+      //   var transform = d3.geo.transform({point: projectPoint}),
+      //     path = d3.geo.path().projection(transform);
+
+      //   // create path elements for each of the features
+      //   d3_features = g.selectAll("path")
+      //     .data(geoShape.features)
+      //     .enter().append("path");
+
+      //   map.on("viewreset", reset);
+
+      //   reset();
+
+      //   // fit the SVG element to leaflet's map layer
+      //   function reset() {
+    
+      //     bounds = path.bounds(geoShape);
+
+      //     var topLeft = bounds[0],
+      //       bottomRight = bounds[1];
+
+      //     svg .attr("width", bottomRight[0] - topLeft[0])
+      //       .attr("height", bottomRight[1] - topLeft[1])
+      //       .style("left", topLeft[0] + "px")
+      //       .style("top", topLeft[1] + "px");
+
+      //     g .attr("transform", "translate(" + -topLeft[0] + "," 
+      //                                       + -topLeft[1] + ")");
+
+      //     // initialize the path data 
+      //     d3_features.attr("d", path)
+      //       .style("fill-opacity", 0.7)
+      //       .attr('fill','blue');
+      //   } 
+
+      //   // Use Leaflet to implement a D3 geometric transformation.
+      //   function projectPoint(x, y) {
+      //     var point = map.latLngToLayerPoint(new L.LatLng(y, x));
+      //     this.stream.point(point.x, point.y);
+      //   }
+
+      // });
+    
+    </script>
+  </body>
+</html>
