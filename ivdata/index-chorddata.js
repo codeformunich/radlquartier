@@ -72,13 +72,8 @@ var createChordDataSets = function(db, bike, callback) {
         return;
     }
 
-    console.log('createMapDataSets, bike: ', bike);
+    console.log('createChordDataSets, bike: ', bike);
 
-    // var previousPlace = null;
-    var mapDatas = [];
-    var mapData = null;
-    // var bike = 97346;
-    // var count =0;
 
     var previousUid = null;
 
@@ -93,6 +88,10 @@ var createChordDataSets = function(db, bike, callback) {
             var currentIndex = stationUids.indexOf(place.uid) + 1;
             var previousIndex = stationUids.indexOf(previousUid) + 1;
             
+            // if (currentIndex > 0) {
+            //     console.log('createChordDataSets, currentIndex: ', currentIndex);
+            // }
+
             if (currentIndex != previousIndex) {
                 dataMatrix[currentIndex][previousIndex] += 1;
             }
@@ -101,18 +100,6 @@ var createChordDataSets = function(db, bike, callback) {
             callback(dataMatrix);
         }
     });
-};
-
-var createMapData = function(bike, place) {
-    var mapData = {};
-
-    mapData.bike = bike;
-    mapData.coordinates = [place.lng, place.lat];
-    mapData.date = place.date;
-    mapData.count = 0;
-
-    console.log('createMapData, mapData: ', mapData.bike, mapData.coordinates);
-    return mapData;
 };
 
 var insertData = function(db, data, callback) {
@@ -131,7 +118,7 @@ MongoClient.connect(url, function(err, db) {
     assert.equal(err, null);
 
     // create chord data for the bike with the bike_number 96111
-    createChordDataSets(db, 96111, function(result) {
+    createChordDataSets(db, 96300, function(result) {
         db.close();
         console.log(result);
     });
