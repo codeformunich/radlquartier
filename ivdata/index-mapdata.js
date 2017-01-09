@@ -7,70 +7,24 @@ var program = require('commander');
 // program.parse(process.argv);
 // var arg = program.args[0].split('.')[0];
 
-
 // requiremetns for mongoDB
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
-
 var url = 'mongodb://localhost:27017/infovis';
 
 
-// MongoClient.connect(url, function(err, db) {
-//   assert.equal(null, err);
-//   console.log("Connected correctly to server.");
-//   db.close();
-// });
-
-// var allBikeNumbers;
-
-
-
 var distinctBikeNumbers = function(db, callback) {
-    // var cursor = db.collection('places').find( { "bike": 1 } );
-    
-    // var cursor = db.collection('places').distinct( "bike_numbers", { "bike": 1 } );
-
     db.collection('places').distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
         // console.log("distinctBikeNumbers, docs: ", docs);
-        docs.sort(function(a, b){return a-b});
+        docs.sort(function(a, b) {
+            return a-b;
+        });
+
         // console.log(docs);
-        // allBikeNumbers = docs;
         callback(docs);
     } );
-
-
-    // var docs = db.collection('places').distinct( "bike_numbers", { "bike": 1 } );
-    // docs.sort();
-    // // console.log(docs);
-    // callback(docs);
-    
-
-
-   //   cursor.toArray(function(err, docs) {
-   //   assert.equal(err, null);
-   //   console.log("Found the following records");
-   //   console.log(docs);
-   //   // callback(docs);
-    // });
-    
-    // cursor.each(function(err, doc) {
-    //    assert.equal(err, null);
-    //    if (doc !== null) {
-    //       console.dir(doc);
-    //       console.log(doc);
-    //    } else {
-    //       callback();
-    //    }
-    // });
 };
-
-// MongoClient.connect(url, function(err, db) {
-//   assert.equal(null, err);
-//   distinctBikeNumbers(db, function() {
-//       db.close();
-//   });
-// });
 
 var createForAllBikes = function(db, bikeNumbers, callback) {
     var bike = 0,
@@ -85,10 +39,6 @@ var createForAllBikes = function(db, bikeNumbers, callback) {
             }
         });
     }
-    
-    // var innerCallback = function(result) {
-    //     callback();
-    // };
 };
 
 var createMapDataSets = function(db, bike, callback) {
@@ -184,9 +134,4 @@ MongoClient.connect(url, function(err, db) {
             console.log('... work done.');
         });
     });
-
-
-  // insertMapDatas(db, function() {
-  //    db.close();
-  // } );
 });
