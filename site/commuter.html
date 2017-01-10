@@ -111,7 +111,7 @@
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <p>Bewegung der MVG-Fahrräder zwischen den einzelnen Standorten der LMU.</p>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">Bewegung der MVG-Fahrräder zwischen den einzelnen Standorten der LMU.</div>
             <svg></svg>
           </div>
         </div>
@@ -163,9 +163,10 @@
             .on("mouseover", mouseover);
            
           // Add a mouseover title.
-          // group.append("title").text(function(d, i) {
-          // return cities[i].name + ": " + formatPercent(d.value) + " of origins";
-          // });
+          group.append("title").text(function(d, i) {
+            // return cities[i].name + ": " + formatPercent(d.value) + " of origins";
+            return cities[i].name + ": " + d.value + " of origins";
+          });
            
           // Add the group arc.
           var groupPath = group.append("path")

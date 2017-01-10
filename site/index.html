@@ -103,28 +103,40 @@
                 <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
                     <div class="mdl-card__supporting-text mdl-color-text--grey-600">Hier erfährst du welche Strecke dein Bike in der letzten Woche, in den letzten Wochen oder Monaten zurückgelegt hat! </div>
                     
-                    <div class="mdl-card__supporting-text">
-                        <button class="mdl-button mdl-js-button mdl-button--raised">
-                          Bike 96111
-                        </button>
+                    <div class="mdl-cell--2-col">
+                        <div class="mdl-card__supporting-text">
+                            <button class="mdl-button mdl-js-button mdl-button--raised" 
+                                    onclick="displayBike96111()">
+                              Bike 96111
+                            </button>
+                        </div>
                     </div>
-                    
-                    <!-- <div class="mdl-grid"> -->
+                    <div class="mdl-cell--2-col">
+                        <div class="mdl-card__supporting-text">
+                            <button class="mdl-button mdl-js-button mdl-button--raised" 
+                                    onclick="displayBike96300()">
+                              Bike 96300
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="mdl-card__supporting-text">
+                    <div class="mdl-grid">
                         <div class="mdl-cell--2-col">
                             <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-1">
-                              <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked>
+                              <input type="checkbox" id="checkbox-1" class="mdl-checkbox__input" checked onchange="checkedLine()">
                               <span class="mdl-checkbox__label">Show line</span>
                             </label>
                         </div>
                         
                         <div class="mdl-cell--2-col">
-                        <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
-                          <input type="checkbox" id="checkbox-4" class="mdl-checkbox__input">
-                          <span class="mdl-checkbox__label">Show point</span>
-                        </label>
+                            <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="checkbox-2">
+                              <input type="checkbox" id="checkbox-2" class="mdl-checkbox__input" checked onchange="checkedPoint()">
+                              <span class="mdl-checkbox__label">Show point</span>
+                            </label>
                         </div>
-                    <!-- </div> -->
-
+                    </div>
+                    </div>
                     <!-- <form action="#">
                         <div class="mdl-textfield mdl-js-textfield">
                             <input class="mdl-textfield__input" type="text" id="sample1">
@@ -155,17 +167,76 @@
     <script src="bower_components/d3/d3.min.js"></script>
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
     <script>
-    d3.json("data/bike96300.json", function(bikeData) {
-        var map = L.map('map').setView([48.1374300, 11.5754900], 13);
+    var showLine = true;
+    var showPoint = true;
+    var path = '';
+    var data = {
+        "type": "FeatureCollection",
+        "features": []
+    };
+    var layer = null;
 
-        mapLink = '<a href="https ://openstreetmap.org">OpenStreetMap</a>';
-        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-          attribution: '&copy; ' + mapLink + ' Contributors',
-          maxZoom: 18,
-        }).addTo(map);
+    var map = L.map('map').setView([48.1374300, 11.5754900], 13);
+    mapLink = '<a href="https ://openstreetmap.org">OpenStreetMap</a>';
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; ' + mapLink + ' Contributors',
+      maxZoom: 18,
+    }).addTo(map);
 
-        L.geoJSON(bikeData).addTo(map);
-    });
+    function displayBike96111() {
+        path = "data/bike96111.json";
+
+        loadData(path);
+    }
+
+    function displayBike96300() {
+        path = "data/bike96300.json";
+
+        loadData(path);
+    }
+
+    function checkedLine() {
+        showLine = !showLine;
+
+        loadData(path);
+    }
+
+    function checkedPoint() {
+        showPoint = !showPoint;
+
+        loadData(path);
+    }
+
+    function showData() {
+        if(layer) {
+            layer.remove();
+        }
+        
+        layer = L.geoJSON(data).addTo(map);
+    }
+
+    function loadData(path) {
+        data.features = [];
+
+        d3.json(path, function(bikeData) {
+            // var temp = data.features.concat( bikeData.features );
+            data.features = data.features.concat( bikeData.features );
+            
+            if (showLine === false && showPoint === false) {
+                data.features = [];
+            }
+            else if (showLine === false && showPoint === true) {
+                data.features.splice(0, 1);
+            }
+            else if (showLine === true && showPoint === false) {
+                data.features.splice(1, data.features.length-1);
+            }
+
+            showData();
+        });
+    }
+
+
             // // Add an SVG element to Leaflet’s overlay pane
             // var svg = d3.select(map.getPanes().overlayPane).append("svg"),
             //   g = svg.append("g").attr("class", "leaflet-zoom-hide");
