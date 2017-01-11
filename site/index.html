@@ -42,7 +42,6 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:regular,bold,italic,thin,light,bolditalic,black,medium&amp;lang=en">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="https://code.getmdl.io/1.2.1/material.cyan-light_blue.min.css">
-    <!-- <link rel="stylesheet" href="http://cdn.leafletjs.com/leaflet-0.7/leaflet.css"> -->
     <link rel="stylesheet" href="bower_components/leaflet/dist/leaflet.css">
     <link rel="stylesheet" href="css/styles.css">
     <style>
@@ -76,19 +75,10 @@
         </header>
         <div class="demo-drawer mdl-layout__drawer mdl-color--blue-grey-900 mdl-color-text--blue-grey-50">
             <header class="demo-drawer-header">
-                <!-- <img src="images/user.jpg" class="demo-avatar"> -->
+                <!-- <img src="images/radweg.jpg" class="demo-avatar"> -->
                 <div class="demo-avatar-dropdown">
                     <span>MVG-Bikes Project</span>
                     <div class="mdl-layout-spacer"></div>
-                    <!-- <button id="accbtn" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
-              <i class="material-icons" role="presentation">arrow_drop_down</i>
-              <span class="visuallyhidden">Accounts</span>
-            </button>
-            <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="accbtn">
-              <li class="mdl-menu__item">hello@example.com</li>
-              <li class="mdl-menu__item">info@example.com</li>
-              <li class="mdl-menu__item"><i class="material-icons">add</i>Add another account...</li>
-            </ul> -->
                 </div>
             </header>
             <nav class="demo-navigation mdl-navigation mdl-color--blue-grey-800">
@@ -101,7 +91,7 @@
         <main class="mdl-layout__content mdl-color--grey-100">
             <div class="mdl-grid demo-content">
                 <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">Hier erfährst du welche Strecken die folgenden Bikes vom 21.06.2016-21.11.2016 zurückgelegt haben! </div>
+                    <div class="mdl-card__supporting-text mdl-color-text--grey-600">Hier erfährst du welche Strecken die folgenden Fahrräder vom 21.06.2016-21.11.2016 zurückgelegt haben. </div>
                     <div class="mdl-cell--2-col">
                         <div class="mdl-card__supporting-text">
                             <button class="mdl-button mdl-js-button mdl-button--raised" onclick="displayBike96111()">
@@ -139,9 +129,8 @@
                     </div>
                     <div class="mdl-cell--2-col">
                         <div class="mdl-card__supporting-text">
-                            <button class="mdl-button mdl-js-button mdl-button--raised" 
-                                    onclick="displayBike97265()">
-                              Bike 97265
+                            <button class="mdl-button mdl-js-button mdl-button--raised" onclick="displayBike97265()">
+                                Bike 97265
                             </button>
                         </div>
                     </div>
@@ -161,31 +150,11 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" id="sample1">
-                            <label class="mdl-textfield__label" for="sample1">Bike...</label>
-                        </div>
-                    </form> -->
-                    <!-- Numeric Textfield -->
-                    <!-- <form action="#">
-                        <div class="mdl-textfield mdl-js-textfield">
-                            <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" id="sample2">
-                            <label class="mdl-textfield__label" for="sample2">Tage...</label>
-                            <span class="mdl-textfield__error">Du hast keine Zahl eingegeben</span>
-                        </div>
-                    </form>
-                    <button class="mdl-button mdl-js-button" disabled>
-                        Suche!
-                    </button> -->
                     <div id="map" style="width: 100%; height: 70vh "></div>
                 </div>
             </div>
         </main>
     </div>
-    <!-- <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://cdn.leafletjs.com/leaflet-0.7/leaflet.js"></script> -->
     <script src="bower_components/material-design-lite/material.min.js"></script>
     <script src="bower_components/d3/d3.min.js"></script>
     <script src="bower_components/leaflet/dist/leaflet.js"></script>
@@ -228,8 +197,9 @@
 
     function displayBike96728() {
         path = "data/bike96728.json";
-        loadData(path);}
-    
+        loadData(path);
+    }
+
     function displayBike97265() {
         path = "data/bike97265.json";
         loadData(path);
@@ -237,16 +207,15 @@
 
     function checkedLine() {
         showLine = !showLine;
-
         loadData(path);
     }
 
     function checkedPoint() {
         showPoint = !showPoint;
-
         loadData(path);
     }
 
+    // extend the map with the geojson data and adds popups for the line and points
     function showData() {
         if (layer) {
             layer.remove();
@@ -255,14 +224,19 @@
         layer = L.geoJSON(data, {
             onEachFeature: function(feature, layer) {
                 if (feature.geometry.type === "Point") {
-                    var popupText = "Datum: " + new Date(feature.properties.date).toDateString() + "<br>Standzeit: " + (feature.properties.count * 10 / 60).toFixed(0) + "h";
-                    layer.bindPopup(popupText); 
+                    var popupText = "Datum: " + new Date(feature.properties.date).toDateString() + "<br>Standzeit ca.: " + (feature.properties.count * 10 / 60).toFixed(0) + "h";
+                    layer.bindPopup(popupText);
+                }
+                if (feature.geometry.type === "LineString") {
+                    var popupTextLine = "Anzahl der Punkte: " + feature.geometry.coordinates.length;
+                    layer.bindPopup(popupTextLine);
                 }
             }
         });
         layer.addTo(map);
     }
 
+    //  load json file and splice features array to show only selected information
     function loadData(path) {
         data.features = [];
 
@@ -282,5 +256,4 @@
     }
     </script>
 </body>
-
 </html>
