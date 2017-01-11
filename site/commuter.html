@@ -111,8 +111,13 @@
       <main class="mdl-layout__content mdl-color--grey-100">
         <div class="mdl-grid demo-content">
           <div class="demo-charts mdl-color--white mdl-shadow--2dp mdl-cell mdl-cell--12-col mdl-grid">
-            <div class="mdl-card__supporting-text mdl-color-text--grey-600">Bewegung der MVG-Fahrräder zwischen den einzelnen Standorten der LMU.</div>
-            <svg></svg>
+            <div class="mdl-card__supporting-text mdl-color-text--grey-600">
+                Bewegung der MVG-Fahrräder zwischen den einzelnen Standorten der LMU.
+            </div>
+            <svg width="1048" height="1048"
+                 viewBox="0 0 1048 1048"
+                 preserveAspectRatio="xMidYMid meet">
+            </svg>
           </div>
         </div>
       </main>
@@ -120,10 +125,12 @@
     <script src="https://code.getmdl.io/1.2.1/material.min.js"></script>
     <script src="https://d3js.org/d3.v2.min.js?2.8.1"></script>
     <script>
-      var width = 950,
-        height = 950,
+      var width = 1048,
+        height = 1048,
         outerRadius = Math.min(width, height) / 2 - 10,
         innerRadius = outerRadius - 24;
+
+      var fill = d3.scale.category10();
 
       var formatPercent = d3.format(".1%");
        
@@ -145,6 +152,7 @@
         .append("g")
         .attr("id", "circle")
         .attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+
 
       svg.append("circle")
         .attr("r", outerRadius);
@@ -172,7 +180,9 @@
           var groupPath = group.append("path")
             .attr("id", function(d, i) { return "group" + i; })
             .attr("d", arc)
-            .style("fill", function(d, i) { return cities[i].color; });
+            .style("fill", function(d) { return fill(d.index); })
+            .style("stroke", function(d) { return fill(d.index); });
+            // .style("fill", function(d, i) { return cities[i].color; });
            
           // Add a text label.
           var groupText = group.append("text")
@@ -194,7 +204,16 @@
             .data(layout.chords)
             .enter().append("path")
             .attr("class", "chord")
-            .style("fill", function(d) { return cities[d.source.index].color; })
+            // .style("fill", function(d) { return cities[d.source.index].color; })
+            // .style("fill", function(d) { return fill(d.source.index); })
+            // .style("stroke", function(d) { return fill(d.source.index); })
+            .style("fill", function(d) { 
+                var color = d3.hsl(fill(d.source.index));
+                color.opacity = 0.5;
+                return color; 
+            })
+            .style("stroke", function(d) { return d3.rgb(fill(d.source.index)).darker(); })
+            
             .attr("d", path);
            
           // Add an elaborate mouseover title for each chord.
