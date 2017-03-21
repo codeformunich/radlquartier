@@ -100,8 +100,14 @@ var createMapData = function( bike, place) {
 
     mapData.bike = bike;
     mapData.coordinates =  [place.lng, place.lat];
-    mapData.date = place.date;
+    mapData.startDate = place.date;
+    mapData.endDate = place.date;
     mapData.count = 0;
+
+    if (place.spot) {
+        mapData.stationId = place.uid;
+        mapData.stationName = place.name;
+    }
 
     console.log('createMapData, mapData: ', mapData.bike, mapData.coordinates);
     return mapData;
