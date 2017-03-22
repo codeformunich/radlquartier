@@ -11,11 +11,13 @@ var program = require('commander');
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
-var url = 'mongodb://localhost:27017/infovis';
 
+var url = 'mongodb://localhost:27017/bikeproject';
+var inputCollection = 'placesfebruar';
+var outputCollection = 'bikeLocationFebruar';
 
 var distinctBikeNumbers = function(db, callback) {
-    db.collection('places').distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
+    db.collection(inputCollection).distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
         // console.log("distinctBikeNumbers, docs: ", docs);
         docs.sort(function(a, b) {
             return a-b;
@@ -54,7 +56,7 @@ var createMapDataSets = function(db, bike, callback) {
     // var bike = 97346;
     // var count =0;
 
-    var cursor = db.collection('places')
+    var cursor = db.collection(inputCollection)
         .find( {"bike_numbers": bike } )
         .sort( {"date": 1} )
         .addCursorFlag('noCursorTimeout', true);
@@ -70,6 +72,7 @@ var createMapDataSets = function(db, bike, callback) {
           }
           
           if (place.lng === mapData.coordinates[0] && place.lat === mapData.coordinates[1]) {
+            mapData.endDate = place.date;
             mapData.count = mapData.count + 1;
           }
           else {
@@ -117,7 +120,7 @@ var insertData = function(db, data, callback) {
     console.log('insertMapDatas, data.length: ', data.length);
     // console.log(data);
 
-    db.collection('mapdatasets').insertMany( data, function(err, result) {
+    db.collection(outputCollection).insertMany( data, function(err, result) {
         assert.equal(null, err);
         
         // console.log('Inserted data into mapdatasets collection');
