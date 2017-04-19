@@ -7,7 +7,7 @@ do
   xmlshort="${xmlname%.*}"
   
   echo "converting ${xmlname}"
-  node ../nextbike/index.js xml2json < ${xml} > ${xmlshort}.rjson
+  node ../../../nextbike/index.js xml2json < ${xml} > ${xmlshort}.rjson
 done
 
 echo "extract place elements"
@@ -17,7 +17,7 @@ do
   rjsonshort="${rjsonname%.*}"
 
   echo "extracting ${rjsonname}"
-  node ../nextbike/index.js extractplace < ${rjson} > ${rjsonshort}.pjson
+  node ../../../nextbike/index.js extractplace < ${rjson} > ${rjsonshort}.pjson
 done
 
 echo "extende place elements with date from file name"
@@ -27,7 +27,7 @@ do
   pjsonshort="${pjsonname%.*}"
 
   echo "extending ${pjsonname}"
-  node ../nextbike/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.djson
+  node ../../../nextbike/index.js adddate $pjsonshort < ${pjson} > ${pjsonshort}.djson
 done
 
 echo "import geojson into mongoDB"
@@ -36,5 +36,5 @@ do
   jsonname=$(basename "$json")
   jsonshort="${jsonname%.*}"
 
-  mongoimport --db bikeproject --collection placesfebruar --type json --file $json --jsonArray
+  mongoimport --db bikeproject --collection nextbike --type json --file $json --jsonArray
 done
