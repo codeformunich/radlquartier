@@ -12,20 +12,27 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
 
-var url = 'mongodb://localhost:27017/bikeproject';
-var inputCollection = 'testcollection';
-var outputCollection = 'testhalt';
+// had some timeout problems with distinct
+// https://stackoverflow.com/questions/39087570/mongodb-timeout-issue-node-js
+var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000'; 
+var inputCollection = 'nextbike';
+var outputCollection = 'halts';
 
 var distinctBikeNumbers = function(db, callback) {
     db.collection(inputCollection).distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
-        // console.log("distinctBikeNumbers, docs: ", docs);
+        assert.equal(err, null);
+
         docs.sort(function(a, b) {
             return a-b;
         });
 
-        // console.log(docs);
+        if ( docs[0] === null ) {
+            docs = docs.slice(1, docs.length);
+        }
+
+        console.log("distinctBikeNumbers, docs: ", docs);
         callback(docs);
-    } );
+    });
 };
 
 // https://zackehh.com/handling-synchronous-asynchronous-loops-javascriptnode-js/
@@ -69,6 +76,8 @@ var createForAllBikes = function(db, bikeNumbers, callback) {
     console.log('createForAllBikes length: ', length);
 
     syncLoop(length, function(loop){  
+        // console.log('createForAllBikes loop.iteration: ', loop.iteration());
+        // console.log('createForAllBikes bikeNumber: ', bikeNumbers[loop.iteration()]);
         createHaltData(db, bikeNumbers[loop.iteration()], function(result) {
             loop.next();
         } );
@@ -79,9 +88,9 @@ var createForAllBikes = function(db, bikeNumbers, callback) {
 
 var createHaltData = function(db, bikeNumber, callback) {
     if ( bikeNumber === null || bikeNumber === undefined ) {
+        console.log('createHaltData ERROR, bikeNumber: ', bikeNumber);
         return;
     }
-
     console.log('createHaltData, bike: ', bikeNumber);
 
     var halts = [];
@@ -140,7 +149,7 @@ var newHalt = function(bikeNumber, place) {
         halt.stationName = place.name;
     }
 
-    console.log('newHaltData, bike:', halt.bike, 'coordinates', halt.coordinates);
+    console.log('newHaltData, bikeNumber:', halt.bikeNumber, 'coordinates', halt.coordinates);
     return halt;
 };
 
