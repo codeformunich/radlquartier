@@ -1,0 +1,19 @@
+{
+  "name": "mvgstate",
+  "version": "0.0.1",
+  "description": "A command-line tool to exract data from the mvg-networkstate-mvgrad data",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Manuel Hartmann",
+  "license": "ISC",
+  "preferGlobal": true,
+  "bin": {
+    "mvgstate": "./index.js"
+  },
+  "dependencies": {
+    "commander": "^2.9.0",
+    "moment": "^2.17.0",
+    "xml-mapping": "^1.7.1"
+  }
+}
