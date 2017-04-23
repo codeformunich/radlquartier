@@ -82,6 +82,33 @@ printjson(
 	] )
 );
 
+printjson(
+    db.nextbike.aggregate( [
+        { $match: { bike: 1 } } 
+    ] )
+);
+
+printjson(
+    db.nextbike.aggregate( [
+        { $match: { bike: 1 } },
+        { $group: {
+            _id: "$bike_numbers",
+            firstAppearanceDate: { $min: "$date" },
+            lastAppearanceDate: { $max: "$date" }
+        } } 
+    ] )
+);
+
+printjson(
+    db.nextbike.aggregate( [
+        { $group: {
+            _id: "$bike_numbers",
+            firstAppearanceDate: { $min: "$date" },
+            lastAppearanceDate: { $max: "$date" }
+        } } 
+    ] )
+);
+
 // // // all bikes by name
 // printjson( db.features.distinct( "properties.name", { "properties.bike": 1 } ) );
 
