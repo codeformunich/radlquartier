@@ -30,6 +30,12 @@ var distinctInputStationUids = function(db, callback) {
             docs = docs.slice(1, docs.length);
         }
 
+        // // Station 567173, "Leopoldstr. vor der Mensa" 
+        // // only apeers a view times in the data and has number: null and bike_racks: null
+        // docs = docs.filter( function(uid) {
+        //     return uid != 567173;
+        // });
+        
         console.log("distinctInputStationUids, length: ", docs.length);
         callback(docs);
     });
@@ -62,10 +68,20 @@ var createStationData = function(db, uid, callback) {
     var station = newStation(uid);
 
     findStation(db, uid, function(data) {
-        station.number = data.number;
+        if (data.number === null) {
+            station.number = 0;
+        }
+        else {
+            station.number = data.number;
+        }
         station.stationName = data.name;
         station.coordinates = [data.lng, data.lat];
-        station.bikeRacks = data.bike_racks;
+        if (data.bike_racks === null) {
+            station.bikeRacks = 0;
+        }
+        else {
+            station.bikeRacks = data.bike_racks;
+        }
 
         if ( checkStation(station) ) {
             insertData(db, station, function(result) {
@@ -76,7 +92,7 @@ var createStationData = function(db, uid, callback) {
 
     aggregateFirstAppearanceDate(db, uid, function(firstAppearance) {
         station.firstAppearanceDate = firstAppearance.date;
-        console.log('createStationData, bike.firstAppearanceDate: ', station.firstAppearanceDate);
+        console.log('createStationData, station.firstAppearanceDate: ', station.firstAppearanceDate);
         
         if ( checkStation(station) ) {
             insertData(db, station, function(result) {
@@ -87,7 +103,7 @@ var createStationData = function(db, uid, callback) {
 
     aggregateLastAppearanceDate(db, uid, function(lastAppearance) {
         station.lastAppearanceDate = lastAppearance.date;
-        console.log('createStationData, bike.lastAppearanceDate: ', station.lastAppearanceDate);
+        console.log('createStationData, station.lastAppearanceDate: ', station.lastAppearanceDate);
         
         if ( checkStation(station) ) {
             insertData(db, station, function(result) {
@@ -148,7 +164,7 @@ var findStation = function(db, uid, callback) {
     console.log('findStation, uid:', uid);
     db.collection(inputCollection).findOne( { uid: uid }, function(err, result) {
         assert.equal(err, null);
-        // console.log('findStation, result:', result);
+        console.log('findStation, result:', result);
         callback(result);
     }); 
 };

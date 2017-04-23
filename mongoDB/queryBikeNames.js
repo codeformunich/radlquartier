@@ -3,7 +3,7 @@
 
 // printjson( db.places.distinct( "name", { "bike": 1 } ) );
 
-cursor = db.places.aggregate( [
+cursor = db.nextbike.aggregate( [
         { $match: { bike: 1 } },
         { $group: { _id: { bike_numbers: "$bike_numbers" }, name: { $addToSet: "$name" } } }
     ] );

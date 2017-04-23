@@ -15,8 +15,8 @@ var ObjectId = require('mongodb').ObjectID;
 // had some timeout problems with distinct
 // https://stackoverflow.com/questions/39087570/mongodb-timeout-issue-node-js
 var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000'; 
-var inputCollection = 'nextbike';
-var outputCollection = 'rides';
+var inputCollection = 'testcollection'; // 'nextbike'; //
+var outputCollection = 'testride'; // 'rides'; //
 
 var distinctBikeNumbers = function(db, callback) {
     db.collection(inputCollection).distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {

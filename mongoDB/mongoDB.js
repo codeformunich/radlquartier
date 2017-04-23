@@ -109,6 +109,24 @@ printjson(
     ] )
 );
 
+db.nextbike.find( { "name": "Leopoldstr. vor der Mensa"} );
+
+printjson(
+    db.nextbike.aggregate( [
+        { $match: { number: null, spot: 1} },
+        { $group: { _id: "$name" } } 
+    ] )
+);
+
+printjson(
+    db.nextbike.aggregate( [
+        { $match: { bike_racks: null, spot: 1} },
+        { $group: { _id: "$name" } } 
+    ] )
+);
+
+
+
 // // // all bikes by name
 // printjson( db.features.distinct( "properties.name", { "properties.bike": 1 } ) );
 
