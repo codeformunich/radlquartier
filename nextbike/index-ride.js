@@ -14,60 +14,26 @@ var ObjectId = require('mongodb').ObjectID;
 
 // had some timeout problems with distinct
 // https://stackoverflow.com/questions/39087570/mongodb-timeout-issue-node-js
-var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000'; 
-var inputCollection = 'testcollection'; // 'nextbike'; //
-var outputCollection = 'testride'; // 'rides'; //
+var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000';
+var inputCollection = 'nextbike'; // 'testcollection'; //
+var outputCollection = 'rides'; // 'testride'; //
 
 var distinctBikeNumbers = function(db, callback) {
-    db.collection(inputCollection).distinct( "bike_numbers", { "bike": 1 }, function(err, docs) {
+    db.collection(inputCollection).distinct("bike_numbers", { "bike": 1 }, function(err, docs) {
         assert.equal(err, null);
 
         docs.sort(function(a, b) {
-            return a-b;
+            return a - b;
+        });
+        
+        docs = docs.filter(function(number) {
+            return number !== null;
         });
 
-        if ( docs[0] === null ) {
-            docs = docs.slice(1, docs.length);
-        }
-
-        console.log("distinctBikeNumbers, docs: ", docs);
+        // console.log("distinctBikeNumbers, docs: ", docs);
         callback(docs);
     });
 };
-
-// https://zackehh.com/handling-synchronous-asynchronous-loops-javascriptnode-js/
-function syncLoop(iterations, process, exit){  
-    var index = 0,
-        done = false,
-        shouldExit = false;
-    var loop = {
-        next:function(){
-            if(done){
-                if(shouldExit && exit){
-                    return exit(); // Exit if we're done
-                }
-            }
-            // If we're not finished
-            if(index < iterations){
-                index++; // Increment our index
-                process(loop); // Run our process, pass in the loop
-            // Otherwise we're done
-            } else {
-                done = true; // Make sure we say we're done
-                if(exit) exit(); // Call the callback on exit
-            }
-        },
-        iteration:function(){
-            return index - 1; // Return the loop number we're on
-        },
-        break:function(end){
-            done = true; // End the loop
-            shouldExit = end; // Passing end as true means we still call the exit callback
-        }
-    };
-    loop.next();
-    return loop;
-}
 
 var createForAllBikes = function(db, bikeNumbers, callback) {
     var bike = 0,
@@ -75,82 +41,93 @@ var createForAllBikes = function(db, bikeNumbers, callback) {
 
     console.log('createForAllBikes length: ', length);
 
-    syncLoop(length, function(loop){  
+    syncLoop(length, function(loop) {
         // console.log('createForAllBikes loop.iteration: ', loop.iteration());
         // console.log('createForAllBikes bikeNumber: ', bikeNumbers[loop.iteration()]);
-        createHaltData(db, bikeNumbers[loop.iteration()], function(result) {
+        createRideData(db, bikeNumbers[loop.iteration()], function(result) {
             loop.next();
-        } );
-    }, function(){
+        });
+    }, function() {
         callback();
     });
 };
 
-var createHaltData = function(db, bikeNumber, callback) {
-    if ( bikeNumber === null || bikeNumber === undefined ) {
-        console.log('createHaltData ERROR, bikeNumber: ', bikeNumber);
+var createRideData = function(db, bikeNumber, callback) {
+    if (bikeNumber === null || bikeNumber === undefined) {
+        console.log('createRideData ERROR, bikeNumber: ', bikeNumber);
         return;
     }
-    console.log('createHaltData, bike: ', bikeNumber);
+    console.log('createRideData, bike: ', bikeNumber);
 
-    var halts = [];
-    var halt = null;
+    var rides = [];
+    var ride = null;
 
     var cursor = db.collection(inputCollection)
-        .find( {"bike_numbers": bikeNumber } )
-        .sort( {"date": 1} )
+        .find({ "bike_numbers": bikeNumber })
+        .sort({ "date": 1 })
         .addCursorFlag('noCursorTimeout', true);
-    
+
     cursor.each(function(err, place) {
-       assert.equal(err, null);
-       if (place !== null) {
+        assert.equal(err, null);
+        if (place !== null) {
 
-          if (halt === null) {
-            halt = newHalt(bikeNumber, place);
-          }
-          
-          if (place.lng === halt.coordinates[0] && place.lat === halt.coordinates[1]) {
-            halt.endDate = halt.date;
-            halt.count = halt.count + 1;
-          }
-          else {
-            if (halt) {
-                halts.push(halt);
-
-                halt = newHalt(bikeNumber, place);
-            }
-          }
-
-       } else {
-            if (halt) {
-                halts.push(halt);
+            if (ride === null) {
+                ride = newRide(bikeNumber, place);
             }
 
-            insertData(db, halts, function(result) {
-                callback(result);
-            });
-       }
+            if (place.lng === ride.start.coordinates[0] && place.lat === ride.start.coordinates[1]) {
+                ride.start = newLocation(place);
+                ride.end = newLocation(place);
+            } else {
+                if (ride) {
+                    ride.end = newLocation(place);
+
+                    rides.push(ride);
+
+                    ride = newRide(bikeNumber, place);
+                }
+            }
+
+        } else {
+            if (ride.start.location != ride.end.location) {
+                rides.push(ride);
+            }
+
+            if (rides.length > 0) {
+                insertData(db, rides, function(result) {
+                    callback(result);
+                });
+            }
+            else {
+                callback();
+            }
+        }
     });
 };
 
 // helper function
-// creates new halt object 
-var newHalt = function(bikeNumber, place) {
-    var halt = {};
+// creates new ride object 
+var newRide = function(bikeNumber, place) {
+    var ride = {};
+    ride.bikeNumber = bikeNumber;
+    ride.start = newLocation(place);
+    ride.end = newLocation(place);
 
-    halt.bikeNumber = bikeNumber;
-    halt.coordinates =  [place.lng, place.lat];
-    halt.startDate = place.date;
-    halt.endDate = place.date;
-    halt.count = 0;
+    console.log('newRide, bikeNumber:', ride.bikeNumber);
+    return ride;
+};
 
+var newLocation = function(place) {
+    var location = {};
+
+    location.coordinates = [place.lng, place.lat];
+    location.date = place.date;
     if (place.spot) {
-        halt.stationId = place.uid;
-        halt.stationName = place.name;
+        location.stationId = place.uid;
+        location.stationName = place.name;
     }
 
-    console.log('newHaltData, bikeNumber:', halt.bikeNumber, 'coordinates', halt.coordinates);
-    return halt;
+    return location;
 };
 
 //helper function
@@ -158,13 +135,45 @@ var newHalt = function(bikeNumber, place) {
 var insertData = function(db, data, callback) {
     console.log('insertData, length: ', data.length);
 
-    db.collection(outputCollection).insertMany( data, function(err, result) {
+    db.collection(outputCollection).insertMany(data, function(err, result) {
         assert.equal(null, err);
         callback(result);
     });
 };
 
-
+// https://zackehh.com/handling-synchronous-asynchronous-loops-javascriptnode-js/
+function syncLoop(iterations, process, exit) {
+    var index = 0,
+        done = false,
+        shouldExit = false;
+    var loop = {
+        next: function() {
+            if (done) {
+                if (shouldExit && exit) {
+                    return exit(); // Exit if we're done
+                }
+            }
+            // If we're not finished
+            if (index < iterations) {
+                index++; // Increment our index
+                process(loop); // Run our process, pass in the loop
+                // Otherwise we're done
+            } else {
+                done = true; // Make sure we say we're done
+                if (exit) exit(); // Call the callback on exit
+            }
+        },
+        iteration: function() {
+            return index - 1; // Return the loop number we're on
+        },
+        break: function(end) {
+            done = true; // End the loop
+            shouldExit = end; // Passing end as true means we still call the exit callback
+        }
+    };
+    loop.next();
+    return loop;
+}
 
 MongoClient.connect(url, function(err, db) {
     assert.equal(err, null);
