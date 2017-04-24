@@ -125,6 +125,16 @@ printjson(
     ] )
 );
 
+printjson(
+    db.nextbike.aggregate( [
+        { $match: { bike_numbers: null, bike: 1} },
+        { $group: { _id: "$name" } } 
+    ] )
+);
+
+printjson(
+    db.nextbike.find({ bike_numbers: null, bike: 1})
+);
 
 
 // // // all bikes by name
