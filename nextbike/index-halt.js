@@ -110,7 +110,7 @@ var createHaltData = function(db, bikeNumber, callback) {
           }
           
           if (place.lng === halt.coordinates[0] && place.lat === halt.coordinates[1]) {
-            halt.endDate = halt.date;
+            halt.endDate = place.date;
             halt.count = halt.count + 1;
           }
           else {
