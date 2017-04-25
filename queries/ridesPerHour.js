@@ -16,14 +16,15 @@ cursor = db.rides.aggregate([
         $group: { 
             _id: { 
                 year: "$year", 
-                month: "$month",
-                week: "$week"
+                month: "$month", 
+                day: "$day", 
+                hour: "$hour",
             }, 
             count: { $sum: 1 }
         } 
     },
     { 
-        $sort : { "_id.year": 1, "_id.week": 1 } 
+        $sort : { "_id.year": 1, "_id.month": 1, "_id.day": 1, "_id.hour": 1 } 
     }
 ]);
 printjson(cursor.toArray());

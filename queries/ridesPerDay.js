@@ -7,19 +7,18 @@ cursor = db.rides.aggregate([
             year: { $year: "$start.date"},
             month: { $month: "$start.date" },
             day: { $dayOfMonth: "$start.date" },
-            // dayOfYear: { $dayOfYear: "$start.date" },
-            dayOfWeek: { $dayOfWeek: "$start.date" },
-            week: { $week: "$start.date" }
+            hour: { $hour: "$start.date" },
+            week: { $isoWeek: "$start.date" },
+            dayOfWeek: { $isoDayOfWeek: "$start.date" }
         } 
     },
     { 
         $group: { 
             _id: { 
-                week: "$week",
                 year: "$year", 
                 month: "$month", 
                 day: "$day", 
-                // dayOfYear: "$dayOfYear",
+                week: "$week",
                 dayOfWeek: "$dayOfWeek" 
             }, 
             count: { $sum: 1 }

@@ -4,8 +4,12 @@ db.rides.aggregate( [
     { 
         $project: {
             bikeNumber: "$bikeNumber",
-            year : { $year:"$start.date"},
-            month : { $month: '$start.date' }
+            year: { $year: "$start.date"},
+            month: { $month: "$start.date" },
+            day: { $dayOfMonth: "$start.date" },
+            hour: { $hour: "$start.date" },
+            week: { $isoWeek: "$start.date" },
+            dayOfWeek: { $isoDayOfWeek: "$start.date" }
         } 
     },
     { 
