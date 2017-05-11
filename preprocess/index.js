@@ -11,7 +11,7 @@ const program = require('commander'),
 
 program
     .version(pkg.version)
-    .command('','')
+    .command('coorswitch','switch coordinats in a geojson file')
     .command('geojson', 'transforms place elments in a geojson file')
     .command('linestring <bike>','cretaes a geojson linestring')
     .command('chorddata', 'loads places data from the DB and aggregates them to data for the chord view')
