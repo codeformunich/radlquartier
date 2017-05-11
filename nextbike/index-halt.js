@@ -109,7 +109,7 @@ var createHaltData = function(db, bikeNumber, callback) {
             halt = newHalt(bikeNumber, place);
           }
           
-          if (place.lng === halt.coordinates[0] && place.lat === halt.coordinates[1]) {
+          if (place.lng === halt.loc.coordinates[0] && place.lat === halt.loc.coordinates[1]) {
             halt.endDate = place.date;
             halt.count = halt.count + 1;
           }
@@ -139,7 +139,7 @@ var newHalt = function(bikeNumber, place) {
     var halt = {};
 
     halt.bikeNumber = bikeNumber;
-    halt.coordinates =  [place.lng, place.lat];
+    halt.loc = { type: 'Point', coordinates: [place.lng, place.lat] };
     halt.startDate = place.date;
     halt.endDate = place.date;
     halt.count = 0;

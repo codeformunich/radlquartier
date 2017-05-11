@@ -75,11 +75,12 @@ var createRideData = function(db, bikeNumber, callback) {
                 ride = newRide(bikeNumber, place);
             }
 
-            if (place.lng === ride.start.coordinates[0] && place.lat === ride.start.coordinates[1]) {
+            if (place.lng === ride.loc.coordinates[0][0] && place.lat === ride.loc.coordinates[0][1]) {
                 ride.start = newLocation(place);
                 ride.end = newLocation(place);
             } else {
                 if (ride) {
+                    ride.loc.coordinates[1] = [place.lng, place.lat];
                     ride.end = newLocation(place);
 
                     rides.push(ride);
@@ -110,6 +111,10 @@ var createRideData = function(db, bikeNumber, callback) {
 var newRide = function(bikeNumber, place) {
     var ride = {};
     ride.bikeNumber = bikeNumber;
+    ride.loc = { 
+        type: 'LineString', 
+        coordinates: [[place.lng, place.lat], [place.lng, place.lat]]
+    };
     ride.start = newLocation(place);
     ride.end = newLocation(place);
 
@@ -119,8 +124,6 @@ var newRide = function(bikeNumber, place) {
 
 var newLocation = function(place) {
     var location = {};
-
-    location.coordinates = [place.lng, place.lat];
     location.date = place.date;
     if (place.spot) {
         location.stationId = place.uid;

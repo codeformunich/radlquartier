@@ -1,31 +1,25 @@
 /*jshint node:true */
 "use strict";
 
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
-
-var input = '';
-process.stdin.on('data', function (chunk) {
-  input = input + chunk;
-});
-
-process.stdin.on('end', function() {
-    var citys,
-        cityCount,
-        json,
-        places;
-/*jshint node:true */
-"use strict";
-
 // requiremetns for mongoDB
 var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
+var db;
 
 var url = 'mongodb://localhost:27017/bikeproject'; 
-var ridesCollection = 'rides'; //'testrides'
+var ridesCollection = 'rides'; //'testrides';
+var bikeCollection =  'mnsbike'; 
+
 
 var callbackCount = 0;
+
+MongoClient.connect(url, function(err, tempDb) {
+    assert.equal(err, null);
+
+    db = tempDb;
+});
+
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
@@ -50,50 +44,62 @@ process.stdin.on('end', function() {
     }
     console.log( 'timeStamp:', timeStamp);
 
-    MongoClient.connect(url, function(err, db) {
-        assert.equal(err, null);
+    var bikes = json.addedBikes;
+    var stations = json.addedStations;
+    var bikeCount = bikes.length;
+    for (var i = 0; i < bikeCount; i++) {
+        var bikeState = bikes[i];
 
-        insertMetaData(db, json, timeStamp, function() {
-            console.log( 'insertMetaDataCallback, callbackCount:', callbackCount);
-            callbackCount = callbackCount - 1;
-    
-            if (callbackCount === 0) {
-                db.close();
-                console.log('... work done.');
-            }
-        });
+        
+        if (checkForBike(bikeState)) {
+            updateBike(biekState);
+        }
+        else {
+            createBike(bikeState);
+        }
 
-        insertBikes(db, json, timeStamp, function() {
-            console.log( 'insertMetaDataCallback, callbackCount:', callbackCount);
-            callbackCount = callbackCount - 1;
-    
-            if (callbackCount === 0) {
-                db.close();
-                console.log('... work done.');
+        var halt = findLastHalt(bikeState);
+        if(halt !== null) {
+            if(halt.coordinates[0] === bikeState.longitude && halt.coordinates[1] === bikeState.latitude ) {
+                updateHalt(bikeState);
             }
-        });
-
-        insertStations(db, json, timeStamp, function() {
-            console.log( 'insertMetaDataCallback, callbackCount:', callbackCount);
-            callbackCount = callbackCount - 1;
-    
-            if (callbackCount === 0) {
-                db.close();
-                console.log('... work done.');
+            else {
+               createRide(halt, bikeState);
+               createHalt(bikeState);
             }
-        });
-    }); 
+        }
+        else {
+            createHalt(bikeState);
+        }        
+    }
 });
 
-var closeConnection = function(db) {
-    console.log( 'closeConnection, callbackCount:', callbackCount);
-    callbackCount = callbackCount - 1;
-    
-    if (callbackCount === 0) {
-        db.close();
-        console.log('... work done.');
-    }
+
+
+
+////////////////////////////////////
+//
+// helper functions for new objects
+//
+////////////////////////////////////
+var newBike = function(bikeState) {
+    var bike = {};
+
+    bike.bikeNumber = bikeState.bikeNumber;
+    bike.firstAppearanceDate = new Date(bikeState.updated);
+    bike.lastAppearanceDate = new Date(bikeState.updated);
+
+    console.log('newBike, bikeNumber:', bike.bikeNumber);
+    return bike;
 };
+
+var checkforBike = function(bikeState) {
+
+    return false;
+};
+
+var 
+
 
 var insertMetaData = function(db, json, timeStamp, callback) {
     callbackCount = callbackCount + 1;
@@ -147,29 +153,3 @@ var newMetaData = function(json, timeStamp) {
     console.log( 'newMetaData, metaData:', metaData);
     return metaData;
 };
-
-    json = JSON.parse(input);
-    // console.log(input);
-    // console.log(json);
-
-    citys = json.markers.country.city;
-    
-    if( citys.constructor === Array ) {
-        cityCount = citys.length;
-        // console.log(citys[0].name);
-        // console.log(cityCount);
-
-        for (var i = 0; i < cityCount; i++) {
-            if (citys[i].name === 'München') {
-                // console.log(json.markers.country.city[i]);
-                places = citys[i].place;
-            }
-        }    
-    }
-    else {
-        // console.log(citys.name);
-        places = citys.place;
-    }
-
-    console.log(JSON.stringify(places, null, '\t'));
-});
