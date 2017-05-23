@@ -47,7 +47,7 @@ text.dummy-text {
     //     .range(['#fff', '#409A99']);
 
     var color = d3.scaleSequential(d3.interpolateWarm)
-    .domain([0, 1000])
+    .domain([6000, 0]);
 
     var projection = d3.geoMercator()
         .scale(110000)
@@ -120,15 +120,19 @@ text.dummy-text {
     }
 
     // Get province name length
-    function nameLength(d) {
+    function getDistrict(d) {
         var n = nameFn(d);
         
         var index = districts.findIndex(function (district) {
           return district.name === n;
         });
 
-        // return n ? n : 0;
-        return districts[index].sum;
+        return districts[index];
+    }
+
+    // Todo rename getTotalCount
+    function nameLength(d) {
+      return getDistrict(d).monthlyAverage;
     }
 
     // Get province color
@@ -171,7 +175,7 @@ text.dummy-text {
         d3.select(this).style('fill', 'orange');
 
         // Draw effects
-        textArt(nameFn(d), nameLength(d));
+        textArt(getDistrict(d));
     }
 
     function mouseout(d) {
@@ -194,10 +198,10 @@ text.dummy-text {
     // Just me playing around.
     // You won't need this for a regular map.
 
-    function textArt(text, count) {
+    function textArt(district) {
         bigText
         // .style('font-family', fontFamily)
-            .text(text + ': ' + count );
+            .text(district.name + ': sum ' + district.totalCount + ' monthly average ' + district.monthlyAverage);
 
     }
     </script>

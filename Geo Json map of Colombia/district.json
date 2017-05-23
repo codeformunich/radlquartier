@@ -2,115 +2,1544 @@
 	"districts": [
 		{
 			"name": "Berg am Laim",
-			"sum": 3997
+			"totalCount": 3997,
+			"monthlyAverage": 399.7,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 301
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 779
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 536
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 607
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 445
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 412
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 333
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 123
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 290
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 171
+				}
+			]
 		},
 		{
 			"name": "Schwanthalerhöhe",
-			"sum": 9735
+			"totalCount": 9735,
+			"monthlyAverage": 973.5,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 464
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 1316
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 1334
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 1528
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1094
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1075
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 953
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 539
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 919
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 513
+				}
+			]
 		},
 		{
 			"name": "Altstadt-Lehel",
-			"sum": 26260
+			"totalCount": 26260,
+			"monthlyAverage": 2626,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 1403
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 4652
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 4751
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 4178
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 2931
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 2281
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 2259
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 810
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1983
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 1012
+				}
+			]
 		},
 		{
 			"name": "Allach-Untermenzing",
-			"sum": 56
+			"totalCount": 56,
+			"monthlyAverage": 5.6,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 3
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 6
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 16
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 7
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 3
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 4
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 14
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 1
+				}
+			]
 		},
 		{
 			"name": "Hadern",
-			"sum": 587
+			"totalCount": 587,
+			"monthlyAverage": 58.7,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 37
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 126
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 109
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 82
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 64
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 63
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 42
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 12
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 33
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 19
+				}
+			]
 		},
 		{
 			"name": "Au-Haidhausen",
-			"sum": 13255
+			"totalCount": 13255,
+			"monthlyAverage": 1325.5,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 791
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 2287
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 2293
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 2154
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1360
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1131
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1047
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 507
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1098
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 587
+				}
+			]
 		},
 		{
 			"name": "Obermenzing",
-			"sum": 111
+			"totalCount": 111,
+			"monthlyAverage": 12.333333333333334,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 10
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 33
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 15
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 21
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 10
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 8
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 4
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 8
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 2
+				}
+			]
 		},
 		{
 			"name": "Neuhausen",
-			"sum": 24502
+			"totalCount": 24502,
+			"monthlyAverage": 2450.2,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 1062
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 3824
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 3755
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 3487
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 2977
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 2640
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 2311
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 1347
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 2125
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 974
+				}
+			]
 		},
 		{
 			"name": "Ludwigsvorstadt-Isarvorstadt",
-			"sum": 28144
+			"totalCount": 28144,
+			"monthlyAverage": 2814.4,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 1290
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 4234
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 4390
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 4997
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 3344
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 2686
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 2540
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 1182
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 2291
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 1190
+				}
+			]
 		},
 		{
 			"name": "Maxvorstadt",
-			"sum": 50894
+			"totalCount": 50894,
+			"monthlyAverage": 5089.4,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 2602
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 7961
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 7247
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 6744
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 6253
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 5916
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 4506
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 2880
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 4754
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 2031
+				}
+			]
 		},
 		{
 			"name": "Schwabing-Schwabing West",
-			"sum": 41828
+			"totalCount": 41828,
+			"monthlyAverage": 4182.8,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 2014
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 6295
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 6319
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 6029
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 4793
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 4592
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 3876
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 2228
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 3986
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 1696
+				}
+			]
 		},
 		{
 			"name": "Moosach",
-			"sum": 11683
+			"totalCount": 11683,
+			"monthlyAverage": 1168.3,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 652
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 1505
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 1405
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 1602
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1350
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1400
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1288
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 799
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1167
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 515
+				}
+			]
 		},
 		{
 			"name": "Trudering-Riem",
-			"sum": 577
+			"totalCount": 577,
+			"monthlyAverage": 57.7,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 57
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 121
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 106
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 115
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 74
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 25
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 28
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 15
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 20
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 16
+				}
+			]
 		},
 		{
 			"name": "Laim",
-			"sum": 6122
+			"totalCount": 6122,
+			"monthlyAverage": 612.2,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 346
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 1104
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 1053
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 868
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 639
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 601
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 510
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 260
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 449
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 292
+				}
+			]
 		},
 		{
 			"name": "Milbertshofen-Am Hart",
-			"sum": 17596
+			"totalCount": 17596,
+			"monthlyAverage": 1759.6,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 986
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 2725
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 2338
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 2170
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1933
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 2122
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1658
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 1194
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1733
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 737
+				}
+			]
 		},
 		{
 			"name": "Nymphenburg",
-			"sum": 5290
+			"totalCount": 5290,
+			"monthlyAverage": 529,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 305
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 922
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 936
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 863
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 509
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 417
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 417
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 269
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 436
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 216
+				}
+			]
 		},
 		{
 			"name": "Feldmoching-Hasenbergl",
-			"sum": 300
+			"totalCount": 300,
+			"monthlyAverage": 30,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 32
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 79
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 61
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 43
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 22
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 15
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 21
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 8
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 8
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 11
+				}
+			]
 		},
 		{
 			"name": "Aubing-Lochhausen-Langwied",
-			"sum": 7
+			"totalCount": 7,
+			"monthlyAverage": 2.3333333333333335,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 4
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 2
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1
+				}
+			]
 		},
 		{
 			"name": "Bogenhausen",
-			"sum": 7084
+			"totalCount": 7084,
+			"monthlyAverage": 708.4,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 400
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 1257
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 1059
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 1165
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 711
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 565
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 621
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 320
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 633
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 353
+				}
+			]
 		},
 		{
 			"name": "Sendling-Westpark",
-			"sum": 19814
+			"totalCount": 19814,
+			"monthlyAverage": 1981.4,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 1093
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 3213
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 3183
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 2981
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 2308
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1989
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1826
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 801
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1585
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 835
+				}
+			]
 		},
 		{
 			"name": "Ramersdorf-Perlach",
-			"sum": 4999
+			"totalCount": 4999,
+			"monthlyAverage": 499.9,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 286
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 826
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 807
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 856
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 532
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 397
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 371
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 263
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 445
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 216
+				}
+			]
 		},
 		{
 			"name": "Solln",
-			"sum": 35
+			"totalCount": 35,
+			"monthlyAverage": 3.888888888888889,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 3
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 6
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 9
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 2
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 7
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 2
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 1
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 2
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 3
+				}
+			]
 		},
 		{
 			"name": "Pasing",
-			"sum": 170
+			"totalCount": 170,
+			"monthlyAverage": 17,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 16
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 43
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 31
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 17
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 21
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 15
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 8
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 1
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 6
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 12
+				}
+			]
 		},
 		{
 			"name": "Harlaching",
-			"sum": 1682
+			"totalCount": 1682,
+			"monthlyAverage": 168.2,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 66
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 186
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 328
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 284
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 194
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 166
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 147
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 81
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 146
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 84
+				}
+			]
 		},
 		{
 			"name": "Giesing",
-			"sum": 13674
+			"totalCount": 13674,
+			"monthlyAverage": 1367.4,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 584
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 1875
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 2313
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 2145
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1536
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1271
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1216
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 701
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1320
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 713
+				}
+			]
 		},
 		{
 			"name": "Freimann",
-			"sum": 12499
+			"totalCount": 12499,
+			"monthlyAverage": 1249.9,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 622
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 2120
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 2074
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 1785
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1298
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 1204
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 1078
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 549
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 1181
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 588
+				}
+			]
 		},
 		{
 			"name": "Thalkirchen, Obersendling",
-			"sum": 3503
+			"totalCount": 3503,
+			"monthlyAverage": 350.3,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 148
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 656
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 729
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 503
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 356
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 341
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 280
+				},
+				{
+					"year": 2017,
+					"month": 1,
+					"count": 136
+				},
+				{
+					"year": 2017,
+					"month": 2,
+					"count": 221
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 133
+				}
+			]
 		},
 		{
 			"name": "Forstenried - Fürstenried",
-			"sum": 43
+			"totalCount": 43,
+			"monthlyAverage": 5.375,
+			"monthlyCounts": [
+				{
+					"year": 2016,
+					"month": 6,
+					"count": 2
+				},
+				{
+					"year": 2016,
+					"month": 7,
+					"count": 14
+				},
+				{
+					"year": 2016,
+					"month": 8,
+					"count": 11
+				},
+				{
+					"year": 2016,
+					"month": 9,
+					"count": 6
+				},
+				{
+					"year": 2016,
+					"month": 10,
+					"count": 1
+				},
+				{
+					"year": 2016,
+					"month": 11,
+					"count": 4
+				},
+				{
+					"year": 2016,
+					"month": 12,
+					"count": 3
+				},
+				{
+					"year": 2017,
+					"month": 3,
+					"count": 2
+				}
+			]
 		}
 	]
 }

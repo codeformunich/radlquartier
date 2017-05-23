@@ -1,0 +1,116 @@
+{
+	"districts": [
+		{
+			"name": "Berg am Laim",
+			"sum": 3997
+		},
+		{
+			"name": "Schwanthalerhöhe",
+			"sum": 9735
+		},
+		{
+			"name": "Altstadt-Lehel",
+			"sum": 26260
+		},
+		{
+			"name": "Allach-Untermenzing",
+			"sum": 56
+		},
+		{
+			"name": "Hadern",
+			"sum": 587
+		},
+		{
+			"name": "Au-Haidhausen",
+			"sum": 13255
+		},
+		{
+			"name": "Obermenzing",
+			"sum": 111
+		},
+		{
+			"name": "Neuhausen",
+			"sum": 24502
+		},
+		{
+			"name": "Ludwigsvorstadt-Isarvorstadt",
+			"sum": 28144
+		},
+		{
+			"name": "Maxvorstadt",
+			"sum": 50894
+		},
+		{
+			"name": "Schwabing-Schwabing West",
+			"sum": 41828
+		},
+		{
+			"name": "Moosach",
+			"sum": 11683
+		},
+		{
+			"name": "Trudering-Riem",
+			"sum": 577
+		},
+		{
+			"name": "Laim",
+			"sum": 6122
+		},
+		{
+			"name": "Milbertshofen-Am Hart",
+			"sum": 17596
+		},
+		{
+			"name": "Nymphenburg",
+			"sum": 5290
+		},
+		{
+			"name": "Feldmoching-Hasenbergl",
+			"sum": 300
+		},
+		{
+			"name": "Aubing-Lochhausen-Langwied",
+			"sum": 7
+		},
+		{
+			"name": "Bogenhausen",
+			"sum": 7084
+		},
+		{
+			"name": "Sendling-Westpark",
+			"sum": 19814
+		},
+		{
+			"name": "Ramersdorf-Perlach",
+			"sum": 4999
+		},
+		{
+			"name": "Solln",
+			"sum": 35
+		},
+		{
+			"name": "Pasing",
+			"sum": 170
+		},
+		{
+			"name": "Harlaching",
+			"sum": 1682
+		},
+		{
+			"name": "Giesing",
+			"sum": 13674
+		},
+		{
+			"name": "Freimann",
+			"sum": 12499
+		},
+		{
+			"name": "Thalkirchen, Obersendling",
+			"sum": 3503
+		},
+		{
+			"name": "Forstenried - Fürstenried",
+			"sum": 43
+		}
+	]
+}
