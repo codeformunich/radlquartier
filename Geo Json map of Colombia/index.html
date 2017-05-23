@@ -41,13 +41,13 @@ text.dummy-text {
         districts;
 
     // Define color scale
-    // var color = d3.scaleLinear()
-    //     .domain([1, 20])
-    //     .clamp(true)
-    //     .range(['#fff', '#409A99']);
+    var color = d3.scaleLinear()
+        .domain([0, 6000])
+        .clamp(true)
+        .range(['#fff', '#409A99']);
 
-    var color = d3.scaleSequential(d3.interpolateWarm)
-    .domain([6000, 0]);
+    // var color = d3.scaleSequential(d3.interpolateWarm)
+    // .domain([6000, 0]);
 
     var projection = d3.geoMercator()
         .scale(110000)
@@ -100,8 +100,9 @@ text.dummy-text {
         var features = mapData.features;
 
         // Update color scale domain based on data
-        color.domain([d3.max(features, nameLength), 0]);
-        
+        // color.domain([d3.max(features, nameLength), 0]);
+        color.domain([0, d3.max(features, nameLength)]);
+
         // Draw each province as a path
         mapLayer.selectAll('path')
             .data(features)
