@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
-@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Josefin+Slab|Arvo|Lato|Vollkorn|Abril+Fatface|Old+Standard+TT|Droid+Sans|Lobster|Inconsolata|Montserrat|Playfair+Display|Karla|Alegreya|Libre+Baskerville|Merriweather|Lora|Archivo+Narrow|Neuton|Signika|Questrial|Fjalla+One|Bitter|Varela+Round);
 .background {
     fill: #eee;
     pointer-events: all;
@@ -38,13 +37,17 @@ text.dummy-text {
     <script>
     var width = 960,
         height = 700,
-        centered;
+        centered,
+        districts;
 
     // Define color scale
-    var color = d3.scaleLinear()
-        .domain([1, 20])
-        .clamp(true)
-        .range(['#fff', '#409A99']);
+    // var color = d3.scaleLinear()
+    //     .domain([1, 20])
+    //     .clamp(true)
+    //     .range(['#fff', '#409A99']);
+
+    var color = d3.scaleSequential(d3.interpolateWarm)
+    .domain([0, 1000])
 
     var projection = d3.geoMercator()
         .scale(110000)
@@ -87,13 +90,18 @@ text.dummy-text {
         .attr('x', 20)
         .attr('y', 45);
 
+    // Load halts data
+    d3.json('district.json', function(error, districtData) {
+        districts = districtData.districts;
+    });
+
     // Load map data
     d3.json('munich.geojson', function(error, mapData) {
         var features = mapData.features;
 
         // Update color scale domain based on data
-        color.domain([0, d3.max(features, nameLength)]);
-
+        color.domain([d3.max(features, nameLength), 0]);
+        
         // Draw each province as a path
         mapLayer.selectAll('path')
             .data(features)
@@ -114,7 +122,13 @@ text.dummy-text {
     // Get province name length
     function nameLength(d) {
         var n = nameFn(d);
-        return n ? n.length : 0;
+        
+        var index = districts.findIndex(function (district) {
+          return district.name === n;
+        });
+
+        // return n ? n : 0;
+        return districts[index].sum;
     }
 
     // Get province color
@@ -157,7 +171,7 @@ text.dummy-text {
         d3.select(this).style('fill', 'orange');
 
         // Draw effects
-        textArt(nameFn(d));
+        textArt(nameFn(d), nameLength(d));
     }
 
     function mouseout(d) {
@@ -180,124 +194,10 @@ text.dummy-text {
     // Just me playing around.
     // You won't need this for a regular map.
 
-    var BASE_FONT = "'Helvetica Neue', Helvetica, Arial, sans-serif";
-
-    var FONTS = [
-        "Open Sans",
-        "Josefin Slab",
-        "Arvo",
-        "Lato",
-        "Vollkorn",
-        "Abril Fatface",
-        "Old StandardTT",
-        "Droid+Sans",
-        "Lobster",
-        "Inconsolata",
-        "Montserrat",
-        "Playfair Display",
-        "Karla",
-        "Alegreya",
-        "Libre Baskerville",
-        "Merriweather",
-        "Lora",
-        "Archivo Narrow",
-        "Neuton",
-        "Signika",
-        "Questrial",
-        "Fjalla One",
-        "Bitter",
-        "Varela Round"
-    ];
-
-    function textArt(text) {
-        // Use random font
-        var fontIndex = Math.round(Math.random() * FONTS.length);
-        var fontFamily = FONTS[fontIndex] + ', ' + BASE_FONT;
-
+    function textArt(text, count) {
         bigText
-            // .style('font-family', fontFamily)
-            .text(text);
+        // .style('font-family', fontFamily)
+            .text(text + ': ' + count );
 
-        // // Use dummy text to compute actual width of the text
-        // // getBBox() will return bounding box
-        // dummyText
-        //     .style('font-family', fontFamily)
-        //     .text(text);
-        // var bbox = dummyText.node().getBBox();
-
-        // var textWidth = bbox.width;
-        // var textHeight = bbox.height;
-        // var xGap = 3;
-        // var yGap = 1;
-
-        // // Generate the positions of the text in the background
-        // var xPtr = 0;
-        // var yPtr = 0;
-        // var positions = [];
-        // var rowCount = 0;
-        // while (yPtr < height) {
-        //     while (xPtr < width) {
-        //         var point = {
-        //             text: text,
-        //             index: positions.length,
-        //             x: xPtr,
-        //             y: yPtr
-        //         };
-        //         var dx = point.x - width / 2 + textWidth / 2;
-        //         var dy = point.y - height / 2;
-        //         point.distance = dx * dx + dy * dy;
-
-        //         positions.push(point);
-        //         xPtr += textWidth + xGap;
-        //     }
-        //     rowCount++;
-        //     xPtr = rowCount % 2 === 0 ? 0 : -textWidth / 2;
-        //     xPtr += Math.random() * 10;
-        //     yPtr += textHeight + yGap;
-        // }
-
-        // var selection = effectLayer.selectAll('text')
-        //     .data(positions, function(d) {
-        //         return d.text + '/' + d.index;
-        //     });
-
-        // // Clear old ones
-        // selection.exit().transition()
-        //     .style('opacity', 0)
-        //     .remove();
-
-        // // Create text but set opacity to 0
-        // selection.enter().append('text')
-        //     .text(function(d) {
-        //         return d.text;
-        //     })
-        //     .attr('x', function(d) {
-        //         return d.x;
-        //     })
-        //     .attr('y', function(d) {
-        //         return d.y;
-        //     })
-        //     .style('font-family', fontFamily)
-        //     .style('fill', '#777')
-        //     .style('opacity', 0);
-
-        // selection
-        //     .style('font-family', fontFamily)
-        //     .attr('x', function(d) {
-        //         return d.x;
-        //     })
-        //     .attr('y', function(d) {
-        //         return d.y;
-        //     });
-
-        // // Create transtion to increase opacity from 0 to 0.1-0.5
-        // // Add delay based on distance from the center of the <svg> and a bit more randomness.
-        // selection.transition()
-        //     .delay(function(d) {
-        //         return d.distance * 0.01 + Math.random() * 1000;
-        //     })
-        //     .style('opacity', function(d) {
-        //         return 0.1 + Math.random() * 0.4;
-        //     });
     }
     </script>
