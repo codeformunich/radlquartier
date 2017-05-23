@@ -34,27 +34,26 @@ text.dummy-text {
 
 <body>
     <svg></svg>
-    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
     <script>
     var width = 960,
         height = 700,
         centered;
 
     // Define color scale
-    var color = d3.scale.linear()
+    var color = d3.scaleLinear()
         .domain([1, 20])
         .clamp(true)
         .range(['#fff', '#409A99']);
 
-    var projection = d3.geo.mercator()
+    var projection = d3.geoMercator()
         .scale(110000)
-        // Center the Map in Colombia
-        // .center([-74, 4.5])
+        // Center the Map in Munich
         .center([11.55, 48.15])
         // .center([11.581980599999952, 48.1351253])
         .translate([width / 2, height / 2]);
 
-    var path = d3.geo.path()
+    var path = d3.geoPath()
         .projection(projection);
 
     // Set svg width & height
