@@ -5,7 +5,7 @@ L.HexLayer = L.Class.extend({
         minZoom: 0,
         maxZoom: 18,
         padding: 100,
-        radius: 10
+        radius: 20
     },
 
     initialize: function (data, options) {

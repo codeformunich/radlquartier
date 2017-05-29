@@ -1,0 +1,733 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47576771,
+					48.175095475
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4784998,
+					48.1739931
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48956048,
+					48.19893758
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48955639,
+					48.19893514
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48035402,
+					48.1841657
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4785815,
+					48.17406078
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4614476,
+					48.1765196
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48059521,
+					48.171994345
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46160589,
+					48.176431005
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47851832,
+					48.17399445
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.480647775,
+					48.21613601
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46155687,
+					48.17620782
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.475664,
+					48.182634
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46143452,
+					48.17627928
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4612922,
+					48.1760373
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4784881,
+					48.1740101
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4783913,
+					48.17392475
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46131463,
+					48.17612933
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4612934,
+					48.1761198
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.466826,
+					48.18309
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48943423,
+					48.17966535
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4786171,
+					48.17415335
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.456670735,
+					48.182632395
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.481004155,
+					48.176784735
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.475657625,
+					48.183875185
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.485812825,
+					48.178397
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.477520745,
+					48.17633285
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48084972,
+					48.18134202
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.486285935,
+					48.178479765
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46131068,
+					48.175999645
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48023518,
+					48.18367487
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48023215,
+					48.18377563
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.481434,
+					48.178261
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48086336,
+					48.178188245
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47843853,
+					48.17395808
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4525072,
+					48.17953592
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47844242,
+					48.17400588
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46157824,
+					48.20968535
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48480157,
+					48.17869725
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.481198305,
+					48.172824875
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.480771,
+					48.172927
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46112652,
+					48.17593518
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.461134795,
+					48.17594123
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48013993,
+					48.18407745
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47856037,
+					48.17400715
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48636567,
+					48.179783525
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48568797,
+					48.17894047
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.485697,
+					48.178899
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48045983,
+					48.17202442
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.480469915,
+					48.171969825
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48410955,
+					48.1836326
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47844933,
+					48.17396885
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47844553,
+					48.17397615
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.480497525,
+					48.1720916
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47804498,
+					48.18134793
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48481627,
+					48.18338613
+				]
+			},
+			"properties": {
+				"name": "Allach-Untermenzing"
+			}
+		}
+	]
+}

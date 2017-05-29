@@ -20,7 +20,8 @@
     </style>
   </head>
   <body>
-    <div id='quake' data-source="quakes_christchurch_20100901-20101001_mag-gt3.json"></div>
+    <div id='quake'></div> 
+    <!-- <div id='quake' data-source="laim.geo.json"></div>  -->
     <script type="text/javascript">
       (function () {
           var max, scale,
@@ -33,10 +34,10 @@
               attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
           }).addTo(map);
 
-          // Load halts data
-          d3.json('halts/Laim.json', function(error, districtData) {
+          //Load halts data
+          d3.json('halts/Laim.geo.json', function(error, districtData) {
               // When data arrives, create leaflet layer with custom style callback.
-              L.hexLayer(districtData.locs, {
+              L.hexLayer(districtData, {
                   applyStyle: hex_style
               }).addTo(map);
           });
