@@ -34,10 +34,54 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+.background {
+    fill: #eee;
+    pointer-events: all;
+}
+
+.breadcrumb {
+    padding: 8px 15px;
+    margin-bottom: 20px;
+    list-style: none;
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    text-align:center;
+}
+
+.breadcrumb>li+li:before {
+    padding: 0 5px;
+    color: #ccc;
+    content: "⎪\00a0"
+}
+
+.map-layer {
+    fill: #fff;
+    stroke: #aaa;
+}
+
+.effect-layer {
+    pointer-events: none;
+}
+
+text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+text.big-text {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.effect-layer text,
+text.dummy-text {
+    font-size: 12px;
+}
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
-    max-width: 730px;
+    max-width: 900px;
   }
 }
 .container-narrow > hr {
