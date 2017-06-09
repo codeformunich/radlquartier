@@ -1,11 +1,11 @@
 #! /bin/zsh
 
-echo "import raw data into mongoDB"
+echo "import halt data into mongoDB"
 for json in ./*.json
 do
   jsonname=$(basename "$json")
-  jsonshort="${xmlname%.*}"
+  jsonshort="${xmlname%.*}"0    
   
   echo "importing ${jsonname}"
-  node ../../mvgstate/index.js importrawdata < ${json}
+  node ../../mvgstate/index.js halt < ${json}
 done

@@ -7,5 +7,5 @@ do
   jsonshort="${xmlname%.*}"
   
   echo "importing ${jsonname}"
-  node ../../../mvgstate/index.js importrawdata < ${json}
+  node ../../../mvgstate/index.js halt < ${json}
 done
