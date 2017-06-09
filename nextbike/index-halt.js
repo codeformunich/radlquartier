@@ -112,6 +112,7 @@ var createHaltData = function(db, bikeNumber, callback) {
           if (place.lng === halt.loc.coordinates[0] && place.lat === halt.loc.coordinates[1]) {
             halt.endDate = place.date;
             halt.count = halt.count + 1;
+            halt.dates.push(place.date);
           }
           else {
             if (halt) {
@@ -142,7 +143,9 @@ var newHalt = function(bikeNumber, place) {
     halt.loc = { type: 'Point', coordinates: [place.lng, place.lat] };
     halt.startDate = place.date;
     halt.endDate = place.date;
+
     halt.count = 0;
+    halt.dates = [place.date];
 
     if (place.spot) {
         halt.stationId = place.uid;
