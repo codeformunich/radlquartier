@@ -11,8 +11,8 @@ const program = require('commander'),
 
 program
     .version(pkg.version)
-    .command('importrawdata', 'imports the raw bike data from the networkstate-mvgrad files')
-    .command('importstations', 'imports the station data from the networkstate-mvgrad files and add a timestamp' )
+    .command('halt', 'creates halts from the raw bike data from the networkstate-mvgrad files')
+    // .command('importstations', 'imports the station data from the networkstate-mvgrad files and add a timestamp' )
     .parse(process.argv);
 
 // if program was called with no arguments, show help.
