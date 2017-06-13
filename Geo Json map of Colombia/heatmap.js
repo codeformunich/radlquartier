@@ -14,8 +14,8 @@ var Heatmap = (function(window, d3) {
         centered,
         districts,
         margin = {}, 
-        width,// = 500, 
-        height; // = 350;
+        width,
+        height;
 
     // sets width and height, necessary for mapLayer
     updateDimensions();
@@ -38,51 +38,45 @@ var Heatmap = (function(window, d3) {
             .clamp(true)
             .range(['#fff', '#409A99']);
 
+        // Define color scale
+        // Update color scale domain based on data
         // var color = d3.scaleSequential(d3.interpolateWarm)
         // .domain([6000, 0]);
-
-        // Update color scale domain based on data
         // color.domain([d3.max(features, nameLength), 0]);
         // color.domain([0, d3.max(features, nameLength)]);
     
+        // Set svg width & height
+        svg = d3.select('svg');
 
-    // Set svg width & height
-    svg = d3.select('svg');
-        // .attr('width', width)
-        // .attr('height', height);
+        // Add background
+        rect = svg.append('rect')
+            .attr('class', 'background')
+            .on('click', clicked);
 
-    // Add background
-    rect = svg.append('rect')
-        .attr('class', 'background')
-        // .attr('width', width)
-        // .attr('height', height)
-        .on('click', clicked);
+        g = svg.append('g');
 
-    g = svg.append('g');
+        effectLayer = g.append('g')
+            .classed('effect-layer', true);
 
-    effectLayer = g.append('g')
-        .classed('effect-layer', true);
+        mapLayer = g.append('g')
+            .classed('map-layer', true);
 
-    mapLayer = g.append('g')
-        .classed('map-layer', true);
+        dummyText = g.append('text')
+            .classed('dummy-text', true)
+            .attr('x', 10)
+            .attr('y', 30)
+            .style('opacity', 0);
 
-    dummyText = g.append('text')
-        .classed('dummy-text', true)
-        .attr('x', 10)
-        .attr('y', 30)
-        .style('opacity', 0);
+        bigText = g.append('text')
+            .classed('big-text', true)
+            .attr('x', 20)
+            .attr('y', 45);
 
-    bigText = g.append('text')
-        .classed('big-text', true)
-        .attr('x', 20)
-        .attr('y', 45);
-
-    projection = d3.geoMercator()
-            .scale( width * 150)
-            // Center the Map in Munich
-            .center([11.542, 48.155])
-            // .center([11.581980599999952, 48.1351253])
-            .translate([width / 2, height / 2]);
+        projection = d3.geoMercator()
+                .scale( width * 150)
+                // Center the Map in Munich
+                .center([11.542, 48.155])
+                .translate([width / 2, height / 2]);
 
         path = d3.geoPath()
             .projection(projection);
@@ -110,7 +104,6 @@ var Heatmap = (function(window, d3) {
           .attr('width', width)
           .attr('height', height);
 
-
         rect
             .attr('width', width)
             .attr('height', height);
@@ -125,14 +118,8 @@ var Heatmap = (function(window, d3) {
     function updateDimensions() {
         width = parseInt(d3.select('#heatmap').style('width'));
 
-        margin.top = 10;
-        margin.right = 10;
-        margin.left = 10;
-        margin.bottom = 10;
-
         width = width;
-        // height = 500 - margin.top - margin.bottom;
-        height = 0.75 * width; //aspect ratio is 0.7
+        height = 0.78 * width; //aspect ratio is 0.78
     }
 
     
