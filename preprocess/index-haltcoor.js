@@ -84,9 +84,9 @@ process.stdin.on('end', function() {
             
             var outputCount = output.districts.length;
             for (var i = 0; i < outputCount; i++) {
-                var fileName = output.districts[i].name + '.geo.json';
+                var fileName = 'cartodb_id_' + output.districts[i].id + '.geo.json';
                 fs.writeFile( fileName, 
-                    JSON.stringify(output.districts[i].geojson, null, '\t'), 
+                    JSON.stringify(output.districts[i].coordinates, null, '\t'), 
                     function(err) {
                         if (err) { 
                             console.log('ERROR: createForAllFeatures:', err);
@@ -168,26 +168,13 @@ var createJson = function(db, feature, callback) {
 
             var districtData = {
                 'name': feature.properties.name,
-                'geojson': {
-                    "type": "FeatureCollection",
-                    "features": []
-                }
+                'id': feature.properties.cartodb_id,
+                "coordinates": []
             };
 
             var resultcount = results.length;
             for (var i = 0; i < resultcount; i++) {
-                var point = {
-                    "type": "Feature",
-                    "geometry": {
-                        "type": "Point",
-                        "coordinates": results[i].coordinates
-                    },
-                    "properties": {
-                        "name": feature.properties.name
-                    }
-                };
-
-                districtData.geojson.features.push(point);
+                districtData.coordinates.push(results[i].coordinates);
             }
 
             output.districts.push(districtData);
