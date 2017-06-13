@@ -1,103 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width" />
-  <title>D3 Line Chart</title>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-<style>
-.background {
-    fill: #eee;
-    pointer-events: all;
-}
-
-.map-layer {
-    fill: #fff;
-    stroke: #aaa;
-}
-
-.effect-layer {
-    pointer-events: none;
-}
-
-text {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-}
-
-text.big-text {
-    font-size: 30px;
-    font-weight: 400;
-}
-
-.effect-layer text,
-text.dummy-text {
-    font-size: 12px;
-}
-</style>
-
-<body>
-    <div id="heatmap">
-        <svg></svg>
-    </div>
-    <script src="heatmap.js"></script>
-    <!-- <script>
-        window.addEventListener('resize', Heatmap.render);
-    </script> -->
-    <!-- <script>
-    var width = 960,
-        height = 700,
+var Heatmap = (function(window, d3) {
+    var svg,
+        rect,
+        g,
+        data, 
+        color,
+        projection,
+        path,
+        effectLayer,
+        mapLayer,
+        features, 
+        dummyText,
+        bigText,
         centered,
-        districts;
+        districts,
+        margin = {}, 
+        width,// = 500, 
+        height; // = 350;
 
-    // Define color scale
-    var color = d3.scaleLinear()
-        .domain([0, 6000])
-        .clamp(true)
-        .range(['#fff', '#409A99']);
-
-    // var color = d3.scaleSequential(d3.interpolateWarm)
-    // .domain([6000, 0]);
-
-    var projection = d3.geoMercator()
-        .scale(110000)
-        // Center the Map in Munich
-        .center([11.55, 48.15])
-        // .center([11.581980599999952, 48.1351253])
-        .translate([width / 2, height / 2]);
-
-    var path = d3.geoPath()
-        .projection(projection);
-
-    // Set svg width & height
-    var svg = d3.select('svg')
-        .attr('width', width)
-        .attr('height', height);
-
-    // Add background
-    svg.append('rect')
-        .attr('class', 'background')
-        .attr('width', width)
-        .attr('height', height)
-        .on('click', clicked);
-
-    var g = svg.append('g');
-
-    var effectLayer = g.append('g')
-        .classed('effect-layer', true);
-
-    var mapLayer = g.append('g')
-        .classed('map-layer', true);
-
-    var dummyText = g.append('text')
-        .classed('dummy-text', true)
-        .attr('x', 10)
-        .attr('y', 30)
-        .style('opacity', 0);
-
-    var bigText = g.append('text')
-        .classed('big-text', true)
-        .attr('x', 20)
-        .attr('y', 45);
+    // sets width and height, necessary for mapLayer
+    updateDimensions();
 
     // Load halts data
     d3.json('district.json', function(error, districtData) {
@@ -105,12 +26,66 @@ text.dummy-text {
     });
 
     // Load map data
-    d3.json('munich.geojson', function(error, mapData) {
-        var features = mapData.features;
+    d3.json('munich.geojson', init);
+
+    function init(error, heatData){
+        features = heatData.features;    
+        
+        // Define color scale
+        // Update color scale domain based on data
+        color = d3.scaleLinear()
+            .domain([0, d3.max(features, nameLength)])
+            .clamp(true)
+            .range(['#fff', '#409A99']);
+
+        // var color = d3.scaleSequential(d3.interpolateWarm)
+        // .domain([6000, 0]);
 
         // Update color scale domain based on data
         // color.domain([d3.max(features, nameLength), 0]);
-        color.domain([0, d3.max(features, nameLength)]);
+        // color.domain([0, d3.max(features, nameLength)]);
+    
+
+    // Set svg width & height
+    svg = d3.select('svg');
+        // .attr('width', width)
+        // .attr('height', height);
+
+    // Add background
+    rect = svg.append('rect')
+        .attr('class', 'background')
+        // .attr('width', width)
+        // .attr('height', height)
+        .on('click', clicked);
+
+    g = svg.append('g');
+
+    effectLayer = g.append('g')
+        .classed('effect-layer', true);
+
+    mapLayer = g.append('g')
+        .classed('map-layer', true);
+
+    dummyText = g.append('text')
+        .classed('dummy-text', true)
+        .attr('x', 10)
+        .attr('y', 30)
+        .style('opacity', 0);
+
+    bigText = g.append('text')
+        .classed('big-text', true)
+        .attr('x', 20)
+        .attr('y', 45);
+
+    projection = d3.geoMercator()
+            .scale( width * 150)
+            // Center the Map in Munich
+            .center([11.542, 48.155])
+            // .center([11.581980599999952, 48.1351253])
+            .translate([width / 2, height / 2]);
+
+        path = d3.geoPath()
+            .projection(projection);
 
         // Draw each province as a path
         mapLayer.selectAll('path')
@@ -121,8 +96,46 @@ text.dummy-text {
             .style('fill', fillFn)
             .on('mouseover', mouseover)
             .on('mouseout', mouseout)
-            .on('click', clicked);
-    });
+            .on('click', clicked);        
+
+        render();  
+    }
+
+    function render() {
+        //get dimensions based on window size
+        updateDimensions();
+
+        //update svg elements to new dimensions
+        svg
+          .attr('width', width)
+          .attr('height', height);
+
+
+        rect
+            .attr('width', width)
+            .attr('height', height);
+
+        projection
+            .scale( width * 150 )
+            .translate([width / 2, height / 2]);
+
+        d3.selectAll("path").attr('d', path);
+    }
+
+    function updateDimensions() {
+        width = parseInt(d3.select('#heatmap').style('width'));
+
+        margin.top = 10;
+        margin.right = 10;
+        margin.left = 10;
+        margin.bottom = 10;
+
+        width = width;
+        // height = 500 - margin.top - margin.bottom;
+        height = 0.75 * width; //aspect ratio is 0.7
+    }
+
+    
 
     // Get province name
     function nameFn(d) {
@@ -214,4 +227,10 @@ text.dummy-text {
             .text(district.name + ': sum ' + district.totalCount + ' monthly average ' + district.monthlyAverage);
 
     }
-    </script> -->
+
+    return {
+        render : render
+    };
+})(window, d3);
+
+window.addEventListener('resize', Heatmap.render);
