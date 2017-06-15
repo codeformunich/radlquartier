@@ -75,7 +75,7 @@ var createStationData = function(db, uid, callback) {
             station.number = data.number;
         }
         station.stationName = data.name;
-        station.coordinates = [data.lng, data.lat];
+        station.loc.coordinates = [data.lng, data.lat];
         if (data.bike_racks === null) {
             station.bikeRacks = 0;
         }
@@ -123,7 +123,7 @@ var newStation = function(uid) {
     station.uid = uid;
     station.number = null;
     station.stationName = null;
-    station.coordinates = null;
+    station.loc = { type: 'Point', coordinates: null };
     station.bikeRacks = null;
     station.firstAppearanceDate = null;
     station.lastAppearanceDate = null;

@@ -1,10 +1,4 @@
-*.rjson
-*.pjson
-*.djson
 *.zip
-test
-out.json
-out2.json
 MvgBikeApp/node_modules
 preprocess/node_modules
 mvg-networkstate-mvgrad
