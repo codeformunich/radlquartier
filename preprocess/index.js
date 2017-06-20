@@ -17,6 +17,7 @@ program
     .command('chorddata', 'loads places data from the DB and aggregates them to data for the chord view')
     .command('quartier','number of halts per destrict')
     .command('haltcoor','coordinates of halts per destrict')
+    .command('stations', 'extract stations as geojson from a "networkstate"-file: preprocess stations < networkstate.json')
     .parse(process.argv);
 
 // if program was called with no arguments, show help.
