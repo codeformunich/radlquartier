@@ -14,18 +14,22 @@ var center = [ 48.1351253, 11.581980599999952 ];
 
         var map = L.map('hexmap', {
             layers: [ layer ],
-            center: L.latLng(center[0], center[1]), zoom: 13
+            center: L.latLng(center[0], center[1]), zoom: 14
         });
 
         // Options for the Hexbin
         var options = {
-            radius: 24,
+            // radius: 24,
+            radius: 12,
             opacity: 0.5,
-            // colorRange: [ 'white', 'orange', 'red' ],
-            colorRange: ['#fff', '#409A99'],
+            duration: 200,
+
+            colorRange: [ '#aee5f7', '#3a59f6', '#55b7f5', '#5617f7' ],
+            // colorRange: ['#fff', '#409A99'],
             // Set overrides for the colorScale's domain extent
-            colorScaleExtent: [ 1, 500 ],
-            radiusRange: [ 4, 22 ]
+            colorScaleExtent: [ 1, 250 ],
+            // radiusRange: [ 4, 22 ]
+            radiusRange: [ 1, 10 ]
         };
 
         // Create the hexlayer
