@@ -21,12 +21,12 @@ var Heatmap = (function(window, d3) {
     updateDimensions();
 
     // Load halts data
-    d3.json('district.json', function(error, districtData) {
+    d3.json('data/district.json', function(error, districtData) {
         districts = districtData.districts;
     });
 
     // Load map data
-    d3.json('munich.geojson', init);
+    d3.json('data/munich.geojson', init);
 
     function init(error, heatData){
         features = heatData.features;    
