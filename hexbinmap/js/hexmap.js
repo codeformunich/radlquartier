@@ -7,7 +7,7 @@ var center = [ 48.1351253, 11.581980599999952 ];
         // });
 
         var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-            minZoom:11,
+            minZoom:13,
             maxZoom: 20, 
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
       });
@@ -94,7 +94,7 @@ var center = [ 48.1351253, 11.581980599999952 ];
 
         //Load halts data
         function loadDistrictHalts(index) {
-            d3.json('data/halts/cartodb_id_' + index + '.geo.json', function(error, districtData) {
+            d3.json('data/halts/cartodb_id_' + index + '.geojson', function(error, districtData) {
                 hexLayer.data(districtData);
 
                 var key = 'id' + index; 
