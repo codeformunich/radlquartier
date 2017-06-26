@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/bAckmumu/MVG-Bike-Project#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7"
+    "@asymmetrik/leaflet-d3": "^2.0.3",
+    "bootstrap": "^3.3.7",
+    "d3": "^4.9.1",
+    "d3-hexbin": "^0.2.2",
+    "leaflet": "^1.0.3"
   }
 }

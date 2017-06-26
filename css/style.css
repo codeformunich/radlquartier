@@ -78,6 +78,11 @@ text.dummy-text {
     font-size: 12px;
 }
 
+svg path.hexbin-hexagon {
+            stroke: #888;
+            stroke-width: 2px;
+        }
+
 /* Customize container */
 @media (min-width: 768px) {
   .container {
