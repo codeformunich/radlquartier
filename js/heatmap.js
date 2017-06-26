@@ -174,13 +174,21 @@ var Heatmap = (function(window, d3) {
                 return centered && d === centered ? '#D5708B' : fillFn(d);
             });
 
+        $('#hexmapCollapse').collapse('show');
+
         Hexmap.loadDistrict(d.properties.cartodb_id);
+        
 
         // // Zoom
         // g.transition()
         //     .duration(750)
         //     .attr('transform', 'translate(' + width / 2 + ',' + height / 2 + ')scale(' + k + ')translate(' + -x + ',' + -y + ')');
     }
+
+    // $('#hexmapCollapse').on('shown.bs.collapse', function () {
+    //     // Hexmap.init();
+    //     Hexmap.loadDistrict(d.properties.cartodb_id);
+    // });
 
     function mouseover(d) {
         // Highlight hovered province

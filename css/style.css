@@ -15,6 +15,7 @@ body {
 /* Custom page header */
 .header {
   padding-bottom: 20px;
+  background-color: #C1F3FF;
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -22,6 +23,8 @@ body {
   margin-bottom: 0;
   line-height: 40px;
 }
+
+
 .btn-card{
   background-color: #adadad;
   margin-bottom: 20px;
@@ -62,6 +65,14 @@ body {
 .effect-layer {
     pointer-events: none;
 }
+
+.ul{
+  list-style-type: none;
+}
+.li{
+  list-style-type: none;
+}
+
 
 text {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
