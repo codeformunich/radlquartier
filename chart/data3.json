@@ -1,8 +1,9 @@
 [
-        {"label":"Category 1", "value":10},
-        {"label":"Category 2", "value":20},
-        {"label":"Category 3", "value":30},
-        {"label":"Category 4", "value":5},
-        {"label":"Category 5", "value":12},
-        {"label":"Category 6", "value":23}
+        {"label":"Montag", "value":7},
+        {"label":"Dienstag", "value":10},
+        {"label":"Mittwoch", "value":13},
+        {"label":"Donnerstag", "value":8},
+        {"label":"Freitag", "value":20},
+        {"label":"Samstag", "value":23},
+        {"label":"Sonntag", "value":25}
     ]

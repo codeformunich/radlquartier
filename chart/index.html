@@ -138,9 +138,9 @@
 </style>
 <body>
 <form>
-    <label><input type="radio" name="dataset" id="dataset" value="total" checked> Total</label>
-    <label><input type="radio" name="dataset" id="dataset" value="option1"> Option 1</label>
-    <label><input type="radio" name="dataset" id="dataset" value="option2"> Option 2</label>
+    <label><input type="radio" name="dataset" id="dataset" value="total" checked> Wochen</label>
+    <label><input type="radio" name="dataset" id="dataset" value="option1"> Monat</label>
+    <label><input type="radio" name="dataset" id="dataset" value="option2"> Jahr</label>
 </form>
 
 <script src="http://d3js.org/d3.v3.min.js"></script>
@@ -239,7 +239,7 @@
                 .attr("y", 6)
                 .attr("dy", ".71em")
                 .style("text-anchor", "end")
-                .text("Distribution %");
+                .text("Fahrten");
 
 
         var bar = svg.selectAll(".bar")
