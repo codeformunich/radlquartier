@@ -10,8 +10,8 @@
     <script src="http://d3js.org/d3.hexbin.v0.js"></script>
     <script src="http://cdn.leafletjs.com/leaflet-0.5/leaflet-src.js"></script>
 
-    <script type="text/javascript" src="colorbrewer.js"></script>
-    <script type="text/javascript" src="leaflet.hexbin-layer.js"></script>
+    <script type="text/javascript" src="js/colorbrewer.js"></script>
+    <script type="text/javascript" src="js/leaflet.hexbin-layer.js"></script>
 
     <style type="text/css">
       html, body { margin: 0; padding: 0; height: 100%; }
@@ -35,7 +35,7 @@
           }).addTo(map);
 
           //Load halts data
-          d3.json('halts/Laim.geo.json', function(error, districtData) {
+          d3.json('data/halts/Laim.geo.json', function(error, districtData) {
               // When data arrives, create leaflet layer with custom style callback.
               L.hexLayer(districtData, {
                   applyStyle: hex_style
