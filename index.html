@@ -35,7 +35,7 @@
 </head>
 
 <body>
-  <div class="header panel-heading clearfix">
+  <!-- <div class="header panel-heading clearfix">
     <nav>
       <ul class="nav navbar-static-top nav-pills pull-right">
         <li>
@@ -45,29 +45,41 @@
         </li>
       </ul>
     </nav>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6">
+        <p>
+          <h2>Radlquatier München</h2></p>
+      </div>
+    </div>
+  </div>
   </div>
   <div class="container">
     <div class="row">
       <div class="col-lg-6">
-        <div>
-          <img class="img-thumbnail" src="p/city.png">
+        <div class="hidden-xs hidden-sm ">
+          <img class="img-thumbnail " src="p/city.png">
+        </div>
+        <div class="visible-xs-block visible-sm-block">
+          <img class="img-thumbnail" src="p/cityLong.png">
         </div>
       </div>
       <div class="col-lg-6">
-        <h3>Radlquatier München</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo,</p>
+        <p class="intro">München besitzt seit Oktober 2015 ein Fahrradverleihsystem. Dieses System erlaubt es dir an vielen Standtorten Fahrräder in der Stadt auszuleihen und zurück zu geben. Du kannst die Räder aber nicht nur an festen Stationen abholen oder abgeben sondern im ganzen Einzugsgebiet. Dieses beschränkt sich bis jetzt auf X Stadtteile. Die MVG hat von 2015 bis 2017 X Stationen aufgestellt und es sind X Fahrräder im Einsatz.
+          <br><span style="font-weight:bold"> Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span></p>
       </div>
     </div>
     <div class="row">
       <div class="col-lg-12">
-        <h3>Headmap</h3>
+        <h3>Münchens MVG Rad nutzung</h3>
         <!-- The heatmap element -->
         <div id="heatmap">
           <svg></svg>
         </div>
         <!-- The hexmap element -->
         <div class="collapse" id="hexmapCollapse">
-            <div id="hexmap" style="width: 100%; height: 750px; border: 1px solid #ccc"></div>
+          <div id="hexmap" style="width: 100%; height: 750px; border: 1px solid #ccc"></div>
         </div>
         <br/>
         <div id="hovered">
@@ -80,7 +92,8 @@
         </div>
         <div>
           <h4>Münchner Stadteile</h4>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, </p>
+          <p>Diese Übersichtskarte von München zeigt dir die durchschnittliche Menge an Fahrten die zwischen 2015 und 2017 gemacht wurden. Wähle einen Stadtteil aus um mehr über die Menge an Fahrten, Rädern und Stationen in deinem Stadtteil zu erfahren.
+          </p>
           <br>
           <br>
         </div>
@@ -88,18 +101,20 @@
     </div>
   </div>
   <!-- /container -->
-<!--   <div class="col-lg-12">
+  <!--   <div class="col-lg-12">
     <div class="jumbotron">
     </div>
   </div> -->
   <div class="container">
     <div class="row">
       <div class="col-lg-6 ">
-        <a class="btn btn-card" href="daten.html" role="button"> <!-- <img class="img-thumbnail" src="p/pBike.png"> -->
+        <a class="btn btn-card" href="daten.html" role="button">
+          <!-- <img class="img-thumbnail" src="p/pBike.png"> -->
           <h3>Das MVG Rad in Daten</h3></a>
       </div>
       <div class="col-lg-6">
-        <a class="btn btn-card" href="abstellradar.html" role="button"> <!-- <img class="img-thumbnail" src="p/pBike.png"> -->
+        <a class="btn btn-card" href="abstellradar.html" role="button">
+          <!-- <img class="img-thumbnail" src="p/pBike.png"> -->
           <h3>Das Abstellradar</h3></a>
       </div>
     </div>

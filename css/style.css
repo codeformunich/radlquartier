@@ -1,6 +1,6 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
+/*  padding-top: 20px;*/
   padding-bottom: 20px;
 }
 
@@ -15,7 +15,7 @@ body {
 /* Custom page header */
 .header {
   padding-bottom: 20px;
-  background-color: #C1F3FF;
+ /* background-color: #C1F3FF;*/
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -73,6 +73,9 @@ body {
   list-style-type: none;
 }
 
+.row{
+  background-color: #DEF6FA;
+}
 
 text {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
@@ -89,13 +92,15 @@ text.dummy-text {
     font-size: 12px;
 }
 
+
+
 svg path.hexbin-hexagon {
             stroke: #888;
             stroke-width: 2px;
         }
 
 /* Customize container */
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .container {
     max-width: 900px;
   }
@@ -113,6 +118,41 @@ svg path.hexbin-hexagon {
   padding: 14px 24px;
   font-size: 21px;
 }
+ .intro{
+    padding-top: 10px;
+  }
+
+/*.img-thumbnail {
+  max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto
+  }*/
+
+@media (min-width:992px) {
+  .col-lg-1,
+  .col-lg-10,
+  .col-lg-11,
+  .col-lg-12,
+  .col-lg-2,
+  .col-lg-3,
+  .col-lg-4,
+  .col-lg-5,
+  .col-lg-6,
+  .col-lg-7,
+  .col-lg-8,
+  .col-lg-9 {
+    float: left
+  }
+    .col-lg-6 {
+    width: 50%
+  }
+}
+
+.visible-xs-block{
+
+}
+
 
 /* Supporting marketing content */
 /*.marketing {
@@ -125,7 +165,7 @@ svg path.hexbin-hexagon {
 
 
 /* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   /* Remove the padding we set earlier */
   .header,
   .marketing,
@@ -141,4 +181,11 @@ svg path.hexbin-hexagon {
   .jumbotron {
     border-bottom: 0;
   }
+  .intro{
+    padding-top: 10px;
+  }
+
+  .img-thumbnail {
+  max-width: 100%;
+
 }
