@@ -8,7 +8,11 @@ var ObjectId = require('mongodb').ObjectID;
 
 var url = 'mongodb://localhost:27017/bikeproject'; 
 var metaDataCollection = 'mnsmeta';
-var haltsCollection = 'halts'; // 'testhalts'; // 
+// var bikeCollection =  'mnsbike'; //'testcollection';
+// var stationCollection =  'mnsstation'; //'testcollection';
+
+// var ridesCollection = 'rides'; // 'testrides'; //
+var haltsCollection = 'testhalts'; // 'halts'; // 
 
 var callbackCount = 0;
 var bikesCount = 0;
@@ -87,9 +91,9 @@ var generateHalt = function(db, bike, callback) {
             });
         }
         else {
-            insertHalt(db, bike, function() {
+        //     insertHalt(db, bike, function() {
                 callback(db);
-            });
+        //     });
         }
 
     });
