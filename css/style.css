@@ -2,8 +2,24 @@
 body {
 /*  padding-top: 20px;*/
   padding-bottom: 20px;
-    background-color: #DEF6FA;
+    background-color: white;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    color: #171552;
 }
+
+strong,
+.text-strong {
+  font-weight: 700; 
+}
+
+
+h1, h2, h3, h4, 
+.h1, .h2, .h3, .h4, {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+}
+
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -17,6 +33,7 @@ body {
 .header {
   padding-bottom: 20px;
  /* background-color: #C1F3FF;*/
+background: linear-gradient(to bottom, #68BAD1 0%, #F3F5FF 100%);
 }
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
@@ -25,6 +42,9 @@ body {
   line-height: 40px;
 }
 
+.panel-heading{
+  border: none;
+}
 
 .btn-card{
   background-color: #adadad;
@@ -38,6 +58,8 @@ body {
   border-top: 1px solid #e5e5e5;
 }
 
+
+/*karte*/
 .background {
     fill: #eee;
     pointer-events: all;
@@ -47,7 +69,7 @@ body {
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #f5f5f5;
+    background-color: #F1FFF8;
     border-radius: 4px;
     text-align:center;
 }
@@ -74,11 +96,11 @@ body {
   list-style-type: none;
 }
 
-.row{
+/*.row{
   background-color: #DEF6FA;
-}
+}*/
 
-text {
+/*text {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
 }
@@ -86,7 +108,7 @@ text {
 text.big-text {
     font-size: 30px;
     font-weight: 400;
-}
+}*/
 
 .effect-layer text,
 text.dummy-text {
@@ -120,7 +142,9 @@ svg path.hexbin-hexagon {
   font-size: 21px;
 }
  .intro{
-    padding-top: 10px;
+/*    padding-top: 10px;*/
+    
+    
   }
 
 /*.img-thumbnail {
