@@ -16,6 +16,8 @@ program
     .command('linestring <bike>','cretaes a geojson linestring')
     .command('chorddata', 'loads places data from the DB and aggregates them to data for the chord view')
     .command('quartier','number of halts per destrict')
+    .command('qhw < ../geojson/munich.geojson','mean number of halts per destrict per week')
+    .command('qhm','mean number of halts per destrict per month')
     .command('haltcoor','coordinates of halts per destrict')
     .parse(process.argv);
 
