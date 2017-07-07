@@ -19,6 +19,7 @@ program
     .command('qhw < ../geojson/munich.geojson','mean number of halts per destrict per week')
     .command('qhm','mean number of halts per destrict per month')
     .command('haltcoor','coordinates of halts per destrict')
+    .command('stations', 'extract stations as geojson from a "networkstate"-file: preprocess stations < networkstate.json')
     .parse(process.argv);
 
 // if program was called with no arguments, show help.
