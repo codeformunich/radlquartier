@@ -2,7 +2,7 @@
 body {
 /*  padding-top: 20px;*/
   padding-bottom: 20px;
-    background-color: white;
+    background-color: #F4FFFF;
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     color: #171552;
@@ -18,8 +18,8 @@ h1, h2, h3, h4,
 .h1, .h2, .h3, .h4, {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-}
 
+}
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
@@ -27,14 +27,15 @@ h1, h2, h3, h4,
 .footer {
   padding-right: 30px;
   padding-left: 30px;
+  text-align:center;
 }
 
 /* Custom page header */
-.header {
+/*.header {
   padding-bottom: 20px;
- /* background-color: #C1F3FF;*/
-background: linear-gradient(to bottom, #68BAD1 0%, #F3F5FF 100%);
-}
+ /* background-color: #C1F3FF;}*/
+
+
 /* Make the masthead heading the same height as the navigation */
 .header h3 {
   margin-top: 0;
@@ -51,17 +52,29 @@ background: linear-gradient(to bottom, #68BAD1 0%, #F3F5FF 100%);
   margin-bottom: 20px;
 }
 
+.colour{
+  position: relative;
+  z-index: 1;
+  background: linear-gradient(to bottom, #55C2EB 0%, #F4FFFF 100%);
+}
+
+.bevor{
+    position: relative;
+   z-index: 3;
+}
+
+
 /* Custom page footer */
 .footer {
   padding-top: 19px;
   color: #777;
-  border-top: 1px solid #e5e5e5;
+/*  border-top: 1px solid #55C2EB;*/
 }
 
 
 /*karte*/
 .background {
-    fill: #eee;
+    fill: #F4FFFF;
     pointer-events: all;
 }
 
@@ -69,7 +82,7 @@ background: linear-gradient(to bottom, #68BAD1 0%, #F3F5FF 100%);
     padding: 8px 15px;
     margin-bottom: 20px;
     list-style: none;
-    background-color: #F1FFF8;
+    background-color: inherit;
     border-radius: 4px;
     text-align:center;
 }
@@ -96,19 +109,6 @@ background: linear-gradient(to bottom, #68BAD1 0%, #F3F5FF 100%);
   list-style-type: none;
 }
 
-/*.row{
-  background-color: #DEF6FA;
-}*/
-
-/*text {
-    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    font-weight: 300;
-}
-
-text.big-text {
-    font-size: 30px;
-    font-weight: 400;
-}*/
 
 .effect-layer text,
 text.dummy-text {
@@ -122,6 +122,72 @@ svg path.hexbin-hexagon {
             stroke-width: 2px;
         }
 
+/*Wolken*/
+
+        .animationOne{
+          position: absolute;
+    width: 50%;
+    -webkit-animation: one 4s linear 0.5s infinite;
+    animation: one 4s linear 1s infinite alternate;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
+         animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
+}
+
+.animationTwo{
+
+    position: absolute;
+    top: 20%;
+    left: 70%;
+    -webkit-animation: two 4s linear 0.5s infinite;
+    animation: two 4s linear 1.1s infinite alternate;
+      -webkit-animation-timing-function: cubic-bezier(1, 1, 0.2, 0);
+        animation-timing-function: cubic-bezier(1, 1, 0.2, 0);
+}
+
+  @-webkit-keyframes one {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 5%;
+    }
+  }
+  
+  @keyframes one {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 5%;
+    }
+  }
+  
+  @-webkit-keyframes two {
+    from {
+      left: 65%;
+    }
+    to {
+      left: 60%;
+    }
+  }
+  
+  @keyframes two {
+    from {
+      left: 65%;
+    }
+    to {
+      left: 60%;
+    }
+  }
+
+  .jumbotoron{
+  background-color: initial;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+
+}
+
 /* Customize container */
 @media (min-width: 992px) {
   .container {
@@ -134,8 +200,15 @@ svg path.hexbin-hexagon {
 
 /* Main marketing message and sign up button */
 .jumbotron {
+
   text-align: center;
-  border-bottom: 1px solid #e5e5e5;
+/*  border-bottom: 1px solid #e5e5e5;*/
+  background-color: initial;
+    padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+ 
+
 }
 .jumbotron .btn {
   padding: 14px 24px;
@@ -199,9 +272,9 @@ svg path.hexbin-hexagon {
     padding-left: 15px;
   }
   /* Space out the masthead */
-  .header {
+/*  .header {
     margin-bottom: 30px;
-  }
+  }*/
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
