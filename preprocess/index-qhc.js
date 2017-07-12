@@ -12,13 +12,13 @@ var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000';
 var inputCollection = 'halts';
 
 var input = '';
-var output = { 
+var output = {
     'districts': []
 };
 
 
 // https://zackehh.com/handling-synchronous-asynchronous-loops-javascriptnode-js/
-function syncLoop(iterations, process, exit){  
+function syncLoop(iterations, process, exit){
     var index = 0,
         done = false,
         shouldExit = false;
@@ -81,18 +81,18 @@ process.stdin.on('end', function() {
         // creare map data for all bikes
         createForAllFeatures(db, features, function(result) {
             db.close();
-            
+
             var outputCount = output.districts.length;
             for (var i = 0; i < outputCount; i++) {
-                var fileName = 'cartodb_id_' + output.districts[i].id + '.geo.json';
-                fs.writeFile( fileName, 
-                    JSON.stringify(output.districts[i].coordinates, null, '\t'), 
+                var fileName = 'cartodb_id_' + output.districts[i].id + '.geojson';
+                fs.writeFile( fileName,
+                    JSON.stringify(output.districts[i].coordinates, null, '\t'),
                     function(err) {
-                        if (err) { 
+                        if (err) {
                             console.log('ERROR: createForAllFeatures:', err);
-                            return; 
+                            return;
                          }
-                        
+
                 });
             }
 
@@ -107,7 +107,7 @@ var createForAllFeatures = function(db, features, callback) {
 
     // console.log('createForAllFeatures length: ', length);
 
-    syncLoop(length, function(loop){  
+    syncLoop(length, function(loop){
         // console.log('createForAllBikes loop.iteration: ', loop.iteration());
         // console.log('createForAllBikes bikeNumber: ', bikeNumbers[loop.iteration()]);
         createJson(db, features[loop.iteration()], function(result) {
@@ -124,10 +124,10 @@ var createJson = function(db, feature, callback) {
         return;
     }
     // console.log('createDistrictJson, name: ', feature.properties.name);
-    
+
     var collection = db.collection(inputCollection);
-    collection.aggregate( 
-        [ 
+    collection.aggregate(
+        [
             {
                 $match: {
                     loc: {
@@ -140,7 +140,7 @@ var createJson = function(db, feature, callback) {
                    }
                 }
             },
-            { 
+            {
                 $project: {
                     bikeNumber: "$bikeNumber",
                     coordinates: "$loc.coordinates"
@@ -150,18 +150,18 @@ var createJson = function(db, feature, callback) {
                     // hour: { $hour: "$startDate" },
                     // week: { $isoWeek: "$startDate" },
                     // dayOfWeek: { $isoDayOfWeek: "$startDate" }
-                } 
+                }
             }
-            // { 
-            //     $group: { 
-            //         _id: { year: "$year", month: "$month"}, 
+            // {
+            //     $group: {
+            //         _id: { year: "$year", month: "$month"},
             //         count: { $sum: 1 }
-            //     } 
+            //     }
             // },
-            // { 
-            //     $sort : { "_id.year": 1, "_id.month": 1 } 
-            // }      
-        ],      
+            // {
+            //     $sort : { "_id.year": 1, "_id.month": 1 }
+            // }
+        ],
         function(err, results) {
             assert.equal(err, null);
             // console.log('createDistrictJson, results: ', results);

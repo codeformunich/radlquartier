@@ -17,7 +17,7 @@ program
     .command('chorddata', 'loads places data from the DB and aggregates them to data for the chord view')
     .command('quartier', 'number of halts per district: node index.js quartier < ../geojson/munich.geojson > district.json')
     .command('qhs', 'halts statistic per district: node index.js preprocess qh < ../geojson/munich.geojson')
-    .command('qhc', 'coordinates of halts per destrict: node index.js haltcoor < ../geojson/munich.geojson > haltsperdistrict.json')
+    .command('qhc', 'coordinates of halts per destrict: node index.js haltcoor < ../geojson/munich.geojson')
     .command('stations', 'extract stations as geojson from a "networkstate"-file: preprocess stations < networkstate.json')
     .parse(process.argv);
 
