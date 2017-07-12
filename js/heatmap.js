@@ -22,7 +22,7 @@ var Heatmap = (function(window, d3) {
 
     // Load halts data
     d3.json('data/district_halts.json', function(error, districtData) {
-        districts = districtData.districts;
+        districts = districtData;
     });
 
     // Load map data
@@ -142,7 +142,7 @@ var Heatmap = (function(window, d3) {
 
     // Todo rename getTotalCount
     function nameLength(d) {
-      return getDistrict(d).monthlyAverage;
+      return getDistrict(d).meanMonth;
     }
 
     // Get province color
@@ -221,7 +221,8 @@ var Heatmap = (function(window, d3) {
     function textArt(district) {
         bigText
         // .style('font-family', fontFamily)
-            .text(district.name + ': sum ' + district.totalCount + ' monthly average ' + district.monthlyAverage);
+            // .text(district.name + ': sum ' + district.totalCount + ' monthly average ' + district.meanMonth);
+            .text(district.name + ': ' + Math.round(district.meanMonth) + ' Fahrten enden im Monat hier');
 
     }
 
