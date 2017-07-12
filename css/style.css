@@ -1,231 +1,248 @@
-/* Space out content a bit */
+  /* Space out content a bit */
+
 body {
-/*  padding-top: 20px;*/
+  /*  padding-top: 20px;*/
   padding-bottom: 20px;
-    background-color: #F4FFFF;
-    font-family: 'Raleway', sans-serif;
-    font-weight: 500;
-    color: #171552;
+  background-color: #F4FFFF;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 500;
+  color: #171552;
 }
 
 strong,
 .text-strong {
-  font-weight: 700; 
+  font-weight: 700;
 }
 
-
-h1, h2, h3, h4, 
-.h1, .h2, .h3, .h4, {
+h1,
+h2,
+h3,
+h4,
+.h1,
+.h2,
+.h3,
+.h4,
+{
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
-
 }
 
+
 /* Everything but the jumbotron gets side spacing for mobile first views */
+
 .header,
 .marketing,
 .footer {
   padding-right: 30px;
   padding-left: 30px;
-  text-align:center;
+  text-align: center;
 }
 
+
 /* Custom page header */
+
+
 /*.header {
   padding-bottom: 20px;
  /* background-color: #C1F3FF;}*/
 
 
 /* Make the masthead heading the same height as the navigation */
+
 .header h3 {
   margin-top: 0;
   margin-bottom: 0;
   line-height: 40px;
 }
 
-.panel-heading{
+.panel-heading {
   border: none;
 }
 
-.btn-card{
+.btn-card {
   background-color: #adadad;
   margin-bottom: 20px;
 }
 
-.colour{
+.colour {
   position: relative;
   z-index: 1;
   background: linear-gradient(to bottom, #55C2EB 0%, #F4FFFF 100%);
 }
 
-.bevor{
-    position: relative;
-   z-index: 3;
+.bevor {
+  position: relative;
+  z-index: 3;
 }
 
 
 /* Custom page footer */
+
 .footer {
   padding-top: 19px;
   color: #777;
-/*  border-top: 1px solid #55C2EB;*/
+  /*  border-top: 1px solid #55C2EB;*/
 }
 
 
 /*karte*/
+
 .background {
-    fill: #F4FFFF;
-    pointer-events: all;
+  fill: #F4FFFF;
+  pointer-events: all;
 }
 
 .breadcrumb {
-    padding: 8px 15px;
-    margin-bottom: 20px;
-    list-style: none;
-    background-color: inherit;
-    border-radius: 4px;
-    text-align:center;
+  padding: 8px 15px;
+  margin-bottom: 20px;
+  list-style: none;
+  background-color: inherit;
+  border-radius: 4px;
+  text-align: center;
 }
 
 .breadcrumb>li+li:before {
-    padding: 0 5px;
-    color: #ccc;
-    content: "⎪\00a0"
+  padding: 0 5px;
+  color: #ccc;
+  content: "⎪\00a0"
 }
 
 .map-layer {
-    fill: #fff;
-    stroke: #aaa;
+  fill: #fff;
+  stroke: #aaa;
 }
 
 .effect-layer {
-    pointer-events: none;
+  pointer-events: none;
 }
 
-.ul{
-  list-style-type: none;
-}
-.li{
+.ul {
   list-style-type: none;
 }
 
+.li {
+  list-style-type: none;
+}
 
 .effect-layer text,
 text.dummy-text {
-    font-size: 12px;
+  font-size: 12px;
 }
 
-
-
 svg path.hexbin-hexagon {
-            stroke: #888;
-            stroke-width: 2px;
-        }
+  stroke: #888;
+  stroke-width: 2px;
+}
+
 
 /*Wolken*/
 
-        .animationOne{
-          position: absolute;
-    width: 50%;
-    -webkit-animation: one 4s linear 0.5s infinite;
-    animation: one 4s linear 1s infinite alternate;
-      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
-         animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
+.animationOne {
+  position: absolute;
+  width: 50%;
+  -webkit-animation: one 4s linear 0.5s infinite;
+  animation: one 4s linear 1s infinite alternate;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
+  animation-timing-function: cubic-bezier(0, 0, 0.3, 1);
 }
 
-.animationTwo{
-
-    position: absolute;
-    top: 20%;
-    left: 70%;
-    -webkit-animation: two 4s linear 0.5s infinite;
-    animation: two 4s linear 1.1s infinite alternate;
-      -webkit-animation-timing-function: cubic-bezier(1, 1, 0.2, 0);
-        animation-timing-function: cubic-bezier(1, 1, 0.2, 0);
+.animationTwo {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  -webkit-animation: two 4s linear 0.5s infinite;
+  animation: two 4s linear 1.1s infinite alternate;
+  -webkit-animation-timing-function: cubic-bezier(1, 1, 0.2, 0);
+  animation-timing-function: cubic-bezier(1, 1, 0.2, 0);
 }
 
-  @-webkit-keyframes one {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 5%;
-    }
+@-webkit-keyframes one {
+  from {
+    left: 0px;
   }
-  
-  @keyframes one {
-    from {
-      left: 0px;
-    }
-    to {
-      left: 5%;
-    }
+  to {
+    left: 5%;
   }
-  
-  @-webkit-keyframes two {
-    from {
-      left: 65%;
-    }
-    to {
-      left: 60%;
-    }
-  }
-  
-  @keyframes two {
-    from {
-      left: 65%;
-    }
-    to {
-      left: 60%;
-    }
-  }
+}
 
-  .jumbotoron{
+@keyframes one {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 5%;
+  }
+}
+
+@-webkit-keyframes two {
+  from {
+    left: 65%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+@keyframes two {
+  from {
+    left: 65%;
+  }
+  to {
+    left: 60%;
+  }
+}
+
+.jumbotoron {
   background-color: initial;
   padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
-
 }
 
+
 /* Customize container */
+
 @media (min-width: 992px) {
   .container {
     max-width: 900px;
   }
 }
+
 .container-narrow > hr {
   margin: 30px 0;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
 
+/* Main marketing message and sign up button */
+
+.jumbotron {
   text-align: center;
-/*  border-bottom: 1px solid #e5e5e5;*/
+  /*  border-bottom: 1px solid #e5e5e5;*/
   background-color: initial;
-    padding-top: 10px;
+  padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 10px;
- 
-
 }
+
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
- .intro{
-/*    padding-top: 10px;*/
-    
-    
-  }
 
-/*.img-thumbnail {
+.intro {
+  /*    padding-top: 10px;*/
+}
+
+.img-head {
+  display: inline-block;
   max-width: 100%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto
-  }*/
+  height: auto;
+  padding: 4px;
+  line-height: 1.42857143;
+  -webkit-transition: all .2s ease-in-out;
+  -o-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out
+}
 
 @media (min-width:992px) {
   .col-lg-1,
@@ -242,17 +259,17 @@ svg path.hexbin-hexagon {
   .col-lg-9 {
     float: left
   }
-    .col-lg-6 {
+  .col-lg-6 {
     width: 50%
   }
 }
 
-.visible-xs-block{
-
-}
+.visible-xs-block {}
 
 
 /* Supporting marketing content */
+
+
 /*.marketing {
   margin: 0, 40px;
 }
@@ -261,8 +278,8 @@ svg path.hexbin-hexagon {
 }*/
 
 
-
 /* Responsive: Portrait tablets and up */
+
 @media screen and (min-width: 992px) {
   /* Remove the padding we set earlier */
   .header,
@@ -272,18 +289,16 @@ svg path.hexbin-hexagon {
     padding-left: 15px;
   }
   /* Space out the masthead */
-/*  .header {
+  /*  .header {
     margin-bottom: 30px;
   }*/
   /* Remove the bottom border on the jumbotron for visual effect */
   .jumbotron {
     border-bottom: 0;
   }
-  .intro{
+  .intro {
     padding-top: 10px;
   }
-
   .img-thumbnail {
-  max-width: 100%;
-
-}
+    max-width: 100%;
+  }
