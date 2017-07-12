@@ -2,18 +2,18 @@ var Heatmap = (function(window, d3) {
     var svg,
         rect,
         g,
-        data, 
+        data,
         color,
         projection,
         path,
         effectLayer,
         mapLayer,
-        features, 
+        features,
         dummyText,
         bigText,
         centered,
         districts,
-        margin = {}, 
+        margin = {},
         width,
         height;
 
@@ -29,8 +29,8 @@ var Heatmap = (function(window, d3) {
     d3.json('data/munich.geojson', init);
 
     function init(error, heatData){
-        features = heatData.features;    
-        
+        features = heatData.features;
+
         // Define color scale
         // Update color scale domain based on data
         color = d3.scaleLinear()
@@ -44,7 +44,7 @@ var Heatmap = (function(window, d3) {
         // .domain([6000, 0]);
         // color.domain([d3.max(features, nameLength), 0]);
         // color.domain([0, d3.max(features, nameLength)]);
-    
+
         // Set svg width & height
         svg = d3.select('svg');
 
@@ -90,9 +90,9 @@ var Heatmap = (function(window, d3) {
             .style('fill', fillFn)
             .on('mouseover', mouseover)
             .on('mouseout', mouseout)
-            .on('click', clicked);        
+            .on('click', clicked);
 
-        render();  
+        render();
     }
 
     function render() {
@@ -122,7 +122,7 @@ var Heatmap = (function(window, d3) {
         height = 0.78 * width; //aspect ratio is 0.78
     }
 
-    
+
 
     // Get province name
     function nameFn(d) {
@@ -132,7 +132,7 @@ var Heatmap = (function(window, d3) {
     // Get province name length
     function getDistrict(d) {
         var n = nameFn(d);
-        
+
         var index = districts.findIndex(function (district) {
           return district.name === n;
         });
@@ -177,7 +177,7 @@ var Heatmap = (function(window, d3) {
         $('#hexmapCollapse').collapse('show');
 
         Hexmap.loadDistrict(d.properties.cartodb_id);
-        
+
 
         // // Zoom
         // g.transition()

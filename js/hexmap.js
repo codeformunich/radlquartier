@@ -14,7 +14,7 @@ var Hexmap = (function(window, d3, L) {
     var hexLayer;
     var districtIndex = 1;
     var map;
-    
+
     function init() {
         calculateDistrictCenters(function(){
             initGeoJsonOverlays(function(){
@@ -29,7 +29,7 @@ var Hexmap = (function(window, d3, L) {
 
                 var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
                     minZoom:13,
-                    maxZoom: 20, 
+                    maxZoom: 20,
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
                 });
 
@@ -40,9 +40,9 @@ var Hexmap = (function(window, d3, L) {
 
                 var overlayControl = L.control.layers(null, overlayMaps).addTo(map);
 
-                // loadDistrictHalts(districtIndex); 
+                // loadDistrictHalts(districtIndex);
             });
-        }); 
+        });
     }
 
     function initHexLayer() {
@@ -95,8 +95,8 @@ var Hexmap = (function(window, d3, L) {
             layerMunich = L.geoJSON(munichData);
 
             loadGeoJson('data/mvgbike.geojson', function(mvgData) {
-                layerMvg = L.geoJSON(mvgData);        
-            
+                layerMvg = L.geoJSON(mvgData);
+
                 loadGeoJson('data/stations.geojson', function(stationData) {
                     layerStations = L.geoJSON(stationData, {
                         pointToLayer: function (feature, latlng) {
@@ -109,7 +109,7 @@ var Hexmap = (function(window, d3, L) {
             });
         });
 
-        
+
         function loadGeoJson( path, callback ) {
             d3.json(path, function(error, data) {
                 callback(data);
@@ -142,24 +142,27 @@ var Hexmap = (function(window, d3, L) {
 
                 var lng  = (bounds[1][0] + bounds[0][0]) / 2;
                 var lat  = (bounds[1][1] + bounds[0][1]) / 2;
-                var key = 'id' + item.properties.cartodb_id;               
-                
+                var key = 'id' + item.properties.cartodb_id;
+
                 districtCenters[key] = [lat, lng];
             });
             callback();
-        }); 
+        });
     }
 
     //Load halts data
     function loadDistrictHalts(index) {
+        // https://github.com/Leaflet/Leaflet/issues/2738
+        map.invalidateSize();
+
         d3.json('data/halts/cartodb_id_' + index + '.geojson', function(error, districtData) {
             hexLayer.data(districtData);
 
-            var key = 'id' + index; 
+            var key = 'id' + index;
             map.panTo(districtCenters[key]);
         });
     }
-    
+
     init();
 
     return {
