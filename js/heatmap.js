@@ -21,7 +21,7 @@ var Heatmap = (function(window, d3) {
     updateDimensions();
 
     // Load halts data
-    d3.json('data/district.json', function(error, districtData) {
+    d3.json('data/district_halts.json', function(error, districtData) {
         districts = districtData.districts;
     });
 
