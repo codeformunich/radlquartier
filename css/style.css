@@ -302,3 +302,17 @@ svg path.hexbin-hexagon {
   .img-thumbnail {
     max-width: 100%;
   }
+}
+
+/* Bar chart */
+.bar {
+  fill: steelblue;
+}
+
+.bar:hover {
+  fill: brown;
+}
+
+.axis--x path {
+  display: none;
+}

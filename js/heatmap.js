@@ -46,7 +46,7 @@ var Heatmap = (function(window, d3) {
         // color.domain([0, d3.max(features, nameLength)]);
 
         // Set svg width & height
-        svg = d3.select('svg');
+        svg = d3.select('#heatmap').select('svg');
 
         // Add background
         rect = svg.append('rect')
@@ -117,8 +117,7 @@ var Heatmap = (function(window, d3) {
 
     function updateDimensions() {
         width = parseInt(d3.select('#heatmap').style('width'));
-
-        width = width;
+        // width = width;
         height = 0.78 * width; //aspect ratio is 0.78
     }
 
