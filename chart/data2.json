@@ -1,9 +1,0 @@
-[
-        {"label":"Montag", "value":3},
-        {"label":"Dienstag", "value":10},
-        {"label":"Mittwoch", "value":20},
-        {"label":"Donnerstag", "value":10},
-        {"label":"Freitag", "value":8},
-        {"label":"Samstag", "value":12},
-        {"label":"Sonntag", "value":12}
-    ]

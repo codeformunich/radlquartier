@@ -2,15 +2,15 @@
 <!DOCTYPE html>
 <meta charset="utf-8">
 <style>
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    width: 700px;
+    height: 250px;
+    position: relative;
+}
 
-    body {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        width: 700px;
-        height: 250px;
-        position: relative;
-    }
 
-    /*
+/*
     body {
       font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
       width: 960px;
@@ -18,266 +18,133 @@
       position: relative;
     }
     */
-    svg {
-        width: 100%;
-        height: 100%;
-        position: center;
-    }
 
-    path.slice{
-        stroke-width:2px;
-    }
+svg {
+    width: 100%;
+    height: 100%;
+    position: center;
+}
 
-    text{
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-    }
+path.slice {
+    stroke-width: 2px;
+}
 
-    polyline{
-        opacity: .3;
-        stroke: black;
-        stroke-width: 2px;
-        fill: none;
-    }
+text {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 
-    .labelValue
-    {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 60%;
-        opacity: .5;
+polyline {
+    opacity: .3;
+    stroke: black;
+    stroke-width: 2px;
+    fill: none;
+}
 
-    }
+.labelValue {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 60%;
+    opacity: .5;
+}
 
-    label {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: normal;
-    }
+label {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: normal;
+}
 
-    .toolTip {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        position: absolute;
-        display: none;
-        width: auto;
-        height: auto;
-        background: none repeat scroll 0 0 white;
-        border: 0 none;
-        border-radius: 8px 8px 8px 8px;
-        box-shadow: -3px 3px 15px #888888;
-        color: black;
-        font: 12px sans-serif;
-        padding: 5px;
-        text-align: center;
-    }
+.toolTip {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    position: absolute;
+    display: none;
+    width: auto;
+    height: auto;
+    background: none repeat scroll 0 0 white;
+    border: 0 none;
+    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;
+    color: black;
+    font: 12px sans-serif;
+    padding: 5px;
+    text-align: center;
+}
 
+.legend {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 60%;
+}
 
-    .legend {
-        font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-size: 60%;
-    }
-    rect {
-        stroke-width: 2;
-    }
+rect {
+    stroke-width: 2;
+}
 
-    text {
-        font: 10px sans-serif;
-    }
+text {
+    font: 10px sans-serif;
+}
 
+text.value {
+    font-size: 200%;
+    fill: white;
+}
 
-    text.value{
-        font-size: 200%;
-        fill: white;
-    }
+text.label {
+    font-size: 100%;
+}
 
-    text.label{
-        font-size: 100%;
-    }
+.axis text {
+    font: 10px sans-serif;
+}
 
-    .axis text {
-        font: 10px sans-serif;
-    }
+.axis path {
+    fill: none;
+    stroke: #000;
+}
 
-    .axis path{
-        fill: none;
-        stroke: #000;
-    }
+.axis line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
 
-    .axis line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-    }
+.axis .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
 
-    .axis .tick line {
-        stroke-width: 1;
-        stroke: rgba(0, 0, 0, 0.2);
-    }
+.axisHorizontal path {
+    fill: none;
+}
 
-    .axisHorizontal path{
-        fill: none;
-    }
+.axisHorizontal line {
+    fill: none;
+    stroke: #000;
+    shape-rendering: crispEdges;
+}
 
-    .axisHorizontal line {
-        fill: none;
-        stroke: #000;
-        shape-rendering: crispEdges;
-    }
+.axisHorizontal .tick line {
+    stroke-width: 1;
+    stroke: rgba(0, 0, 0, 0.2);
+}
 
-    .axisHorizontal .tick line {
-        stroke-width: 1;
-        stroke: rgba(0, 0, 0, 0.2);
-    }
+.bar {
+    fill: steelblue;
+    fill-opacity: .9;
+}
 
-    .bar {
-        fill: steelblue;
-        fill-opacity: .9;
-    }
-
-    .x.axis path {
-        display: none;
-    }
-
+.x.axis path {
+    display: none;
+}
 </style>
+
 <body>
-<form>
-    <label><input type="radio" name="dataset" id="dataset" value="total" checked> Wochen</label>
-    <label><input type="radio" name="dataset" id="dataset" value="option1"> Monat</label>
-    <label><input type="radio" name="dataset" id="dataset" value="option2"> Jahr</label>
-</form>
+    <form>
+        <label>
+            <input type="radio" name="dataset" id="dataset" value="total" checked> Wochen</label>
+        <label>
+            <input type="radio" name="dataset" id="dataset" value="option1"> Monat</label>
+        <label>
+            <input type="radio" name="dataset" id="dataset" value="option2"> Jahr</label>
+    </form>
+    <div id="chart"></div>
 
-<script src="http://d3js.org/d3.v3.min.js"></script>
-<script>
-
-    d3.select("input[value=\"total\"]").property("checked", true);    
-
-    d3.selectAll("input").on("change", selectDataset);
-
-    function selectDataset()
-    {
-        var value = this.value;
-        if (value == "total")
-        {
-            d3.json("data.json", function(error, data) {
-        change(data);
-    });
-        }
-        else if (value == "option1")
-        {
-            d3.json("data2.json", function(error, data) {
-        change(data);
-    });
-        }
-        else if (value == "option2")
-        {
-            d3.json("data3.json", function(error, data) {
-        change(data);
-    });
-        }
-    }
-
-    var margin = {top: (parseInt(d3.select('body').style('height'), 10)/10), right: (parseInt(d3.select('body').style('width'), 10)/20), bottom: (parseInt(d3.select('body').style('height'), 10)/10), left: (parseInt(d3.select('body').style('width'), 10)/20)},
-            width = parseInt(d3.select('body').style('width'), 10) - margin.left - margin.right,
-            height = parseInt(d3.select('body').style('height'), 10) - margin.top - margin.bottom;
-
-    var div = d3.select("body").append("div").attr("class", "toolTip");
-
-    var formatPercent = d3.format("");
-
-    var x = d3.scale.ordinal()
-            .rangeRoundBands([0, width], .2, 0.5);
-
-    var y = d3.scale.linear()
-            .range([height, 0]);
-
-    var xAxis = d3.svg.axis()
-            .scale(x)
-            .orient("bottom");
-
-    var yAxis = d3.svg.axis()
-            .scale(y)
-            .orient("left")
-            .tickFormat(formatPercent);
-
-    var svg = d3.select("body").append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
-
-    svg.append("g")
-            .attr("class", "x axis")
-            .attr("transform", "translate(0," + height + ")")
-            .call(xAxis);
-
-// 	d3.json("zero.json", function(error, data) {
-//         change(data);
-
-		d3.json("data.json", function(error, data) {
-        	change(data);
-		});
-
-//     });
-
-    
-
-    function change(dataset) {
-
-        x.domain(dataset.map(function(d) { return d.label; }));
-        y.domain([0, d3.max(dataset, function(d) { return d.value; })]);
-
-        svg.append("g")
-                .attr("class", "x axis")
-                .attr("transform", "translate(0," + height + ")")
-                .call(xAxis);
-
-        svg.select(".y.axis").remove();
-        svg.select(".x.axis").remove();
-
-        svg.append("g")
-                .attr("class", "y axis")
-                .call(yAxis)
-                .append("text")
-                .attr("transform", "rotate(-90)")
-                .attr("y", 6)
-                .attr("dy", ".71em")
-                .style("text-anchor", "end")
-                .text("Fahrten");
-
-
-        var bar = svg.selectAll(".bar")
-                .data(dataset, function(d) { return d.label; });
-        // new data:
-        bar.enter().append("rect")
-                .attr("class", "bar")
-                .attr("x", function(d) { return x(d.label); })
-                // .attr("y", function(d) { return y(d.value); })
-                .attr("y", function(d) { return y(0); })
-                // .attr("height",0)
-                // .attr("height", function(d) { return height - y(d.value); })
-                .attr("height", function(d) { return height - y(0); })
-                
-                .attr("width", x.rangeBand());
-
-
-        bar
-                .on("mousemove", function(d){
-                    div.style("left", d3.event.pageX+10+"px");
-                    div.style("top", d3.event.pageY-25+"px");
-                    div.style("display", "inline-block");
-                    div.html((d.label)+"<br>"+(d.value)+"%");
-                });
-        bar
-                .on("mouseout", function(d){
-                    div.style("display", "none");
-                });
-
-        // removed data:
-        bar.exit().remove();
-        // updated data:
-        bar
-                .transition()
-                .duration(750)
-                .attr("y", function(d) { return y(d.value); })
-                .attr("height", function(d) { return height - y(d.value); });
-    };
-
-</script>
+    <script src="http://d3js.org/d3.v3.min.js"></script>
+    <script src="js/chart.js"></script>
 </body>

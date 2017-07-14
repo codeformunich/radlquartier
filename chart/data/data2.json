@@ -1,0 +1,13 @@
+[
+    {"label":"Jan", "value":1},
+    {"label":"Feb", "value":10},
+    {"label":"Mär", "value":20},
+    {"label":"Apr", "value":10},
+    {"label":"Jun", "value":8},
+    {"label":"Jul", "value":12},
+    {"label":"Aug", "value":12},
+    {"label":"Sep", "value":8},
+    {"label":"Okt", "value":12},
+    {"label":"Nov", "value":6},
+    {"label":"Dez", "value":5}
+]

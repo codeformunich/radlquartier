@@ -35,7 +35,7 @@ var margin = {top: 20, right: 30, bottom: 30, left: 40},
 
 var y = d3.scale.linear()
     .range([height, 0]);
-    
+
     var xAxis = d3.svg.axis()
     .scale(x)
     .orient("bottom");
@@ -52,7 +52,7 @@ var chart = d3.select(".chart")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
 
-d3.tsv("data.tsv", type, function(error, data) {
+d3.tsv("data/data.tsv", type, function(error, data) {
     x.domain(data.map(function(d) { return d.name; }));
   y.domain([0, d3.max(data, function(d) { return d.value; })]);
 
