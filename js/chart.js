@@ -48,6 +48,8 @@ var Chart = (function(window, d3) {
         selectionChanged();
     }
 
+    var div = d3.select(".toolTip");
+
     var svg = d3.select("#barchart").select('svg'),
         margin = { top: 20, right: 20, bottom: 30, left: 40 },
         // width = +svg.attr("width") - margin.left - margin.right,
@@ -137,6 +139,17 @@ var Chart = (function(window, d3) {
                 return height - y(d.value); });
         // .attr("height", function(d) { return height - y(0); })
         // .merge(bar);
+
+        bar.on("mouseover", function() { div.style("display", null); })
+        bar.on("mousemove", function(d) {
+            div.style("left", d3.event.pageX + 10 + "px");
+            div.style("top", d3.event.pageY - 25 + "px");
+            div.style("display", "inline-block");
+            div.html((d.name) + "<br>" + (d.value) + "%");
+        });
+        bar.on("mouseout", function(d) {
+            div.style("display", "none");
+        });
 
         // removed data:
         // bar.exit().remove();
