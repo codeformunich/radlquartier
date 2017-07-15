@@ -310,7 +310,7 @@ svg path.hexbin-hexagon {
 
 /* Bar chart */
 .bar {
-  fill: steelblue;
+  fill: #ffb224;
 }
 
 /*.bar:hover {
