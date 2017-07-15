@@ -203,6 +203,13 @@ svg path.hexbin-hexagon {
   margin-bottom: 10px;
 }
 
+.space{
+    padding-top: 10px;
+  padding-bottom: 10px;
+  margin-top: 20px;
+   margin-top: 20px;
+}
+
 
 /* Customize container */
 
@@ -211,14 +218,9 @@ svg path.hexbin-hexagon {
     max-width: 900px;
   }
 }
-
 .container-narrow > hr {
   margin: 30px 0;
 }
-
-
-/* Main marketing message and sign up button */
-
 .jumbotron {
   text-align: center;
   /*  border-bottom: 1px solid #e5e5e5;*/
@@ -227,16 +229,13 @@ svg path.hexbin-hexagon {
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
-
 .jumbotron .btn {
   padding: 14px 24px;
   font-size: 21px;
 }
-
 .intro {
   /*    padding-top: 10px;*/
 }
-
 .img-head {
   display: inline-block;
   max-width: 100%;
