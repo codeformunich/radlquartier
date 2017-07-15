@@ -309,9 +309,9 @@ svg path.hexbin-hexagon {
   fill: steelblue;
 }
 
-.bar:hover {
+/*.bar:hover {
   fill: brown;
-}
+}*/
 
 .axis--x path {
   display: none;
@@ -320,3 +320,9 @@ svg path.hexbin-hexagon {
 .axis--y path {
   display: none;
 }
+
+/*.line {
+  stroke: red;
+  stroke-width: 2px;
+  fill: none;
+}*/

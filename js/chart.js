@@ -30,6 +30,7 @@ var Chart = (function(window, d3) {
         selectedData,
         selectedDistrict = null,
         selectedChart = 'week',
+        selectedMean = 0,
         yDomainMax = 300;
 
     var parentWidth,
@@ -72,10 +73,12 @@ var Chart = (function(window, d3) {
         //get dimensions based on window size
         updateDimensions();
 
-        //line function for averageLine
-        var averageline = d3.line()
-            .x(function(d) { return x(d.name); })
-            .y(function(d) { return y(selectedDistrict.meanMonth); });
+        // //line function for averageLine
+        // var averageline = d3.line()
+        //     .x(function(d) { return x(d.name); })
+        //     .y(function(d) { return y(selectedMean); });
+        //     // .y(function(d) { return y(d.value); });
+
 
         var t = d3.transition()
             .duration(1000)
@@ -146,9 +149,14 @@ var Chart = (function(window, d3) {
         //   .attr("width", x.bandwidth())
         //   .attr("height", function(d) { return height - y(d.value); });
 
-        g.append("path")        // Add the valueline path.
-            .attr("class", "line")
-            .attr("d", averageline(selectedData));
+
+        // // add lien to chart
+        // svg.select(".line").remove();
+
+        // // var line = g.selectAll(".line")
+        //     g.append("path")        // Add the valueline path.
+        //     .attr("class", "line")
+        //     .attr("d", averageline(selectedData));
     }
 
     function updateDimensions() {
@@ -163,10 +171,12 @@ var Chart = (function(window, d3) {
 
         if (selectedChart == "week") {
             yDomainMax = 250;
+            selectedMean  = d3.mean(selectedDistrict.meanWeekDays);
             selectedData = weekData(selectedDistrict);
             render();
         } else if (selectedChart == "month") {
             yDomainMax = 10000;
+            selectedMean = selectedDistrict.meanMonth;
             selectedData = monthData(selectedDistrict);
             render();
         } else if (selectedChart == "year") {
