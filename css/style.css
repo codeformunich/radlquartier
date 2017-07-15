@@ -316,3 +316,7 @@ svg path.hexbin-hexagon {
 .axis--x path {
   display: none;
 }
+
+.axis--y path {
+  display: none;
+}

@@ -2,42 +2,42 @@
 <html lang="de">
 
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-  <meta name="description" content="">
-  <meta name="author" content="">
-  <link rel="icon" href="p/favicon.ico">
-  <title>MVG Bike Projekt</title>
-  <!-- Bootstrap core CSS -->
-  <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
-  <!-- Custom styles for this template -->
-  <link href="css/style.css" rel="stylesheet">
-  <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
-  <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
-  <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
-  <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-  <script src="js/ie-emulation-modes-warning.js"></script>
-  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-  <!--[if lt IE 9]>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="p/favicon.ico">
+    <title>MVG Bike Projekt</title>
+    <!-- Bootstrap core CSS -->
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/leaflet/dist/leaflet.css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-  <!--    D3 Head Map -->
-  <script src="node_modules/d3/build/d3.js" charset="utf-8"></script>
-  <script src="node_modules/d3-hexbin/build/d3-hexbin.js" charset="utf-8"></script>
-  <script src="node_modules/leaflet/dist/leaflet-src.js"></script>
-  <script src="node_modules/@asymmetrik/leaflet-d3/dist/leaflet-d3.js" charset="utf-8"></script>
-  <script src="node_modules/jquery/dist/jquery.min.js"></script>
-  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!--    D3 Head Map -->
+    <script src="node_modules/d3/build/d3.js" charset="utf-8"></script>
+    <script src="node_modules/d3-hexbin/build/d3-hexbin.js" charset="utf-8"></script>
+    <script src="node_modules/leaflet/dist/leaflet-src.js"></script>
+    <script src="node_modules/@asymmetrik/leaflet-d3/dist/leaflet-d3.js" charset="utf-8"></script>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-  <!-- <div class="header panel-heading clearfix">
+    <!-- <div class="header panel-heading clearfix">
     <nav>
       <ul class="nav navbar-static-top nav-pills pull-right">
         <li>
@@ -48,110 +48,111 @@
       </ul>
     </nav>
   </div> -->
-  <div class="header colour panel-heading clearfix intro">
-    <div class="animationOne"><img class="img-head" src="p/cloud1.png"></div>
-    <div class="animationTwo"><img class="img-head" src="p/cloud2.png"></div>
-    <div class="container bevor">
-      <div class="row ">
-        <div class="col-lg12 visible-xs-block visible-sm-block">
-          <h2>Radlquatier München</h2>
-          <h4>Öffentlicher Verkehr mit dem Fahrrad</h4>
+    <div class="header colour panel-heading clearfix intro">
+        <div class="animationOne"><img class="img-head" src="p/cloud1.png"></div>
+        <div class="animationTwo"><img class="img-head" src="p/cloud2.png"></div>
+        <div class="container bevor">
+            <div class="row ">
+                <div class="col-lg12 visible-xs-block visible-sm-block">
+                    <h2>Radlquatier München</h2>
+                    <h4>Öffentlicher Verkehr mit dem Fahrrad</h4>
+                </div>
+            </div>
+            <!-- schmal -->
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="hidden-xs hidden-sm ">
+                        <img class="img-head" src="p/cityShort.png">
+                    </div>
+                    <div class="visible-xs-block visible-sm-block">
+                        <img class="img-head" src="p/cityLong1.png">
+                    </div>
+                </div>
+                <!-- breit -->
+                <div class=" hidden-xs hidden-sm ">
+                    <div class="col-lg-6 jumbotron ">
+                        <h1>Radlquatier München</h1>
+                        <p>Öffentlicher Verkehr
+                            <br>mit dem Fahrrad</p>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
-      <!-- schmal -->
-      <div class="row ">
-        <div class="col-lg-6">
-          <div class="hidden-xs hidden-sm ">
-            <img class="img-head" src="p/cityShort.png">
-          </div>
-          <div class="visible-xs-block visible-sm-block">
-            <img class="img-head" src="p/cityLong1.png">
-          </div>
-        </div>
-        <!-- breit -->
-        <div class=" hidden-xs hidden-sm ">
-        <div class="col-lg-6 jumbotron ">
-            <h1>Radlquatier München</h1>
-            <p>Öffentlicher Verkehr<br>mit dem Fahrrad</p>
-          </div>
-        </div>
-      </div>
     </div>
-  </div>
-  <div class="container">
-    <div class="row">
-      <div class="col-lg-12">
-        <p>München besitzt seit Oktober 2015 ein Fahrradverleihsystem. Dieses System erlaubt es dir an vielen Standtorten Fahrräder in der Stadt auszuleihen und zurück zu geben. Du kannst die Räder aber nicht nur an festen Stationen abholen oder abgeben sondern im ganzen Einzugsgebiet. Dieses beschränkt sich bis jetzt auf X Stadtteile. Die MVG hat von 2015 bis 2017 X Stationen aufgestellt und es sind X Fahrräder im Einsatz.
-          <br><span style="font-weight:bold"> Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span></p>
-      </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>München besitzt seit Oktober 2015 ein Fahrradverleihsystem. Dieses System erlaubt es dir an vielen Standtorten Fahrräder in der Stadt auszuleihen und zurück zu geben. Du kannst die Räder aber nicht nur an festen Stationen abholen oder abgeben sondern im ganzen Einzugsgebiet. Dieses beschränkt sich bis jetzt auf X Stadtteile. Die MVG hat von 2015 bis 2017 X Stationen aufgestellt und es sind X Fahrräder im Einsatz.
+                    <br><span style="font-weight:bold"> Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span></p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <h3>Münchens MVG Rad nutzung</h3>
+                <!-- The heatmap element -->
+                <div id="heatmap">
+                    <svg></svg>
+                </div>
+                <!-- the bar chart element -->
+                <div class="collapse" id="chartCollapse">
+                    <div id="barchart">
+                        <form>
+                            <label>
+                                <input type="radio" name="dataset" id="dataset" value="week" checked> Wochen</label>
+                            <label>
+                                <input type="radio" name="dataset" id="dataset" value="month"> Monat</label>
+                            <label>
+                                <input type="radio" name="dataset" id="dataset" value="year"> Jahr</label>
+                        </form>
+                        <svg></svg>
+                        <!-- <svg width="960" height="500"></svg> -->
+                    </div>
+                </div>
+                <!-- The hexmap element -->
+                <div class="collapse" id="hexmapCollapse">
+                    <div id="hexmap" style="width: 100%; height: 750px; border: 1px solid #ccc"></div>
+                    <br/>
+                    <div id="hovered">
+                        <label>Hovered: </label>
+                        <span class="count"></span>
+                    </div>
+                    <div id="clicked">
+                        <label>Last Clicked: </label>
+                        <span class="count"></span>
+                    </div>
+                </div>
+                <div>
+                    <h4>Münchner Stadteile</h4>
+                    <p>Diese Übersichtskarte von München zeigt dir die durchschnittliche Menge an Fahrten die zwischen 2015 und 2017 gemacht wurden. Wähle einen Stadtteil aus um mehr über die Menge an Fahrten, Rädern und Stationen in deinem Stadtteil zu erfahren.
+                    </p>
+                    <br>
+                    <br>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-lg-12">
-        <h3>Münchens MVG Rad nutzung</h3>
-        <!-- The heatmap element -->
-        <div id="heatmap">
-          <svg></svg>
-        </div>
-
-        <!-- the bar chart element -->
-        <div id="barchart">
-          <form>
-            <label>
-              <input type="radio" name="dataset" id="dataset" value="week" checked> Wochen</label>
-            <label>
-              <input type="radio" name="dataset" id="dataset" value="month"> Monat</label>
-            <label>
-              <input type="radio" name="dataset" id="dataset" value="year"> Jahr</label>
-          </form>
-          <svg></svg>
-          <!-- <svg width="960" height="500"></svg> -->
-        </div>
-
-        <!-- The hexmap element -->
-        <div class="collapse" id="hexmapCollapse">
-          <div id="hexmap" style="width: 100%; height: 750px; border: 1px solid #ccc"></div>
-        </div>
-        <br/>
-        <div id="hovered">
-          <label>Hovered: </label>
-          <span class="count"></span>
-        </div>
-        <div id="clicked">
-          <label>Last Clicked: </label>
-          <span class="count"></span>
-        </div>
-        <div>
-          <h4>Münchner Stadteile</h4>
-          <p>Diese Übersichtskarte von München zeigt dir die durchschnittliche Menge an Fahrten die zwischen 2015 und 2017 gemacht wurden. Wähle einen Stadtteil aus um mehr über die Menge an Fahrten, Rädern und Stationen in deinem Stadtteil zu erfahren.
-          </p>
-          <br>
-          <br>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- /container -->
-  <!--   <div class="col-lg-12">
+    <!-- /container -->
+    <!--   <div class="col-lg-12">
     <div class="jumbotron">
     </div>
   </div> -->
-  </div>
-  </div>
-  <footer class="footer">
-    <ol class="breadcrumb">
-      <li><a href="#">Home</a></li>
-      <li><a href="about.html">über das Projekt</a></li>
-      <li><a href="#">MVG</a></li>
-      <!-- <li class="active">Data</li> -->
-    </ol>
-    <p>&copy; 2016 Company, Inc.</p>
-  </footer>
-  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-  <script src="js/ie10-viewport-bug-workaround.js"></script>
-  <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="js/heatmap.js"></script>
-  <script src="js/chart.js"></script>
-  <script src="js/hexmap.js"></script>
+    </div>
+    </div>
+    <footer class="footer">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">über das Projekt</a></li>
+            <li><a href="#">MVG</a></li>
+            <!-- <li class="active">Data</li> -->
+        </ol>
+        <p>&copy; 2016 Company, Inc.</p>
+    </footer>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/hexmap.js"></script>
 </body>
 
 </html>

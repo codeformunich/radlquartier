@@ -28,8 +28,9 @@ var Chart = (function(window, d3) {
 
     var districtsData,
         selectedData,
-        selectedDistrict = 0,
-        selectedChart = "week";
+        selectedDistrict = null,
+        selectedChart = 'week',
+        yDomainMax = 300;
 
     var parentWidth,
         parentHeight;
@@ -42,7 +43,8 @@ var Chart = (function(window, d3) {
     d3.selectAll("input").on("change", selectDataset);
 
     function selectDataset() {
-        selectionChanged(this.value);
+        selectedChart = this.value;
+        selectionChanged();
     }
 
     var svg = d3.select("#barchart").select('svg'),
@@ -63,12 +65,21 @@ var Chart = (function(window, d3) {
         if (error) throw error;
 
         districtsData = json;
-        selectionChanged('week');
+        selectionChanged();
     });
 
     function render() {
         //get dimensions based on window size
         updateDimensions();
+
+        //line function for averageLine
+        var averageline = d3.line()
+            .x(function(d) { return x(d.name); })
+            .y(function(d) { return y(selectedDistrict.meanMonth); });
+
+        var t = d3.transition()
+            .duration(1000)
+            .ease(d3.easeLinear);
 
         svg
           .attr('width', parentWidth)
@@ -80,14 +91,11 @@ var Chart = (function(window, d3) {
         x = d3.scaleBand().rangeRound([0, width]).padding(0.1);
         y = d3.scaleLinear().rangeRound([height, 0]);
 
-        var t = d3.transition()
-            .duration(1000)
-            .ease(d3.easeLinear);
-
         x.domain(selectedData.map(function(d) {
             return d.name; }));
-        y.domain([0, d3.max(selectedData, function(d) {
-            return d.value; })]);
+        //  d3.max(selectedData, function(d) {
+        //     return d.value; })]);
+        y.domain([0, yDomainMax]);
 
         svg.select(".axis.axis--y").remove();
         svg.select(".axis.axis--x").remove();
@@ -127,7 +135,6 @@ var Chart = (function(window, d3) {
         // .attr("height", function(d) { return height - y(0); })
         // .merge(bar);
 
-
         // removed data:
         // bar.exit().remove();
 
@@ -138,22 +145,33 @@ var Chart = (function(window, d3) {
         //   .attr("y", function(d) { return y(d.value); })
         //   .attr("width", x.bandwidth())
         //   .attr("height", function(d) { return height - y(d.value); });
+
+        g.append("path")        // Add the valueline path.
+            .attr("class", "line")
+            .attr("d", averageline(selectedData));
     }
 
     function updateDimensions() {
         parentWidth = parseInt(d3.select('#barchart').style('width'));
-        parentHeight = 0.5 * parentWidth; //aspect ratio is 0.78
+        parentHeight = 0.4 * parentWidth; //aspect ratio is 0.78
     }
 
-    function selectionChanged(selected) {
-        if (selected == "week") {
-            selectedData = weekData(districtsData[selectedDistrict]);
+    function selectionChanged() {
+        if (selectedDistrict === null) {
+            return;
+        }
+
+        if (selectedChart == "week") {
+            yDomainMax = 250;
+            selectedData = weekData(selectedDistrict);
             render();
-        } else if (selected == "month") {
-            selectedData =monthData(districtsData[selectedDistrict]);
+        } else if (selectedChart == "month") {
+            yDomainMax = 10000;
+            selectedData = monthData(selectedDistrict);
             render();
-        } else if (selected == "year") {
-            selectedData =weekData(districtsData[selectedDistrict]);
+        } else if (selectedChart == "year") {
+            yDomainMax = 50000;
+            selectedData = weekData(selectedDistrict);
             render();
         }
     }
@@ -174,8 +192,17 @@ var Chart = (function(window, d3) {
         return data;
     }
 
+    function loadDistrict(id) {
+        selectedDistrict = districtsData.find( function(district) {
+            return district.id === id;
+        });
+
+        selectionChanged();
+    }
+
     return {
-        render : render
+        render : render,
+        loadDistrict : loadDistrict
     };
 })(window, d3);
 

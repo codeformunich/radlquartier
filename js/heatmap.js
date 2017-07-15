@@ -173,10 +173,11 @@ var Heatmap = (function(window, d3) {
                 return centered && d === centered ? '#D5708B' : fillFn(d);
             });
 
+        $('#chartCollapse').collapse('show');
+        Chart.loadDistrict(d.properties.cartodb_id);
+
         $('#hexmapCollapse').collapse('show');
-
         Hexmap.loadDistrict(d.properties.cartodb_id);
-
 
         // // Zoom
         // g.transition()
