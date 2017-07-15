@@ -13,9 +13,12 @@ var Hexmap = (function(window, d3, L) {
     var layerMvg;
     var hexLayer;
     var districtIndex = 1;
-    var map;
+    var map,
+        div;
 
     function init() {
+        div = d3.select(".toolTip");
+
         calculateDistrictCenters(function(){
             initGeoJsonOverlays(function(){
                initHexLayer();
@@ -64,15 +67,23 @@ var Hexmap = (function(window, d3, L) {
         hexLayer.dispatch()
             .on('mouseover', function(d, i) {
                 console.log({ type: 'mouseover', event: d, index: i, context: this });
-                setHovered(d);
+
+                div.style("left", d3.event.pageX + 10 + "px");
+                div.style("top", d3.event.pageY - 25 + "px");
+                div.style("display", "inline-block");
+                div.html(((null !== d) ? d.length : '') + " Fahrten");
+
+                // setHovered(d);
             })
             .on('mouseout', function(d, i) {
-                console.log({ type: 'mouseout', event: d, index: i, context: this });
-                setHovered();
+                // console.log({ type: 'mouseout', event: d, index: i, context: this });
+                div.style("display", "none");
+
+                // setHovered();
             })
             .on('click', function(d, i) {
-                console.log({ type: 'click', event: d, index: i, context: this });
-                setClicked(d);
+                // console.log({ type: 'click', event: d, index: i, context: this });
+                // setClicked(d);
             });
 
         // hexLayer.setZIndex(650);
@@ -117,13 +128,13 @@ var Hexmap = (function(window, d3, L) {
         }
     }
 
-    function setHovered(d) {
-        d3.select('#hovered .count').text((null != d) ? d.length : '');
-    }
+    // function setHovered(d) {
+    //     d3.select('#hovered .count').text((null != d) ? d.length : '');
+    // }
 
-    function setClicked(d) {
-        d3.select('#clicked .count').text((null != d) ? d.length : '');
-    }
+    // function setClicked(d) {
+    //     d3.select('#clicked .count').text((null != d) ? d.length : '');
+    // }
 
     function loadDistrict(id) {
             loadDistrictHalts(id);

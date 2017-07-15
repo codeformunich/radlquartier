@@ -313,9 +313,9 @@ svg path.hexbin-hexagon {
   fill: #ffc484;
 }
 
-.bar:hover {
+/*.bar:hover {
   fill: brown;
-}
+}*/
 
 .axis--x path {
   display: none;
@@ -345,7 +345,9 @@ svg path.hexbin-hexagon {
     font: 12px;
     padding: 5px;
     text-align: left;
+    z-index: 650;
 }
+
 .but{
    border: none;
   border-radius: 0px;

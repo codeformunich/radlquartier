@@ -135,21 +135,11 @@ var Chart = (function(window, d3) {
                 return y(d.value); })
             // .attr("y", function(d) { return y(0); })
             .attr("width", x.bandwidth())
-            .attr("height", function(d) {
-                return height - y(d.value); });
+            .attr("height", function(d) { return height - y(d.value); })
+        .on('mouseout', mouseout)
+        .on('mousemove', mousemove);
         // .attr("height", function(d) { return height - y(0); })
         // .merge(bar);
-
-        bar.on("mouseover", function() { div.style("display", null); })
-        bar.on("mousemove", function(d) {
-            div.style("left", d3.event.pageX + 10 + "px");
-            div.style("top", d3.event.pageY - 25 + "px");
-            div.style("display", "inline-block");
-            div.html((d.name) + "<br>" + (d.value) + "%");
-        });
-        bar.on("mouseout", function(d) {
-            div.style("display", "none");
-        });
 
         // removed data:
         // bar.exit().remove();
@@ -171,6 +161,18 @@ var Chart = (function(window, d3) {
         //     .attr("class", "line")
         //     .attr("d", averageline(selectedData));
     }
+
+    function mouseout(d) {
+        div.style("display", "none");
+    }
+
+    function mousemove(d) {
+        div.style("left", d3.event.pageX + 10 + "px");
+        div.style("top", d3.event.pageY - 25 + "px");
+        div.style("display", "inline-block");
+        div.html((Math.round(d.value)) + " Fahrten");
+    }
+
 
     function updateDimensions() {
         parentWidth = parseInt(d3.select('#barchart').style('width'));

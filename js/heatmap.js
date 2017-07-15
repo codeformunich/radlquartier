@@ -196,6 +196,7 @@ var Heatmap = (function(window, d3) {
     // });
 
     function mouseover(d) {
+
         // Highlight hovered province
         d3.select(this).style('fill', '#ffc484');
 
@@ -204,6 +205,7 @@ var Heatmap = (function(window, d3) {
     }
 
     function mouseout(d) {
+
         // Reset province color
         mapLayer.selectAll('path')
             .style('fill', function(d) {
@@ -227,7 +229,7 @@ var Heatmap = (function(window, d3) {
         div.style("left", d3.event.pageX + 10 + "px");
         div.style("top", d3.event.pageY - 25 + "px");
         div.style("display", "inline-block");
-        div.html((district.name) + "<br>" + (Math.round(district.meanMonth)) + " Fahrten enden im Monat hier");
+        div.html((district.name) + "<br>" + (Math.round(district.meanMonth)) + " Fahrten");
     }
 
     // Gimmick
