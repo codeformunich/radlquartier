@@ -15,7 +15,8 @@ var Heatmap = (function(window, d3) {
         districts,
         margin = {},
         width,
-        height;
+        height,
+        div;
 
     // sets width and height, necessary for mapLayer
     updateDimensions();
@@ -30,6 +31,8 @@ var Heatmap = (function(window, d3) {
 
     function init(error, heatData){
         features = heatData.features;
+
+        div = d3.select(".toolTip");
 
         // Define color scale
         // Update color scale domain based on data
@@ -90,6 +93,7 @@ var Heatmap = (function(window, d3) {
             .style('fill', fillFn)
             .on('mouseover', mouseover)
             .on('mouseout', mouseout)
+            .on('mousemove', mousemove)
             .on('click', clicked);
 
         render();
@@ -212,6 +216,17 @@ var Heatmap = (function(window, d3) {
 
         // Clear province name
         bigText.text('');
+
+        div.style("display", "none");
+    }
+
+    function mousemove(d) {
+        var district = getDistrict(d);
+
+        div.style("left", d3.event.pageX + 10 + "px");
+        div.style("top", d3.event.pageY - 25 + "px");
+        div.style("display", "inline-block");
+        div.html((district.name) + "<br>" + (Math.round(district.meanMonth)) + " Fahrten enden im Monat hier");
     }
 
     // Gimmick
@@ -219,10 +234,8 @@ var Heatmap = (function(window, d3) {
     // You won't need this for a regular map.
 
     function textArt(district) {
-        bigText
-        // .style('font-family', fontFamily)
-            // .text(district.name + ': sum ' + district.totalCount + ' monthly average ' + district.meanMonth);
-            .text(district.name + ': ' + Math.round(district.meanMonth) + ' Fahrten enden im Monat hier');
+        bigText.text(district.name);
+            // .text(district.name + ': ' + Math.round(district.meanMonth) + ' Fahrten enden im Monat hier');
 
     }
 

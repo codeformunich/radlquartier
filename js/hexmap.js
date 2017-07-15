@@ -35,7 +35,7 @@ var Hexmap = (function(window, d3, L) {
 
                 map = L.map('hexmap', {
                     layers: [ layer, hexLayer ],
-                    center: L.latLng(center[0], center[1]), zoom: 13
+                    center: L.latLng(center[0], center[1]), zoom: 14
                 });
 
                 var overlayControl = L.control.layers(null, overlayMaps).addTo(map);
