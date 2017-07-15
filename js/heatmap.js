@@ -174,7 +174,7 @@ var Heatmap = (function(window, d3) {
         // Highlight the clicked province
         mapLayer.selectAll('path')
             .style('fill', function(d) {
-                return centered && d === centered ? '#ffb224' : fillFn(d);
+                return centered && d === centered ? '#ffc484' : fillFn(d);
             });
 
         $('#chartCollapse').collapse('show');
@@ -198,7 +198,7 @@ var Heatmap = (function(window, d3) {
     function mouseover(d) {
 
         // Highlight hovered province
-        d3.select(this).style('fill', '#ffb224');
+        d3.select(this).style('fill', '#ffc484');
 
         // Draw effects
         textArt(getDistrict(d));
@@ -209,7 +209,7 @@ var Heatmap = (function(window, d3) {
         // Reset province color
         mapLayer.selectAll('path')
             .style('fill', function(d) {
-                return centered && d === centered ? '#ffb224' : fillFn(d);
+                return centered && d === centered ? '#ffc484' : fillFn(d);
             });
 
         // Remove effect text

@@ -310,7 +310,7 @@ svg path.hexbin-hexagon {
 
 /* Bar chart */
 .bar {
-  fill: #ffb224;
+  fill: #ffc484;
 }
 
 /*.bar:hover {
@@ -338,13 +338,61 @@ svg path.hexbin-hexagon {
     display: none;
     width: auto;
     height: auto;
-    background: none repeat scroll 0 0 white;
+    background: none /*repeat scroll 0 0 white*/;
     border: 0 none;
-    border-radius: 8px 8px 8px 8px;
-    box-shadow: -3px 3px 15px #888888;
+/*    border-radius: 8px 8px 8px 8px;
+    box-shadow: -3px 3px 15px #888888;*/
     color: black;
-    font: 12px sans-serif;
+    font: 12px;
     padding: 5px;
-    text-align: center;
+    text-align: left;
     z-index: 650;
 }
+
+.but{
+   border: none;
+  border-radius: 0px;
+  background-color: inherit;
+}
+
+.but-left{
+text-align: left;
+}
+
+.but-mid{
+text-align: center;
+}
+
+.but-right{
+text-align: right;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus {
+  color: blue;
+  text-decoration: none;
+  background-color: inherit;
+}
+
+/*.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: none;
+  border-radius: 0px;
+}*/

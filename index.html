@@ -103,7 +103,7 @@
                 <div class="collapse" id="chartCollapse">
                     <div>
                         <h4 id="textH4"></h4>
-                        <p id="textP" ></p>
+                        <p id="textP"></p>
                     </div>
                     <h4>Durchschnittliche fahrenten in diesem Viertel</h4>
                     <div id="barchart">
@@ -127,8 +127,8 @@
                 <div class="collapse" id="hexmapCollapse">
                     <h4>Alle fahrten in diesem Viertel</h4>
                     <div id="hexmap" style="width: 100%; height: 60vh; border: 1px solid #ccc"></div>
-                    <!-- <br/>
-                    <div id="hovered">
+                    <br/>
+                    <!-- <div id="hovered">
                         <label>Hovered: </label>
                         <span class="count"></span>
                     </div>
@@ -136,12 +136,23 @@
                         <label>Last Clicked: </label>
                         <span class="count"></span>
                     </div> -->
-                    <nav aria-label="...">
+                    <div class=" btn-group btn-group-justified" role="group" aria-label="...">
+                        <div class=" btn-group" role="group">
+                            <button type="button" class="but but-left btn btn-default"><span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Left</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="but but-mid btn btn-default">Neuen Stadteil auswählen</button>
+                        </div>
+                        <div class="btn-group" role="group">
+                            <button type="button" class="but but-right btn btn-default">Right <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></button>
+                        </div>
+                    </div>
+                    <!-- <nav aria-label="...">
                         <ul class="pager">
                             <li class="previous"><a href="#"><span aria-hidden="true">&larr;</span> Older</a></li>
                             <li class="next"><a href="#">Newer <span aria-hidden="true">&rarr;</span></a></li>
                         </ul>
-                    </nav>
+                    </nav> -->
                 </div>
             </div>
         </div>
