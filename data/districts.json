@@ -1,30 +1,85 @@
-[
-    {"id": 4, "name": "Allach-Untermenzing"},
-    {"id": 12, "name": "Altstadt-Lehel"},
-    {"id": 14, "name": "Au-Haidhausen"},
-    {"id": 3, "name": "Aubing-Lochhausen-Langwied"},
-    {"id": 15, "name": "Berg am Laim"},
-    {"id": 13, "name": "Bogenhausen"},
-    {"id": 5, "name": "Feldmoching-Hasenbergl"},
-    {"id": 28, "name": "Forstenried - Fürstenried"},
-    {"id": 20, "name": "Freimann"},
-    {"id": 25, "name": "Giesing"}
-    {"id": 2, "name": "Hadern"},
-    {"id": 24, "name": "Harlaching"},
-    {"id": 7, "name": "Laim"},
-    {"id": 9, "name": "Ludwigsvorstadt-Isarvorstadt"},
-    {"id": 11, "name": "Maxvorstadt"},
-    {"id": 10, "name": "Milbertshofen-Am Hart"},
-    {"id": 6, "name": "Moosach"},
-    {"id": 22, "name": "Neuhausen"},
-    {"id": 18, "name": "Nymphenburg"},
-    {"id": 19, "name": "Obermenzing"},
-    {"id": 23, "name": "Pasing"},
-    {"id": 16, "name": "Ramersdorf-Perlach"},
-    {"id": 21, "name": "Schwabing-Schwabing West"},
-    {"id": 8, "name": "Schwanthalerhöhe"},
-    {"id": 27, "name": "Sendling-Westpark"},
-    {"id": 17, "name": "Solln"},
-    {"id": 26, "name": "Thalkirchen, Obersendling"},
-    {"id": 1, "name": "Trudering-Riem"}
-]
+[{
+    "id": 4,
+    "name": "Allach-Untermenzing"
+}, {
+    "id": 12,
+    "name": "Altstadt-Lehel"
+}, {
+    "id": 14,
+    "name": "Au-Haidhausen"
+}, {
+    "id": 3,
+    "name": "Aubing-Lochhausen-Langwied"
+}, {
+    "id": 15,
+    "name": "Berg am Laim"
+}, {
+    "id": 13,
+    "name": "Bogenhausen"
+}, {
+    "id": 5,
+    "name": "Feldmoching-Hasenbergl"
+}, {
+    "id": 28,
+    "name": "Forstenried - Fürstenried"
+}, {
+    "id": 20,
+    "name": "Freimann"
+}, {
+    "id": 25,
+    "name": "Giesing"
+}, {
+    "id": 2,
+    "name": "Hadern"
+}, {
+    "id": 24,
+    "name": "Harlaching"
+}, {
+    "id": 7,
+    "name": "Laim"
+}, {
+    "id": 9,
+    "name": "Ludwigsvorstadt-Isarvorstadt"
+}, {
+    "id": 11,
+    "name": "Maxvorstadt"
+}, {
+    "id": 10,
+    "name": "Milbertshofen-Am Hart"
+}, {
+    "id": 6,
+    "name": "Moosach"
+}, {
+    "id": 22,
+    "name": "Neuhausen"
+}, {
+    "id": 18,
+    "name": "Nymphenburg"
+}, {
+    "id": 19,
+    "name": "Obermenzing"
+}, {
+    "id": 23,
+    "name": "Pasing"
+}, {
+    "id": 16,
+    "name": "Ramersdorf-Perlach"
+}, {
+    "id": 21,
+    "name": "Schwabing-Schwabing West"
+}, {
+    "id": 8,
+    "name": "Schwanthalerhöhe"
+}, {
+    "id": 27,
+    "name": "Sendling-Westpark"
+}, {
+    "id": 17,
+    "name": "Solln"
+}, {
+    "id": 26,
+    "name": "Thalkirchen, Obersendling"
+}, {
+    "id": 1,
+    "name": "Trudering-Riem"
+}]

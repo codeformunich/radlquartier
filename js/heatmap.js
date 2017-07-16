@@ -180,7 +180,7 @@ var Heatmap = (function(window, d3) {
 
 
         if (centered === null) {
-            App.selectNewDistrict(null);
+            App.selectNewDistrict(0);
         }
         else {
             App.selectNewDistrict(d.properties.cartodb_id);
