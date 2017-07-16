@@ -371,7 +371,11 @@ text-align: right;
 
 .btn:hover,
 .btn:focus,
-.btn.focus {
+.btn.focus
+.btn:active:focus,
+.btn.active:focus,
+.btn:active.focus,
+.btn.active.focus {
   color: blue;
   text-decoration: none;
   background-color: inherit;
