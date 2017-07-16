@@ -49,18 +49,37 @@ var Hexmap = (function(window, d3, L) {
     }
 
     function initHexLayer() {
+        // Make a reusable color scale array
+        var colorRange = ['#f3fbfc','#86ccd1', '#5ebeb4', '#11afd9','#4970b6', '#6467c2', '#604595', '#390898'];
+
         // Options for the Hexbin
         var options = {
             radius: 12,
             opacity: 0.5,
             // colorRange: [ 'white', 'orange', 'red' ],
             // colorRange: ['white','#f4e94f', '#bcf089', '#50b9a2', '#11afd9','#4970b6', '#604595'],
-             colorRange: ['#f3fbfc','#86ccd1', '#5ebeb4', '#11afd9','#4970b6', '#6467c2', '#604595', '#390898'],
+             colorRange: colorRange,
             // colorRange: D3.interpolateCool(),
             // Set overrides for the colorScale's domain extent
             colorScaleExtent: [ 1, 900 ],
             radiusRange: [ 4, 10 ]
         };
+
+        // Create the legend to illustrate the color scale being divergent
+        var legendEntries = ['900', '780', '650', '520', '390', '260', '130', '1'];
+        var colorScale = d3.scaleLinear()
+            .domain([1, 130, 260, 390, 520, 650, 780, 900])
+            .range(colorRange);
+        var legend = d3.select('.hexmapLegend').selectAll('.legend-entry').data(legendEntries).enter().append('div').attr('class', 'legend-entry');
+        legend.append('div').attr('class', 'color-tile').style('background-color', function(d, i) { return colorScale(d); });
+        legend.append('div').attr('class', 'description').text(function(d) {
+            if( d === '1' ) {
+                return d + ' Fahrrad';
+            }
+            else {
+                return d;
+            }
+        });
 
         // Create the hexlayer
         hexLayer = L.hexbinLayer(options);
