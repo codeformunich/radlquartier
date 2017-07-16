@@ -240,59 +240,11 @@
       transition: all .2s ease-in-out
   }
 
-  @media (min-width:992px) {
-      .col-lg-1,
-      .col-lg-10,
-      .col-lg-11,
-      .col-lg-12,
-      .col-lg-2,
-      .col-lg-3,
-      .col-lg-4,
-      .col-lg-5,
-      .col-lg-6,
-      .col-lg-7,
-      .col-lg-8,
-      .col-lg-9 {
-          float: left
-      }
-      .col-lg-6 {
-          width: 50%
-      }
+  .table-responsive{
+padding-top: 20px;
   }
 
-  .visible-xs-block {}
-  /* Supporting marketing content */
-  /*.marketing {
-  margin: 0, 40px;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}*/
-  /* Responsive: Portrait tablets and up */
-
-  @media screen and (min-width: 992px) {
-      /* Remove the padding we set earlier */
-      .header,
-      .marketing,
-      .footer {
-          padding-right: 15px;
-          padding-left: 15px;
-      }
-      /* Space out the masthead */
-      /*  .header {
-    margin-bottom: 30px;
-  }*/
-      /* Remove the bottom border on the jumbotron for visual effect */
-      .jumbotron {
-          border-bottom: 0;
-      }
-      .intro {
-          padding-top: 10px;
-      }
-      .img-thumbnail {
-          max-width: 100%;
-      }
-  }
+  
   /* Bar chart */
 
   .bar {
@@ -349,35 +301,21 @@
       text-align: right;
   }
 
-  .btn:hover,
-  .btn:focus,
-  .btn.focus {
-      color: blue;
-      text-decoration: none;
-      background-color: inherit;
-  }
-  /*.btn {
-  display: inline-block;
-  padding: 6px 12px;
-  margin-bottom: 0;
-  font-size: 14px;
-  font-weight: normal;
-  line-height: 1.42857143;
-  text-align: center;
-  white-space: nowrap;
-  vertical-align: middle;
-  -ms-touch-action: manipulation;
-      touch-action: manipulation;
-  cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
-  background-image: none;
-  border: none;
-  border-radius: 0px;
-}*/
-  /* legend */
+.but-right{
+text-align: right;
+}
+
+.btn:hover,
+.btn:focus,
+.btn.focus
+.btn:active:focus,
+.btn.active:focus,
+.btn:active.focus,
+.btn.active.focus {
+  color: blue;
+  text-decoration: none;
+  background-color: inherit;
+}
 
   .heatmapLegend {
       position: absolute;
@@ -403,4 +341,58 @@
   .description {
       margin-left: 20px;
       font: 12px;
+  }
+
+  @media (min-width:992px) {
+      .col-lg-1,
+      .col-lg-10,
+      .col-lg-11,
+   /*   .col-lg-12,*/
+      .col-lg-2,
+      .col-lg-3,
+      .col-lg-4,
+      .col-lg-5,
+      .col-lg-6,
+      .col-lg-7,
+      .col-lg-8,
+      .col-lg-9 {
+          float: left
+      }
+      .col-lg-6 {
+          width: 50%
+      }
+  }
+
+  .visible-xs-block {}
+  /* Supporting marketing content */
+  /*.marketing {
+  margin: 0, 40px;
+}
+.marketing p + h4 {
+  margin-top: 28px;
+}*/
+  /* Responsive: Portrait tablets and up */
+
+  @media screen and (min-width: 992px) {
+      /* Remove the padding we set earlier */
+      .header,
+      .marketing,
+      .footer {
+          padding-right: 15px;
+          padding-left: 15px;
+      }
+      /* Space out the masthead */
+      /*  .header {
+    margin-bottom: 30px;
+  }*/
+      /* Remove the bottom border on the jumbotron for visual effect */
+      .jumbotron {
+          border-bottom: 0;
+      }
+      .intro {
+          padding-top: 10px;
+      }
+      .img-thumbnail {
+          max-width: 100%;
+      }
   }
