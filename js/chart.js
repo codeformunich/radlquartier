@@ -231,4 +231,4 @@ var Chart = (function(window, d3) {
     };
 })(window, d3);
 
-window.addEventListener('resize', Chart.render);
+

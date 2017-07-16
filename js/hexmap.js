@@ -31,7 +31,7 @@ var Hexmap = (function(window, d3, L) {
                 };
 
                 var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
-                    minZoom:13,
+                    minZoom:12,
                     maxZoom: 20,
                     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, &copy; <a href="https://carto.com/attribution">CARTO</a>'
                 });
@@ -68,7 +68,7 @@ var Hexmap = (function(window, d3, L) {
         // Set up events
         hexLayer.dispatch()
             .on('mouseover', function(d, i) {
-                console.log({ type: 'mouseover', event: d, index: i, context: this });
+                // console.log({ type: 'mouseover', event: d, index: i, context: this });
 
                 div.style("left", d3.event.pageX + 10 + "px");
                 div.style("top", d3.event.pageY - 25 + "px");
@@ -183,3 +183,4 @@ var Hexmap = (function(window, d3, L) {
         loadDistrict : loadDistrict
     };
 })(window, d3, L);
+

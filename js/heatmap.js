@@ -248,4 +248,3 @@ var Heatmap = (function(window, d3) {
     };
 })(window, d3);
 
-window.addEventListener('resize', Heatmap.render);
