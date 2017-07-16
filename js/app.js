@@ -18,6 +18,8 @@ var App = (function(window, document, d3) {
             Chart.loadDistrict(id);
             Hexmap.loadDistrict(id);
 
+            setNavBar();
+
             var target = $('#detailCollapse');
             if (target.length) {
                 event.preventDefault();
@@ -25,7 +27,6 @@ var App = (function(window, document, d3) {
                     scrollTop: target.offset().top
                 }, 1050); // 500 (0.5sek) legt Geschwindkeit fest
             }
-
         } else {
             $('#detailCollapse').collapse('hide');
 
