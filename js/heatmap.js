@@ -23,7 +23,7 @@ var Heatmap = (function(window, d3) {
 
     // Load halts data
     d3.json('data/district_halts.json', function(error, districtData) {
-        districts = districtData;
+        districts = districtData.districts;
     });
 
     // Load map data
