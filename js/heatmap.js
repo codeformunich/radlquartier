@@ -177,12 +177,13 @@ var Heatmap = (function(window, d3) {
                 return centered && d === centered ? '#ffc484' : fillFn(d);
             });
 
-        $('#chartCollapse').collapse('show');
-        Text.loadDistrict(d.properties.cartodb_id);
-        Chart.loadDistrict(d.properties.cartodb_id);
 
-        $('#hexmapCollapse').collapse('show');
-        Hexmap.loadDistrict(d.properties.cartodb_id);
+        if (centered === null) {
+            App.selectNewDistrict(null);
+        }
+        else {
+            App.selectNewDistrict(d.properties.cartodb_id);
+        }
 
         // // Zoom
         // g.transition()

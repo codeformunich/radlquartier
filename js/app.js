@@ -1,7 +1,23 @@
 var App = (function(window, document, d3) {
+    var selctedDistrict = 0;
 
     function selectNewDistrict(id) {
         console.log({ type: 'selectNewDistrict', id: id, context: this });
+
+        if (id !== null) {
+            $('#detailCollapse').collapse('show');
+
+            selctedDistrict = id;
+
+            Text.loadDistrict(id);
+            Chart.loadDistrict(id);
+            Hexmap.loadDistrict(id);
+        }
+        else {
+            $('#detailCollapse').collapse('hide');
+
+            selctedDistrict = 0;
+        }
     }
 
     function clickedPreviousDistrict(e) {
