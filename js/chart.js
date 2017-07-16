@@ -26,6 +26,11 @@ var Chart = (function(window, d3) {
         'Sonntag'
     ];
 
+    var year = [
+        'Viertel',
+        'Absolut'
+    ];
+
     var districtsData,
         selectedData,
         selectedDistrict = null,
@@ -195,8 +200,8 @@ var Chart = (function(window, d3) {
             selectedData = monthData(selectedDistrict);
             render();
         } else if (selectedChart == "year") {
-            yDomainMax = 50000;
-            selectedData = weekData(selectedDistrict);
+            yDomainMax = 500000;
+            selectedData = yearData(selectedDistrict);
             render();
         }
     }
@@ -217,8 +222,17 @@ var Chart = (function(window, d3) {
         return data;
     }
 
+    function yearData(district) {
+        var data = [];
+
+        data.push({ 'name': year[0], 'value': district.totalCount });
+        data.push({ 'name': year[1], 'value': districtsData.totalCount });
+
+        return data;
+    }
+
     function loadDistrict(id) {
-        selectedDistrict = districtsData.find( function(district) {
+        selectedDistrict = districtsData.districts.find( function(district) {
             return district.id === id;
         });
 
