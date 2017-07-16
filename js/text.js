@@ -13,6 +13,11 @@ var Text = (function(window, d3) {
         });
         $("#textH4").text(selectedDistrict.name);
         $("#textP").text(selectedDistrict.description);
+
+        $("#tdStationCount").text(selectedDistrict.stationCount);
+        $("#tdArea").text(selectedDistrict.area + " km²");
+        $("#tdInhabitants").text(selectedDistrict.inhabitants);
+        $("#tdAreaMvg").text(selectedDistrict.areaMvg ? "ja" : "nein");
     }
 
     return {
