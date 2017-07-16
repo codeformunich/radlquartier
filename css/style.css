@@ -1,383 +1,362 @@
   /* Space out content a bit */
 
-body {
-  /*  padding-top: 20px;*/
-  padding-bottom: 20px;
-  background-color: #F4FFFF;
-  font-family: 'Raleway', sans-serif;
-  font-weight: 500;
-  color: #171552;
-}
+  body {
+      /*  padding-top: 20px;*/
+      padding-bottom: 20px;
+      background-color: #F4FFFF;
+      font-family: 'Raleway', sans-serif;
+      font-weight: 500;
+      color: #171552;
+  }
 
-strong,
-.text-strong {
-  font-weight: 700;
-}
+  strong,
+  .text-strong {
+      font-weight: 700;
+  }
 
-h1,
-h2,
-h3,
-h4,
-.h1,
-.h2,
-.h3,
-.h4,
-{
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-}
+  h1,
+  h2,
+  h3,
+  h4,
+  .h1,
+  .h2,
+  .h3,
+  .h4,
+  {
+      font-family: 'Raleway', sans-serif;
+      font-weight: 700;
+  }
+  /* Everything but the jumbotron gets side spacing for mobile first views */
 
-
-/* Everything but the jumbotron gets side spacing for mobile first views */
-
-.header,
-.marketing,
-.footer {
-  padding-right: 30px;
-  padding-left: 30px;
-  text-align: center;
-}
-
-
-/* Custom page header */
-
-
-/*.header {
+  .header,
+  .marketing,
+  .footer {
+      padding-right: 30px;
+      padding-left: 30px;
+      text-align: center;
+  }
+  /* Custom page header */
+  /*.header {
   padding-bottom: 20px;
  /* background-color: #C1F3FF;}*/
+  /* Make the masthead heading the same height as the navigation */
 
-
-/* Make the masthead heading the same height as the navigation */
-
-.header h3 {
-  margin-top: 0;
-  margin-bottom: 0;
-  line-height: 40px;
-}
-
-.panel-heading {
-  border: none;
-}
-
-.btn-card {
-  background-color: #adadad;
-  margin-bottom: 20px;
-}
-
-.colour {
-  position: relative;
-  z-index: 1;
-  background: linear-gradient(to bottom, #55C2EB 0%, #F4FFFF 100%);
-}
-
-.bevor {
-  position: relative;
-  z-index: 3;
-}
-
-
-/* Custom page footer */
-
-.footer {
-  padding-top: 19px;
-  color: #777;
-  /*  border-top: 1px solid #55C2EB;*/
-}
-
-
-/*karte*/
-
-.background {
-  fill: #F4FFFF;
-  pointer-events: all;
-}
-
-.breadcrumb {
-  padding: 8px 15px;
-  margin-bottom: 20px;
-  list-style: none;
-  background-color: inherit;
-  border-radius: 4px;
-  text-align: center;
-}
-
-.breadcrumb>li+li:before {
-  padding: 0 5px;
-  color: #ccc;
-  content: "⎪\00a0"
-}
-
-.map-layer {
-  fill: #fff;
-  stroke: #aaa;
-}
-
-.path{
-  opacity: 0.5;
-}
-
-.effect-layer {
-  pointer-events: none;
-}
-
-.ul {
-  list-style-type: none;
-}
-
-.li {
-  list-style-type: none;
-}
-
-.effect-layer text,
-text.dummy-text {
-  font-size: 12px;
-}
-
-svg path.hexbin-hexagon {
-  stroke: #888;
-  stroke-width: 2px;
-}
-
-
-/*Wolken*/
-
-.cloud{
-  size: 50%;
-}
-
-.animationOne {
-  position: absolute;
-  width: 50%;
-  -webkit-animation: one 6s linear 0.5s infinite;
-  animation: one 6s linear 0.5s infinite alternate;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.3, 0.5);
-  animation-timing-function: cubic-bezier(0, 0, 0.3, 0.5);
-}
-
-.animationTwo {
-  position: absolute;
-  top: 20%;
-  left: 70%;
-  -webkit-animation: two 6s linear 0.5s infinite;
-  animation: two 6s linear 0.5s infinite alternate;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 0.5);
-  animation-timing-function: cubic-bezier(0, 0, 0.2, 0.5);
-}
-
-@-webkit-keyframes one {
-  from {
-    left: 0px;
+  .header h3 {
+      margin-top: 0;
+      margin-bottom: 0;
+      line-height: 40px;
   }
-  to {
-    left: 5vw;
+
+  .panel-heading {
+      border: none;
   }
-}
 
-@keyframes one {
-  from {
-    left: 0px;
+  .btn-card {
+      background-color: #adadad;
+      margin-bottom: 20px;
   }
-  to {
-    left: 5vw;
+
+  .colour {
+      position: relative;
+      z-index: 1;
+      background: linear-gradient(to bottom, #55C2EB 0%, #F4FFFF 100%);
   }
-}
 
-@-webkit-keyframes two {
-  from {
-    left: 65%;
+  .bevor {
+      position: relative;
+      z-index: 3;
   }
-  to {
-    left: 62%;
+  /* Custom page footer */
+
+  .footer {
+      padding-top: 19px;
+      color: #777;
+      /*  border-top: 1px solid #55C2EB;*/
   }
-}
+  /*karte*/
 
-@keyframes two {
-  from {
-    left: 65%;
+  .background {
+      fill: #F4FFFF;
+      pointer-events: all;
   }
-  to {
-    left: 62%;
+
+  .breadcrumb {
+      padding: 8px 15px;
+      margin-bottom: 20px;
+      list-style: none;
+      background-color: inherit;
+      border-radius: 4px;
+      text-align: center;
   }
-}
 
-.jumbotoron {
-  background-color: initial;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-
-.space{
-    padding-top: 10px;
-  padding-bottom: 10px;
-  margin-top: 30px;
-   margin-bottom: 20px;
-}
-
-
-/* Customize container */
-
-@media (min-width: 992px) {
-  .container {
-    max-width: 900px;
+  .breadcrumb>li+li:before {
+      padding: 0 5px;
+      color: #ccc;
+      content: "⎪\00a0"
   }
-}
-.container-narrow > hr {
-  margin: 30px 0;
-}
-.jumbotron {
-  text-align: center;
-  /*  border-bottom: 1px solid #e5e5e5;*/
-  background-color: initial;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  margin-bottom: 10px;
-}
-.jumbotron .btn {
-  padding: 14px 24px;
-  font-size: 21px;
-}
-.intro {
-  /*    padding-top: 10px;*/
-}
-.img-head {
-  display: inline-block;
-  max-width: 100%;
-  height: auto;
-  padding: 4px;
-  line-height: 1.42857143;
-  -webkit-transition: all .2s ease-in-out;
-  -o-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out
-}
 
-@media (min-width:992px) {
-  .col-lg-1,
-  .col-lg-10,
-  .col-lg-11,
-  .col-lg-12,
-  .col-lg-2,
-  .col-lg-3,
-  .col-lg-4,
-  .col-lg-5,
-  .col-lg-6,
-  .col-lg-7,
-  .col-lg-8,
-  .col-lg-9 {
-    float: left
+  .map-layer {
+      fill: #fff;
+      stroke: #aaa;
   }
-  .col-lg-6 {
-    width: 50%
+
+  .path {
+      opacity: 0.5;
   }
-}
 
-.visible-xs-block {}
+  .effect-layer {
+      pointer-events: none;
+  }
 
+  .ul {
+      list-style-type: none;
+  }
 
-/* Supporting marketing content */
+  .li {
+      list-style-type: none;
+  }
 
+  .effect-layer text,
+  text.dummy-text {
+      font-size: 12px;
+  }
 
-/*.marketing {
+  svg path.hexbin-hexagon {
+      stroke: #888;
+      stroke-width: 2px;
+  }
+  /*Wolken*/
+
+  .cloud {
+      size: 50%;
+  }
+
+  .animationOne {
+      position: absolute;
+      width: 50%;
+      -webkit-animation: one 6s linear 0.5s infinite;
+      animation: one 6s linear 0.5s infinite alternate;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.3, 0.5);
+      animation-timing-function: cubic-bezier(0, 0, 0.3, 0.5);
+  }
+
+  .animationTwo {
+      position: absolute;
+      top: 20%;
+      left: 70%;
+      -webkit-animation: two 6s linear 0.5s infinite;
+      animation: two 6s linear 0.5s infinite alternate;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.2, 0.5);
+      animation-timing-function: cubic-bezier(0, 0, 0.2, 0.5);
+  }
+
+  @-webkit-keyframes one {
+      from {
+          left: 0px;
+      }
+      to {
+          left: 5vw;
+      }
+  }
+
+  @keyframes one {
+      from {
+          left: 0px;
+      }
+      to {
+          left: 5vw;
+      }
+  }
+
+  @-webkit-keyframes two {
+      from {
+          left: 65%;
+      }
+      to {
+          left: 62%;
+      }
+  }
+
+  @keyframes two {
+      from {
+          left: 65%;
+      }
+      to {
+          left: 62%;
+      }
+  }
+
+  .jumbotoron {
+      background-color: initial;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+
+  .space {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 30px;
+      margin-bottom: 20px;
+  }
+  /* Customize container */
+
+  @media (min-width: 992px) {
+      .container {
+          max-width: 900px;
+      }
+  }
+
+  .container-narrow > hr {
+      margin: 30px 0;
+  }
+
+  .jumbotron {
+      text-align: center;
+      /*  border-bottom: 1px solid #e5e5e5;*/
+      background-color: initial;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+  }
+
+  .jumbotron .btn {
+      padding: 14px 24px;
+      font-size: 21px;
+  }
+
+  .intro {
+      /*    padding-top: 10px;*/
+  }
+
+  .img-head {
+      display: inline-block;
+      max-width: 100%;
+      height: auto;
+      padding: 4px;
+      line-height: 1.42857143;
+      -webkit-transition: all .2s ease-in-out;
+      -o-transition: all .2s ease-in-out;
+      transition: all .2s ease-in-out
+  }
+
+  @media (min-width:992px) {
+      .col-lg-1,
+      .col-lg-10,
+      .col-lg-11,
+      .col-lg-12,
+      .col-lg-2,
+      .col-lg-3,
+      .col-lg-4,
+      .col-lg-5,
+      .col-lg-6,
+      .col-lg-7,
+      .col-lg-8,
+      .col-lg-9 {
+          float: left
+      }
+      .col-lg-6 {
+          width: 50%
+      }
+  }
+
+  .visible-xs-block {}
+  /* Supporting marketing content */
+  /*.marketing {
   margin: 0, 40px;
 }
 .marketing p + h4 {
   margin-top: 28px;
 }*/
+  /* Responsive: Portrait tablets and up */
 
-
-/* Responsive: Portrait tablets and up */
-
-@media screen and (min-width: 992px) {
-  /* Remove the padding we set earlier */
-  .header,
-  .marketing,
-  .footer {
-    padding-right: 15px;
-    padding-left: 15px;
-  }
-  /* Space out the masthead */
-  /*  .header {
+  @media screen and (min-width: 992px) {
+      /* Remove the padding we set earlier */
+      .header,
+      .marketing,
+      .footer {
+          padding-right: 15px;
+          padding-left: 15px;
+      }
+      /* Space out the masthead */
+      /*  .header {
     margin-bottom: 30px;
   }*/
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
+      /* Remove the bottom border on the jumbotron for visual effect */
+      .jumbotron {
+          border-bottom: 0;
+      }
+      .intro {
+          padding-top: 10px;
+      }
+      .img-thumbnail {
+          max-width: 100%;
+      }
   }
-  .intro {
-    padding-top: 10px;
-  }
-  .img-thumbnail {
-    max-width: 100%;
-  }
-}
+  /* Bar chart */
 
-/* Bar chart */
-.bar {
-  fill: #ffc484;
-}
-
-/*.bar:hover {
+  .bar {
+      fill: #ffc484;
+  }
+  /*.bar:hover {
   fill: brown;
 }*/
 
-.axis--x path {
-  display: none;
-}
+  .axis--x path {
+      display: none;
+  }
 
-.axis--y path {
-  display: none;
-}
-
-/*.line {
+  .axis--y path {
+      display: none;
+  }
+  /*.line {
   stroke: red;
   stroke-width: 2px;
   fill: none;
 }*/
+  /* Tooltip*/
 
-/* Tooltip*/
-.toolTip {
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
-    position: absolute;
-    display: none;
-    width: auto;
-    height: auto;
-    background: none;
-    border: 0 none;
+  .toolTip {
+      /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+      position: absolute;
+      display: none;
+      width: auto;
+      height: auto;
+      background: none;
+      border: 0 none;
+      color: black;
+      font: 12px;
+      padding: 5px;
+      text-align: left;
+      z-index: 650;
+  }
 
-    color: black;
-    font: 12px;
-    padding: 5px;
-    text-align: left;
-    z-index: 650;
-}
+  .but {
+      border: none;
+      border-radius: 0px;
+      background-color: inherit;
+  }
 
-.but{
-   border: none;
-  border-radius: 0px;
-  background-color: inherit;
-}
+  .but-left {
+      text-align: left;
+  }
 
-.but-left{
-text-align: left;
-}
+  .but-mid {
+      text-align: center;
+  }
 
-.but-mid{
-text-align: center;
-}
+  .but-right {
+      text-align: right;
+  }
 
-.but-right{
-text-align: right;
-}
-
-.btn:hover,
-.btn:focus,
-.btn.focus {
-  color: blue;
-  text-decoration: none;
-  background-color: inherit;
-}
-
-/*.btn {
+  .btn:hover,
+  .btn:focus,
+  .btn.focus {
+      color: blue;
+      text-decoration: none;
+      background-color: inherit;
+  }
+  /*.btn {
   display: inline-block;
   padding: 6px 12px;
   margin-bottom: 0;
@@ -398,3 +377,30 @@ text-align: right;
   border: none;
   border-radius: 0px;
 }*/
+  /* legend */
+
+  .heatmapLegend {
+      position: absolute;
+      left: 50px;
+      bottom: 30px;
+      z-index: 1000;
+  }
+
+.hexmapLegend {
+      position: absolute;
+      left: 30px;
+      bottom: 30px;
+      z-index: 1000;
+  }
+
+  .color-tile {
+      float: left;
+      width: 14px;
+      height: 14px;
+      border: 1px solid #888;
+  }
+
+  .description {
+      margin-left: 20px;
+      font: 12px;
+  }

@@ -2,7 +2,11 @@
     {
         "id": 15,
         "name": "Berg am Laim",
-        "description": "Der Stadtteil gehört seit 1913 zu München und mit einer Fläche von 6,31 km²einer der kleinsten Stadtbezirke. Er ist mit U2 und S2/4/6 an das öffentliche Verkehrsnetz angebunden und umgeben von großen Wohnblöcken, gibt es einen historischen Ortskern mit vielen alten Gebäuden. Er gehört zum Einzugsgebiet der MVG-Räder und besitzt 2 Stationen."
+        "description": "Der Stadtteil gehört seit 1913 zu München und mit einer Fläche von 6,31 km²einer der kleinsten Stadtbezirke. Er ist mit U2 und S2/4/6 an das öffentliche Verkehrsnetz angebunden und umgeben von großen Wohnblöcken, gibt es einen historischen Ortskern mit vielen alten Gebäuden. Er gehört zum Einzugsgebiet der MVG-Räder und besitzt 2 Stationen.",
+        "stationCount": 0,
+        "area": 0,
+        "inhabitants": 0,
+        "areaMvg": false
     },
     {
         "id": 8,

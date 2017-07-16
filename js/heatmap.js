@@ -37,7 +37,8 @@ var Heatmap = (function(window, d3) {
         // Define color scale
         // Update color scale domain based on data
         color = d3.scaleLinear()
-            .domain([0, 100, 1000, 3000, d3.max(features, nameLength)])
+            .domain([1, 100, 1000, 3000, d3.max(features, nameLength)])
+            // .domain([0, 100, 1000, 3000, 6000])
             .clamp(true)
             .range(['#fff', '#86ccd1', '#17b0da', '#6265ac', '#3a2a85']);
 
@@ -47,6 +48,22 @@ var Heatmap = (function(window, d3) {
         // .domain([6000, 0]);
         // color.domain([d3.max(features, nameLength), 0]);
         // color.domain([0, d3.max(features, nameLength)]);
+
+
+        // Create the legend to illustrate the color scale being divergent
+        var legendEntries = ['5500', '3000', '1000', '100', '0'];
+        var legend = d3.select('.heatmapLegend').selectAll('.legend-entry').data(legendEntries).enter().append('div').attr('class', 'legend-entry');
+        legend.append('div').attr('class', 'color-tile').style('background-color', function(d, i) { return color(d); });
+        legend.append('div').attr('class', 'description').text(function(d) {
+            if( d === '0' ) {
+                return d + ' Fahrten';
+            }
+            else {
+                return d;
+            }
+        });
+
+
 
         // Set svg width & height
         svg = d3.select('#heatmap').select('svg');
