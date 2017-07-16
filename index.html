@@ -87,7 +87,7 @@
                     <br><span style="font-weight:bold"> Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span> Die Daten zur Auswertung beziehen sich auf ein Jahr: Von Juli 2016 bis Juli 2017.</p>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="top">
             <div class="col-lg-12">
                 <h3>Münchnes Stadteile</h3>
                 <p>Diese Übersichtskarte von München zeigt dir die durchschnittliche Menge an Fahrten die in einem Monat gemacht wurden. Wähle einen Stadtteil aus um mehr über die Menge an Fahrten, Rädern und Stationen in deinem Stadtteil zu erfahren.
@@ -108,15 +108,15 @@
                     </div>
                     <div class="space">
                         <h4>Durchschnittliche fahrenten in diesem Viertel</h4>
-                        <p></p>
+                        <p>Hier sieht du die durchscnittliche Anzahl von Fahrten in Wochen, Monaten und über ein Jahr.</p>
                         <div id="barchart">
                             <form>
                                 <label>
-                                    <input type="radio" name="dataset" id="dataset" value="week" checked> Wochen</label>
+                                    <input type="radio"  name="dataset" id="dataset" value="week" checked> Wochen&nbsp;&nbsp;</label>
                                 <label>
-                                    <input type="radio" name="dataset" id="dataset" value="month"> Monat</label>
+                                    <input type="radio" name="dataset" id="dataset" value="month"> Monat&nbsp;&nbsp;</label>
                                 <label>
-                                    <input type="radio" name="dataset" id="dataset" value="year"> Jahr</label>
+                                    <input type="radio"  name="dataset" id="dataset" value="year"> Jahr&nbsp;&nbsp;</label>
                             </form>
                             <svg></svg>
                             <!-- <svg width="960" height="500"></svg> -->
@@ -125,10 +125,10 @@
                 </div>
             </div>
             <!-- hexmap element -->
-            <div class="row">
+            <div class="row space">
                 <div class="col-lg-12">
                     <h4>Alle fahrten in diesem Viertel</h4>
-                    <p>Die Hexagons zeigen dir alle Fahrten die innerhalb eines Jahres in diesem Viertel geendet haben.</p>
+                    <p>Die Hexagons zeigen dir alle Fahrten die innerhalb eines Jahres und wohin sie in diesem Viertel gingen.</p>
                     <div id="hexmap" style="width: 100%; height: 60vh; border: 1px solid #ccc"></div>
                     <br/>
                     <!-- <div id="hovered">
@@ -139,6 +139,10 @@
                         <label>Last Clicked: </label>
                         <span class="count"></span>
                     </div> -->
+                    </div>
+                    </div>
+                      <div class="row space">
+                <div class="col-lg-12">
                     <div class=" btn-group btn-group-justified" role="group" aria-label="...">
                         <div class=" btn-group" role="group">
                             <button type="button" class="but but-left btn btn-default" id="previousbutton" value="0">
@@ -172,7 +176,7 @@
   </div> -->
     <!-- </div> -->
     <!-- </div> -->
-    <footer class="footer">
+    <footer class="footer space">
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
             <li><a href="about.html">über das Projekt</a></li>
