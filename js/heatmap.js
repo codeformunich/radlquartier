@@ -37,9 +37,9 @@ var Heatmap = (function(window, d3) {
         // Define color scale
         // Update color scale domain based on data
         color = d3.scaleLinear()
-            .domain([0, d3.max(features, nameLength)])
+            .domain([0, 100, 1000, 3000, d3.max(features, nameLength)])
             .clamp(true)
-            .range(['#fff', '#409A99']);
+            .range(['#fff', '#86ccd1', '#17b0da', '#6265ac', '#3a2a85']);
 
         // Define color scale
         // Update color scale domain based on data
@@ -91,6 +91,7 @@ var Heatmap = (function(window, d3) {
             .attr('d', path)
             .attr('vector-effect', 'non-scaling-stroke')
             .style('fill', fillFn)
+            .style('opacity', 0.9)
             .on('mouseover', mouseover)
             .on('mouseout', mouseout)
             .on('mousemove', mousemove)
