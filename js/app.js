@@ -12,8 +12,16 @@ var App = (function(window, document, d3) {
             Text.loadDistrict(id);
             Chart.loadDistrict(id);
             Hexmap.loadDistrict(id);
-        }
-        else {
+            
+            var target = $('#detailCollapse');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1050); // 500 (0.5sek) legt Geschwindkeit fest
+            }
+
+        } else {
             $('#detailCollapse').collapse('hide');
 
             selctedDistrict = 0;
@@ -30,7 +38,14 @@ var App = (function(window, document, d3) {
 
     function clickedUp(e) {
         console.log({ type: 'clickedUp', event: e, context: this });
+         var target = $('#top');
+            if (target.length) {
+                event.preventDefault();
+                $('html, body').animate({
+                    scrollTop: target.offset().top
+                }, 1050); // 500 (0.5sek) legt Geschwindkeit fest
     }
+}
 
     $(document).ready(function() {
         window.addEventListener('resize', Chart.render);
@@ -42,6 +57,6 @@ var App = (function(window, document, d3) {
     });
 
     return {
-        selectNewDistrict : selectNewDistrict
+        selectNewDistrict: selectNewDistrict
     };
 })(window, document, d3);
