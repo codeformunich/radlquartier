@@ -54,9 +54,11 @@ var Hexmap = (function(window, d3, L) {
             radius: 12,
             opacity: 0.5,
             // colorRange: [ 'white', 'orange', 'red' ],
-            colorRange: ['#fff', '#409A99'],
+            // colorRange: ['white','#f4e94f', '#bcf089', '#50b9a2', '#11afd9','#4970b6', '#604595'],
+             colorRange: ['#f3fbfc','#86ccd1', '#5ebeb4', '#11afd9','#4970b6', '#6467c2', '#604595', '#390898'],
+            // colorRange: D3.interpolateCool(),
             // Set overrides for the colorScale's domain extent
-            colorScaleExtent: [ 1, 500 ],
+            colorScaleExtent: [ 1, 900 ],
             radiusRange: [ 4, 10 ]
         };
 
