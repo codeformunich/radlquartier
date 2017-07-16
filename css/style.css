@@ -287,6 +287,8 @@ padding-top: 20px;
       border: none;
       border-radius: 0px;
       background-color: inherit;
+      cursor: pointer;
+      width: 100%;
   }
 
   .but-left {
@@ -315,6 +317,7 @@ text-align: right;
   color: blue;
   text-decoration: none;
   background-color: inherit;
+      outline: none;
 }
 
   .heatmapLegend {
