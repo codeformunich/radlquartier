@@ -7,6 +7,7 @@
       font-family: 'Raleway', sans-serif;
       font-weight: 400;
       color: #171552;
+      font-size: 1.5em;
   }
 
   strong,
@@ -102,7 +103,7 @@
 
   .breadcrumb>li+li:before {
       padding: 0 5px;
-      color: #ccc;
+      color: white;
       content: "⎪\00a0"
   }
 
@@ -205,22 +206,27 @@
       margin-bottom: 10px;
   }
 
+/*  .space{
+
+  }*/
+
   .spaceSmall {
       padding-top: 10px;
-      padding-bottom: 10px;
+      padding-bottom: 15px;
  /*     margin-top: 30px;
       margin-bottom: 20px;*/
   }
 
   .spaceBig{
-      padding-top: 50px;
-      padding-bottom: 10px;
+      padding-top: 15px;
+      padding-bottom: 30px;
   }
+
 
 hr{
    /*   border-style: inset;*/
     border-width: 1px;
-    border-color: #aaa;
+    border-color: #dee2e5;
 
 
 }
@@ -265,12 +271,18 @@ hr{
       -o-transition: all .2s ease-in-out;
       transition: all .2s ease-in-out
   }
-
-  .table-responsive{
-    font-weight: 300; 
-padding-top: 40px;
+  .table,
+  .table-responsive{ 
+    padding-top: 40px;
+    border-bottom: 1px;
   }
-
+ th {
+  font-weight: 600;
+ }
+ td 
+ {
+   font-weight: 400;
+}
   
   /* Bar chart */
 
