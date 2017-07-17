@@ -215,6 +215,7 @@ var Heatmap = (function(window, d3) {
     // });
 
     function mouseover(d) {
+        d3.select(this).style("cursor", "pointer");
 
         // Highlight hovered province
         d3.select(this).style('fill', '#ffc484');
@@ -224,6 +225,7 @@ var Heatmap = (function(window, d3) {
     }
 
     function mouseout(d) {
+        d3.select(this).style("cursor", "default");
 
         // Reset province color
         mapLayer.selectAll('path')
