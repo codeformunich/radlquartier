@@ -1,5 +1,8 @@
 var Text = (function(window, d3) {
-    var districts = null;
+    var districts = null,
+        description,
+        link = '<a href="https://www.mvg.de/services/kontakt/kundendialog/lobundtadelformular12.html" target="_blank">hier</a>';
+
 
     d3.json('data/district_text.json', function(error, districtsData) {
         districts = districtsData;
@@ -12,7 +15,12 @@ var Text = (function(window, d3) {
             return district.id === id;
         });
         $("#textH4").text(selectedDistrict.name);
-        $("#textP").text(selectedDistrict.description);
+
+        description = selectedDistrict.description;
+        if (description.includes("[hier]")) {
+            description = description.replace("[hier]", link);
+        }
+        $("#textP").html(description);
 
         $("#tdStationCount").text(selectedDistrict.stationCount);
         $("#tdArea").text(selectedDistrict.area + " km²");
