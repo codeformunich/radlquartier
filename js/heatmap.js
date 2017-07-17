@@ -56,7 +56,7 @@ var Heatmap = (function(window, d3) {
         legend.append('div').attr('class', 'color-tile').style('background-color', function(d, i) { return color(d); });
         legend.append('div').attr('class', 'description').text(function(d) {
             if( d === '0' ) {
-                return d + ' Fahrten';
+                return d + ' Fahrten oder mehr';
             }
             else {
                 return d;

@@ -83,7 +83,7 @@
       {
         "id": 11,
         "name": "Maxvorstadt",
-        "description": "Der Stadtteil hat eine Fläche von 4,3 km² und wurde um 1810 als erste planmäßige Stadterweiterung konzipiert. Dort finden sich viele von Münchens Sehenswürdikeiten wie der Königsplatz, die Pinakotheken und das Siegestor. Außerdem noch drei von Münchens Hochschulen. Er gehört zum Geschäftsgebiet  der MVG-Räder und besitzt 7 Stationen." ,
+        "description": "Der Stadtteil hat eine Fläche von 4,3 km² und wurde um 1810 als erste planmäßige Stadterweiterung konzipiert. Dort finden sich viele von Münchens Sehenswürdigkeiten wie der Königsplatz, die Pinakotheken und das Siegestor. Außerdem noch drei von Münchens Hochschulen. Er gehört zum Geschäftsgebiet  der MVG-Räder und besitzt 7 Stationen." ,
         "stationCount": 7,
         "area": 4.3,
         "inhabitants": 53552,
@@ -95,7 +95,7 @@
         "description": "Der Stadtbezirk hat eine Fläche von 25,6 km² ist mit etwa 100.000 Einwohnern der bevölkerungsreichste Stadtteil Münchens. Sein wichtigster Park ist der Luitpoldpark, auch sonst besitzt der Stadtbezirk viele öffentliche Plätze wie den Kurfürstenplatz,  Hohenzollernplatz oder den Elisabethplatz. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 9 Stationen." ,
         "stationCount": 9,
         "area": 25.6,
-        "inhabitants": 100000, 
+        "inhabitants": 100000,
         "areaMvg": true
     },
       {
@@ -104,7 +104,7 @@
         "description": "Der Stadtteil hat eine Fläche von 11,09 km² und ist durch die S1 an das öffentliche Verkehrsnetz angebunden. Moosach zählt mit einer  Besiedelung seit 4000 Jahren zu den ältesten Orten rund um bzw. in München und wurde 1913 Eingemeindet. Er gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 5 Stationen." ,
         "stationCount": 5,
         "area": 11.9,
-        "inhabitants": 54045, 
+        "inhabitants": 54045,
         "areaMvg": true
     },
      {
@@ -113,7 +113,7 @@
         "description": "Der Stadtbezirk hat eine Fläche von 22,45 km² und gehört zu den Teilen Münchens die wohl schon in der Steinzeit bewohnt waren, die Gemeindebildung erfolgte 1818. Es gehört nicht zum Geschäftsgebiet der MVG-Räder hat aber eine Stadtion an der Messe-Riem. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen." ,
         "stationCount": 1,
         "area": 22.45,
-        "inhabitants": 70958, 
+        "inhabitants": 70958,
         "areaMvg": false
     },
       {
@@ -122,16 +122,16 @@
         "description": "Der Stadtteil hat eine Fläche von 5,29 km² und  im Vergleich zu anderen Stadtteilen hat Laim einen überdurchschnittlich hohen Anteil an Wohn- und Verkehrsflächen. Es wurde 1900 Eingemeindet und hatte damals den größten Eisenbahn Rangierbahnhof Europas. Laim gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 2 Stationen." ,
         "stationCount": 2,
         "area": 5.29,
-        "inhabitants":  55951, 
+        "inhabitants":  55951,
         "areaMvg": true
     },
      {
         "id": 10,
         "name": "Milbertshofen-Am Hart",
-        "description": "Der Stadtbezirk hat eine Fläche von 13,42 km², 28 Prozent der Fläche sind Grünanlagen. dazu gehört auch der Olympiapark. Er wurde für die Olypmischenspiele 1972 erbaut. Milbertshofen-Am Hart gehört auch zu den Stadtteilen mit den meisten Arbeitsplätzten. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das hier machen.",
+        "description": "Der Stadtbezirk hat eine Fläche von 13,42 km², 28 Prozent der Fläche sind Grünanlagen. dazu gehört auch der Olympiapark. Er wurde für die Olympischen Spiele 1972 erbaut. Milbertshofen-Am Hart gehört auch zu den Stadtteilen mit den meisten Arbeitsplätzen. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das hier machen.",
         "stationCount": 0,
         "area": 13.42,
-        "inhabitants":  76454, 
+        "inhabitants":  76454,
         "areaMvg": false
     },
       {
@@ -140,7 +140,7 @@
         "description": "Seit 1992 gehören Neuhausen und Nymphenburg gleichen Stadtbezirk und haben eine Fläche von knapp 13 km². Außerdem haben sie mit 98.702 Einwohnern die zweithöchste Einwohnerzahl der Münchner Bezirke. Nymphenburg ist mit dem Nymphenburger Park und dem Botanischen Garten ist es ein sehr grüner und beliebter Stadtteil. Nymphenburg gehört zum Geschäftsgebiet der MVG-Räder und besitzt 4 Stationen." ,
         "stationCount": 4,
         "area":"*",
-        "inhabitants":  "*", 
+        "inhabitants":  "*",
         "areaMvg": true
     },
       {
@@ -149,7 +149,7 @@
         "description": "Der Stadtbezirk hat eine Fläche von 13,42 km² und ist durch die S-Bahn Linie 1 und U-bahn Linie 2  das öffentliche Verkehrsnetz angebunden. Der Bezirk ist vor allem ein Wohnviertel mit Hohe Wohnblöcke. Es ging in den 60er Jahren darum möglichst schnell günstigen Wohnraum für die wachsende Stadtbevölkerung zu schaffen. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen." ,
         "stationCount": 0,
         "area": 13.42,
-        "inhabitants": 61764, 
+        "inhabitants": 61764,
         "areaMvg": false
     },
       {
@@ -158,7 +158,7 @@
         "description": "Der Stadtbezirk hat eine Fläche von 34,06 km² von allen Münchner Stadtbezirken hat er die größte Ausdehnung und mit 46.148 Bewohnern die geringste Bevölkerungsdichte. Außerdem liegen dort ausgedehnte Grün-, Wald- und landwirtschaftliche Flächen. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das hier machen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen." ,
         "stationCount": 0,
         "area": 34.06,
-        "inhabitants": 46148, 
+        "inhabitants": 46148,
         "areaMvg": false
     },
      {
@@ -167,16 +167,16 @@
         "description": "Der Stadtteil hat eine Fläche von 23,7 km² und ist zwischen dicht bebauter Innenstadt bis ins grüne Umland einer der vielfältigsten Stadtbezirke. Es wurde 1892 nach München eingemeindet und ist durch die U4 sowie die S8 an das öffentliche Verkehrsnetz angebunden. Bogenhausen gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 4 Stationen."  ,
         "stationCount": 4,
         "area": 23.7,
-        "inhabitants": 86731 , 
+        "inhabitants": 86731 ,
         "areaMvg": true
     },
     {
         "id": 27,
         "name": "Sendling-Westpark",
-        "description": "Der Stadtbezirk hat eine Fläche von 7,81 km² und 59.149 Bewohner. Der Westpark, der zur Internationalen Gartenbauausstellung 1983 angelegt wurde. Heute ist er die größte Grünfläche des Bezirks. Durch die U3/U6 sowie die S7 ist er an das öffentliche Verkehrsnetz angebunden. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 11 Stationen. Dmait ist es der Stadtteil mit den meisten Stationen."  ,
+        "description": "Der Stadtbezirk hat eine Fläche von 7,81 km² und 59.149 Bewohner. Der Westpark, der zur Internationalen Gartenbauausstellung 1983 angelegt wurde. Heute ist er die größte Grünfläche des Bezirks. Durch die U3/U6 sowie die S7 ist er an das öffentliche Verkehrsnetz angebunden. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 11 Stationen. Damit ist es der Stadtteil mit den meisten Stationen."  ,
         "stationCount": 11,
         "area": 7.81,
-        "inhabitants": 59149, 
+        "inhabitants": 59149,
         "areaMvg": true
     },
     {
@@ -185,7 +185,7 @@
         "description": "Der Stadtbezirk hat eine Fläche von 19,9 km² bei 113.043 Einwohnern. Die größte Grünfläche ist der Ostpark und Ramersdorf-Perlach hat 75 Haltepunkte der Münchner Verkehrsgesellschaft. Es gehört nicht zum Geschäftsgebiet der MVG-Räder hat aber eine Stadtion. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen. " ,
         "stationCount": 1,
         "area": 19.9,
-        "inhabitants": 113043, 
+        "inhabitants": 113043,
         "areaMvg": true
     },
      {
@@ -200,7 +200,7 @@
      {
         "id": 23,
         "name": "Pasing",
-        "description": "Seit 1992 bildet er mit Obermenzing einen gemeinsamen Stadtteil, zusammen haben sie eine Fläche von 16,4 km². Pasing war bis zu seiner Zwangseingemeindung 1938, die fünftgrößte Stadt Oberbayerns. Pasing ist bis heute ein recht eigenständiger Stadtteil mit viel eigener Infrastucktur. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen." ,
+        "description": "Seit 1992 bildet er mit Obermenzing einen gemeinsamen Stadtteil, zusammen haben sie eine Fläche von 16,4 km². Pasing war bis zu seiner Zwangseingemeindung 1938, die fünftgrößte Stadt Oberbayerns. Pasing ist bis heute ein recht eigenständiger Stadtteil mit viel eigener Infrastruktur. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen." ,
         "stationCount": 0,
         "area": "*",
         "inhabitants": "*",
@@ -230,13 +230,13 @@
         "description": "Der Stadtbezirk hat eine Fläche von 25,6 km² und ist vor allem für die  Allianz Arena bekannt. Mit dem Englischen Garten, der Fröttmaninger Heide und der Oberen Isarau besitzt der Stadtteil außerdem bedeutende Naherholungsgebiete, und die Studentenstadt ist das größte studentische Wohngebiet Deutschlands. Es gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 3 Stationen." ,
         "stationCount": 3,
         "area": 25.6,
-        "inhabitants": 75020, 
+        "inhabitants": 75020,
         "areaMvg": true
     },
     {
         "id": 26,
         "name": "Thalkirchen-Obersendling",
-        "description": "Thalkirchen - Obersendling bildet zusammen mit Fürstenried- Forstenried und Solln einen Stadtbezirk  mit einer Fläche von 17,7 km². Thalkirchen-Obersendling liegt einer seits an den Isarauen und ist andererseits ein großes Gewerbe- und immer mehr auch Wohngebiet. Es gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 2 Stationen." ,
+        "description": "Thalkirchen - Obersendling bildet zusammen mit Fürstenried- Forstenried und Solln einen Stadtbezirk  mit einer Fläche von 17,7 km². Thalkirchen-Obersendling liegt einerseits an den Isarauen und ist andererseits ein großes Gewerbe- und immer mehr auch Wohngebiet. Es gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 2 Stationen." ,
         "stationCount": 2,
         "area": "*",
         "inhabitants": "*",

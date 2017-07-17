@@ -74,7 +74,7 @@ var Hexmap = (function(window, d3, L) {
         legend.append('div').attr('class', 'color-tile').style('background-color', function(d, i) { return colorScale(d); });
         legend.append('div').attr('class', 'description').text(function(d) {
             if( d === '1' ) {
-                return d + ' < Fahrten';
+                return d + ' Fahrrad oder mehr';
             }
             else {
                 return d;
@@ -124,14 +124,14 @@ var Hexmap = (function(window, d3, L) {
         };
 
         loadGeoJson('data/munich.geojson', function(munichData) {
-            layerMunich = L.geoJSON(munichData, { 
+            layerMunich = L.geoJSON(munichData, {
                     style: function (feature) {
                         return { fill: false , color: '#b1b2b2' , weight:3 };
                     }
                 });
 
             loadGeoJson('data/mvgbike.geojson', function(mvgData) {
-                layerMvg = L.geoJSON(mvgData, { 
+                layerMvg = L.geoJSON(mvgData, {
                     style: function (feature) {
                         return { fillOpacity: 0.1 , fillColor: '#013fbb' , stroke: false };
                     }
