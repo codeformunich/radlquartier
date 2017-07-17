@@ -40,7 +40,7 @@ var Heatmap = (function(window, d3) {
             .domain([1, 100, 1000, 3000, d3.max(features, nameLength)])
             // .domain([0, 100, 1000, 3000, 6000])
             .clamp(true)
-            .range(['#f3fbfc', '#86ccd1', '#17b0da', '#6265ac', '#3a2a85']);
+            .range(['#f0fdfe', '#86ccd1', '#17b0da', '#6265ac', '#3a2a85']);
 
         // Define color scale
         // Update color scale domain based on data
