@@ -15,6 +15,8 @@ var inputCollection = 'halts';
 
 var input = '';
 var output = {
+    'totalCount': 0,
+    'meanYearMonth': [0,0,0,0,0,0,0,0,0,0,0,0],
     'districts': []
 };
 
@@ -89,7 +91,7 @@ process.stdin.on('end', function() {
                 // var fileName = 'cartodb_id_' + output.districts[i].id + '.geo.json';
                 var fileName = 'district_halts.json';
                 fs.writeFile( fileName,
-                    JSON.stringify(output.districts, null, '\t'),
+                    JSON.stringify(output, null, '\t'),
                     function(err) {
                         if (err) {
                             console.log('ERROR: createForAllFeatures:', err);
@@ -261,6 +263,7 @@ var createMonthJson = function(db, feature, callback) {
                 'meanWeeks': 0,
                 'meanWeekDays': [0,0,0,0,0,0,0],
                 'meanDays': 0,
+                'data': {}
             };
 
             var data = {
@@ -283,6 +286,10 @@ var createMonthJson = function(db, feature, callback) {
                     continue;
                 }
 
+                if(result._id.year == 2017 && result._id.month == 7) {
+                    continue;
+                }
+
                 if (details.length === 0 ||
                     details[yearCount].date.year !== result._id.year) {
                     details.push(newYear(result._id.year,
@@ -294,6 +301,7 @@ var createMonthJson = function(db, feature, callback) {
                 }
 
                 districtData.totalCount += result.count;
+                output.totalCount += result.count;
 
                 // details
                 details[yearCount].date.lastMonth = result._id.month;
@@ -320,7 +328,7 @@ var createMonthJson = function(db, feature, callback) {
                         continue;
                     }
 
-                    if(j === yearCount && m > year.date.lastMonth) {
+                    if(j === yearCount && m >= year.date.lastMonth) {
                         continue;
                     }
 
@@ -346,6 +354,8 @@ var createMonthJson = function(db, feature, callback) {
 
                 data.days = data.days.concat(year.days);
             }
+
+            // districtData.data = data;
 
             // calculate means
             districtData.meanYears = ss.mean(data.years);
@@ -380,6 +390,17 @@ var createMonthJson = function(db, feature, callback) {
             districtData.meanDays = ss.mean(data.days);
 
             output.districts.push(districtData);
+
+            if (output.districts.length === 1) {
+                output.meanYearMonth = districtData.meanYearMonth.slice(); // slice() to copy array
+            }
+            else {
+                var count = output.districts.length - 1;
+                for (var n = 0; n < 12; n++) {
+                    output.meanYearMonth[n]  = ss.addToMean(output.meanYearMonth[n], count, districtData.meanYearMonth[n]);
+                }
+            }
+
             callback();
         }
     );
