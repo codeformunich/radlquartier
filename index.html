@@ -17,8 +17,8 @@
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="js/library//leaflet.css" />
-    <link href="https://fonts.googleapis.com/css?family=Raleway:500,700" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway:300,500,700" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
     <script src="js/ie-emulation-modes-warning.js"></script>
@@ -83,8 +83,9 @@
         <div class="row">
             <div class="col-lg-12">
                 <p>München besitzt seit Oktober 2015 ein Fahrradverleihsystem. Dieses System erlaubt es dir an vielen Standtorten Fahrräder in der Stadt auszuleihen und zurück zu geben. Du kannst die Räder aber nicht nur an festen Stationen abholen oder abgeben sondern im ganzen Geschäftsgebiet. Dieses beschränkt sich bis jetzt auf 15 Stadtteile und zwei halbe.
-                    <br>
-                    <br><span style="font-weight:bold"> Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span> Die Daten zur Auswertung beziehen sich auf ein Jahr: Von Juli 2016 bis Juli 2017.</p>
+                 </p><br>
+                   <!--  <br><span style="font-weight:bold"> Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span> Die Daten zur Auswertung beziehen sich auf ein Jahr: Von Juli 2016 bis Juli 2017.</p> -->
+                   <p style="font-weight: 600;">Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst? Die Daten zur Auswertung beziehen sich auf ein Jahr: Von Juli 2016 bis Juli 2017.</p>
             </div>
         </div>
         <div class="row" id="top">
@@ -100,17 +101,33 @@
                 </div>
             </div>
         </div>
-        <div class="collapse" id="detailCollapse">
-            <!-- bar chart element -->
+    </div>
+    <!-- <div class="space"></div> -->
+    <div class="collapse" id="detailCollapse">
+<!--     <div class=" colourUp">
+        <p></p>
+    </div> -->
+  
+        <!-- <div class="colour"> -->
+            <div class="container">
+              <hr>
+                <!-- bar chart element -->
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="space">
+                            <h2 id="textH4"></h2>
+                            <p id="textP"></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <!-- </div> -->
+        <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <div class="space">
-                        <h4 id="textH4"></h4>
-                        <p id="textP"></p>
-                    </div>
-                    <div class="space">
-                        <h4>Durchschnittliche fahrenten in diesem Viertel</h4>
-                        <p>Hier sieht du die durchscnittliche Anzahl von Fahrten an den Wochentagen und alle fahrten in den Monaten und übers Jahr</p>
+                    <div class="spaceSmall">
+                        <h3>Durchschnittliche fahrten in diesem Viertel</h3>
+                        <p>Hier sieht du die durchscnittliche Anzahl von Fahrten an den Wochentagen und alle fahrten in den Monaten und übers Jahr</p><br>
                         <div id="barchart">
                             <form>
                                 <label>
@@ -139,15 +156,17 @@
                                 </tr>
                             </table>
                         </div>
-                        <div>* <small>Der Stadtbezirk wurde neu Aufgeteilt, siehe Text</small></div>
+                        <div style="text-align: right;">* <small>Der Stadtbezirk wurde neu Aufgeteilt, siehe Text</small></div> <br>
                     </div>
                 </div>
             </div>
+            <!-- <div class="space"></div> -->
             <!-- hexmap element -->
-            <div class="row space">
+             <hr>
+            <div class="row spaceSmall">
                 <div class="col-lg-12">
-                    <h4>Alle fahrten in diesem Viertel</h4>
-                    <p>Die Hexagons zeigen dir alle Fahrten die innerhalb eines Jahres und wohin sie in diesem Viertel gingen.</p>
+                    <h3>Alle fahrten in diesem Viertel</h3>
+                    <p>Die Hexagons zeigen dir alle Fahrten die innerhalb eines Jahres und wohin sie in diesem Viertel gingen.</p><br>
                     <div id="hexmap" style="width: 100%; height: 60vh; border: 1px solid #ccc"></div>
                     <div class="hexmapLegend">
                     </div>
@@ -162,7 +181,7 @@
                     </div> -->
                 </div>
             </div>
-            <div class="row space">
+            <div class="row spaceSmall">
                 <div class="col-xs-4 ut-left">
                     <a class="but b " id="previousbutton" value="0">
                         <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Allach-Untermenzing </a>
@@ -176,30 +195,37 @@
             </div>
             <div class="toolTip"></div>
         </div>
-        <!-- /container -->
-        <!--   <div class="col-lg-12">
+    </div>
+    <div class="spaceBig"></div>
+    <div class="spaceBig"></div>
+    <!-- /container -->
+    <!--   <div class="col-lg-12">
     <div class="jumbotron">
     </div>
   </div> -->
-        <!-- </div> -->
-        <!-- </div> -->
-        <footer class="footer space">
+    <!-- </div> -->
+    <!-- </div> -->
+    <div class="row colourUp ">
+        <div class="spaceBig">
             <ol class="breadcrumb">
                 <li><a href="#">Home</a></li>
                 <li><a href="about.html">über das Projekt</a></li>
                 <li><a href="https://www.mvg.de/services/mobile-services/mvg-rad.html" target="_blank">MVG</a></li>
                 <!-- <li class="active">Data</li> -->
             </ol>
+        </div>
+        <footer class="footer">
             <p>&copy; 2016 Company, Inc.</p>
         </footer>
-        <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-        <script src="js/ie10-viewport-bug-workaround.js"></script>
-        <script src="https://d3js.org/d3.v4.min.js"></script>
-        <script src="js/app.js"></script>
-        <script src="js/heatmap.js"></script>
-        <script src="js/text.js"></script>
-        <script src="js/chart.js"></script>
-        <script src="js/hexmap.js"></script>
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/heatmap.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/hexmap.js"></script>
 </body>
 
 </html>
