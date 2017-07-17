@@ -1,6 +1,6 @@
 var Text = (function(window, d3) {
-
     var districts = null;
+
     d3.json('data/district_text.json', function(error, districtsData) {
         districts = districtsData;
     });
@@ -23,5 +23,4 @@ var Text = (function(window, d3) {
     return {
         loadDistrict: loadDistrict
     };
-
 })(window, d3);
