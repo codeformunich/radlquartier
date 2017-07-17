@@ -1,8 +1,7 @@
-  /* Space out content a bit */
+
 
   body {
-      /*  padding-top: 20px;*/
-/*      padding-bottom: 20px;*/
+
       background-color: #F4FFFF;
       font-family: 'Raleway', sans-serif;
       font-weight: 400;
@@ -27,7 +26,7 @@
       font-family: 'Raleway', sans-serif;
       font-weight: 700;
   }
-  /* Everything but the jumbotron gets side spacing for mobile first views */
+
 
   .header,
   .marketing,
@@ -36,11 +35,7 @@
       padding-left: 30px;
       text-align: center;
   }
-  /* Custom page header */
-  /*.header {
-  padding-bottom: 20px;
- /* background-color: #C1F3FF;}*/
-  /* Make the masthead heading the same height as the navigation */
+
 
   .header h3 {
       margin-top: 0;
@@ -78,13 +73,14 @@
       position: relative;
       z-index: 3;
   }
-  /* Custom page footer */
+
 
   .footer {
       padding-top: 19px;
       color: #777;
-      /*  border-top: 1px solid #55C2EB;*/
   }
+
+
   /*karte*/
 
   .background {
@@ -289,9 +285,6 @@ hr{
   .bar {
       fill: #ffc484;
   }
-  /*.bar:hover {
-  fill: brown;
-}*/
 
   .axis--x path {
       display: none;
@@ -300,15 +293,11 @@ hr{
   .axis--y path {
       display: none;
   }
-  /*.line {
-  stroke: red;
-  stroke-width: 2px;
-  fill: none;
-}*/
+
+
   /* Tooltip*/
 
   .toolTip {
-      /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
       position: absolute;
       display: none;
       width: auto;
@@ -384,10 +373,11 @@ text-align: right;
   }
 
   .description {
-    /*padding-bottom: 8px;*/
       margin-left: 20px;
       font: 12px;
   }
+
+  .visible-xs-block {}
 
   @media (min-width:992px) {
       .col-lg-1,
@@ -409,14 +399,6 @@ text-align: right;
       }
   }
 
-  .visible-xs-block {}
-  /* Supporting marketing content */
-  /*.marketing {
-  margin: 0, 40px;
-}
-.marketing p + h4 {
-  margin-top: 28px;
-}*/
   /* Responsive: Portrait tablets and up */
 
   @media screen and (min-width: 992px) {
@@ -427,11 +409,7 @@ text-align: right;
           padding-right: 15px;
           padding-left: 15px;
       }
-      /* Space out the masthead */
-      /*  .header {
-    margin-bottom: 30px;
-  }*/
-      /* Remove the bottom border on the jumbotron for visual effect */
+
       .jumbotron {
           border-bottom: 0;
       }

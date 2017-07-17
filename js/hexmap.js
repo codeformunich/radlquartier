@@ -24,10 +24,10 @@ var Hexmap = (function(window, d3, L) {
                initHexLayer();
 
                 overlayMaps = {
-                    "Munich": layerMunich,
-                    "MVG": layerMvg,
-                    "Stations": layerStations,
-                    "Halts": hexLayer
+                    "München": layerMunich,
+                    "MVG-Rad": layerMvg,
+                    "Stationen": layerStations,
+                    "Fahrten": hexLayer
                 };
 
                 var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
@@ -74,7 +74,7 @@ var Hexmap = (function(window, d3, L) {
         legend.append('div').attr('class', 'color-tile').style('background-color', function(d, i) { return colorScale(d); });
         legend.append('div').attr('class', 'description').text(function(d) {
             if( d === '1' ) {
-                return d + ' Fahrrad';
+                return d + ' < Fahrten';
             }
             else {
                 return d;
@@ -116,18 +116,26 @@ var Hexmap = (function(window, d3, L) {
     function initGeoJsonOverlays(callback) {
         var geojsonMarkerOptions = {
                 radius: 5,
-                fillColor: "#ff7800",
-                color: "#000",
+                fillColor: "#013fbb",
+                color: "#3013fbb",
                 weight: 1,
                 opacity: 1,
                 fillOpacity: 0.8
         };
 
         loadGeoJson('data/munich.geojson', function(munichData) {
-            layerMunich = L.geoJSON(munichData);
+            layerMunich = L.geoJSON(munichData, { 
+                    style: function (feature) {
+                        return { fill: false , color: '#b1b2b2' , weight:3 };
+                    }
+                });
 
             loadGeoJson('data/mvgbike.geojson', function(mvgData) {
-                layerMvg = L.geoJSON(mvgData);
+                layerMvg = L.geoJSON(mvgData, { 
+                    style: function (feature) {
+                        return { fillOpacity: 0.1 , fillColor: '#013fbb' , stroke: false };
+                    }
+                });
 
                 loadGeoJson('data/stations.geojson', function(stationData) {
                     layerStations = L.geoJSON(stationData, {
