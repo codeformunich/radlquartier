@@ -364,13 +364,16 @@ text-align: right;
       left: 50px;
       bottom: 30px;
       z-index: 1000;
+
   }
 
 .hexmapLegend {
+      padding: 5px;
       position: absolute;
       left: 30px;
       bottom: 30px;
       z-index: 1000;
+      background-color: rgba(255,255,255,0.6);
   }
 
   .color-tile {
@@ -381,6 +384,7 @@ text-align: right;
   }
 
   .description {
+    /*padding-bottom: 8px;*/
       margin-left: 20px;
       font: 12px;
   }
