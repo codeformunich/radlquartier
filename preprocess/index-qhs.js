@@ -17,6 +17,7 @@ var input = '';
 var output = {
     'totalCount': 0,
     'meanYearMonth': [0,0,0,0,0,0,0,0,0,0,0,0],
+    'meanWeekDays': [0,0,0,0,0,0,0],
     'districts': []
 };
 
@@ -371,6 +372,15 @@ var createMonthJson = function(db, feature, callback) {
                 else {
                     districtData.meanYearMonth[l] = ss.mean(data.yearMonth[l]);
                 }
+
+                if (output.districts.length === 0) {
+                    output.meanYearMonth[l] = districtData.meanYearMonth[l];
+                }
+                else {
+                    output.meanYearMonth[l]  = ss.addToMean(output.meanYearMonth[l],
+                        output.districts.length,
+                        districtData.meanYearMonth[l]);
+                }
             }
 
             districtData.meanWeeks = ss.mean(data.weeks);
@@ -385,22 +395,21 @@ var createMonthJson = function(db, feature, callback) {
                 else {
                     districtData.meanWeekDays[k] = ss.mean(data.weekDays[k]);
                 }
+
+                if (output.districts.length === 0) {
+                    output.meanWeekDays[k] = districtData.meanWeekDays[k];
+                }
+                else {
+                    output.meanWeekDays[k]  = ss.addToMean(output.meanWeekDays[k],
+                        output.districts.length,
+                        districtData.meanWeekDays[k]);
+                }
             }
 
             districtData.meanDays = ss.mean(data.days);
 
+
             output.districts.push(districtData);
-
-            if (output.districts.length === 1) {
-                output.meanYearMonth = districtData.meanYearMonth.slice(); // slice() to copy array
-            }
-            else {
-                var count = output.districts.length - 1;
-                for (var n = 0; n < 12; n++) {
-                    output.meanYearMonth[n]  = ss.addToMean(output.meanYearMonth[n], count, districtData.meanYearMonth[n]);
-                }
-            }
-
             callback();
         }
     );
