@@ -85,8 +85,10 @@ process.stdin.on('end', function() {
             var outputCount = output.districts.length;
             for (var i = 0; i < outputCount; i++) {
                 var fileName = 'cartodb_id_' + output.districts[i].id + '.geojson';
+                var coordinates = output.districts[i].coordinates;
+
                 fs.writeFile( fileName,
-                    JSON.stringify(output.districts[i].coordinates, null, '\t'),
+                    JSON.stringify(coordinates, null, '\t'),
                     function(err) {
                         if (err) {
                             console.log('ERROR: createForAllFeatures:', err);
