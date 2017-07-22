@@ -13,18 +13,21 @@ var Hexmap = (function(window, d3, L) {
     var layerMvg;
     var hexLayer;
     var districtIndex = 0;
-    var map;
+    var map,
+        div;
 
     function init() {
+        div = d3.select(".toolTip");
+
         calculateDistrictCenters(function(){
             initGeoJsonOverlays(function(){
                initHexLayer();
 
                 overlayMaps = {
-                    "Munich": layerMunich,
-                    "MVG": layerMvg,
-                    "Stations": layerStations,
-                    "Halts": hexLayer
+                    "Muenchen": layerMunich,
+                    "MVG-Rad": layerMvg,
+                    "Stationen": layerStations,
+                    "Fahrten": hexLayer
                 };
 
                 var layer = L.tileLayer('https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png', {
@@ -46,16 +49,37 @@ var Hexmap = (function(window, d3, L) {
     }
 
     function initHexLayer() {
+        // Make a reusable color scale array
+        var colorRange = ['#f3fbfc','#86ccd1', '#5ebeb4', '#11afd9','#4970b6', '#6467c2', '#604595', '#390898'];
+
         // Options for the Hexbin
         var options = {
             radius: 12,
             opacity: 0.5,
             // colorRange: [ 'white', 'orange', 'red' ],
-            colorRange: ['#fff', '#409A99'],
+            // colorRange: ['white','#f4e94f', '#bcf089', '#50b9a2', '#11afd9','#4970b6', '#604595'],
+             colorRange: colorRange,
+            // colorRange: D3.interpolateCool(),
             // Set overrides for the colorScale's domain extent
             colorScaleExtent: [ 1, 500 ],
             radiusRange: [ 4, 10 ]
         };
+
+        // Create the legend to illustrate the color scale being divergent
+        var legendEntries = ['900', '780', '650', '520', '390', '260', '130', '1'];
+        var colorScale = d3.scaleLinear()
+            .domain([1, 130, 260, 390, 520, 650, 780, 900])
+            .range(colorRange);
+        var legend = d3.select('.hexmapLegend').selectAll('.legend-entry').data(legendEntries).enter().append('div').attr('class', 'legend-entry');
+        legend.append('div').attr('class', 'color-tile').style('background-color', function(d, i) { return colorScale(d); });
+        legend.append('div').attr('class', 'description').text(function(d) {
+            if( d === '1' ) {
+                return d + ' Fahrrad oder mehr';
+            }
+            else {
+                return d;
+            }
+        });
 
         // Create the hexlayer
         hexLayer = L.hexbinLayer(options);
@@ -63,16 +87,24 @@ var Hexmap = (function(window, d3, L) {
         // Set up events
         hexLayer.dispatch()
             .on('mouseover', function(d, i) {
-                console.log({ type: 'mouseover', event: d, index: i, context: this });
-                setHovered(d);
+                // console.log({ type: 'mouseover', event: d, index: i, context: this });
+
+                div.style("left", d3.event.pageX + 10 + "px");
+                div.style("top", d3.event.pageY - 25 + "px");
+                div.style("display", "inline-block");
+                div.html(((null !== d) ? d.length : '') + " Fahrten");
+
+                // setHovered(d);
             })
             .on('mouseout', function(d, i) {
-                console.log({ type: 'mouseout', event: d, index: i, context: this });
-                setHovered();
+                // console.log({ type: 'mouseout', event: d, index: i, context: this });
+                div.style("display", "none");
+
+                // setHovered();
             })
             .on('click', function(d, i) {
-                console.log({ type: 'click', event: d, index: i, context: this });
-                setClicked(d);
+                // console.log({ type: 'click', event: d, index: i, context: this });
+                // setClicked(d);
             });
 
         // hexLayer.setZIndex(650);
@@ -84,18 +116,26 @@ var Hexmap = (function(window, d3, L) {
     function initGeoJsonOverlays(callback) {
         var geojsonMarkerOptions = {
                 radius: 5,
-                fillColor: "#ff7800",
-                color: "#000",
+                fillColor: "#013fbb",
+                color: "#3013fbb",
                 weight: 1,
                 opacity: 1,
                 fillOpacity: 0.8
         };
 
         loadGeoJson('data/munich.geojson', function(munichData) {
-            layerMunich = L.geoJSON(munichData);
+            layerMunich = L.geoJSON(munichData, {
+                    style: function (feature) {
+                        return { fill: false , color: '#b1b2b2' , weight:3 };
+                    }
+                });
 
             loadGeoJson('data/mvgbike.geojson', function(mvgData) {
-                layerMvg = L.geoJSON(mvgData);
+                layerMvg = L.geoJSON(mvgData, {
+                    style: function (feature) {
+                        return { fillOpacity: 0.1 , fillColor: '#013fbb' , stroke: false };
+                    }
+                });
 
                 loadGeoJson('data/stations.geojson', function(stationData) {
                     layerStations = L.geoJSON(stationData, {
@@ -117,24 +157,16 @@ var Hexmap = (function(window, d3, L) {
         }
     }
 
-    function setHovered(d) {
-        d3.select('#hovered .count').text((null !== d) ? d.length : '');
-    }
+    // function setHovered(d) {
+    //     d3.select('#hovered .count').text((null !== d) ? d.length : '');
+    // }
 
-    function setClicked(d) {
-        d3.select('#clicked .count').text((null !== d) ? d.length : '');
-    }
+    // function setClicked(d) {
+    //     d3.select('#clicked .count').text((null !== d) ? d.length : '');
+    // }
 
-    function loadNextDistrict() {
-        if (districtIndex < 28) {
-            districtIndex = districtIndex + 1;
-        }
-        else {
-            districtIndex = 0;
-        }
-
-
-        loadDistrictHalts(districtIndex);
+    function loadDistrict(id) {
+        loadDistrictHalts(id);
     }
 
     var districts;
@@ -162,6 +194,9 @@ var Hexmap = (function(window, d3, L) {
 
     //Load halts data
     function loadDistrictHalts(index) {
+        // https://github.com/Leaflet/Leaflet/issues/2738
+        map.invalidateSize();
+
         var fileName = 'data/halts/allCoordinates.geojson';
         if (index !== 0) {
             fileName = 'data/halts/cartodb_id_' + index + '.geojson';
@@ -175,9 +210,8 @@ var Hexmap = (function(window, d3, L) {
         });
     }
 
-    init();
-
     return {
-        loadNextDistrict : loadNextDistrict
+        init : init,
+        loadDistrict : loadDistrict
     };
 })(window, d3, L);
