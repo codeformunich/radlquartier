@@ -90,7 +90,7 @@ var App = (function(window, document, d3) {
 
     $(document).ready(function() {
         window.addEventListener('resize', Chart.render);
-        window.addEventListener('resize', Heatmap.render);
+        window.addEventListener('resize', Mucmap.render);
 
         $("#previousbutton").click(clickedNextDistrict);
         $("#nextbutton").click(clickedNextDistrict);

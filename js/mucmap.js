@@ -1,4 +1,4 @@
-var Heatmap = (function(window, d3) {
+var Mucmap = (function(window, d3) {
     var svg,
         rect,
         g,
