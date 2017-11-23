@@ -61,8 +61,8 @@ var Hexdemo = (function(window, d3, L) {
              colorRange: colorRange,
             // colorRange: D3.interpolateCool(),
             // Set overrides for the colorScale's domain extent
-            colorScaleExtent: [ 1, 500 ],
-            radiusRange: [ 4, 11 ]
+            colorScaleExtent: [ 1, 900 ],
+            radiusRange: [ 4, 10 ]
         };
 
         // Create the legend to illustrate the color scale being divergent
