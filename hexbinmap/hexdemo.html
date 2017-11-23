@@ -21,33 +21,18 @@
 
 </head>
 <body>
-    <h2>Leaflet d3 Hexbin Example with Event Handling</h2>
-    <p>Demonstrates use of events</p>
+    <h2>Leaflet d3 Hexbin Example</h2>
+    <p>Alle Fahreten von Juli 2016 bis Juli 2017. Kann etwas dauern bis die Seite fertig geladen ist ;)</p>
 
     <!-- The map element -->
     <div id="hexmap" style="width: 100%; height: 80vh; border: 1px solid #ccc"></div>
     <div class="toolTip"></div>
     <br/>
 
-    <button onclick="loadNextDistrict()">Load next district</button>
-
-    <script src="js/hexmap.js"></script>
+    <script src="js/hexdemo.js"></script>
     <script type="text/javascript">
         var districtIndex = 0;
-
-        Hexmap.init();
-
-        function loadNextDistrict() {
-            if (districtIndex < 28) {
-                districtIndex = districtIndex + 1;
-            }
-            else {
-                districtIndex = 0;
-            }
-
-            Hexmap.loadDistrict(districtIndex);
-        }
-
+        Hexdemo.init();
     </script>
 </body>
 </html>
