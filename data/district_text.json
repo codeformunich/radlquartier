@@ -164,10 +164,10 @@
         "name": "Obergiesing-Fasangarten",
         "description":
             "",
-        "stationCount": 0,
+        "stationCount": 4,
         "area": 5.72,
         "inhabitants": 9577,
-        "areaMvg": false
+        "areaMvg": true
     },
     {
         "id": 18,
