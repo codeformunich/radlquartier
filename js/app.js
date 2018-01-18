@@ -51,9 +51,9 @@ var App = (function(window, document, d3) {
         if (index === 0) {
             previousDistrict = 0;
             nextDistrict = 1;
-        } else if (index === 27) {
-            previousDistrict = 26;
-            nextDistrict = 27;
+        } else if (index === 24) {
+            previousDistrict = 23;
+            nextDistrict = 24;
         } else {
             previousDistrict = index - 1;
             nextDistrict = index + 1;
