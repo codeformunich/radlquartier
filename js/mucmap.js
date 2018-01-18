@@ -27,7 +27,7 @@ var Mucmap = (function(window, d3) {
     });
 
     // Load map data
-    d3.json('data/munich.geojson', init);
+    d3.json('data/bezirke.geojson', init);
 
     function init(error, heatData){
         features = heatData.features;
@@ -48,8 +48,6 @@ var Mucmap = (function(window, d3) {
         // .domain([6000, 0]);
         // color.domain([d3.max(features, nameLength), 0]);
         // color.domain([0, d3.max(features, nameLength)]);
-
-
         // Create the legend to illustrate the color scale being divergent
         var legendEntries = ['5500', '3000', '1000', '100', '0'];
         var legend = d3.select('.heatmapLegend').selectAll('.legend-entry').data(legendEntries).enter().append('div').attr('class', 'legend-entry');
@@ -147,7 +145,7 @@ var Mucmap = (function(window, d3) {
 
     // Get province name
     function nameFn(d) {
-        return d && d.properties ? d.properties.name : null;
+        return d && d.properties ? d.properties.NAME : null;
     }
 
     // Get province name length
@@ -200,7 +198,7 @@ var Mucmap = (function(window, d3) {
             App.selectNewDistrict(0);
         }
         else {
-            App.selectNewDistrict(d.properties.cartodb_id);
+            App.selectNewDistrict(Number(d.properties.SB_NUMMER));
         }
 
         // // Zoom

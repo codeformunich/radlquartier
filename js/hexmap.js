@@ -123,7 +123,7 @@ var Hexmap = (function(window, d3, L) {
                 fillOpacity: 0.8
         };
 
-        loadGeoJson('data/munich.geojson', function(munichData) {
+        loadGeoJson('data/bezirke.geojson', function(munichData) {
             layerMunich = L.geoJSON(munichData, {
                     style: function (feature) {
                         return { fill: false , color: '#b1b2b2' , weight:3 };
@@ -170,19 +170,19 @@ var Hexmap = (function(window, d3, L) {
         }
 
     var districts;
-    d3.json('data/munich.geojson', function(error, districtsData) {
+    d3.json('data/bezirke.geojson', function(error, districtsData) {
         districts = districtsData;
     });
 
     var districtCenters = {};
     function calculateDistrictCenters(callback) {
-        d3.json('data/munich.geojson', function(error, districtsData) {
+        d3.json('data/bezirke.geojson', function(error, districtsData) {
             districts.features.forEach( function(item) {
                 var bounds = d3.geoBounds(item);
 
                 var lng  = (bounds[1][0] + bounds[0][0]) / 2;
                 var lat  = (bounds[1][1] + bounds[0][1]) / 2;
-                var key = 'id' + item.properties.cartodb_id;
+                var key = 'id' + Number(item.properties.SB_NUMMER);
 
                 districtCenters[key] = [lat, lng];
             });
