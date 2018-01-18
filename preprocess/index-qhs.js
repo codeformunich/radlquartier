@@ -214,7 +214,7 @@ var createMonthJson = function(db, feature, callback) {
                     loc: {
                         $geoWithin: {
                             $geometry: {
-                                type: "MultiPolygon",
+                                type: feature.geometry.type,
                                 coordinates: feature.geometry.coordinates
                             }
                         }
@@ -255,8 +255,8 @@ var createMonthJson = function(db, feature, callback) {
             // console.log('createDistrictJson, results: ', results);
 
             var districtData = {
-                'name': feature.properties.name,
-                'id': feature.properties.cartodb_id,
+                'name': feature.properties.NAME,
+                'id': Number(feature.properties.SB_NUMMER),
                 'totalCount': 0,
                 'meanYears': 0,
                 'meanMonth': 0,

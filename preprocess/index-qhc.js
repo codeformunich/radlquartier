@@ -8,7 +8,7 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
 
-var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000';
+var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=200000';
 var inputCollection = 'halts';
 
 var input = '';
@@ -107,7 +107,7 @@ process.stdin.on('end', function() {
 var createForAllFeatures = function(db, features, callback) {
     var length = features.length;
 
-    // console.log('createForAllFeatures length: ', length);
+    console.log('createForAllFeatures length: ', length);
 
     syncLoop(length, function(loop){
         // console.log('createForAllBikes loop.iteration: ', loop.iteration());
@@ -122,10 +122,10 @@ var createForAllFeatures = function(db, features, callback) {
 
 var createJson = function(db, feature, callback) {
     if ( feature === null || feature === undefined ) {
-        console.log('ERROR: createDistrictJson, feature:', feature);
+        console.log('ERROR: createJson, feature:', feature);
         return;
     }
-    // console.log('createDistrictJson, name: ', feature.properties.name);
+    console.log('createJson, name: ', feature.properties.NAME);
 
     var collection = db.collection(inputCollection);
     collection.aggregate(
@@ -135,7 +135,7 @@ var createJson = function(db, feature, callback) {
                     loc: {
                         $geoWithin: {
                             $geometry: {
-                                type: "MultiPolygon",
+                                type: feature.geometry.type,
                                 coordinates: feature.geometry.coordinates
                             }
                         }
@@ -169,8 +169,8 @@ var createJson = function(db, feature, callback) {
             // console.log('createDistrictJson, results: ', results);
 
             var districtData = {
-                'name': feature.properties.name,
-                'id': feature.properties.cartodb_id,
+                'name': feature.properties.NAME,
+                'id': Number(feature.properties.SB_NUMMER),
                 "coordinates": []
             };
 
