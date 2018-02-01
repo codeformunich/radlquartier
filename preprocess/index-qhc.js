@@ -8,17 +8,17 @@ var MongoClient = require('mongodb').MongoClient;
 var assert = require('assert');
 var ObjectId = require('mongodb').ObjectID;
 
-var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=90000';
+var url = 'mongodb://localhost:27017/bikeproject?socketTimeoutMS=200000';
 var inputCollection = 'halts';
 
 var input = '';
-var output = { 
+var output = {
     'districts': []
 };
 
 
 // https://zackehh.com/handling-synchronous-asynchronous-loops-javascriptnode-js/
-function syncLoop(iterations, process, exit){  
+function syncLoop(iterations, process, exit){
     var index = 0,
         done = false,
         shouldExit = false;
@@ -81,18 +81,20 @@ process.stdin.on('end', function() {
         // creare map data for all bikes
         createForAllFeatures(db, features, function(result) {
             db.close();
-            
+
             var outputCount = output.districts.length;
             for (var i = 0; i < outputCount; i++) {
-                var fileName = 'cartodb_id_' + output.districts[i].id + '.geo.json';
-                fs.writeFile( fileName, 
-                    JSON.stringify(output.districts[i].coordinates, null, '\t'), 
+                var fileName = 'cartodb_id_' + output.districts[i].id + '.geojson';
+                var coordinates = output.districts[i].coordinates;
+
+                fs.writeFile( fileName,
+                    JSON.stringify(coordinates, null, '\t'),
                     function(err) {
-                        if (err) { 
+                        if (err) {
                             console.log('ERROR: createForAllFeatures:', err);
-                            return; 
+                            return;
                          }
-                        
+
                 });
             }
 
@@ -105,9 +107,9 @@ process.stdin.on('end', function() {
 var createForAllFeatures = function(db, features, callback) {
     var length = features.length;
 
-    // console.log('createForAllFeatures length: ', length);
+    console.log('createForAllFeatures length: ', length);
 
-    syncLoop(length, function(loop){  
+    syncLoop(length, function(loop){
         // console.log('createForAllBikes loop.iteration: ', loop.iteration());
         // console.log('createForAllBikes bikeNumber: ', bikeNumbers[loop.iteration()]);
         createJson(db, features[loop.iteration()], function(result) {
@@ -120,27 +122,27 @@ var createForAllFeatures = function(db, features, callback) {
 
 var createJson = function(db, feature, callback) {
     if ( feature === null || feature === undefined ) {
-        console.log('ERROR: createDistrictJson, feature:', feature);
+        console.log('ERROR: createJson, feature:', feature);
         return;
     }
-    // console.log('createDistrictJson, name: ', feature.properties.name);
-    
+    console.log('createJson, name: ', feature.properties.NAME);
+
     var collection = db.collection(inputCollection);
-    collection.aggregate( 
-        [ 
+    collection.aggregate(
+        [
             {
                 $match: {
                     loc: {
                         $geoWithin: {
                             $geometry: {
-                                type: "MultiPolygon",
+                                type: feature.geometry.type,
                                 coordinates: feature.geometry.coordinates
                             }
                         }
                    }
                 }
             },
-            { 
+            {
                 $project: {
                     bikeNumber: "$bikeNumber",
                     coordinates: "$loc.coordinates"
@@ -150,25 +152,25 @@ var createJson = function(db, feature, callback) {
                     // hour: { $hour: "$startDate" },
                     // week: { $isoWeek: "$startDate" },
                     // dayOfWeek: { $isoDayOfWeek: "$startDate" }
-                } 
+                }
             }
-            // { 
-            //     $group: { 
-            //         _id: { year: "$year", month: "$month"}, 
+            // {
+            //     $group: {
+            //         _id: { year: "$year", month: "$month"},
             //         count: { $sum: 1 }
-            //     } 
+            //     }
             // },
-            // { 
-            //     $sort : { "_id.year": 1, "_id.month": 1 } 
-            // }      
-        ],      
+            // {
+            //     $sort : { "_id.year": 1, "_id.month": 1 }
+            // }
+        ],
         function(err, results) {
             assert.equal(err, null);
             // console.log('createDistrictJson, results: ', results);
 
             var districtData = {
-                'name': feature.properties.name,
-                'id': feature.properties.cartodb_id,
+                'name': feature.properties.NAME,
+                'id': Number(feature.properties.SB_NUMMER),
                 "coordinates": []
             };
 
