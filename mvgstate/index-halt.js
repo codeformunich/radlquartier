@@ -2,16 +2,25 @@
 "use strict";
 
 // requiremetns for mongoDB
-var MongoClient = require('mongodb').MongoClient;
-var assert = require('assert');
-var ObjectId = require('mongodb').ObjectID;
+// var MongoClient = require('mongodb').MongoClient;
+// var assert = require('assert');
+// var ObjectId = require('mongodb').ObjectID;
+var fs = require('fs');
 
-var url = 'mongodb://localhost:27017/bikeproject'; 
-var metaDataCollection = 'mnsmeta';
-var haltsCollection = 'halts'; // 'testhalts'; // 
+// var url = 'mongodb://localhost:27017/bikeproject'; 
+// var metaDataCollection = 'mnsmeta';
+// var haltsCollection = 'halts'; // 'testhalts'; // 
+
+var lastParseFile  = "lastParse.json";
+var haltDataFile = "haltData.json";
+
+var lastParse = null;
+var haltData = null;
 
 var callbackCount = 0;
 var bikesCount = 0;
+
+
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
@@ -32,6 +41,20 @@ process.stdin.on('end', function() {
 
     bikes = json.addedBikes;
     bikesCount = bikes.length;
+
+
+    // try {
+    //    lastParse = fs.readFileSync(lastParseFile);
+    // } catch (error) {
+    //     log.console('process.stdin.on, error', error);
+    // }
+    
+    // try {
+    //     haltData = fs.readFileSync(haltDataFile);
+    // } catch (error) {
+    //     log.console('process.stdin.on, error', error);
+    // }
+
 
     MongoClient.connect(url, function(err, db) {
         assert.equal(err, null);
