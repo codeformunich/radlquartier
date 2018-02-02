@@ -1,199 +1,177 @@
 /*jshint node:true */
-"use strict";
+'use strict';
 
-// requiremetns for mongoDB
-// var MongoClient = require('mongodb').MongoClient;
-// var assert = require('assert');
-// var ObjectId = require('mongodb').ObjectID;
-var fs = require('fs');
+const fs = require('fs');
+const uuidv4 = require('uuid/v4');
 
-// var url = 'mongodb://localhost:27017/bikeproject'; 
-// var metaDataCollection = 'mnsmeta';
-// var haltsCollection = 'halts'; // 'testhalts'; // 
+const outputFolder = 'output';
+const tempFileName = 'mvgStateTemp.json';
+const dataFileName = 'mvgStateHalts.json';
 
-var lastParseFile  = "lastParse.json";
-var haltDataFile = "haltData.json";
-
-var lastParse = null;
-var haltData = null;
-
-var callbackCount = 0;
-var bikesCount = 0;
-
-
+let haltData = null;
+let oldTempData = null;
+let newTemopData = [];
+let input = '';
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
-var input = '';
 process.stdin.on('data', function (chunk) {
-  input = input + chunk;
+    input = input + chunk;
 });
 
-process.stdin.on('end', function() {
-    var json, 
-        bikes,  
-        index = 0;
+process.stdin.on('end', function () {
+    let index = 0;
 
-    json = JSON.parse(input);
+    const json = JSON.parse(input);
     // console.log(input);
     // console.log(json);
 
-    bikes = json.addedBikes;
-    bikesCount = bikes.length;
+    const bikes = json.addedBikes;
+    const bikesCount = bikes.length;
 
+    const outputPathTemp = outputFolder + '/' + tempFileName;
+    const outputPathData = outputFolder + '/' + dataFileName;
 
-    // try {
-    //    lastParse = fs.readFileSync(lastParseFile);
-    // } catch (error) {
-    //     log.console('process.stdin.on, error', error);
-    // }
-    
-    // try {
-    //     haltData = fs.readFileSync(haltDataFile);
-    // } catch (error) {
-    //     log.console('process.stdin.on, error', error);
-    // }
+    if (!fs.existsSync(outputFolder)) {
+        fs.mkdirSync(outputFolder);
+    }
 
+    oldTempData = loadExitingJsonFile(outputPathTemp);
 
-    MongoClient.connect(url, function(err, db) {
-        assert.equal(err, null);
-
-        callbackCount = callbackCount + 1;
-        insertMetaData(db, json);
-
-        for (index; index < bikesCount; index++) {
-            generateHalt(db, bikes[index], closeCallback);
-
-            //     function() {
-            //     console.log( 'generateHaltCallback, callbackCount:', callbackCount);
-            //     callbackCount = callbackCount - 1;
-    
-            //     if (callbackCount === 0) {
-            //         db.close();
-            //         console.log('... work done.');
-            //     }
-            // });
+    if (fs.existsSync(outputPathData)) {
+        try {
+            haltData = JSON.parse(fs.readFileSync(outputPathData));
+        } catch (error) {
+            console.log('process.stdin.on, error', error);
+            throw error;
         }
-    }); 
+    } else {
+        console.log('No ' + outputPathData + ' file creating new one.');
+        haltData = [];
+    }
+
+    for (index; index < bikesCount; index++) {
+        generateHalt(bikes[index]);
+    }
+
+    try {
+        fs.writeFileSync(outputPathData, JSON.stringify(haltData, null, '\t'));
+    } catch (error) {
+        console.log('process.stdin.on, error', error);
+        throw error;
+    }
+
+    try {
+        fs.writeFileSync(outputPathTemp, JSON.stringify(newTemopData, null, '\t'));
+    } catch (error) {
+        console.log('process.stdin.on, error', error);
+        throw error;
+    }
+
+    console.log('Done');
 });
 
-var closeCallback = function(db) {
-    if (++callbackCount == bikesCount) {
-        console.log( 'closeCallback, callbackCount:', callbackCount);
-        db.close();
-        console.log('... work done.');
+const loadExitingJsonFile = function (filePath) {
+    if (!fs.existsSync(filePath)) {
+        console.log('No ' + filePath + ' file creating new one.');
+        return [];
+    }
+
+    try {
+        return JSON.parse(fs.readFileSync(filePath));
+    } catch (error) {
+        console.log('process.stdin.on, error', error);
+        throw error;
     }
 };
 
-var generateHalt = function(db, bike, callback) {
-    console.log( 'generateHalt, bike.bikeNumber:', bike.bikeNumber);
+const generateHalt = function (bike) {
+    // console.log('generateHalt, bike.bikeNumber:', bike.bikeNumber);
 
-    findLastHalt(db, bike, function(docs) {
-        if ( docs.length === 0 || docs[0] === null || docs[0] === undefined ){
-            insertHalt(db, bike, function() {
-                callback(db);
-            });
-            
-            return;
-        }
+    const lastHalt = findLastHalt(bike);
+    // console.log('generateHalt, lastHalt:', lastHalt);
 
-        var lastHalt = docs[0];
+    if (lastHalt === null || lastHalt === undefined) {
+        insertHalt(bike);
+    } else {
         // console.log( 'generateHalt, bike:', bike);
         // console.log( 'generateHalt, lastHalt:', lastHalt);
 
         // console.log( 'generateHalt:', lastHalt.loc.coordinates[0], bike.longitude, 
         //     lastHalt.loc.coordinates[1], bike.latitude);
         if (lastHalt.loc.coordinates[0] === bike.longitude && lastHalt.loc.coordinates[1] === bike.latitude) {
-            updateHalt(db, bike, lastHalt, function() {
-                callback(db);
-            });
+            // console.log( 'generateHalt, bike:', bike);
+            updateHalt(bike, lastHalt);
+        } else {
+            // console.log( 'generateHalt, bike:', bike);
+            insertHalt(bike);
         }
-        else {
-            insertHalt(db, bike, function() {
-                callback(db);
-            });
-        }
+    }
+};
 
+var findLastHalt = function (bike) {
+    // console.log('findLastHalt, newBike.bikeNumber:', bike.bikeNumber);
+    if (oldTempData === null || oldTempData === undefined) {
+        console.log('findLastHalt, oldTempData: null or undefined');
+        return null;
+    }
+
+    return oldTempData.find(function (temp) {
+        // if (temp.bikeNumber === bike.bikeNumber){
+        //     console.log( 'findLastHalt found bikeNumber:', bike.bikeNumber);
+        // }
+        return temp.bikeNumber === bike.bikeNumber;
     });
-
-    
 };
 
-var findLastHalt = function(db, bike, callback) {
-    console.log( 'findLastHalt, bike.bikeNumber:', bike.bikeNumber);
-
-    db.collection(haltsCollection)
-        .find({bikeNumber: bike.bikeNumber})
-        .sort({_id:-1})
-        .limit(1)
-        .toArray(function( err, docs ){
-            assert.equal(err, null);
-            // console.log( 'findLastHalt, docs:', docs);
-            callback(docs);
-        }
-    );
-};
-
-var insertHalt = function(db, bike, callback) {
-    var halt= newHalt(bike);
+var insertHalt = function (bike) {
+    var halt = newHalt(bike);
     if (halt === null) {
         console.log('ERROR insertHalt, halt: ', halt);
         return;
     }
 
-    console.log('insertHalt, halt.bikeNumber: ', halt.bikeNumber);
-    db.collection(haltsCollection).insertOne( halt, function(err, result) {
-        assert.equal(null, err);
-        callback(result);
+    haltData.push(halt);
+    newTemopData.push(halt);
+
+    // console.log('insertHalt, bikeNumber:', halt.bikeNumber, 'id:', halt.id);
+};
+
+var updateHalt = function (bike, lastHalt) {
+
+    const index = haltData.findIndex(function (halt) {
+        return halt.id === lastHalt.id;
     });
+
+    const date = new Date(bike.updated);
+
+    haltData[index].dates.push(date);
+    haltData[index].endDate = date;
+    haltData[index].count = haltData[index].count + 1;
+
+    newTemopData.push(haltData[index]);
+
+    // console.log('updateHalt, bikeNumber:', haltData[index].bikeNumber, 'id:', haltData[index].id);
 };
-
-var updateHalt = function(db, bike, lastHalt, callback) {
-    var date = new Date(bike.updated);
-
-    var halt = lastHalt;
-    // console.log('updateHalt, halt: ', halt);
-    halt.dates.push(date);
-    halt.endDate = date;
-    halt.count = halt.count + 1;
-
-    console.log('updateHalt, halt.bikeNumber: ', halt.bikeNumber);
-    db.collection(haltsCollection).updateOne({_id: halt._id}, 
-        {$set: {dates: halt.dates, endDate: halt.endDate, count: halt.count}}, 
-        function(err, result) {
-            assert.equal(null, err);
-            assert.equal(1, result.matchedCount);
-            assert.equal(1, result.modifiedCount);
-            callback(result);
-        }
-    );
-};
-
-var closeConnection = function(db) {
-    console.log( 'closeConnection, callbackCount:', callbackCount);
-    callbackCount = callbackCount - 1;
-    
-    if (callbackCount === 0) {
-        db.close();
-        console.log('... work done.');
-    }
-};
-
 
 // helper function
 // creates new halt object 
-var newHalt = function(bike) {
-    if (bike === null || bike === undefined ) {
+var newHalt = function (bike) {
+    if (bike === null || bike === undefined) {
         console.log('ERROR: newHalt, bike:', bike);
-        return null;    
+        return null;
     }
 
     var halt = {};
     var date = new Date(bike.updated);
 
+    halt.id = uuidv4();
     halt.bikeNumber = bike.bikeNumber;
-    halt.loc = { type: 'Point', coordinates: [bike.longitude, bike.latitude] };
+    halt.loc = {
+        type: 'Point',
+        coordinates: [bike.longitude, bike.latitude]
+    };
     halt.startDate = date;
     halt.endDate = date;
 
@@ -201,36 +179,13 @@ var newHalt = function(bike) {
     halt.dates = [date];
 
     if (bike.currentStationID) {
-        halt.stationId = bike.currentStationID;        
+        halt.stationId = bike.currentStationID;
 
         // TODO standardize
         //halt.stationId = place.uid;
         //halt.stationName = place.name;
     }
 
-    console.log('newHalt, bikeNumber:', halt.bikeNumber);
+    // console.log('newHalt, bikeNumber:', halt.bikeNumber, halt.id);
     return halt;
-};
-
-
-var insertMetaData = function(db, json, timeStamp, callback) {
-    var metaData = newMetaData(json, timeStamp);
-    
-    db.collection(metaDataCollection).insertOne(metaData, function(err, result) {
-        assert.equal(err, null);
-    });
-};
-
-var newMetaData = function(json) {
-    var metaData = {};
-    metaData.timeStamp = new Date(json.addedBikes[0].updated);
-    metaData.addedBikes = json.addedBikes.length;
-    metaData.changedBikes = json.changedBikes.length;
-    metaData.deletedBikes = json.deletedBikes.length;
-    metaData.addedStations = json.addedStations.length;
-    metaData.changedStations = json.changedStations.length;
-    metaData.deletedStations = json.deletedStations.length;
-
-    console.log( 'newMetaData, metaData:', metaData);
-    return metaData;
 };

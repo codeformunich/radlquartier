@@ -14,6 +14,6 @@
   "dependencies": {
     "commander": "^2.9.0",
     "moment": "^2.17.0",
-    "mongodb": "^2.2.16"
+    "uuid": "^3.2.1"
   }
 }
