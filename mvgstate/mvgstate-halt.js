@@ -1,5 +1,7 @@
-/*jshint node:true */
-'use strict';
+/**
+ * halt
+ *
+ */
 
 const fs = require('fs');
 const uuidv4 = require('uuid/v4');

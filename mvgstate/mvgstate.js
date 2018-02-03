@@ -1,13 +1,11 @@
 #!/usr/bin/env node
-/*jshint node:true */
-'use strict';
 
 /**
  * Require dependencies
  *
  */
-const program = require('commander'),
-      pkg = require('./package.json');
+const program = require('commander');
+const pkg = require('./package.json');
 
 program
     .version(pkg.version)
