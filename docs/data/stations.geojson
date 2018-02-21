@@ -1,0 +1,1769 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.546428680419922,
+					48.10127258300781
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "00e6825bb9f1782eb8b298c79011fde4",
+				"placeID": "487192",
+				"latitude": 48.10127258300781,
+				"longitude": 11.546428680419922,
+				"name": "Thalkirchen (Tierpark)",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.55035400390625,
+					48.076622009277344
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "025f446bb6cc5378d924d07fdbe11ea3",
+				"placeID": "683292",
+				"latitude": 48.076622009277344,
+				"longitude": 11.55035400390625,
+				"name": "Großhesseloher Brücke",
+				"available": 8,
+				"provider": "MVG_RAD",
+				"district": "Untergiesing-Harlaching"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.5728759765625,
+					48.171051025390625
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "0682079c76ec956639d02b5544cf557d",
+				"placeID": "341137",
+				"latitude": 48.171051025390625,
+				"longitude": 11.5728759765625,
+				"name": "Scheidplatz",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.5282621383667,
+					48.138832092285156
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "0875ae1060a28754cacaad063617611b",
+				"placeID": "487188",
+				"latitude": 48.138832092285156,
+				"longitude": 11.5282621383667,
+				"name": "Barthstraße",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Schwanthalerhöhe"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.529929161071777,
+					48.181854248046875
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "0baa44c26ea24b22db91805506968a73",
+				"placeID": "361557",
+				"latitude": 48.181854248046875,
+				"longitude": 11.529929161071777,
+				"name": "Olympia-Einkaufszentrum",
+				"available": 7,
+				"provider": "MVG_RAD",
+				"district": "Moosach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.506213188171387,
+					48.181026458740234
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "0cc30264fee831692abb4be3e4bda9a9",
+				"placeID": "361819",
+				"latitude": 48.181026458740234,
+				"longitude": 11.506213188171387,
+				"name": "Moosach",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Moosach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.630562782287598,
+					48.11913299560547
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "12482522d33afef080d67dc3ed24ac4e",
+				"placeID": "359205",
+				"latitude": 48.11913299560547,
+				"longitude": 11.630562782287598,
+				"name": "Michaelibad",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Berg am Laim"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.585261344909668,
+					48.13157653808594
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "15c01dc7769f6705891556a89662516f",
+				"placeID": "487452",
+				"latitude": 48.13157653808594,
+				"longitude": 11.585261344909668,
+				"name": "Deutsches Museum",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Ludwigsvorstadt-Isarvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.493183135986328,
+					48.165279388427734
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "1e293857fe55c9ab5350fa0040abc1e4",
+				"placeID": "341048",
+				"latitude": 48.165279388427734,
+				"longitude": 11.493183135986328,
+				"name": "Amalienburgstraße",
+				"available": 7,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.633756637573242,
+					48.13593292236328
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "1e4856d22965f8a84ee87bf03e1027e9",
+				"placeID": "487462",
+				"latitude": 48.13593292236328,
+				"longitude": 11.633756637573242,
+				"name": "Berg am Laim",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Bogenhausen"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.580735206604004,
+					48.11548614501953
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "20e91363b00d8d1ba93599aa0fed4fb7",
+				"placeID": "359202",
+				"latitude": 48.11548614501953,
+				"longitude": 11.580735206604004,
+				"name": "Silberhornstraße",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Obergiesing-Fasangarten"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.54870891571045,
+					48.123756408691406
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "23639c62de8c3cb0e0241665a9347b68",
+				"placeID": "341097",
+				"latitude": 48.123756408691406,
+				"longitude": 11.54870891571045,
+				"name": "Kreisverwaltungsreferat",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4749755859375,
+					48.109439849853516
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "2a842dd1f9dcf8f4757347773ab9e606",
+				"placeID": "341092",
+				"latitude": 48.109439849853516,
+				"longitude": 11.4749755859375,
+				"name": "Klinikum Großhadern",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Hadern"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.615015983581543,
+					48.14324951171875
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "2d6cd54743360b4dd6ea353dcc62fc21",
+				"placeID": "361806",
+				"latitude": 48.14324951171875,
+				"longitude": 11.615015983581543,
+				"name": "Böhmerwaldplatz",
+				"available": 3,
+				"provider": "MVG_RAD",
+				"district": "Bogenhausen"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.54408073425293,
+					48.13363265991211
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "2df476873de6ac9fa45fbe448e08c76d",
+				"placeID": "341142",
+				"latitude": 48.13363265991211,
+				"longitude": 11.54408073425293,
+				"name": "Schwanthalerhöhe",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Schwanthalerhöhe"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.571440696716309,
+					48.132415771484375
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "310a14e8d2263f6c27cf9084883f4835",
+				"placeID": "341127",
+				"latitude": 48.132415771484375,
+				"longitude": 11.571440696716309,
+				"name": "Planungsreferat",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Altstadt-Lehel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.546545028686523,
+					48.159515380859375
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "36cc6279ebdb1f20581b3f841777b044",
+				"placeID": "341102",
+				"latitude": 48.159515380859375,
+				"longitude": 11.546545028686523,
+				"name": "Leonrodplatz",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.589056968688965,
+					48.17959213256836
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "39b222fe11cad6a40a745208ae145b39",
+				"placeID": "341049",
+				"latitude": 48.17959213256836,
+				"longitude": 11.589056968688965,
+				"name": "Anni-Albers-Straße",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-Freimann"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.59508228302002,
+					48.11035919189453
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "4a113851d74961297048319b1d361be2",
+				"placeID": "683288",
+				"latitude": 48.11035919189453,
+				"longitude": 11.59508228302002,
+				"name": "Giesing",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Obergiesing-Fasangarten"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.540533065795898,
+					48.1199836730957
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "4b158764cb0c7a0086ab2829def7059d",
+				"placeID": "487456",
+				"latitude": 48.1199836730957,
+				"longitude": 11.540533065795898,
+				"name": "Margaretenplatz",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.52916431427002,
+					48.16912078857422
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "4ed11322ced365e494d63e15b171a107",
+				"placeID": "546944",
+				"latitude": 48.16912078857422,
+				"longitude": 11.52916431427002,
+				"name": "Westfriedhof",
+				"available": 3,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.55311393737793,
+					48.161773681640625
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "516f2691a127077f132830f895f81546",
+				"placeID": "487224",
+				"latitude": 48.161773681640625,
+				"longitude": 11.55311393737793,
+				"name": "Infanteriestraße",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.51556396484375,
+					48.11845016479492
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "5670ba11f48de88f9d88b5dd8ce0fcc3",
+				"placeID": "341162",
+				"latitude": 48.11845016479492,
+				"longitude": 11.51556396484375,
+				"name": "Westpark",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Sendling-Westpark"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.548197746276855,
+					48.11967468261719
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "581b1335a63d66d801e5d8668f3b11a9",
+				"placeID": "487194",
+				"latitude": 48.11967468261719,
+				"longitude": 11.548197746276855,
+				"name": "Implerstraße",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.536076545715332,
+					48.10898971557617
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "5827440141ba833491d70291a1250a22",
+				"placeID": "341110",
+				"latitude": 48.10898971557617,
+				"longitude": 11.536076545715332,
+				"name": "Mittersendling",
+				"available": 3,
+				"provider": "MVG_RAD",
+				"district": "Sendling-Westpark"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.548748016357422,
+					48.142940521240234
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "5a6a9b2e5d6c76b0b9d204209dbe0b9f",
+				"placeID": "487184",
+				"latitude": 48.142940521240234,
+				"longitude": 11.548748016357422,
+				"name": "Hackerbrücke",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Ludwigsvorstadt-Isarvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.580649375915527,
+					48.1495361328125
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "61385d47198fed4aaee984a0cf03a14e",
+				"placeID": "341156",
+				"latitude": 48.1495361328125,
+				"longitude": 11.580649375915527,
+				"name": "Universität",
+				"available": 0,
+				"provider": "MVG_RAD",
+				"district": "Maxvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.505438804626465,
+					48.160057067871094
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "61a677d63a42d7dc00a319eeeca0cca4",
+				"placeID": "683300",
+				"latitude": 48.160057067871094,
+				"longitude": 11.505438804626465,
+				"name": "Schloss Nymphenburg",
+				"available": 9,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.56799602508545,
+					48.16106033325195
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "66ade7d86b152abd25bbffbdc239eabb",
+				"placeID": "487223",
+				"latitude": 48.16106033325195,
+				"longitude": 11.56799602508545,
+				"name": "Hohenzollernplatz",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.6178560256958,
+					48.120628356933594
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "694ad5a69ebc11a54e4233b700dfb49e",
+				"placeID": "361817",
+				"latitude": 48.120628356933594,
+				"longitude": 11.6178560256958,
+				"name": "Innsbrucker Ring",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Berg am Laim"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.532980918884277,
+					48.152896881103516
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "69b9a743edb839ae1b670e2c784f1109",
+				"placeID": "683284",
+				"latitude": 48.152896881103516,
+				"longitude": 11.532980918884277,
+				"name": "Rotkreuzplatz",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.566240310668945,
+					48.175193786621094
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "6a62a124d3eca7a6905aae9a846cf058",
+				"placeID": "487226",
+				"latitude": 48.175193786621094,
+				"longitude": 11.566240310668945,
+				"name": "Petuelring",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.597309112548828,
+					48.173770904541016
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "6d2d05e00b5efd761455effbc0aa7dd9",
+				"placeID": "487459",
+				"latitude": 48.173770904541016,
+				"longitude": 11.597309112548828,
+				"name": "Nordfriedhof",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-Freimann"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.556575775146484,
+					48.17841720581055
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "6d938090ce590742075a73dab8540551",
+				"placeID": "341121",
+				"latitude": 48.17841720581055,
+				"longitude": 11.556575775146484,
+				"name": "Olympiazentrum",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Milbertshofen-Am Hart"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.576512336730957,
+					48.12044143676758
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "6e597af21fd05db44602bd8f25ee691d",
+				"placeID": "361553",
+				"latitude": 48.12044143676758,
+				"longitude": 11.576512336730957,
+				"name": "Kolumbusplatz",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Au-Haidhausen"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.631521224975586,
+					48.17609405517578
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "73af5e83d183d6f7e721013c62ba8ffd",
+				"placeID": "683298",
+				"latitude": 48.17609405517578,
+				"longitude": 11.631521224975586,
+				"name": "St. Emmeram",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Bogenhausen"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.609416007995605,
+					48.11811828613281
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "7d2c4ce29dde69376e2bfbd481004758",
+				"placeID": "341089",
+				"latitude": 48.11811828613281,
+				"longitude": 11.609416007995605,
+				"name": "Karl-Preis-Platz",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Ramersdorf-Perlach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.583087921142578,
+					48.134849548339844
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "853a86c62441a036e534f870443c75c9",
+				"placeID": "487218",
+				"latitude": 48.134849548339844,
+				"longitude": 11.583087921142578,
+				"name": "Isartor",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Altstadt-Lehel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.587594032287598,
+					48.112945556640625
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "8c340738d266dedbfbe320d91da5361c",
+				"placeID": "487222",
+				"latitude": 48.112945556640625,
+				"longitude": 11.587594032287598,
+				"name": "Untersbergstraße",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Obergiesing-Fasangarten"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.535262107849121,
+					48.17375564575195
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "8e4ce992cb7b78706f33c3c59edc3763",
+				"placeID": "695165",
+				"latitude": 48.17375564575195,
+				"longitude": 11.535262107849121,
+				"name": "IT@M",
+				"available": 0,
+				"provider": "MVG_RAD",
+				"district": "Moosach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.557229995727539,
+					48.10869598388672
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "9557a7c5fcda65e5324b331243516bbc",
+				"placeID": "683277",
+				"latitude": 48.10869598388672,
+				"longitude": 11.557229995727539,
+				"name": "Flaucher Biergarten",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Untergiesing-Harlaching"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.50247573852539,
+					48.164676666259766
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "987c02802a32e1b76db555162b599928",
+				"placeID": "341054",
+				"latitude": 48.164676666259766,
+				"longitude": 11.50247573852539,
+				"name": "Botanischer Garten",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.588881492614746,
+					48.139400482177734
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "98ee05824cb579da3539acb38e63d81c",
+				"placeID": "683286",
+				"latitude": 48.139400482177734,
+				"longitude": 11.588881492614746,
+				"name": "Lehel",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Altstadt-Lehel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.56468677520752,
+					48.168243408203125
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "997f75ecd57b917d252b1b59f66ce4b3",
+				"placeID": "487449",
+				"latitude": 48.168243408203125,
+				"longitude": 11.56468677520752,
+				"name": "Ackermannstraße",
+				"available": 3,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.559043884277344,
+					48.14693832397461
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "9a7bc735929630e5e8a79b5927716556",
+				"placeID": "487230",
+				"latitude": 48.14693832397461,
+				"longitude": 11.559043884277344,
+				"name": "Stiglmaierplatz",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Maxvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.644625663757324,
+					48.089576721191406
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "9f5a328af595946fbafdb45031d7ae4c",
+				"placeID": "361444",
+				"latitude": 48.089576721191406,
+				"longitude": 11.644625663757324,
+				"name": "Neuperlach Süd",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Ramersdorf-Perlach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.581266403198242,
+					48.09785461425781
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "a099aaa3451c8880b52e3a0066a212f7",
+				"placeID": "487455",
+				"latitude": 48.09785461425781,
+				"longitude": 11.581266403198242,
+				"name": "Mangfallplatz",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Untergiesing-Harlaching"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.54758071899414,
+					48.18597412109375
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "a19f439a85334a64a9f36fb0421b9f3a",
+				"placeID": "361813",
+				"latitude": 48.18597412109375,
+				"longitude": 11.54758071899414,
+				"name": "Oberwiesenfeld",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Milbertshofen-Am Hart"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.533890724182129,
+					48.15995788574219
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "a287567b72d0193b2aaad0889b41d61a",
+				"placeID": "341059",
+				"latitude": 48.15995788574219,
+				"longitude": 11.533890724182129,
+				"name": "Dom-Pedro-Platz",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.591118812561035,
+					48.186927795410156
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "a448330fffb5fe76baf709bbfaa50008",
+				"placeID": "516726",
+				"latitude": 48.186927795410156,
+				"longitude": 11.591118812561035,
+				"name": "Schwabing Nord",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-Freimann"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.59736442565918,
+					48.103309631347656
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "a79b2e38492a28d373e9d75396372bc0",
+				"placeID": "359178",
+				"latitude": 48.103309631347656,
+				"longitude": 11.59736442565918,
+				"name": "Schwanseestraße",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Obergiesing-Fasangarten"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.539055824279785,
+					48.1165657043457
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "a865fe7546b478fa9ae533f8c1019f59",
+				"placeID": "361682",
+				"latitude": 48.1165657043457,
+				"longitude": 11.539055824279785,
+				"name": "Harras",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.533697128295898,
+					48.13363265991211
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ad26d3c618460f14c7168fbb0f90421e",
+				"placeID": "683270",
+				"latitude": 48.13363265991211,
+				"longitude": 11.533697128295898,
+				"name": "Heimeranplatz",
+				"available": 0,
+				"provider": "MVG_RAD",
+				"district": "Schwanthalerhöhe"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.529047012329102,
+					48.16355514526367
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "adc3854d314d9e5ed33dff36d7d554c7",
+				"placeID": "487179",
+				"latitude": 48.16355514526367,
+				"longitude": 11.529047012329102,
+				"name": "Gern",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.54129695892334,
+					48.125179290771484
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "af4738c8770b0b350692bd51c0cae2fc",
+				"placeID": "487214",
+				"latitude": 48.125179290771484,
+				"longitude": 11.54129695892334,
+				"name": "Herzog-Ernst-Platz",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.588664054870605,
+					48.142826080322266
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "b5baffbd2c5900abd27d2459b179ae88",
+				"placeID": "346001",
+				"latitude": 48.142826080322266,
+				"longitude": 11.588664054870605,
+				"name": "Eisbachwelle",
+				"available": 7,
+				"provider": "MVG_RAD",
+				"district": "Altstadt-Lehel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.598703384399414,
+					48.13579559326172
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "b633210b9b7eeb1fb2f5720475e09c9a",
+				"placeID": "341106",
+				"latitude": 48.13579559326172,
+				"longitude": 11.598703384399414,
+				"name": "Max-Weber-Platz",
+				"available": 3,
+				"provider": "MVG_RAD",
+				"district": "Au-Haidhausen"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.50658893585205,
+					48.17641830444336
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "be30207cb181625b71558a715bcd6c78",
+				"placeID": "487463",
+				"latitude": 48.17641830444336,
+				"longitude": 11.50658893585205,
+				"name": "Netzerstraße",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Moosach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.531241416931152,
+					48.17123794555664
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "be9dd1e0dfe50a60a56015e221bd2033",
+				"placeID": "341150",
+				"latitude": 48.17123794555664,
+				"longitude": 11.531241416931152,
+				"name": "SWM Zentrale, Haupteingang",
+				"available": 0,
+				"provider": "MVG_RAD",
+				"district": "Moosach"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.576473236083984,
+					48.13203430175781
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "c43b8ee9242130f1c1289dea35c534f2",
+				"placeID": "360525",
+				"latitude": 48.13203430175781,
+				"longitude": 11.576473236083984,
+				"name": "Gärtnerplatz",
+				"available": 0,
+				"provider": "MVG_RAD",
+				"district": "Ludwigsvorstadt-Isarvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.55242919921875,
+					48.1071891784668
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "c73d9f2d58376fab66b28a057114afc7",
+				"placeID": "487454",
+				"latitude": 48.1071891784668,
+				"longitude": 11.55242919921875,
+				"name": "Flauchersteg",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.55490493774414,
+					48.08663558959961
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "c91e2751f0778a9ee397a4e1fefb919b",
+				"placeID": "359193",
+				"latitude": 48.08663558959961,
+				"longitude": 11.55490493774414,
+				"name": "Klinikum Harlaching",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Untergiesing-Harlaching"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.526344299316406,
+					48.117122650146484
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "cb6df72816e8f872870f834f305c4908",
+				"placeID": "341123",
+				"latitude": 48.117122650146484,
+				"longitude": 11.526344299316406,
+				"name": "Partnachplatz",
+				"available": 2,
+				"provider": "MVG_RAD",
+				"district": "Sendling-Westpark"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.578632354736328,
+					48.16660690307617
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ccfc7da1289804fe297d80bbf7303211",
+				"placeID": "341053",
+				"latitude": 48.16660690307617,
+				"longitude": 11.578632354736328,
+				"name": "Bonner Platz",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.534843444824219,
+					48.13896179199219
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "cdfcc4eaab74c4f08374dedb2d28c634",
+				"placeID": "683275",
+				"latitude": 48.13896179199219,
+				"longitude": 11.534843444824219,
+				"name": "Trappentreustraße",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Schwanthalerhöhe"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.566774368286133,
+					48.12632369995117
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ce8ea1d37f1cd69bff97358c0d28f4f3",
+				"placeID": "364316",
+				"latitude": 48.12632369995117,
+				"longitude": 11.566774368286133,
+				"name": "Am Glockenbach",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Ludwigsvorstadt-Isarvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.503531455993652,
+					48.13547897338867
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "cea1c82aa6fb67cebf77df4cad78ab02",
+				"placeID": "487182",
+				"latitude": 48.13547897338867,
+				"longitude": 11.503531455993652,
+				"name": "Laimer Platz",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Laim"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.553512573242188,
+					48.15406036376953
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "cf82ef3b0e9bf4305f11832c36edbff2",
+				"placeID": "360524",
+				"latitude": 48.15406036376953,
+				"longitude": 11.553512573242188,
+				"name": "Hochschule München",
+				"available": 0,
+				"provider": "MVG_RAD",
+				"district": "Maxvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.68966293334961,
+					48.13323211669922
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "d05001a67022dff92d8c5844e6a23200",
+				"placeID": "361554",
+				"latitude": 48.13323211669922,
+				"longitude": 11.68966293334961,
+				"name": "Messestadt West",
+				"available": 9,
+				"provider": "MVG_RAD",
+				"district": "Trudering-Riem"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.549036026000977,
+					48.112674713134766
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "d4fb31712976001cb623ea0ddfbd386a",
+				"placeID": "366736",
+				"latitude": 48.112674713134766,
+				"longitude": 11.549036026000977,
+				"name": "Brudermühlstraße",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Sendling"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.568183898925781,
+					48.15010070800781
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "d6a031bc61e80e48e9f67a2f0e2d0c12",
+				"placeID": "341155",
+				"latitude": 48.15010070800781,
+				"longitude": 11.568183898925781,
+				"name": "Technische Universität München",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Maxvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.564190864562988,
+					48.16020965576172
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "dcc728d72b407c55fd4700ea4266aece",
+				"placeID": "361809",
+				"latitude": 48.16020965576172,
+				"longitude": 11.564190864562988,
+				"name": "Nordbad",
+				"available": 2,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-West"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.544791221618652,
+					48.150386810302734
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "dead08f4081592823ada3017f622c695",
+				"placeID": "360522",
+				"latitude": 48.150386810302734,
+				"longitude": 11.544791221618652,
+				"name": "Maillingerstraße",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.586536407470703,
+					48.16273498535156
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "e0abd646437e48f5fab78f18dffa073e",
+				"placeID": "341112",
+				"latitude": 48.16273498535156,
+				"longitude": 11.586536407470703,
+				"name": "Münchner Freiheit",
+				"available": 14,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-Freimann"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.522706031799316,
+					48.13465881347656
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "e149ba518e03ac149a8b3b6bcd54ae2f",
+				"placeID": "341160",
+				"latitude": 48.13465881347656,
+				"longitude": 11.522706031799316,
+				"name": "Westendstraße",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Laim"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.56994342803955,
+					48.11176300048828
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "e703b9c715cdcecabcb244f8ab11be07",
+				"placeID": "487451",
+				"latitude": 48.11176300048828,
+				"longitude": 11.56994342803955,
+				"name": "Candidplatz",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Untergiesing-Harlaching"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.584924697875977,
+					48.17102813720703
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "e7227b6636e87e4ff2da909de4b68742",
+				"placeID": "487227",
+				"latitude": 48.17102813720703,
+				"longitude": 11.584924697875977,
+				"name": "Parzivalplatz",
+				"available": 7,
+				"provider": "MVG_RAD",
+				"district": "Schwabing-Freimann"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.576854705810547,
+					48.13825607299805
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ec122147c074640ec162d7df418fdbec",
+				"placeID": "487457",
+				"latitude": 48.13825607299805,
+				"longitude": 11.576854705810547,
+				"name": "Marienplatz",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Altstadt-Lehel"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.620128631591797,
+					48.13720703125
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ec3da8175147e3f519b160ae2b145575",
+				"placeID": "704380",
+				"latitude": 48.13720703125,
+				"longitude": 11.620128631591797,
+				"name": "Vogelweideplatz",
+				"available": 3,
+				"provider": "MVG_RAD",
+				"district": "Bogenhausen"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.524110794067383,
+					48.098365783691406
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ee1be445281a59dc9b66ff13629103b1",
+				"placeID": "487193",
+				"latitude": 48.098365783691406,
+				"longitude": 11.524110794067383,
+				"name": "Aidenbachstraße",
+				"available": 6,
+				"provider": "MVG_RAD",
+				"district": "Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.540118217468262,
+					48.1552619934082
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "f21cfe05f578ac1f9e3f05ccaafe9e19",
+				"placeID": "487450",
+				"latitude": 48.1552619934082,
+				"longitude": 11.540118217468262,
+				"name": "Albrechtstraße",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.566762924194336,
+					48.15514373779297
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "f639cd235554e8d67fd770e724d70016",
+				"placeID": "361810",
+				"latitude": 48.15514373779297,
+				"longitude": 11.566762924194336,
+				"name": "Josephsplatz",
+				"available": 4,
+				"provider": "MVG_RAD",
+				"district": "Maxvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.564655303955078,
+					48.140052795410156
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "f66ccf26cc7dbf14cf59fc31699d271c",
+				"placeID": "361803",
+				"latitude": 48.140052795410156,
+				"longitude": 11.564655303955078,
+				"name": "Karlsplatz",
+				"available": 1,
+				"provider": "MVG_RAD",
+				"district": "Maxvorstadt"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.511573791503906,
+					48.15413284301758
+				]
+			},
+			"properties": {
+				"type": "RENTAL",
+				"id": "ff505aef801527df3384ec4cbac235e2",
+				"placeID": "341133",
+				"latitude": 48.15413284301758,
+				"longitude": 11.511573791503906,
+				"name": "Romanplatz",
+				"available": 5,
+				"provider": "MVG_RAD",
+				"district": "Neuhausen-Nymphenburg"
+			}
+		}
+	]
+}
