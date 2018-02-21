@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="p/favicon.ico">
+    <title>Radlquartier München</title>
+    <!-- Bootstrap core CSS -->
+    <link href="js/library/bootstrap.min.css" rel="stylesheet">
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="js/library//leaflet.css" />
+     <link href="https://fonts.googleapis.com/css?family=Raleway:400,600,700" rel="stylesheet">
+
+    <script src="js/ie-emulation-modes-warning.js"></script>
+    <!--    D3 Head Map -->
+    <script src="js/library/jquery.min.js"></script>
+    <script src="js/library/bootstrap.min.js"></script>
+    <script src="js/library/leaflet.js"></script>
+    <script src="js/library/d3.min.js" charset="utf-8"></script>
+    <script src="js/library/d3-hexbin.min.js" charset="utf-8"></script>
+    <script src="js/library/leaflet-d3.min.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <!-- <div class="header panel-heading clearfix">
+    <nav>
+      <ul class="nav navbar-static-top nav-pills pull-right">
+        <li>
+          <button type="button" class="btn btn-default btn-lg" aria-label="Align Justify">
+            <span class="glyphicon glyphicon-align-justify" aria-hidden="true"></span>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </div> -->
+    <div class="header colour panel-heading clearfix intro">
+        <div class="animationOne"><img class="img-head" id="cloud" src="p/cloud1.png"></div>
+        <div class="animationTwo"><img class="img-head" id="cloud" src="p/cloud2.png"></div>
+        <div class="container bevor">
+            <div class="row ">
+                <div class="col-lg12 visible-xs-block visible-sm-block">
+                    <h2>Radlquartier München</h2>
+                    <h4>Öffentlicher Verkehr mit dem Fahrrad</h4>
+                </div>
+            </div>
+            <!-- schmal -->
+            <div class="row ">
+                <div class="col-lg-6">
+                    <div class="hidden-xs hidden-sm ">
+                        <img class="img-head" src="p/cityShort.png">
+                    </div>
+                    <div class="visible-xs-block visible-sm-block">
+                        <img class="img-head" src="p/cityLong1.png">
+                    </div>
+                </div>
+                <!-- breit -->
+                <div class=" hidden-xs hidden-sm ">
+                    <div class="col-lg-6 jumbotron ">
+                        <h1>Radlquartier München</h1>
+                        <p>Öffentlicher Verkehr
+                            <br>mit dem Fahrrad</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <p>Mit dem MVG Rad besitzt München seit Oktober 2015 ein weiteres Fahrradverleihsystem. Dieses System erlaubt es dir an vielen Standorten Fahrräder in der Stadt auszuleihen und zurück zu geben. Du kannst die Räder aber nicht nur an festen Stationen abholen oder abgeben sondern im ganzen Geschäftsgebiet. Dieses beschränkt sich bis jetzt auf 15 Stadtteile und zwei halbe.
+                </p>
+                <br>
+                <!--  <br><span style="font-weight:bold"> Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst?</span> Die Daten zur Auswertung beziehen sich auf ein Jahr: Von Juli 2016 bis Juli 2017.</p> -->
+                <p style="font-weight: 600;">Unsere Frage: Wie viel wird das MVG Rad genutzt und reichen die Fahrräder damit du dich jederzeit flexibel in München bewegen kannst? Die Daten zur Auswertung beziehen sich auf ein Jahr: Von Juli 2016 bis Juli 2017.</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row" id="top">
+            <div class="col-lg-12">
+                <h3>Münchens Stadtteile</h3>
+                <p>Diese Übersichtskarte von München zeigt dir die durchschnittliche Menge an Fahrten die in einem Monat gemacht wurden. Wähle deinen Stadtteil aus um mehr über Fahrten, wo Fahrräder abgestellt wurden und Stationen in ihm zu erfahren.
+                </p>
+                <!-- The heatmap element -->
+                <div id="heatmap">
+                    <svg></svg>
+                </div>
+                <div class="heatmapLegend">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- <div class="space"></div> -->
+    <div class="collapse" id="detailCollapse">
+        <!--     <div class=" colourUp">
+        <p></p>
+    </div> -->
+        <!-- <div class="colour"> -->
+        <div class="container">
+            <hr>
+            <!-- bar chart element -->
+            <div class="row">
+                <div class="col-lg-12">
+                    <!--    <div class="space"> -->
+                    <h2 id="textH4"></h2>
+                    <p id="textP"></p>
+                    <!-- </div> -->
+                </div>
+            </div>
+        </div>
+        <!-- </div> -->
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="spaceBig">
+                        <h3>Durchschnittliche Fahrten in diesem Viertel</h3>
+                        <p>Hier sieht du die durchschnittliche Anzahl von Fahrten an den Wochentagen und alle Fahrten in den Monaten und übers Jahr</p>
+                        <br>
+                        <div id="barchart">
+                            <form>
+                                <label>
+                                    <input type="radio" name="dataset" id="dataset" value="week" checked> Wochen&nbsp;&nbsp;</label>
+                                <label>
+                                    <input type="radio" name="dataset" id="dataset" value="month"> Monat&nbsp;&nbsp;</label>
+                                <label>
+                                    <input type="radio" name="dataset" id="dataset" value="year"> Jahr&nbsp;&nbsp;</label>
+                            </form>
+                            <svg></svg>
+                            <!-- <svg width="960" height="500"></svg> -->
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr>
+                                    <th>Stationen</th>
+                                    <th>Fläche</th>
+                                    <th>Einwohner</th>
+                                    <th>Geschäftsgebiet</th>
+                                </tr>
+                                <tr>
+                                    <td id="tdStationCount"></td>
+                                    <td id="tdArea"></td>
+                                    <td id="tdInhabitants"></td>
+                                    <td id="tdAreaMvg"></td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div style="text-align: right; font-size:11px; ">* Der Stadtbezirk wurde neu Aufgeteilt, siehe Text</div> -->
+            <!-- <div class="space"></div> -->
+            <!-- hexmap element -->
+            <hr>
+
+            <div class="row spaceBig">
+                <div class="col-lg-12">
+                    <h3>Alle Fahrten in diesem Viertel</h3>
+                    <p>Die Karte zeigt dir alle Fahrten innerhalb eines Jahres, die in diesem Stadtviertel geendet haben an. Jedes Hexagon steht für die Anzahl an Fahrrädern die in diesem Bereich abgestellt wurden. Über das Menü rechts oben können noch mehr Informationen eingeblendet werden.</p>
+                    <br>
+                    <div id="hexmap" style="width: 100%; height: 60vh; border: 1px solid #ccc"></div>
+                    <div class="hexmapLegend">
+                    </div>
+                    <br/>
+                    <!-- <div id="hovered">
+                        <label>Hovered: </label>
+                        <span class="count"></span>
+                    </div>
+                    <div id="clicked">
+                        <label>Last Clicked: </label>
+                        <span class="count"></span>
+                    </div> -->
+                </div>
+            </div>
+            <div class="spaceBig">
+            </div>
+            <div class="row">
+                <div class="col-xs-4 ut-left">
+                    <a class="but b " id="previousbutton" value="0">
+                        <span class="glyphicon glyphicon-arrow-left" aria-hidden="true"></span> Allach-Untermenzing </a>
+                </div>
+                <div class="col-xs-4 but-mid">
+                    <a class="but  " id="upbutton">Neuen Stadtteil auswählen</a>
+                </div>
+                <div class="col-xs-4 but-right">
+                    <a class="but  " id="nextbutton" value="1"> Altstadt-Lehel <span class="glyphicon glyphicon-arrow-right" aria-hidden="true"></span></a>
+                </div>
+            </div>
+           <hr>
+        </div>
+    </div>
+   <div class="spaceBig">
+    <div class="row"></div>
+</div>
+
+
+    <!-- tooltip -->
+    <div class="spaceBig">
+    <div class="toolTip"></div>
+</div>
+    <div class="row colourUp ">
+        <div class="spaceBig">
+            <ol class="breadcrumb">
+                <li><a href="#">Home</a></li>
+                <li><a href="about.html">Über das Projekt</a></li>
+                <li><a href="https://www.mvg.de/services/mobile-services/mvg-rad.html" target="_blank">MVG</a></li>
+                <li><a href="https://github.com/bAckmumu/MVG-Bike-Project" target="_blank">GitHub</a></li>
+                <!-- <li class="active">Data</li> -->
+            </ol>
+        </div>
+        <footer class="footer spaceBig ">
+        </footer>
+    </div>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="js/ie10-viewport-bug-workaround.js"></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/mucmap.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/chart.js"></script>
+    <script src="js/hexmap.js"></script>
+</body>
+
+</html>

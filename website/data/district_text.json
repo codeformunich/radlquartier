@@ -1,0 +1,252 @@
+[
+    {
+        "id": 1,
+        "name": "Altstadt-Lehel",
+        "description":
+            "Der Stadtbezirk umfasst die historische Altstadt, welche war seit dem Mittelalter existiert und bis zum Ende des 18. Jahrhunderts von der Münchner Stadtbefestigung umgeben war und das daran anschließende das Lehel. Zusammen umfassen sie 3,15 km² und Mit dem Englischen Garten liegt hier einer der bekanntesten Stadtparks der Welt. Es gehören zu Geschäftsgebiet der MVG-Räder mit 5 Stationen.",
+        "stationCount": 5,
+        "area": 3.15,
+        "inhabitants": 21454,
+        "areaMvg": true
+    },
+    {
+        "id": 2,
+        "name": "Ludwigsvorstadt-Isarvorstadt",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 4,4 km² und einer Wohnbevölkerung von 54.520 damit gehört der zu den sehr besiedelten Stadtbezirken Münchens. Der Stadtbezirk entstand 1992 aus der Zusammenlegung der Ludwigsvorstadt mit den drei Isarvorstadtbezirken. Seine wichtigste öffentliche Fläche ist die Theresienwiese. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 4 Stationen.",
+        "stationCount": 4,
+        "area": 4.4,
+        "inhabitants": 54520,
+        "areaMvg": true
+    },
+    {
+        "id": 3,
+        "name": "Maxvorstadt",
+        "description":
+            "Der Stadtteil hat eine Fläche von 4,3 km² und wurde um 1810 als erste planmäßige Stadterweiterung konzipiert. Dort finden sich viele von Münchens Sehenswürdigkeiten wie der Königsplatz, die Pinakotheken und das Siegestor. Außerdem noch drei von Münchens Hochschulen. Er gehört zum Geschäftsgebiet  der MVG-Räder und besitzt 7 Stationen.",
+        "stationCount": 7,
+        "area": 4.3,
+        "inhabitants": 53552,
+        "areaMvg": true
+    },
+    {
+        "id": 4,
+        "name": "Schwabing-West",
+        "description":
+            "",
+        "stationCount": 0,
+        "area": 4.36,
+        "inhabitants": 69407,
+        "areaMvg": true
+    },
+    {
+        "id": 5,
+        "name": "Au-Haidhausen",
+        "description":
+            "Der Stadtbezirk Fläche von 4,22 km² und einer Wohnbevölkerung von 61.686 zu den am dichtesten besiedelten Stadtbezirken Münchens. Beide Teile, Au und Haidhausen wurden 1854 Eingemeindet und sind ein beliebtes Wohngebiet. Nah der Isar liegt dort sowohl das Kulturzentrum am Gasteig als auch der Nockherberg. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 2 Stationen.",
+        "stationCount": 2,
+        "area": 4.22,
+        "inhabitants": 61686,
+        "areaMvg": true
+    },
+    {
+        "id": 6,
+        "name": "Sendling",
+        "description":
+            "",
+        "stationCount": 0,
+        "area": 3.94,
+        "inhabitants": 41.230,
+        "areaMvg": true
+    },
+    {
+        "id": 7,
+        "name": "Sendling-Westpark",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 7,81 km² und 59.149 Bewohner. Der Westpark, der zur Internationalen Gartenbauausstellung 1983 angelegt wurde. Heute ist er die größte Grünfläche des Bezirks. Durch die U3/U6 sowie die S7 ist er an das öffentliche Verkehrsnetz angebunden. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 11 Stationen. Damit ist es der Stadtteil mit den meisten Stationen.",
+        "stationCount": 11,
+        "area": 7.81,
+        "inhabitants": 59149,
+        "areaMvg": true
+    },
+    {
+        "id": 8,
+        "name": "Schwanthalerhöhe",
+        "description":
+            "Der Stadtteil ist mit einer Fläche von 2,07 km² einer Wohnbevölkerung von ca. 30.000 zu den am dichtesten besiedelten Stadtteil Münchens und seine Entstehung hängt mit der um 1840 beginnenden Industrialisierung zusammen. Seine wichtigsten öffentlichen Plätze sind der Bavariapark, und die Freifläche auf dem alten Messezentrum. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 4 Stationen.",
+        "stationCount": 4,
+        "area": 2.07,
+        "inhabitants": 30259,
+        "areaMvg": true
+    },
+    {
+        "id": 9,
+        "name": "Neuhausen-Nymphenburg",
+        "description":
+            "Seit 1992 gehören Neuhausen und Nymphenburg gleichen Stadtbezirk und haben eine Fläche von knapp 13 km². Außerdem haben sie die zweithöchste Einwohnerzahl der Münchner Bezirke. Er ist durch die U1/U7 sowie die Stammstrecke der S-Bahn an das öffentliche Verkehrsnetz angebunden und direkt umgeben von Nymphenburger Park und Olympiapark. Er gehört zum Geschäftsgebiet der MVG-Räder und besitzt 7 Stationen.",
+        "stationCount": 11,
+        "area": 12.91,
+        "inhabitants": 7729,
+        "areaMvg": true
+    },
+    {
+        "id": 10,
+        "name": "Moosach",
+        "description":
+            "Der Stadtteil hat eine Fläche von 11,09 km² und ist durch die S1 an das öffentliche Verkehrsnetz angebunden. Moosach zählt mit einer  Besiedelung seit 4000 Jahren zu den ältesten Orten rund um bzw. in München und wurde 1913 Eingemeindet. Er gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 5 Stationen.",
+        "stationCount": 5,
+        "area": 11.9,
+        "inhabitants": 54045,
+        "areaMvg": true
+    },
+    {
+        "id": 11,
+        "name": "Milbertshofen-Am Hart",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 13,42 km², 28 Prozent der Fläche sind Grünanlagen. dazu gehört auch der Olympiapark. Er wurde für die Olympischen Spiele 1972 erbaut. Milbertshofen-Am Hart gehört auch zu den Stadtteilen mit den meisten Arbeitsplätzen. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das hier machen.",
+        "stationCount": 0,
+        "area": 13.42,
+        "inhabitants": 76454,
+        "areaMvg": false
+    },
+    {
+        "id": 12,
+        "name": "Schwabing-Freimann",
+        "description":
+            "",
+        "stationCount": 5,
+        "area": 25.67,
+        "inhabitants": 77626,
+        "areaMvg": true
+    },
+    {
+        "id": 13,
+        "name": "Bogenhausen",
+        "description":
+            "Der Stadtteil hat eine Fläche von 23,7 km² und ist zwischen dicht bebauter Innenstadt bis ins grüne Umland einer der vielfältigsten Stadtbezirke. Es wurde 1892 nach München eingemeindet und ist durch die U4 sowie die S8 an das öffentliche Verkehrsnetz angebunden. Bogenhausen gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 4 Stationen.",
+        "stationCount": 4,
+        "area": 23.7,
+        "inhabitants": 86731,
+        "areaMvg": true
+    },
+    {
+        "id": 14,
+        "name": "Berg am Laim",
+        "description":
+            "Der Stadtteil gehört seit 1913 zu München und mit einer Fläche von 6,31 km²einer der kleinsten Stadtbezirke. Er ist mit U2 und S2/4/6 an das öffentliche Verkehrsnetz angebunden und umgeben von großen Wohnblöcken, gibt es einen historischen Ortskern mit vielen alten Gebäuden. Er gehört zum Einzugsgebiet der MVG-Räder und besitzt 2 Stationen.",
+        "stationCount": 2,
+        "area": 6.31,
+        "inhabitants": 45442,
+        "areaMvg": true
+    },
+    {
+        "id": 15,
+        "name": "Trudering-Riem",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 22,45 km² und gehört zu den Teilen Münchens die wohl schon in der Steinzeit bewohnt waren, die Gemeindebildung erfolgte 1818. Es gehört nicht zum Geschäftsgebiet der MVG-Räder hat aber eine Stadtion an der Messe-Riem. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen.",
+        "stationCount": 1,
+        "area": 22.45,
+        "inhabitants": 70958,
+        "areaMvg": false
+    },
+    {
+        "id": 16,
+        "name": "Ramersdorf-Perlach",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 19,9 km² bei 113.043 Einwohnern. Die größte Grünfläche ist der Ostpark und Ramersdorf-Perlach hat 75 Haltepunkte der Münchner Verkehrsgesellschaft. Es gehört nicht zum Geschäftsgebiet der MVG-Räder hat aber eine Stadtion. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen. ",
+        "stationCount": 1,
+        "area": 19.9,
+        "inhabitants": 113043,
+        "areaMvg": true
+    },
+    {
+        "id": 17,
+        "name": "Obergiesing-Fasangarten",
+        "description":
+            "",
+        "stationCount": 4,
+        "area": 5.72,
+        "inhabitants": 9577,
+        "areaMvg": true
+    },
+    {
+        "id": 18,
+        "name": "Untergiesing-Harlaching",
+        "description":
+            "",
+        "stationCount": 0,
+        "area": 8.06,
+        "inhabitants": 54050,
+        "areaMvg": false
+    },
+    {
+        "id": 19,
+        "name": "Thalkirchen-Obersendling-Forstenried-Fürstenried-Solln",
+        "description":
+            "",
+        "stationCount": 0,
+        "area": 17.76,
+        "inhabitants": 5416,
+        "areaMvg": false
+    },
+    {
+        "id": 20,
+        "name": "Hadern",
+        "description":
+            "Der Stadtteil besteht aus Kleinhadern und Großhadern die 1938 zu München eingemeindet wurden. Es hat eine Fläche von 9,22 km² und 50.397 Einwohner. Es gehört nicht zum Geschäftsgebiet der MVG-Räder hat aber eine Stadtion am Klinikum Großhadern. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen.",
+        "stationCount": 0,
+        "area": 9.22,
+        "inhabitants": 50397,
+        "areaMvg": false
+    },
+    {
+        "id": 21,
+        "name": "Pasing-Obermenzing",
+        "description":
+            "",
+        "stationCount": 0,
+        "area": 16.5,
+        "inhabitants": 4525,
+        "areaMvg": false
+    },
+    {
+        "id": 22,
+        "name": "Aubing-Lochhausen-Langwied",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 34,06 km² von allen Münchner Stadtbezirken hat er die größte Ausdehnung und mit 46.148 Bewohnern die geringste Bevölkerungsdichte. Außerdem liegen dort ausgedehnte Grün-, Wald- und landwirtschaftliche Flächen. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das hier machen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen.",
+        "stationCount": 0,
+        "area": 34.06,
+        "inhabitants": 46148,
+        "areaMvg": false
+    },
+    {
+        "id": 23,
+        "name": "Allach-Untermenzing",
+        "description":
+            "Der Stadtbezirk umfasst eine Fläche von 15,45 km² und besteht seit 1938. Es und ist durch die U2 an das öffentliche Verkehrsnetz angebunden,  gehört aber nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen.",
+        "stationCount": 0,
+        "area": 15.45,
+        "inhabitants": 32601,
+        "areaMvg": false
+    },
+    {
+        "id": 24,
+        "name": "Feldmoching-Hasenbergl",
+        "description":
+            "Der Stadtbezirk hat eine Fläche von 13,42 km² und ist durch die S-Bahn Linie 1 und U-bahn Linie 2  das öffentliche Verkehrsnetz angebunden. Der Bezirk ist vor allem ein Wohnviertel mit Hohe Wohnblöcke. Es ging in den 60er Jahren darum möglichst schnell günstigen Wohnraum für die wachsende Stadtbevölkerung zu schaffen. Es gehört nicht zum Geschäftsgebiet der MVG-Räder und hat deswegen auch keine Stationen. Wenn du der MVG deswegen schreiben möchtest kannst du das [hier] machen.",
+        "stationCount": 0,
+        "area": 13.42,
+        "inhabitants": 61764,
+        "areaMvg": false
+    },
+    {
+        "id": 25,
+        "name": "Laim",
+        "description":
+            "Der Stadtteil hat eine Fläche von 5,29 km² und  im Vergleich zu anderen Stadtteilen hat Laim einen überdurchschnittlich hohen Anteil an Wohn- und Verkehrsflächen. Es wurde 1900 Eingemeindet und hatte damals den größten Eisenbahn Rangierbahnhof Europas. Laim gehört zum Teil zum Geschäftsgebiet der MVG-Räder und besitzt 2 Stationen.",
+        "stationCount": 2,
+        "area": 5.29,
+        "inhabitants": 55951,
+        "areaMvg": true
+    }
+]

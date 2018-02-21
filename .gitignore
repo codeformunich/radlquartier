@@ -6,3 +6,4 @@ queries/results
 mvgstate/node_modules
 results
 test data/mvg-networkstate/output
+node_modules
