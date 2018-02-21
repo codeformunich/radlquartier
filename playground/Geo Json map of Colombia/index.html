@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width" />
+  <title>Munich Heat Map</title>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+<style>
+.background {
+    fill: #eee;
+    pointer-events: all;
+}
+
+.map-layer {
+    fill: #fff;
+    stroke: #aaa;
+}
+
+.effect-layer {
+    pointer-events: none;
+}
+
+text {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 300;
+}
+
+text.big-text {
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.effect-layer text,
+text.dummy-text {
+    font-size: 12px;
+}
+</style>
+
+<body>
+    <div id="heatmap">
+        <svg></svg>
+    </div>
+    <script src="js/heatmap.js"></script>
+</body>
+</html>

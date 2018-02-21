@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+
+.animationOne{
+    position: relative;
+    -webkit-animation: one 4s linear 0.5s infinite;
+    animation: one 4s linear 0.5s infinite alternate;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+         animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+}
+
+.animationTwo{
+    position: relative;
+    left: 300px;
+    -webkit-animation: two 4s linear 0.5s infinite;
+    animation: two 4s linear 0.5s infinite alternate;
+      -webkit-animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+        animation-timing-function: cubic-bezier(0, 0, 0.25, 1);
+}
+
+  /*#div3 {animation-timing-function: cubic-bezier(0.42,0,1,1);}
+#div4 {animation-timing-function: cubic-bezier(0,0,0.58,1);}
+#div5 {animation-timing-function: cubic-bezier(0.42,0,0.58,1);}*/
+  
+  @-webkit-keyframes one {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+  
+  @keyframes one {
+    from {
+      left: 0px;
+    }
+    to {
+      left: 300px;
+    }
+  }
+  
+  @-webkit-keyframes two {
+    from {
+      left: 300px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+  
+  @keyframes two {
+    from {
+      left: 300px;
+    }
+    to {
+      left: 0px;
+    }
+  }
+
+  </style>
+</head>
+
+<body>
+ 
+  <div class="animationOne" ><img class="img-thumbnail" src="p/cloud1.png"></div>
+  <div class="animationTwo" ><img class="img-thumbnail" src="p/cloud2.png"></div>
+  <!-- <div id="div3"><img class="img-thumbnail" src="p/cloud3.png"></div>
+
+<div id="div4"><img class="img-thumbnail" src="p/cloud3.png"></div>
+<div id="div5"><img class="img-thumbnail" src="p/cloud1.png"></div>
+<div id="div6"><img class="img-thumbnail" src="p/cloud2.png"></div> -->
+</body>
+
+</html>

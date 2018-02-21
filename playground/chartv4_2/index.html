@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<style>
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+/*.axis--x path {
+    display: none;
+}*/
+
+path {
+    stroke: steelblue;
+    stroke-width: 2;
+    fill: none;
+}
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: grey;
+    stroke-width: 1;
+    shape-rendering: crispEdges;
+}
+
+.legend {
+    font-size: 16px;
+    font-weight: bold;
+    text-anchor: middle;
+}
+
+</style>
+<div id="barchart">
+    <form>
+        <label>
+            <input type="radio" name="dataset" id="dataset" value="week" checked> Wochen&nbsp;&nbsp;</label>
+        <label>
+            <input type="radio" name="dataset" id="dataset" value="month"> Monat&nbsp;&nbsp;</label>
+    </form>
+    <svg></svg>
+    <!-- <svg width="960" height="500"></svg> -->
+</div>
+<!-- tooltip -->
+<div class="toolTip"></div>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="js/chart.js"></script>

@@ -1,0 +1,1448 @@
+{
+	"type": "FeatureCollection",
+	"features": [
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.476463675,
+					48.165108235
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46293374,
+					48.164934525
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.458474635,
+					48.16843354
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48756118,
+					48.16632487
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.480978145,
+					48.162720045
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46723915,
+					48.1641554
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.457959975,
+					48.16908702
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.487663865,
+					48.16642932
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47492737,
+					48.1562345
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4858244,
+					48.16376283
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48593115,
+					48.167128815
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.485932015,
+					48.1671190075
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.49106832,
+					48.16484602
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45695042,
+					48.16341608
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45866005,
+					48.1626706
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46745758,
+					48.16227417
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48859997,
+					48.16460087
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48084972,
+					48.16264743
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.476018095,
+					48.16377826
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47603283,
+					48.16686333
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4759824225,
+					48.1669001275
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48965015,
+					48.16543903
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48051612,
+					48.17181993
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46120072,
+					48.15624231
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44439123,
+					48.15866747
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4762817,
+					48.16393252
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4896715,
+					48.16520492
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47854127,
+					48.16422708
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4880268,
+					48.163393385
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.488742425,
+					48.163213025
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48088468,
+					48.1628763
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48087372,
+					48.1628769
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48978032,
+					48.16546543
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.487786375,
+					48.16699236
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44937745,
+					48.15956857
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47060973,
+					48.173877525
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48588558,
+					48.16361942
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47655364,
+					48.1560978
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48947882,
+					48.16517375
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45825462,
+					48.16874488
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45813578,
+					48.16868112
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45817561,
+					48.168864675
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.49155433,
+					48.16513027
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.49146205,
+					48.16501278
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47829525,
+					48.16853985
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48223698,
+					48.17088675
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.482207825,
+					48.17087309
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48614482,
+					48.16371155
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46214301,
+					48.158236705
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.457597475,
+					48.162550085
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47368415,
+					48.17235282
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48839818,
+					48.163079305
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.43287641,
+					48.163036285
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.463812,
+					48.16547814
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45723419,
+					48.16371285
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.454962,
+					48.175099
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.490718,
+					48.165326
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45672855,
+					48.16401782
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48074825,
+					48.16272897
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.486175,
+					48.16354855
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48050601,
+					48.171658175
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.49021617,
+					48.16494678
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.471171465,
+					48.16718026
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4805677,
+					48.17144722
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48107402,
+					48.16272097
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.490402395,
+					48.165462
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.479456525,
+					48.164084405
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47092152,
+					48.161739215
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48968002,
+					48.16508263
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48858731,
+					48.162968805
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.49043192,
+					48.16876457
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4892267,
+					48.1651476
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4679514,
+					48.16238138
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45852627,
+					48.16322268
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4583567,
+					48.1625975
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4571242,
+					48.16285694
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46261137,
+					48.16232403
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.467195755,
+					48.161756385
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48023417,
+					48.17197475
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.47079067,
+					48.17427918
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.469578015,
+					48.164886185
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46959915,
+					48.164836565
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.48048257,
+					48.16206052
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45969383,
+					48.15812263
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.46757285,
+					48.16470972
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45692415,
+					48.16354223
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45692859,
+					48.163545315
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45129762,
+					48.1647359
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4513132,
+					48.16476344
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.451446105,
+					48.1647204
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44775383,
+					48.1589519
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.447798215,
+					48.159168935
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44776551125,
+					48.15907914125
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44745245,
+					48.15913448
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44750274,
+					48.15908563
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.448132125,
+					48.159155475
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4478732,
+					48.159087
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44786579,
+					48.1590654925
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4478832225,
+					48.159092258125
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44810282,
+					48.15917425
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.448094435,
+					48.159177825
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.447807335,
+					48.159243625
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44776865,
+					48.15907413
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.448149685,
+					48.159376085
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44803583,
+					48.159119615
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.44779895,
+					48.15903762
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.447481525,
+					48.159122505
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.457795285,
+					48.165657285
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.45810273625,
+					48.1685860975
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4779681,
+					48.17008257
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [
+					11.4570406,
+					48.1636211
+				]
+			},
+			"properties": {
+				"name": "Obermenzing"
+			}
+		}
+	]
+}
