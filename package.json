@@ -1,7 +1,7 @@
 {
   "name": "radlquartier",
   "version": "0.0.1",
-  "description": "Command-line tool to prepare and exract bike sharing data. Plus example implementations of visualisations and a example website.",
+  "description": "Command-line tool to prepare and extract bike sharing data. Plus example implementations of visualizations and a example website.",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

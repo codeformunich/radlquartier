@@ -1,6 +1,6 @@
 # MVG-Bike-Data
 
-Comandline tools to parse scraped data from bike sharing operators and transform them into a standardised format. 
+Command-line tools to parse scraped data from bike sharing operators and transform them into a standardized format. 
 
 ## Tools
 
