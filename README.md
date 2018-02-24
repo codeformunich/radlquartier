@@ -1,45 +1,20 @@
-# MVG-Bike-Data
+# Radlquartier
 
-Comandline tools to parse the scraped data from bike sharing operators and transform them into a standardised format. 
+Command-line tool to prepare and extract bike sharing data from munich. Plus example implementations of visualizations and a example website.
 
-## Tools
+## Project structure
 
-### mvgstate
-Parses MVG Bike data
+### data
+Geojson files for munich and test data from different bike sharing services.
 
-```
-$ node ./mvgstate halt < "file"
-```
+### datatool
+Command-line tool to prepare and extract bike sharing data.
 
+### docs
+Copy of the website folder for GitHub Pages [mvg.manuel.red](http://mvg.manuel.red)
 
- 
-## data format
+### playground
+Modified D3 and leaflet examples.
 
-### halt
-
-```javascript
-{
-  "id": "f7d1c4b7-627c-45b4-b78b-ff75755c57a0",
-  "bikeNumber": 96204,
-  "loc": {
-    "type": "Point",
-     "coordinates": [
-        11.576512336730957,
-        48.12044143676758
-      ]
-    },
-    "startDate": "2017-03-15T23:00:04.000Z",
-    "endDate": "2017-03-15T23:09:29.000Z",
-    "additionalData": {
-      "operator"; 
-      "count": 3,
-      "dates": [
-        "2017-03-15T23:00:04.000Z",
-        "2017-03-15T23:05:21.000Z",
-        "2017-03-15T23:09:29.000Z"
-      ],
-      "stationId": "6e597af21fd05db44602bd8f25ee691d"
-      "stationName": "Laimerplatz"
-    }
-  }
-```
+### website
+Example website with visualization based on bike sharing data.

@@ -1,6 +1,6 @@
 # MVG-Bike-Data
 
-Comandline tools to parse the scraped data from bike sharing operators and transform them into a standardised format. 
+Comandline tools to parse scraped data from bike sharing operators and transform them into a standardised format. 
 
 ## Tools
 
@@ -13,7 +13,7 @@ $ node ./mvgstate halt < "file"
 
 
  
-## data format
+## Data format
 
 ### halt
 
