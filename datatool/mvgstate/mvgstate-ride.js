@@ -1,4 +1,3 @@
-/*jshint node:true */
 "use strict";
 
 // requiremetns for mongoDB
@@ -15,9 +14,9 @@ var bikeCollection =  'mnsbike';
 var callbackCount = 0;
 
 MongoClient.connect(url, function(err, tempDb) {
-    assert.equal(err, null);
+  assert.equal(err, null);
 
-    db = tempDb;
+  db = tempDb;
 });
 
 
