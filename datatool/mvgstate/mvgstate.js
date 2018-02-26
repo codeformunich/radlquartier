@@ -19,7 +19,7 @@ program
   )
   .command(
     'halt',
-    'creates halts from the raw bike data from the networkstate-mvgrad files: : mvgstate halt < input,json'
+    'mvgstate halt "directory with json files" - creates halts from the raw bike data from the networkstate-mvgrad files'
   )
   .command(
     'ride',

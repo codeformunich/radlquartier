@@ -1,216 +1,140 @@
+/**
+ * station
+ *
+ */
 'use strict';
 
-// requiremetns for mongoDB
-var MongoClient = require('mongodb').MongoClient;
-var assert = require('assert');
-var ObjectId = require('mongodb').ObjectID;
+const helper = require('./helper');
 
-var url = 'mongodb://localhost:27017/bikeproject';
-var metaDataCollection = 'mnsmeta';
-// var bikeCollection =  'mnsbike'; //'testcollection';
-// var stationCollection =  'mnsstation'; //'testcollection';
+const program = require('commander');
+const path = require('path');
+const uuidv4 = require('uuid/v4');
 
-// var ridesCollection = 'rides'; // 'testrides'; //
-var haltsCollection = 'testhalts'; // 'halts'; //
+const outputFolder = 'output';
+const dataFileName = 'mvgStation.json';
 
-var callbackCount = 0;
-var bikesCount = 0;
+let data = null;
+let date = null;
 
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
+program.parse(process.argv);
+const args = program.args;
 
-var input = '';
-process.stdin.on('data', function(chunk) {
-  input = input + chunk;
-});
-
-process.stdin.on('end', function() {
-  var json,
-    bikes,
-    index = 0;
-
-  json = JSON.parse(input);
-  // console.log(input);
-  // console.log(json);
-
-  bikes = json.addedBikes;
-  bikesCount = bikes.length;
-
-  MongoClient.connect(url, function(err, db) {
-    assert.equal(err, null);
-
-    callbackCount = callbackCount + 1;
-    insertMetaData(db, json);
-
-    for (index; index < bikesCount; index++) {
-      generateHalt(db, bikes[index], closeCallback);
-
-      //     function() {
-      //     console.log( 'generateHaltCallback, callbackCount:', callbackCount);
-      //     callbackCount = callbackCount - 1;
-
-      //     if (callbackCount === 0) {
-      //         db.close();
-      //         console.log('... work done.');
-      //     }
-      // });
-    }
-  });
-});
-
-var closeCallback = function(db) {
-  if (++callbackCount == bikesCount) {
-    console.log('closeCallback, callbackCount:', callbackCount);
-    db.close();
-    console.log('... work done.');
-  }
-};
-
-var generateHalt = function(db, bike, callback) {
-  console.log('generateHalt, bike.bikeNumber:', bike.bikeNumber);
-
-  findLastHalt(db, bike, function(docs) {
-    if (docs.length === 0 || docs[0] === null || docs[0] === undefined) {
-      insertHalt(db, bike, function() {
-        callback(db);
-      });
-
-      return;
-    }
-
-    var lastHalt = docs[0];
-    // console.log( 'generateHalt, bike:', bike);
-    // console.log( 'generateHalt, lastHalt:', lastHalt);
-
-    // console.log( 'generateHalt:', lastHalt.loc.coordinates[0], bike.longitude,
-    //     lastHalt.loc.coordinates[1], bike.latitude);
-    if (
-      lastHalt.loc.coordinates[0] === bike.longitude &&
-      lastHalt.loc.coordinates[1] === bike.latitude
-    ) {
-      updateHalt(db, bike, lastHalt, function() {
-        callback(db);
-      });
-    } else {
-      //     insertHalt(db, bike, function() {
-      callback(db);
-      //     });
-    }
-  });
-};
-
-var findLastHalt = function(db, bike, callback) {
-  console.log('findLastHalt, bike.bikeNumber:', bike.bikeNumber);
-
-  db
-    .collection(haltsCollection)
-    .find({ bikeNumber: bike.bikeNumber })
-    .sort({ _id: -1 })
-    .limit(1)
-    .toArray(function(err, docs) {
-      assert.equal(err, null);
-      // console.log( 'findLastHalt, docs:', docs);
-      callback(docs);
-    });
-};
-
-var insertHalt = function(db, bike, callback) {
-  var halt = newHalt(bike);
-  if (halt === null) {
-    console.log('ERROR insertHalt, halt: ', halt);
+const main = function() {
+  const inputFolder = args[0];
+  if (
+    inputFolder === null ||
+    inputFolder === undefined ||
+    inputFolder.length === 0
+  ) {
+    console.log('ERROR: main, inputFolder:', inputFolder);
     return;
   }
 
-  console.log('insertHalt, halt.bikeNumber: ', halt.bikeNumber);
-  db.collection(haltsCollection).insertOne(halt, function(err, result) {
-    assert.equal(null, err);
-    callback(result);
+  const outputPathData = path.join(outputFolder, dataFileName);
+
+  data = helper.loadJsonFile(outputPathData);
+  if (data == null) {
+    console.log('INFO: main, create new data array');
+    data = [];
+  }
+
+  const filenames = helper.readDirectory(inputFolder);
+  filenames.forEach(function(filename) {
+    if (path.extname(filename) !== '.json') {
+      return;
+    }
+
+    console.log('INFO: main, filename:', filename);
+
+    const filePath = path.join(inputFolder, filename);
+    const json = helper.loadJsonFile(filePath);
+
+    if (json == null) {
+      console.log('ERROR: main, json:', json);
+      return;
+    }
+
+    date = new Date(json.addedBikes[0].updated);
+
+    const rawStations = json.addedStations;
+    generateStations(rawStations);
+  });
+
+  helper.createDirectory(outputFolder);
+
+  helper.writeJsonFile(outputPathData, data);
+
+  console.log('INFO: main: Done!');
+};
+
+const generateStations = function(rawStations) {
+  rawStations.forEach(function(rawStation) {
+    const existingStation = findStation(rawStation.id, data);
+
+    if (existingStation) {
+      updateStation(rawStation, existingStation);
+    } else {
+      createStation(rawStation);
+    }
   });
 };
 
-var updateHalt = function(db, bike, lastHalt, callback) {
-  var date = new Date(bike.updated);
-
-  var halt = lastHalt;
-  // console.log('updateHalt, halt: ', halt);
-  halt.dates.push(date);
-  halt.endDate = date;
-  halt.count = halt.count + 1;
-
-  console.log('updateHalt, halt.bikeNumber: ', halt.bikeNumber);
-  db
-    .collection(haltsCollection)
-    .updateOne(
-      { _id: halt._id },
-      { $set: { dates: halt.dates, endDate: halt.endDate, count: halt.count } },
-      function(err, result) {
-        assert.equal(null, err);
-        assert.equal(1, result.matchedCount);
-        assert.equal(1, result.modifiedCount);
-        callback(result);
-      }
-    );
-};
-
-var closeConnection = function(db) {
-  console.log('closeConnection, callbackCount:', callbackCount);
-  callbackCount = callbackCount - 1;
-
-  if (callbackCount === 0) {
-    db.close();
-    console.log('... work done.');
-  }
-};
-
-// helper function
-// creates new halt object
-var newHalt = function(bike) {
-  if (bike === null || bike === undefined) {
-    console.log('ERROR: newHalt, bike:', bike);
+const findStation = function(stationId, data) {
+  // console.log('mvgstate-station.findStation, stationID:', stationID);
+  if (data === null || data === undefined) {
+    console.log('ERROR: findStation, data:', data);
     return null;
   }
 
-  var halt = {};
-  var date = new Date(bike.updated);
-
-  halt.bikeNumber = bike.bikeNumber;
-  halt.loc = { type: 'Point', coordinates: [bike.longitude, bike.latitude] };
-  halt.startDate = date;
-  halt.endDate = date;
-
-  halt.count = 1;
-  halt.dates = [date];
-
-  if (bike.currentStationID) {
-    halt.stationId = bike.currentStationID;
-
-    // TODO standardize
-    //halt.stationId = place.uid;
-    //halt.stationName = place.name;
-  }
-
-  console.log('newHalt, bikeNumber:', halt.bikeNumber);
-  return halt;
-};
-
-var insertMetaData = function(db, json, timeStamp, callback) {
-  var metaData = newMetaData(json, timeStamp);
-
-  db.collection(metaDataCollection).insertOne(metaData, function(err, result) {
-    assert.equal(err, null);
+  return data.find(function(station) {
+    return station.stationId === stationId;
   });
 };
 
-var newMetaData = function(json) {
-  var metaData = {};
-  metaData.timeStamp = new Date(json.addedBikes[0].updated);
-  metaData.addedBikes = json.addedBikes.length;
-  metaData.changedBikes = json.changedBikes.length;
-  metaData.deletedBikes = json.deletedBikes.length;
-  metaData.addedStations = json.addedStations.length;
-  metaData.changedStations = json.changedStations.length;
-  metaData.deletedStations = json.deletedStations.length;
+const createStation = function(rawData) {
+  const station = newStation(rawData);
+  if (station === null) {
+    console.log('ERROR: createStation, station: null');
+    return;
+  }
 
-  console.log('newMetaData, metaData:', metaData);
-  return metaData;
+  data.push(station);
 };
+
+const updateStation = function(rawStation, existingStation) {
+  const index = data.findIndex(function(station) {
+    return station.id === existingStation.id;
+  });
+
+  data[index].lastAppearanceDate = date;
+};
+
+// helper function
+// creates new station object
+const newStation = function(rawStation) {
+  if (rawStation === null || rawStation === undefined) {
+    console.log('ERROR: newStation, rawStation:', rawStation);
+    return null;
+  }
+
+  let station = {
+    id: uuidv4(),
+    stationId: rawStation.id,
+    loc: {
+      type: 'Point',
+      coordinates: [rawStation.longitude, rawStation.latitude]
+    },
+    firstAppearanceDate: date,
+    lastAppearanceDate: date,
+    additionalData: {
+      provider: rawStation.provider,
+      stationName: rawStation.name,
+      // bikeRacks: rawStation.?, // TODO where to get?
+      district: rawStation.district // TODO do we want it?
+    }
+  };
+
+  return station;
+};
+
+main();
