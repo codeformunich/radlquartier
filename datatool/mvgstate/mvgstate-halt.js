@@ -2,10 +2,11 @@
  * halt
  *
  */
-
 'use strict';
 
+const program = require('commander');
 const fs = require('fs');
+const path = require('path');
 const uuidv4 = require('uuid/v4');
 
 const outputFolder = 'output';
@@ -13,27 +14,29 @@ const tempFileName = 'mvgStateTemp.json';
 const dataFileName = 'mvgStateHalts.json';
 
 let haltData = null;
-let oldTempData = null;
-let newTempData = [];
-let input = '';
+let tempData = null;
+// let input = '';
 
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
+program.parse(process.argv);
 
-process.stdin.on('data', function(chunk) {
-  input = input + chunk;
-});
+const args = program.args;
+// console.log('mvgstate-halt, args:', args);
+const inputFolder = args[0];
+console.log('mvgstate-halt, inputFolder:', inputFolder);
+if (inputFolder === null || inputFolder === undefined || inputFolder.length === 0) {
+  console.log('ERROR mvgstate-halt.process.stdin.on, inputFolder:', inputFolder);
+  return;  
+}
 
-process.stdin.on('end', function() {
-  let index = 0;
+// process.stdin.resume();
+// process.stdin.setEncoding('utf8');
 
-  const json = JSON.parse(input);
-  // console.log(input);
-  // console.log(json);
+// process.stdin.on('data', function(chunk) {
+//   input = input + chunk;
+// });
 
-  const bikes = json.addedBikes;
-  const bikesCount = bikes.length;
-
+// process.stdin.on('end', function() {
+const main = function(){
   const outputPathTemp = outputFolder + '/' + tempFileName;
   const outputPathData = outputFolder + '/' + dataFileName;
 
@@ -41,59 +44,114 @@ process.stdin.on('end', function() {
     fs.mkdirSync(outputFolder);
   }
 
-  oldTempData = loadExistingJsonFile(outputPathTemp);
-
-  if (fs.existsSync(outputPathData)) {
-    try {
-      haltData = JSON.parse(fs.readFileSync(outputPathData));
-    } catch (error) {
-      console.log('process.stdin.on, error', error);
-      throw error;
-    }
-  } else {
-    console.log('No ' + outputPathData + ' file creating new one.');
+  tempData = loadJsonFile(outputPathTemp);
+  if (tempData == null) {
+    console.log('INFO mvgstate-halt.process.stdin.on, create new tempData object');
+    tempData = {};
+  }
+  haltData = loadJsonFile(outputPathData);
+  if (haltData == null) {
+    console.log('INFO mvgstate-halt.process.stdin.on, create new haltData array');
     haltData = [];
   }
 
-  for (index; index < bikesCount; index++) {
-    generateHalt(bikes[index]);
-  }
+  const filenames = readFiles(inputFolder);
+  const filenamesCount = filenames.length;
+  for (let index = 0; index < filenamesCount; index++) {
+    const filename = filenames[index];
+    if (path.extname(filename) === '.json') {
+      const filePath = path.join(inputFolder, filename) ;
+      console.log('INFO mvgstate-halt.process.stdin.on, filePath:', filePath);
 
+      const json = loadJsonFile(filePath);
+      if (json == null) {
+        console.log('ERROR mvgstate-halt.process.stdin.on, json:', json);
+        continue;
+      }
+
+      const bikes = json.addedBikes;
+      generateHalts(bikes);
+    }
+  }
+  
+  // filenames.forEach(function(filename) {
+  //   if (path.extname(filename) === '.json') {
+  //     const filePath = path.join(inputFolder, filename) ;
+  //     console.log('mvgstate-halt.process.stdin.on, filePath:', filePath);
+
+  //     const json = loadJsonFile(filePath);
+  //     if (json == null) {
+  //       console.log('ERROR mvgstate-halt.process.stdin.on, json:', json);
+  //     }
+
+  //     const bikes = json.addedBikes;
+  //     generateHalts(bikes);
+  //   }
+  // });
+
+  // console.log('mvgstate-halt.process.stdin.on, input:', input);
+
+  // const json = JSON.parse(input);
+  // console.log('mvgstate-halt.process.stdin.on, json:', json);
+
+  // const bikes = json.addedBikes;
+  // const bikesCount = bikes.length;
+
+  // for (let index = 0; index < bikesCount; index++) {
+  // generateHalt(bikes[index]);
+  // }
+
+  writeJsonFile(outputPathData, haltData);
+  writeJsonFile(outputPathTemp, tempData);
+
+  console.log('Done!');
+};
+  // });
+
+const readFiles = function(dirname) {
   try {
-    fs.writeFileSync(outputPathData, JSON.stringify(haltData, null, '\t'));
+    return fs.readdirSync(dirname);
   } catch (error) {
-    console.log('process.stdin.on, error', error);
+    console.log('mvgstate-halt.readFiles, error', error);
     throw error;
   }
+};
 
-  try {
-    fs.writeFileSync(outputPathTemp, JSON.stringify(newTempData, null, '\t'));
-  } catch (error) {
-    console.log('process.stdin.on, error', error);
-    throw error;
-  }
-
-  console.log('Done');
-});
-
-const loadExistingJsonFile = function(filePath) {
+const loadJsonFile = function(filePath) {
   if (!fs.existsSync(filePath)) {
-    console.log('No ' + filePath + ' file creating new one.');
-    return [];
+    return null;
   }
 
   try {
     return JSON.parse(fs.readFileSync(filePath));
   } catch (error) {
     console.log('process.stdin.on, error', error);
+    return null;
+    // throw error;
+  }
+};
+
+const writeJsonFile = function(path, data) {
+  try {
+    fs.writeFileSync(path, JSON.stringify(data, null, '\t'));
+  } catch (error) {
+    console.log('mvgstate-halt.writeJsonFile, error', error);
     throw error;
+  }
+};
+
+const generateHalts = function(bikes) {
+  const bikesCount = bikes.length;
+
+  for (let index = 0; index < bikesCount; index++) {
+    generateHalt(bikes[index]);
   }
 };
 
 const generateHalt = function(bike) {
   // console.log('generateHalt, bike.bikeNumber:', bike.bikeNumber);
 
-  const lastHalt = findLastHalt(bike);
+  const lastHalt = findLastHalt(bike.bikeNumber);
   // console.log('generateHalt, lastHalt:', lastHalt);
 
   if (lastHalt === null || lastHalt === undefined) {
@@ -101,8 +159,7 @@ const generateHalt = function(bike) {
   } else {
     // console.log( 'generateHalt, bike:', bike);
     // console.log( 'generateHalt, lastHalt:', lastHalt);
-
-    // console.log( 'generateHalt:', lastHalt.loc.coordinates[0], bike.longitude,
+    // console.log( 'generateHalt, lastHalt.loc', lastHalt.loc.coordinates[0], bike.longitude,
     //     lastHalt.loc.coordinates[1], bike.latitude);
     if (
       lastHalt.loc.coordinates[0] === bike.longitude &&
@@ -117,19 +174,32 @@ const generateHalt = function(bike) {
   }
 };
 
-const findLastHalt = function(bike) {
+const findLastHalt = function(bikeNumber) {
   // console.log('findLastHalt, newBike.bikeNumber:', bike.bikeNumber);
-  if (oldTempData === null || oldTempData === undefined) {
-    console.log('findLastHalt, oldTempData: null or undefined');
+  if (tempData === null || tempData === undefined) {
+    console.log('findLastHalt, tempData:', tempData);
     return null;
   }
 
-  return oldTempData.find(function(temp) {
-    // if (temp.bikeNumber === bike.bikeNumber){
-    //     console.log( 'findLastHalt found bikeNumber:', bike.bikeNumber);
-    // }
-    return temp.bikeNumber === bike.bikeNumber;
-  });
+  // console.log('findLastHalt, tempData[bikeNumber]:', tempData[bikeNumber]);
+  if (tempData.hasOwnProperty(bikeNumber)) {
+    // console.log('findLastHalt, bikeNumber:', bikeNumber);
+    return tempData[bikeNumber];
+  }
+
+  return null;
+
+  // for (const key in tempData) {
+  //   if (tempData.hasOwnProperty(key)) {
+  //     const bike = tempData[key];
+      
+  //     if (bike.bikeNumber === bikeNumber) {
+  //       return bike;
+  //     }
+  //   }
+  // }
+
+  // return null;
 };
 
 const insertHalt = function(bike) {
@@ -140,7 +210,7 @@ const insertHalt = function(bike) {
   }
 
   haltData.push(halt);
-  newTempData.push(halt);
+  tempData[halt.bikeNumber] = halt;
 
   // console.log('insertHalt, bikeNumber:', halt.bikeNumber, 'id:', halt.id);
 };
@@ -158,7 +228,7 @@ const updateHalt = function(bike, lastHalt) {
   haltData[index].additionalData.count =
     haltData[index].additionalData.count + 1;
 
-  newTempData.push(haltData[index]);
+  tempData[haltData[index].bikeNumber] = haltData[index];
 
   // console.log('updateHalt, bikeNumber:', haltData[index].bikeNumber, 'id:', haltData[index].id);
 };
@@ -184,7 +254,7 @@ const newHalt = function(bike) {
   halt.endDate = date;
 
   let additionalData = {};
-  additionalData.operator = 'mvg';
+  additionalData.provider = 'MVG_RAD';
   additionalData.count = 1;
   additionalData.dates = [date];
 
@@ -200,3 +270,5 @@ const newHalt = function(bike) {
   // console.log('newHalt, bikeNumber:', halt.bikeNumber, halt.id);
   return halt;
 };
+
+main();
