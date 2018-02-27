@@ -4,7 +4,7 @@
  */
 'use strict';
 
-const helper = require('./helper');
+const helper = require('./../share/helper');
 
 const program = require('commander');
 const path = require('path');

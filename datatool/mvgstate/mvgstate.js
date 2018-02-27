@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Require dependancy
+ * Require dependencies
  *
  */
 const program = require('commander');
@@ -11,7 +11,7 @@ program
   .version(pkg.version)
   .command(
     'station',
-    'creates stations from the raw bike data from the networkstate-mvgrad files: : mvgstate station [directory]'
+    'creates stations from the raw bike data from the networkstate-mvgrad files: mvgstate station [directory]'
   )
   .command(
     'halt',
