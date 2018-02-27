@@ -7,6 +7,5 @@ logs
 npm-debug.log*
 
 
-data/sh/output
-data/mvg-networkstate/input/2017
-data/mvg-networkstate/output
+data/networkstate-mvgrad/input/2017
+data/networkstate-mvgrad/output
