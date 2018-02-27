@@ -2,10 +2,20 @@
 
 Command-line tool to prepare and extract bike sharing data from munich. Plus example implementations of visualizations and a example website.
 
+## Dependencies
+- npm
+
+## Setup
+```
+git clone https://github.com/codeformunich/radlquartier.git
+cd radlquartier
+npm install
+```
+
 ## Project structure
 
 ### data
-Geojson files for munich and test data from different bike sharing services.
+Geojson files for munich and test data from different bike sharing services from [transit.robbi5.com](https://transit.robbi5.com/).
 
 ### datatool
 Command-line tool to prepare and extract bike sharing data.
@@ -14,7 +24,7 @@ Command-line tool to prepare and extract bike sharing data.
 Copy of the website folder for GitHub Pages [mvg.manuel.red](http://mvg.manuel.red)
 
 ### playground
-Modified D3 and leaflet examples.
+Modified D3.js and leaflet examples.
 
 ### website
 Example website with visualization based on bike sharing data.
