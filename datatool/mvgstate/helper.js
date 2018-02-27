@@ -30,7 +30,7 @@ exports.loadJsonFile = function (filePath) {
     return JSON.parse(fs.readFileSync(filePath));
   } catch (error) {
     console.log('helper.loadJsonFile, error: ', error);
-    throw error;
+    return null;
   }
 };
 

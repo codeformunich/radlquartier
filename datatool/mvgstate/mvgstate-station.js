@@ -60,8 +60,12 @@ const main = function() {
     generateStations(rawStations);
   });
 
-  helper.createDirectory(outputFolder);
+  if (data.length === 0) {
+    console.log('ERROR main, data: empty');
+    return;
+  }
 
+  helper.createDirectory(outputFolder);
   helper.writeJsonFile(outputPathData, data);
 
   console.log('INFO: main: Done!');
@@ -80,7 +84,6 @@ const generateStations = function(rawStations) {
 };
 
 const findStation = function(stationId, data) {
-  // console.log('mvgstate-station.findStation, stationID:', stationID);
   if (data === null || data === undefined) {
     console.log('ERROR: findStation, data:', data);
     return null;

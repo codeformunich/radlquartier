@@ -11,21 +11,12 @@ program
   .version(pkg.version)
   .command(
     'station',
-    'creates stations from the raw bike data from the networkstate-mvgrad files: : mvgstate station < input,json'
-  )
-  .command(
-    'bike',
-    'creates bikess from the raw bike data from the networkstate-mvgrad files: : mvgstate bike < input,json'
+    'creates stations from the raw bike data from the networkstate-mvgrad files: : mvgstate station [directory]'
   )
   .command(
     'halt',
-    'mvgstate halt "directory with json files" - creates halts from the raw bike data from the networkstate-mvgrad files'
+    'creates halts from the raw bike data from the networkstate-mvgrad files: mvgstate halt [directory]'
   )
-  .command(
-    'ride',
-    'creates rides from the raw bike data from the networkstate-mvgrad files: : mvgstate ride < input,json'
-  )
-  // .command('importstations', 'imports the station data from the networkstate-mvgrad files and add a timestamp' )
   .parse(process.argv);
 
 // if program was called with no arguments, show help.
