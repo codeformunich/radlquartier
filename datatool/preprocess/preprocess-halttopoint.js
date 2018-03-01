@@ -9,7 +9,7 @@ const helper = require('./../share/helper');
 const path = require('path');
 
 const outputFolder = 'output';
-const dataFileName = 'mvgStations.geojson';
+const dataFileName = 'mvgHalts.geojson';
 
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
@@ -29,7 +29,7 @@ process.stdin.on('end', function() {
 
   const output = {
     type: 'FeatureCollection',
-    features: json.map(stationToGeojsonFeature)
+    features: json.map(haltToGeojsonFeature)
   };
 
   const outputPath = path.join(outputFolder, dataFileName);
@@ -40,18 +40,19 @@ process.stdin.on('end', function() {
   console.log('INFO: preprocess, Done!');
 });
 
-const stationToGeojsonFeature = function(station) {
+const haltToGeojsonFeature = function(halt) {
   const geojsonFeature = {
     type: 'Feature',
-    geometry: station.loc,
+    geometry: halt.loc,
     properties: {
-      id: station.id,
-      stationId: station.stationId,
-      stationName: station.additionalData.stationName,
-      provider: station.additionalData.provider,
-      // district: station.additionalData.district,
-      firstAppearanceDate: station.firstAppearanceDate,
-      lastAppearanceDate: station.lastAppearanceDate
+      id: halt.id,
+      bikeNumber: halt.bikeNumber,
+      provider: halt.provider,
+      startDate: halt.startDate,
+      endDate: halt.endDate,
+      count: halt.count,
+      // stationId: halt.stationId,
+      // district: halt.district
     }
   };
 

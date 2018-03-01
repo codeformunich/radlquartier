@@ -10,8 +10,9 @@ const pkg = require('./../../package.json');
 
 program
   .version(pkg.version)
-  .command('halttopoint', 'transforms halt elments into geojson point: preprocess halttopoint < halts.json')
-  .command('stationtopoint', 'transforms station elments into geojson point: preprocess halttopoint < halts.json')
+  .command('halttopoint', 'transforms halt elments into geojson Point: preprocess halttopoint < halts.json')
+  .command('halttoline', 'transforms halt elments into geojson LineString: preprocess halttoline < halts.json')
+  .command('stationtopoint', 'transforms station elments into geojson Point: preprocess halttopoint < stations.json')
   
   // .command('coorswitch', 'switch coordinats in a geojson file')
   // .command(
