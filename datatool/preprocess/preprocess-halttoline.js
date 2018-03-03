@@ -78,7 +78,9 @@ const newGeojsonLineString = function(halt) {
       bikeNumber: halt.bikeNumber,
       provider: halt.provider,
       startDate: halt.startDate,
-      endDate: halt.endDate
+      endDate: halt.endDate,
+      driveStartDates: [halt.endDate],
+      driveEndDates: []
     }
   };
 
@@ -93,6 +95,8 @@ const updateGeojsonLineString = function(geojsonFeature, halt) {
     geojsonFeature.geometry.coordinates.push(halt.loc.coordinates);
   }
   geojsonFeature.properties.endDate = halt.endDate;
+  geojsonFeature.properties.driveStartDates.push(halt.endDate);
+  geojsonFeature.properties.driveEndDates.push(halt.startDate);
 
   // console.log('updateGeojsonLineString, geojsonFeature:', geojsonFeature);
   return geojsonFeature;
