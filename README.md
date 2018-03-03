@@ -2,6 +2,8 @@
 
 Command-line tool to prepare and extract bike sharing data from munich. Plus example implementations of visualizations and a example website.
 
+Some notes: https://workflowy.com/s/um7.HypklgPC4Y
+
 ## Dependencies
 - npm
 
