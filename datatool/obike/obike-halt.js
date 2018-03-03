@@ -11,8 +11,8 @@ const path = require('path');
 const uuidv4 = require('uuid/v4');
 
 const outputFolder = 'output';
-const tempFileName = 'mvgStateTemp.json';
-const dataFileName = 'mvgStateHalts.json';
+const tempFileName = 'obikeTemp.json';
+const dataFileName = 'obikeHalts.json';
 
 let haltData = null;
 let tempData = null;
@@ -54,14 +54,17 @@ const main = function() {
     console.log('INFO: main, filename:', filename);
 
     const filePath = path.join(inputFolder, filename);
+    // muc-2017-09-07T12:40:22+0200.json
+    // muc-2017-09-07T23:55:19+0200-11.37267149695314-48.16890050781732.json
+    const date = filePath.split('muc-')[1].split('+0200')[0];
     const json = helper.loadJsonFile(filePath);
 
-    if (json == null) {
-      console.log('ERROR main, json:', json);
-      return;
+    var bikes = json.data.list;
+    for (var index = 0; index < bikes.length; index++) {
+      // "convert" data from obike to target
+      bikes[index].updated = date;
+      bikes[index].bikeNumber = bikes[index].id;
     }
-
-    const bikes = json.addedBikes;
     generateHalts(bikes);
   });
 
@@ -150,19 +153,16 @@ const newHalt = function(rawBike) {
     startDate: date,
     endDate: date,
     additionalData: {
-      provider: 'MVG_RAD',
+      provider: 'OBIKE',
       count: 1,
       // additionalData.dates = [date]; // Too much data
-      stationId: rawBike.currentStationID,
-      // TODO standardize between mvg-networkstate
-      //   addedBike.currentStationID
-      //   addedStation.id
-      //   addedStation.placeID
-      //   addedStation.name
-      // and nextbike-mvgrad
-      //   place.uid
-      //   place.name
-      district: rawBike.district
+      // TODO? additional obike 2017 data we currenlty ignore
+      //   imei:6C697A6174346F6E
+      //   iconUrl:null
+      //   promotionActivityType:null
+      //   rideMinutes:null
+      //   countryId:60
+      //   helmet:0
     }
   };
 

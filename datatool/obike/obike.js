@@ -10,12 +10,8 @@ const pkg = require('./../../package.json');
 program
   .version(pkg.version)
   .command(
-    'station',
-    'creates stations from the raw bike data from the networkstate-mvgrad files: mvgstate station [directory]'
-  )
-  .command(
     'halt',
-    'creates halts from the raw bike data from the networkstate-mvgrad files: mvgstate halt [directory]'
+    'creates halts from the raw bike data from the obkie files: obkie halt [directory]'
   )
   .parse(process.argv);
 
