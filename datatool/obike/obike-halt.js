@@ -46,6 +46,12 @@ const main = function() {
   }
 
   const filenames = helper.readDirectory(inputFolder);
+  // possible file names are:
+  // - muc-2017-09-07T12:40:22+0200.json
+  // - muc-2017-09-07T23:55:19+0200-11.37267149695314-48.16890050781732.json
+  // - muc-2017-09-07T12_40_22+0100.json
+  const regex = /muc-(.+?\+\d+)/
+  
   filenames.forEach(function(filename) {
     if (path.extname(filename) !== '.json') {
       return;
@@ -54,9 +60,7 @@ const main = function() {
     console.log('INFO: main, filename:', filename);
 
     const filePath = path.join(inputFolder, filename);
-    // muc-2017-09-07T12:40:22+0200.json
-    // muc-2017-09-07T23:55:19+0200-11.37267149695314-48.16890050781732.json
-    const date = filePath.split('muc-')[1].split('+0200')[0];
+    const date = regex.exec(filePath)[1].replace(/_/g, ':');
     const json = helper.loadJsonFile(filePath);
 
     var bikes = json.data.list;
