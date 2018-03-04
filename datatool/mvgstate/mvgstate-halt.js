@@ -8,6 +8,7 @@ const helper = require('./../share/helper');
 
 const program = require('commander');
 const path = require('path');
+const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 
 const outputFolder = 'output';
@@ -45,7 +46,7 @@ const main = function() {
     haltData = [];
   }
 
-  const filenames = helper.readDirectory(inputFolder);
+/*  const filenames = helper.readDirectory(inputFolder);
   filenames.forEach(function(filename) {
     if (path.extname(filename) !== '.json') {
       return;
@@ -63,7 +64,8 @@ const main = function() {
 
     const bikes = json.addedBikes;
     generateHalts(bikes);
-  });
+  });*/
+  processDirectory(inputFolder);
 
   if (haltData.length === 0) {
     console.log('ERROR main, haltData: empty');
@@ -75,6 +77,34 @@ const main = function() {
   helper.writeJsonFile(outputPathTemp, tempData);
 
   console.log('INFO: main: Done!');
+};
+
+const processDirectory = function(inputFolder) {
+  const filenames = helper.readDirectory(inputFolder);
+  filenames.forEach(function(filename) {
+    if (path.basename(filename) != '.' && path.basename(filename) != '..' && fs.lstatSync(path.resolve(inputFolder + '/' + filename)).isDirectory()) {
+      processDirectory(inputFolder + '/' + filename);
+    }
+
+    if (path.extname(filename) !== '.json') {
+      return;
+    }
+
+    console.log('INFO: main, filename:', filename);
+
+    const filePath = path.join(inputFolder, filename);
+    const json = helper.loadJsonFile(filePath);
+
+    if (json == null) {
+      console.log('ERROR main, json:', json);
+      return;
+    }
+
+    const bikes = json.addedBikes;
+    if(bikes) {
+      generateHalts(bikes);
+    }
+  });
 };
 
 const generateHalts = function(rawBikes) {
