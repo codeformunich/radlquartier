@@ -111,7 +111,7 @@ var Mucmap = (function(window, d3) {
             .on('mouseout', mouseout)
             .on('mousemove', mousemove)
             .on('mousedown', clicked)
-            .on('click', clicked);
+            // .on('click', clicked);
 
         render();
     }
