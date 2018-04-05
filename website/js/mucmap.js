@@ -1,4 +1,4 @@
-var Mucmap = (function(window, d3) {
+var Mucmap = (function(App, d3, window, document, undefined) {
     var svg,
         rect,
         g,
@@ -265,5 +265,5 @@ var Mucmap = (function(window, d3) {
     return {
         render : render
     };
-})(window, d3);
+})(App, d3, window, document);
 

@@ -1,4 +1,4 @@
-var Hexmap = (function(window, d3, L) {
+var Hexmap = (function(L, d3, window, document, undefined) {
 
     var center = [ 48.1351253, 11.581980599999952 ];
     // var layer = L.tileLayer('http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -209,5 +209,5 @@ var Hexmap = (function(window, d3, L) {
         init : init,
         loadDistrict : loadDistrict
     };
-})(window, d3, L);
+})(L, d3, window, document);
 

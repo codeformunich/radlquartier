@@ -1,4 +1,4 @@
-var Text = (function(window, d3) {
+var Text = (function(d3, window, document, undefined) {
     var districts = null,
         description,
         link = '<a href="https://www.mvg.de/services/kontakt/kundendialog/lobundtadelformular12.html" target="_blank">hier</a>';
@@ -31,4 +31,4 @@ var Text = (function(window, d3) {
     return {
         loadDistrict: loadDistrict
     };
-})(window, d3);
+})(d3, window, document);

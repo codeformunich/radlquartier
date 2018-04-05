@@ -1,4 +1,4 @@
-var Mucmap = (function(window, d3) {
+var Mucmap = (function(App, d3, window, document, undefined) {
     var svg,
         rect,
         g,
@@ -110,8 +110,8 @@ var Mucmap = (function(window, d3) {
             .on('mouseover', mouseover)
             .on('mouseout', mouseout)
             .on('mousemove', mousemove)
-            .on('mousedown', clicked)
-            // .on('click', clicked);
+            // .on('mousedown', clicked)
+            .on('click', clicked);
 
         render();
     }
@@ -265,5 +265,5 @@ var Mucmap = (function(window, d3) {
     return {
         render : render
     };
-})(window, d3);
+})(App, d3, window, document);
 

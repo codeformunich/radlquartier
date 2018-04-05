@@ -1,4 +1,4 @@
-var Chart = (function(window, d3) {
+var Chart = (function(d3, window, document, undefined) {
     //https://bl.ocks.org/mbostock/3885304
 
     var month = [
@@ -243,6 +243,6 @@ var Chart = (function(window, d3) {
         render : render,
         loadDistrict : loadDistrict
     };
-})(window, d3);
+})(d3, window, document);
 
 
