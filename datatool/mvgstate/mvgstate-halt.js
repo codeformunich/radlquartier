@@ -108,6 +108,8 @@ const processDirectory = function(inputFolder) {
 };
 
 const generateHalts = function(rawBikes) {
+  if 
+  
   rawBikes.forEach(function(rawBike) {
     const lastExistingHalt = findLastExistingHalt(rawBike.bikeNumber);
 
