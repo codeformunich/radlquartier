@@ -123,6 +123,7 @@ var Mucmap = (function(App, d3, window, document, undefined) {
       .style('fill', fillFn)
       .style('opacity', 0.9)
       .on('click', clicked)
+      .on('touchstart', clicked)
       .on('mouseover', mouseover)
       .on('mouseout', mouseout)
       .on('mousemove', mousemove);
@@ -197,6 +198,8 @@ var Mucmap = (function(App, d3, window, document, undefined) {
       centered = null;
     }
 
+    // textArt(getDistrict(d));
+
     // Highlight the clicked province
     mapLayer.selectAll('path').style('fill', function(d) {
       return centered && d === centered ? '#ffc484' : fillFn(d);
@@ -228,7 +231,7 @@ var Mucmap = (function(App, d3, window, document, undefined) {
     d3.select(this).style('fill', '#ffc484');
 
     // Draw effects
-    textArt(getDistrict(d));
+    // textArt(getDistrict(d));
   }
 
   function mouseout(d) {

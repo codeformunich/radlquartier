@@ -202,22 +202,28 @@ var Hexmap = (function(L, d3, window, document, undefined) {
 
   var districtCenters = {};
   function calculateDistrictCenters(callback) {
-    d3.json('data/bezirke.geojson', function(error, districtsData) {
-      districts.features.forEach(function(item) {
-        var bounds = d3.geoBounds(item);
+    if (!districts) {
+      return;
+    }
+    // d3.json('data/bezirke.geojson', function(error, districtsData) {
+    districts.features.forEach(function(item) {
+      var bounds = d3.geoBounds(item);
 
-        var lng = (bounds[1][0] + bounds[0][0]) / 2;
-        var lat = (bounds[1][1] + bounds[0][1]) / 2;
-        var key = 'id' + Number(item.properties.SB_NUMMER);
+      var lng = (bounds[1][0] + bounds[0][0]) / 2;
+      var lat = (bounds[1][1] + bounds[0][1]) / 2;
+      var key = 'id' + Number(item.properties.SB_NUMMER);
 
-        districtCenters[key] = [lat, lng];
-      });
-      callback();
+      districtCenters[key] = [lat, lng];
     });
+    callback();
+    // });
   }
 
   //Load halts data
   function loadDistrictHalts(index) {
+    if (!map) {
+      return;
+    }
     // https://github.com/Leaflet/Leaflet/issues/2738
     map.invalidateSize();
 
