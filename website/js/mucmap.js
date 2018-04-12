@@ -179,6 +179,8 @@ var Mucmap = (function(App, d3, window, document, undefined) {
 
   // When clicked, zoom in
   function clicked(d) {
+    console.log({ type: 'clicked', d: d, context: this });
+    
     var x, y, k;
 
     // Compute centroid of the selected path
@@ -218,6 +220,8 @@ var Mucmap = (function(App, d3, window, document, undefined) {
   // });
 
   function mouseover(d) {
+    console.log({ type: 'mouseover', d: d, context: this });
+
     d3.select(this).style('cursor', 'pointer');
 
     // Highlight hovered province
@@ -228,6 +232,8 @@ var Mucmap = (function(App, d3, window, document, undefined) {
   }
 
   function mouseout(d) {
+    console.log({ type: 'mouseout', d: d, context: this });
+
     d3.select(this).style('cursor', 'default');
 
     // Reset province color
@@ -249,6 +255,8 @@ var Mucmap = (function(App, d3, window, document, undefined) {
   }
 
   function mousemove(d) {
+    // console.log({ type: 'mousemove', d: d, context: this });
+    
     var district = getDistrict(d);
 
     div.style('left', d3.event.pageX + 10 + 'px');
