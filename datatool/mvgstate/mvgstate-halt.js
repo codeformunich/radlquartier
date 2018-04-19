@@ -39,15 +39,20 @@ const main = function() {
   const outputPathTemp = path.join(outputFolder, tempFileName);
   const outputPathData = path.join(outputFolder, dataFileName);
 
-  tempData = helper.loadJsonFileSync(outputPathTemp);
-  if (tempData == null) {
+  const jsonTempData = helper.loadJsonFileSync(outputPathTemp);
+  if (jsonTempData) {
+    tempData = new Map(jsonTempData);
+  } else {
     console.log('main, create new tempData object');
-    tempData = {};
+    tempData = new Map();
   }
-  haltData = helper.loadJsonFileSync(outputPathData);
-  if (haltData == null) {
+
+  const jsonHaltData = helper.loadJsonFileSync(outputPathData);
+  if (jsonHaltData) {
+    haltData = new Map(jsonTempData);
+  } else {
     console.log('main, create new haltData array');
-    haltData = [];
+    haltData = new Map();
   }
 
   // const filenames = helper.readDirectory(inputFolder);
@@ -75,14 +80,14 @@ const main = function() {
       // stop the progress bar
       bar2.stop();
 
-      if (haltData.length === 0) {
+      if (haltData.size === 0) {
         console.error('main, haltData: empty');
         return;
       }
 
       helper.createDirectorySync(outputFolder);
-      helper.writeJsonFileSync(outputPathData, haltData);
-      helper.writeJsonFileSync(outputPathTemp, tempData);
+      helper.writeJsonFileSync(outputPathData, [...haltData]);
+      helper.writeJsonFileSync(outputPathTemp, [...tempData]);
 
       console.log('main, Done!');
     })
@@ -103,12 +108,11 @@ const processDirectory = function(inputFolder) {
   // start the progress bar with a total value of 200 and start value of 0
   bar1.start(filenames.length, 0);
 
-
   filenames.forEach(function(filename, index) {
     // update the current value in your application..
     bar1.update(index + 1);
     // console.log('processDirectory, filename:', filename);
-    
+
     if (
       path.basename(filename) != '.' &&
       path.basename(filename) != '..' &&
@@ -169,9 +173,6 @@ const processDirectory = function(inputFolder) {
     // if (bikes) {
     //   generateHalts(bikes);
     // }
-
-    
-    
   });
 
   // stop the progress bar
@@ -180,7 +181,6 @@ const processDirectory = function(inputFolder) {
   console.log('process bike data');
   // start the progress bar with a total value of 200 and start value of 0
   bar2.start(filenames.length, 0);
-  
 
   return Promise.all(promises);
 };
@@ -210,23 +210,30 @@ const createHalt = function(bike) {
     return;
   }
 
-  haltData.push(halt);
-  tempData[halt.bikeNumber] = halt;
+  haltData.set(halt.id, halt);
+  tempData.set(halt.bikeNumber, halt);
 };
 
 const updateHalt = function(bike, lastHalt) {
-  // const index = haltData.findIndex(function(halt) {
-  //   return halt.id === lastHalt.id;
-  // });
-  const index = findLastIndexForId(haltData, lastHalt);
+  // // const index = haltData.findIndex(function(halt) {
+  // //   return halt.id === lastHalt.id;
+  // // });
+  // const index = findLastIndexForId(haltData, lastHalt);
 
   const date = new Date(bike.updated);
 
-  haltData[index].endDate = date;
-  haltData[index].additionalData.count =
-    haltData[index].additionalData.count + 1;
+  let halt = haltData.get(lastHalt.id);
+  if (halt) {
+    halt.endDate = date;
+    halt.additionalData.count = halt.additionalData.count + 1;
 
-  tempData[haltData[index].bikeNumber] = haltData[index];
+    haltData.set(halt.id, halt); // necessaire?
+    tempData.set(halt.bikeNumber, halt);
+  }
+  else {
+    console.error('updateHalt, lastHalt: ', lastHalt);
+  }
+
 };
 
 // helper function
@@ -274,29 +281,31 @@ const findLastExistingHalt = function(bikeNumber) {
     return null;
   }
 
-  if (tempData.hasOwnProperty(bikeNumber)) {
-    return tempData[bikeNumber];
-  }
+  return tempData.get(bikeNumber);
 
-  return null;
+  // if (tempData.hasOwnProperty(bikeNumber)) {
+  //   return tempData[bikeNumber];
+  // }
+
+  // return null;
 };
 
-const findLastIndexForId = function(data, lastHalt) {
-  // console.info('findLastIndexForId, data:', data);
-  // console.info('findLastIndexForId, lastHalt:', lastHalt);
-  // console.info('findLastIndexForId, data.length:', data.length);
+// const findLastIndexForId = function(data, lastHalt) {
+//   // console.info('findLastIndexForId, data:', data);
+//   // console.info('findLastIndexForId, lastHalt:', lastHalt);
+//   // console.info('findLastIndexForId, data.length:', data.length);
 
-  for (let index = data.length - 1; index >= 0; index--) {
-    // console.info('findLastIndexForId, index:', index);
+//   for (let index = data.length - 1; index >= 0; index--) {
+//     // console.info('findLastIndexForId, index:', index);
 
-    if (data[index].id == lastHalt.id) {
-      // console.info('findLastIndexForId, return:', index);
-      return index;
-    }
-  }
+//     if (data[index].id == lastHalt.id) {
+//       // console.info('findLastIndexForId, return:', index);
+//       return index;
+//     }
+//   }
 
-  console.info('findLastIndexForId, return:', -1);
-  return -1;
-};
+//   console.info('findLastIndexForId, return:', -1);
+//   return -1;
+// };
 
 main();
