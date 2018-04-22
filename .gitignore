@@ -9,3 +9,4 @@ npm-debug.log*
 
 data/networkstate-mvgrad/input/2017
 data/networkstate-mvgrad/output
+data/obike/output
