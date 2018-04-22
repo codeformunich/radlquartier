@@ -9,107 +9,168 @@ const helper = require('./../share/helper');
 const program = require('commander');
 const path = require('path');
 const uuidv4 = require('uuid/v4');
+const cliProgress = require('cli-progress');
 
 const outputFolder = 'output';
 const dataFileName = 'mvgStation.json';
 
-let data = null;
-let date = null;
+// create a new progress bar instances
+const processDirectoryBar = new cliProgress.Bar(
+  {},
+  cliProgress.Presets.shades_classic
+);
+const processDataBar = new cliProgress.Bar(
+  {},
+  cliProgress.Presets.shades_classic
+);
+let processDataIndex = 0;
+
+let stationData = null;
+let currentDate = null;
 
 program.parse(process.argv);
 const args = program.args;
 
 const main = function() {
   const inputFolder = args[0];
-  if (
-    inputFolder === null ||
-    inputFolder === undefined ||
-    inputFolder.length === 0
-  ) {
-    console.log('ERROR: main, inputFolder:', inputFolder);
+  if (!inputFolder || inputFolder.length === 0) {
+    console.error('main, inputFolder:', inputFolder);
     return;
   }
 
   const outputPathData = path.join(outputFolder, dataFileName);
 
-  data = helper.loadJsonFile(outputPathData);
-  if (data == null) {
-    console.log('INFO: main, create new data array');
-    data = [];
-  }
+  helper.readJsonFile(outputPathData).then(json => {
+    stationData = helper.PairsToMap(json);
 
-  const filenames = helper.readDirectory(inputFolder);
-  filenames.forEach(function(filename) {
-    if (path.extname(filename) !== '.json') {
+    return processDirectory(inputFolder);
+  }).then(() => {
+    // stop the progress bar
+    processDataBar.stop();
+
+    return helper.createDirectory(outputFolder);
+  }).then(() => {
+    if (stationData.size === 0) {
+      console.error('main, stationData: empty');
       return;
     }
 
-    console.log('INFO: main, filename:', filename);
-
-    const filePath = path.join(inputFolder, filename);
-    const json = helper.loadJsonFile(filePath);
-
-    if (json == null) {
-      console.log('ERROR: main, json:', json);
-      return;
-    }
-
-    date = new Date(json.addedBikes[0].updated);
-
-    const rawStations = json.addedStations;
-    generateStations(rawStations);
+    return Promise.all([
+      helper.writeJsonFile(outputPathData, [...stationData])
+    ]);
+  }).then(() => {
+    console.log('Done!');
+  }).catch(error => {
+    console.error('main, error:', error.message);
   });
+};
 
-  if (data.length === 0) {
-    console.log('ERROR main, data: empty');
-    return;
+/**
+ * 
+ * @param {*} inputFolder 
+ */
+const processDirectory = function(inputFolder) {
+  return helper.readdir(inputFolder).then(files => {
+    let promises = [];
+
+    console.log('process directory');
+    // start the progress bar with a total value of 200 and start value of 0
+    processDirectoryBar.start(files.length, 0);
+
+    files.forEach(function(filename, index) {
+      if (path.extname(filename) !== '.json') {
+        return;
+      }
+
+      // update the current value in your application..
+      processDirectoryBar.update(index + 1);
+      // console.log('processDirectory, filename:', filename);
+
+      const filePath = path.join(inputFolder, filename);
+      promises.push(
+        helper.readJsonFile(filePath).then(
+          json => {
+            // update the current value in your application..
+            processDataIndex += 1;
+            processDataBar.update(processDataIndex);
+
+            try {
+              processData(json);
+            } catch (error) {
+              console.error(
+                `processDirectory, filePath: ${filePath} error:, ${
+                  error.message
+                }`
+              );
+              return;
+            }
+          },
+          error => {
+            console.error('processDirectory, error:', error.message);
+            return;
+          }
+        )
+      );
+    });
+
+    // stop the progress bar
+    processDirectoryBar.stop();
+
+    console.log('process files');
+    // start the progress bar with a total value of 200 and start value of 0
+    processDataBar.start(files.length, 0);
+
+    return Promise.all(promises);
+  });
+};
+
+const processData = function(json) {
+  if (!json || !json.addedBikes || json.addedBikes.length === 0) {
+    throw new Error('processData, json:', json);
   }
 
-  helper.createDirectory(outputFolder);
-  helper.writeJsonFile(outputPathData, data);
+  const rawStations = json.addedStations;
+  if (!rawStations) {
+    throw new Error('processData, rawStations:', rawStations);
+  }
 
-  console.log('INFO: main: Done!');
+  currentDate = new Date(json.addedBikes[0].updated);
+
+  generateStations(rawStations);
 };
 
 const generateStations = function(rawStations) {
   rawStations.forEach(function(rawStation) {
-    const existingStation = findStation(rawStation.id, data);
+    // const existingStation = findStation(rawStation.id, stationData);
 
-    if (existingStation) {
-      updateStation(rawStation, existingStation);
+    if (stationData.has(rawStation.id)) {
+      updateStation(rawStation);
     } else {
       createStation(rawStation);
     }
   });
 };
 
-const findStation = function(stationId, data) {
-  if (data === null || data === undefined) {
-    console.log('ERROR: findStation, data:', data);
-    return null;
-  }
-
-  return data.find(function(station) {
-    return station.stationId === stationId;
-  });
-};
-
 const createStation = function(rawData) {
   const station = newStation(rawData);
-  if (station === null) {
-    console.log('ERROR: createStation, station: null');
+  if (!station) {
+    console.error('createStation, station:', station);
     return;
   }
 
-  data.push(station);
+  stationData.set(station.stationId, station);
 };
 
-const updateStation = function(rawStation, existingStation) {
-  const index = data.findIndex(function(station) {
-    return station.id === existingStation.id;
-  });
+const updateStation = function(rawStation) {
+  let station = stationData.get(rawStation.id);
+  if (!station) {
+    console.error('updateStation, station: ', station);
+    return;
+  }
 
-  data[index].lastAppearanceDate = date;
+  station.lastAppearanceDate = currentDate;
+
+  stationData.set(station.stationId, station); // necessaire?
 };
 
 // helper function
@@ -127,8 +188,8 @@ const newStation = function(rawStation) {
       type: 'Point',
       coordinates: [rawStation.longitude, rawStation.latitude]
     },
-    firstAppearanceDate: date,
-    lastAppearanceDate: date,
+    firstAppearanceDate: currentDate,
+    lastAppearanceDate: currentDate,
     additionalData: {
       provider: rawStation.provider,
       stationName: rawStation.name,

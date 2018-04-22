@@ -8,7 +8,6 @@ const helper = require('./../share/helper');
 
 const program = require('commander');
 const path = require('path');
-const fs = require('fs');
 const uuidv4 = require('uuid/v4');
 const cliProgress = require('cli-progress');
 
@@ -16,22 +15,29 @@ const outputFolder = 'output';
 const tempFileName = 'mvgStateTemp.json';
 const dataFileName = 'mvgStateHalts.json';
 
+// create a new progress bar instances
+const processDirectoryBar = new cliProgress.Bar(
+  {},
+  cliProgress.Presets.shades_classic
+);
+const processDataBar = new cliProgress.Bar(
+  {},
+  cliProgress.Presets.shades_classic
+);
+let processDataIndex = 0;
+
 let haltData = null;
 let tempData = null;
-
-const bar2 = new cliProgress.Bar({}, cliProgress.Presets.shades_classic);
-let bar2Index = 0;
 
 program.parse(process.argv);
 const args = program.args;
 
+/**
+ * 
+ */
 const main = function() {
   const inputFolder = args[0];
-  if (
-    inputFolder === null ||
-    inputFolder === undefined ||
-    inputFolder.length === 0
-  ) {
+  if (!inputFolder || inputFolder.length === 0) {
     console.error('main, inputFolder:', inputFolder);
     return;
   }
@@ -39,157 +45,128 @@ const main = function() {
   const outputPathTemp = path.join(outputFolder, tempFileName);
   const outputPathData = path.join(outputFolder, dataFileName);
 
-  const jsonTempData = helper.loadJsonFileSync(outputPathTemp);
-  if (jsonTempData) {
-    tempData = new Map(jsonTempData);
-  } else {
-    console.log('main, create new tempData object');
-    tempData = new Map();
-  }
+  helper
+    .readJsonFile(outputPathTemp)
+    .then(json => {
+      tempData = helper.PairsToMap(json);
 
-  const jsonHaltData = helper.loadJsonFileSync(outputPathData);
-  if (jsonHaltData) {
-    haltData = new Map(jsonTempData);
-  } else {
-    console.log('main, create new haltData array');
-    haltData = new Map();
-  }
+      return helper.readJsonFile(outputPathData);
+    })
+    .then(json => {
+      haltData = helper.PairsToMap(json);
 
-  // const filenames = helper.readDirectory(inputFolder);
-  // filenames.forEach(function(filename) {
-  //   if (path.extname(filename) !== '.json') {
-  //     return;
-  //   }
-
-  //   console.log('INFO: main, filename:', filename);
-
-  //   const filePath = path.join(inputFolder, filename);
-  //   const json = helper.loadJsonFile(filePath);
-
-  //   if (json == null) {
-  //     console.log('ERROR main, json:', json);
-  //     return;
-  //   }
-
-  //   const bikes = json.addedBikes;
-  //   generateHalts(bikes);
-  // });
-
-  processDirectory(inputFolder)
+      return processDirectory(inputFolder);
+    })
     .then(() => {
       // stop the progress bar
-      bar2.stop();
+      processDataBar.stop();
 
+      return helper.createDirectory(outputFolder);
+    })
+    .then(() => {
       if (haltData.size === 0) {
         console.error('main, haltData: empty');
         return;
       }
 
-      helper.createDirectorySync(outputFolder);
-      helper.writeJsonFileSync(outputPathData, [...haltData]);
-      helper.writeJsonFileSync(outputPathTemp, [...tempData]);
-
-      console.log('main, Done!');
+      return Promise.all([
+        helper.writeJsonFile(outputPathData, helper.MapToPairs(haltData)),
+        helper.writeJsonFile(outputPathTemp, helper.MapToPairs(tempData))
+      ]);
+    })
+    .then(() => {
+      console.log('Done!');
     })
     .catch(error => {
       console.error('main, error:', error.message);
     });
 };
 
+/**
+ * 
+ * @param {*} inputFolder 
+ */
 const processDirectory = function(inputFolder) {
-  // create a new progress bar instance and use shades_classic theme
-  const bar1 = new cliProgress.Bar({}, cliProgress.Presets.shades_classic);
+  return helper.readdir(inputFolder).then(files => {
+    let promises = [];
 
-  let promises = [];
+    console.log('process directory');
+    // start the progress bar with a total value of 200 and start value of 0
+    processDirectoryBar.start(files.length, 0);
 
-  const filenames = helper.readDirectorySync(inputFolder);
+    files.forEach(function(filename, index) {
+      if (path.extname(filename) !== '.json') {
+        return;
+      }
 
-  console.log('process directory');
-  // start the progress bar with a total value of 200 and start value of 0
-  bar1.start(filenames.length, 0);
+      // update the current value in your application..
+      processDirectoryBar.update(index + 1);
+      // console.log('processDirectory, filename:', filename);
 
-  filenames.forEach(function(filename, index) {
-    // update the current value in your application..
-    bar1.update(index + 1);
-    // console.log('processDirectory, filename:', filename);
+      const filePath = path.join(inputFolder, filename);
+      promises.push(
+        helper.readJsonFile(filePath).then(
+          json => {
+            // update the current value in your application..
+            processDataIndex += 1;
+            processDataBar.update(processDataIndex);
 
-    if (
-      path.basename(filename) != '.' &&
-      path.basename(filename) != '..' &&
-      fs.lstatSync(path.resolve(inputFolder + '/' + filename)).isDirectory()
-    ) {
-      processDirectory(inputFolder + '/' + filename);
-    }
-
-    if (path.extname(filename) !== '.json') {
-      return;
-    }
-
-    const filePath = path.join(inputFolder, filename);
-    promises.push(
-      helper.readFile(filePath).then(
-        content => {
-          // update the current value in your application..
-          bar2Index += 1;
-          bar2.update(bar2Index);
-          // console.log('processDirectory, bar1:', bar1);
-          // console.log('processDirectory, barIndex:', barIndex);
-
-          let json = null;
-          try {
-            json = JSON.parse(content);
-          } catch (error) {
-            console.error(
-              `processDirectory, filePath: ${filePath} error:, ${error}, filePath`
-            );
+            try {
+              processData(json);
+            } catch (error) {
+              console.error(
+                `processDirectory, filePath: ${filePath} error:, ${
+                  error.message
+                }`
+              );
+              return;
+            }
+          },
+          error => {
+            console.error('processDirectory, error:', error.message);
             return;
           }
+        )
+      );
+    });
 
-          if (json == null) {
-            console.error('processDirectory, json:', json);
-            return;
-          }
+    // stop the progress bar
+    processDirectoryBar.stop();
 
-          const bikes = json.addedBikes;
-          if (bikes) {
-            generateHalts(bikes);
-          }
-        },
-        error => {
-          console.error('processDirectory, error:', error.message);
-          return;
-        }
-      )
-    );
+    console.log('process files');
+    // start the progress bar with a total value of 200 and start value of 0
+    processDataBar.start(files.length, 0);
 
-    // const json = helper.loadJsonFile(filePath);
-
-    // if (json == null) {
-    //   console.log('ERROR main, json:', json);
-    //   return;
-    // }
-
-    // const bikes = json.addedBikes;
-    // if (bikes) {
-    //   generateHalts(bikes);
-    // }
+    return Promise.all(promises);
   });
-
-  // stop the progress bar
-  bar1.stop();
-
-  console.log('process bike data');
-  // start the progress bar with a total value of 200 and start value of 0
-  bar2.start(filenames.length, 0);
-
-  return Promise.all(promises);
 };
 
+/**
+ * 
+ * @param {*} json 
+ */
+const processData = function(json) {
+  if (!json) {
+    throw new Error('processData, json:', json);
+  }
+
+  const bikes = json.addedBikes;
+  if (!bikes) {
+    throw new Error('processData, bikes:', bikes);
+  }
+
+  generateHalts(bikes);
+};
+
+/**
+ * 
+ * @param {*} rawBikes 
+ */
 const generateHalts = function(rawBikes) {
   // console.log('generateHalts, filename', filename);
 
   rawBikes.forEach(function(rawBike) {
-    const lastExistingHalt = findLastExistingHalt(rawBike.bikeNumber);
+    const lastExistingHalt = tempData.get(rawBike.bikeNumber);
 
     if (
       lastExistingHalt &&
@@ -203,6 +180,10 @@ const generateHalts = function(rawBikes) {
   });
 };
 
+/**
+ * 
+ * @param {*} bike 
+ */
 const createHalt = function(bike) {
   const halt = newHalt(bike);
   if (!halt) {
@@ -214,33 +195,33 @@ const createHalt = function(bike) {
   tempData.set(halt.bikeNumber, halt);
 };
 
+/**
+ * 
+ * @param {*} bike 
+ * @param {*} lastHalt 
+ */
 const updateHalt = function(bike, lastHalt) {
-  // // const index = haltData.findIndex(function(halt) {
-  // //   return halt.id === lastHalt.id;
-  // // });
-  // const index = findLastIndexForId(haltData, lastHalt);
-
-  const date = new Date(bike.updated);
-
   let halt = haltData.get(lastHalt.id);
-  if (halt) {
-    halt.endDate = date;
-    halt.additionalData.count = halt.additionalData.count + 1;
-
-    haltData.set(halt.id, halt); // necessaire?
-    tempData.set(halt.bikeNumber, halt);
-  }
-  else {
-    console.error('updateHalt, lastHalt: ', lastHalt);
+  if (!halt) {
+    console.error('updateHalt, halt: ', halt);
+    return;
   }
 
+  halt.endDate = new Date(bike.updated);
+  halt.additionalData.count = halt.additionalData.count + 1;
+
+  haltData.set(halt.id, halt); // necessaire?
+  tempData.set(halt.bikeNumber, halt);
 };
 
 // helper function
 
-// creates new halt object
+/**
+ * Creates new halt object
+ * @param {*} rawBike 
+ */
 const newHalt = function(rawBike) {
-  if (rawBike === null || rawBike === undefined) {
+  if (!rawBike) {
     console.error('newHalt, bike:', rawBike);
     return null;
   }
@@ -274,38 +255,5 @@ const newHalt = function(rawBike) {
 
   return halt;
 };
-
-const findLastExistingHalt = function(bikeNumber) {
-  if (!tempData) {
-    console.error('findLastExistingHalt, tempData:', tempData);
-    return null;
-  }
-
-  return tempData.get(bikeNumber);
-
-  // if (tempData.hasOwnProperty(bikeNumber)) {
-  //   return tempData[bikeNumber];
-  // }
-
-  // return null;
-};
-
-// const findLastIndexForId = function(data, lastHalt) {
-//   // console.info('findLastIndexForId, data:', data);
-//   // console.info('findLastIndexForId, lastHalt:', lastHalt);
-//   // console.info('findLastIndexForId, data.length:', data.length);
-
-//   for (let index = data.length - 1; index >= 0; index--) {
-//     // console.info('findLastIndexForId, index:', index);
-
-//     if (data[index].id == lastHalt.id) {
-//       // console.info('findLastIndexForId, return:', index);
-//       return index;
-//     }
-//   }
-
-//   console.info('findLastIndexForId, return:', -1);
-//   return -1;
-// };
 
 main();

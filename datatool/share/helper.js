@@ -6,52 +6,114 @@
 
 const fs = require('fs');
 
-exports.createDirectorySync = function(directory) {
-  if (!fs.existsSync(directory)) {
-    fs.mkdirSync(directory);
+/**
+ * helper functions
+ */
+
+exports.MapToPairs = function(map){
+  return [...map];
+};
+
+exports.PairsToMap = function(pairs){
+  if (pairs) {
+    console.log('helper.PairsToMap, read existing Map');
+    return new Map(pairs);
+    
+  } else {
+    console.log('helper.PairsToMap, create new Map');
+    return new Map();
+  } 
+};
+
+exports.createDirectory = function(path) {
+  if (!fs.existsSync(path)) {
+    return this.mkdir(path);
   }
 };
 
-exports.readDirectorySync = function(directory) {
+exports.readJsonFile = function(path) {
+  return this.readFile(path)
+    .then(data => {
+      try {
+        return JSON.parse(data);
+      } catch (error) {
+        console.log('helper.readJsonFile, error', error.message);
+        throw error;
+      }
+    })
+    .catch(error => {
+      console.error('helper.readJsonFile, error:', error.message);
+      return null;
+    });
+};
+
+exports.writeJsonFile = function(filePath, data) {
+  let json;
   try {
-    return fs.readdirSync(directory);
+    json = JSON.stringify(data, null, '\t');
   } catch (error) {
-    console.log('helper.readDirectory, error', error);
+    console.log('helper.writeJsonFile, error', error.message);
     throw error;
   }
+
+  return this.writeFile(filePath, json);
 };
 
-exports.loadJsonFileSync = function(filePath) {
-  if (!fs.existsSync(filePath)) {
-    return null;
-  }
+/**
+ * wrapper for fs calls, with promises
+ */
 
-  try {
-    return JSON.parse(fs.readFileSync(filePath));
-  } catch (error) {
-    console.log('helper.loadJsonFile, error: ', error);
-    return null;
-  }
+/**
+ *
+ * @param {*} path
+ */
+exports.mkdir = function(path) {
+  return new Promise(function(resolve, reject) {
+    // trigger the asynchronous operation
+    fs.mkdir(path, function(error) {
+      // check for errors
+      if (error) {
+        // console.error('helper.mkdir, error:', error.message);
+        reject(error);
+        return;
+      } // the read succeeded
+
+      resolve();
+    });
+  });
 };
 
-exports.writeJsonFileSync = function (filePath, data) {
-  try {
-    fs.writeFileSync(filePath, JSON.stringify(data, null, '\t'));
-  } catch (error) {
-    console.log('helper.writeJsonFile, error', error);
-    throw error;
-  }
+/**
+ *
+ * @param {*} path
+ */
+exports.readdir = function(path) {
+  return new Promise(function(resolve, reject) {
+    // trigger the asynchronous operation
+    fs.readdir(path, function(error, files) {
+      // check for errors
+      if (error) {
+        // console.error('helper.readdir, error:', error.message);
+        reject(error);
+        return;
+      } // the read succeeded
+
+      resolve(files);
+    });
+  });
 };
 
-
-
+/**
+ *
+ * @param {*} filename
+ */
 exports.exists = function(filename) {
   return new Promise(function(resolve, reject) {
     // trigger the asynchronous operation
-    fs.exists(filename, function(err, contents) {
+    fs.exists(filename, function(error, contents) {
       // check for errors
-      if (err) {
-        reject(err);
+      if (error) {
+        reject(error);
         return;
       } // the read succeeded
 
@@ -60,28 +122,37 @@ exports.exists = function(filename) {
   });
 };
 
-exports.readFile = function(filename) {
+/**
+ *
+ * @param {*} filename
+ */
+exports.readFile = function(path) {
   return new Promise(function(resolve, reject) {
     // trigger the asynchronous operation
-    fs.readFile(filename, { encoding: 'utf8' }, function(err, contents) {
+    fs.readFile(path, { encoding: 'utf8' }, function(error, data) {
       // check for errors
-      if (err) {
-        reject(err);
+      if (error) {
+        reject(error);
         return;
       } // the read succeeded
 
-      resolve(contents);
+      resolve(data);
     });
   });
 };
 
+/**
+ *
+ * @param {*} filename
+ * @param {*} data
+ */
 exports.writeFile = function(filename, data) {
   return new Promise(function(resolve, reject) {
     // trigger the asynchronous operation
-    fs.writeFile(filename, JSON.stringify(data, null, '\t'), function(err, contents) {
+    fs.writeFile(filename, data, function(error, contents) {
       // check for errors
-      if (err) {
-        reject(err);
+      if (error) {
+        reject(error);
         return;
       } // the write succeeded
 
@@ -89,20 +160,3 @@ exports.writeFile = function(filename, data) {
     });
   });
 };
-
-
-
-
-// let promise = readFile('example.txt');
-
-// // listen for both fulfillment and rejection
-// promise.then(
-//   function(contents) {
-//     // fulfillment
-//     console.log(contents);
-//   },
-//   function(err) {
-//     // rejection
-//     console.error(err.message);
-//   }
-// );
