@@ -1,6 +1,11 @@
-const BikeDataParser = require('./../share/BikeDataParser');
+/**
+ * ObikeHaltParser
+ *
+ */
 
-class HaltParser extends BikeDataParser {
+const HaltParser = require('./../share/HaltParser');
+
+class ObikeHaltParser extends HaltParser {
   constructor(outputFolder, tempFileName, dataFileName, provider) {
     super(outputFolder, tempFileName, dataFileName, provider);
   }
@@ -56,4 +61,4 @@ class HaltParser extends BikeDataParser {
   }
 }
 
-module.exports = HaltParser;
+module.exports = ObikeHaltParser;

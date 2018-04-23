@@ -6,7 +6,7 @@
 
 const program = require('commander');
 
-const HaltParser = require('./HaltParser');
+const ObikeHaltParser = require('./ObikeHaltParser');
 
 const outputFolder = 'output';
 const tempFileName = 'obikeTemp.json';
@@ -16,7 +16,7 @@ const provider = 'OBIKE';
 program.parse(process.argv);
 const args = program.args;
 
-const haltParser = new HaltParser(
+const haltParser = new ObikeHaltParser(
   outputFolder,
   tempFileName,
   dataFileName,

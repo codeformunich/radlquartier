@@ -37,12 +37,12 @@ exports.readJsonFile = function(path) {
       try {
         return JSON.parse(data);
       } catch (error) {
-        console.log('helper.readJsonFile, error', error.message);
+        console.log('helper.readJsonFile, ', error.message);
         throw error;
       }
     })
     .catch(error => {
-      console.error('helper.readJsonFile, error:', error.message);
+      console.error('helper.readJsonFile, ', error.message);
       return null;
     });
 };
