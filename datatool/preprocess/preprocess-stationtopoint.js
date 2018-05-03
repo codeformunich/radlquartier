@@ -27,17 +27,22 @@ process.stdin.on('end', function() {
     return;
   }
 
+  const stations = [...helper.PairsToMap(json).values()];
+
   const output = {
     type: 'FeatureCollection',
-    features: json.map(stationToGeojsonFeature)
+    features: stations.map(stationToGeojsonFeature)
   };
 
   const outputPath = path.join(outputFolder, dataFileName);
 
   helper.createDirectory(outputFolder);
-  helper.writeJsonFile(outputPath, output);
-
-  console.log('INFO: preprocess, Done!');
+  helper.writeJsonFile(outputPath, output).then(() => {
+    console.log('...Done!');
+  })
+  .catch(error => {
+    console.error('main, error:', error.message);
+  });
 });
 
 const stationToGeojsonFeature = function(station) {

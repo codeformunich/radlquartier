@@ -26,8 +26,10 @@ process.stdin.on('end', function() {
     return;
   }
 
+  const halts = [...helper.PairsToMap(json).values()];
+
   let haltsOfBikes = {};
-  json.forEach(halt => {
+  halts.forEach(halt => {
     if (haltsOfBikes.hasOwnProperty(halt.bikeNumber)) {
       haltsOfBikes[halt.bikeNumber] = updateGeojsonLineString(
         haltsOfBikes[halt.bikeNumber],
