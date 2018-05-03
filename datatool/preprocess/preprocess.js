@@ -10,10 +10,23 @@ const pkg = require('./../../package.json');
 
 program
   .version(pkg.version)
-  .command('halttopoint', 'transforms halt elments into geojson Point: preprocess halttopoint < halts.json')
-  .command('halttoline', 'transforms halt elments into geojson LineString: preprocess halttoline < halts.json')
-  .command('stationtopoint', 'transforms station elments into geojson Point: preprocess halttopoint < stations.json')
-  
+  .command(
+    'halttopoint',
+    'transform halt elements to geojson Point: preprocess halttopoint < halts.json'
+  )
+  .command(
+    'halttoline',
+    'transform halt elements to geojson LineString: preprocess halttoline < halts.json'
+  )
+  .command(
+    'stationtopoint',
+    'transform station elements to geojson Point: preprocess halttopoint < stations.json'
+  )
+  .command(
+    'quartierstats',
+    'create halts statistics per distrikt: node index.js qh < ../geojson/munich.geojson'
+  )
+
   // .command('coorswitch', 'switch coordinats in a geojson file')
   // .command(
   //   'linestring <bike>',
