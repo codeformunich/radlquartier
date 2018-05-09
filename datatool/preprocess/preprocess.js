@@ -23,8 +23,8 @@ program
     'transform station elements to geojson Point: preprocess halttopoint < stations.json'
   )
   .command(
-    'quartierstats',
-    'create halts statistics per distrikt: node index.js qh < ../geojson/munich.geojson'
+    'counthalts',
+    'create halts statistics count halts per hour: preprocess counthalts [directory]'
   )
 
   // .command('coorswitch', 'switch coordinats in a geojson file')
