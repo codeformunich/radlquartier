@@ -19,9 +19,12 @@
 # echo "creating stations from networkstate-mvgrad files"
 # node ./../../datatool/mvgstate/mvgstate.js station ./input/2017/04
 
-echo "creating geojson Points from halts"
-node ./../../datatool/preprocess/preprocess.js halttopoint < ./output/mvgStateHalts.json
-echo "creating geojson LineStrings from halts"
-node ./../../datatool/preprocess/preprocess.js halttoline < ./output/mvgStateHalts.json
-echo "creating geojson Points from stations"
-node ./../../datatool/preprocess/preprocess.js stationtopoint < ./output/mvgStateStation.json
+# echo "creating geojson Points from halts"
+# node ./../../datatool/preprocess/preprocess.js halttopoint < ./output/mvgStateHalts.json
+# echo "creating geojson LineStrings from halts"
+# node ./../../datatool/preprocess/preprocess.js halttoline < ./output/mvgStateHalts.json
+# echo "creating geojson Points from stations"
+# node ./../../datatool/preprocess/preprocess.js stationtopoint < ./output/mvgStateStation.json
+
+echo "creating json counting halts"
+node ./../../datatool/preprocess/preprocess.js counthalts ./output/halt

@@ -10,3 +10,8 @@ npm-debug.log*
 data/networkstate-mvgrad/input/2017
 data/networkstate-mvgrad/output
 data/obike/output
+data/transit.robbi5.com/mvg-networkstate-mvgrad/2017
+data/transit.robbi5.com/mvg-networkstate-mvgrad/2018
+data/transit.robbi5.com/mvg-networkstate-mvgrad/output
+data/test_data/obike/output
+data/test_data/networkstate-mvgrad/output
