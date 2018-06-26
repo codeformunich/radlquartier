@@ -15,6 +15,8 @@ const provider = 'MVG_RAD';
 
 program.parse(process.argv);
 const args = program.args;
+// console.log('program.directory:', program.directory);
+console.log('args[0]:', args[0]);
 
 const haltParser = new MvgstateHaltParser(
   outputFolder,
@@ -23,3 +25,4 @@ const haltParser = new MvgstateHaltParser(
   provider
 );
 haltParser.parse(args[0]);
+// haltParser.parse(program.directory);

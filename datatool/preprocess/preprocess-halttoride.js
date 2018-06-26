@@ -6,9 +6,9 @@
 
 const program = require('commander');
 
-const CountHalts = require('./CountHalts');
+const HaltToRide = require('./HaltToRide');
 
-const outputFolder = 'output/ride';
+const outputFolder = 'output';
 const tempFileName = 'mvgRidesTemp.json';
 const dataFileName = 'mvgRides.json';
 const provider = 'MVG_RAD';
@@ -16,10 +16,10 @@ const provider = 'MVG_RAD';
 program.parse(process.argv);
 const args = program.args;
 
-const haltParser = new CountHalts(
+const haltToRide = new HaltToRide(
   outputFolder,
   tempFileName,
   dataFileName,
   provider
 );
-haltParser.parse(args[0]);
+haltToRide.parse(args[0]);

@@ -10,6 +10,8 @@ const pkg = require('./../../package.json');
 
 program
   .version(pkg.version)
+  .option('-f, --file <path>', 'use a single file as input')
+  .option('-d, --directory <path>', 'use a directory as input')
   .command(
     'halttopoint',
     'transform halt elements to geojson Point: preprocess halttopoint < halts.json'
@@ -24,9 +26,12 @@ program
   )
   .command(
     'counthalts',
-    'create halts statistics count halts per hour: preprocess counthalts [directory]'
+    'create halts statistics count halts per hour: preprocess counthalts <directory>'
   )
-
+  .command(
+    'halttoride',
+    'create rides from halts: preprocess halttoride <directory>'
+  )
   // .command('coorswitch', 'switch coordinats in a geojson file')
   // .command(
   //   'linestring <bike>',

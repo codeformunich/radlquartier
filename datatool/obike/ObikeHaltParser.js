@@ -33,8 +33,8 @@ class ObikeHaltParser extends HaltParser {
 
       if (
         lastHalt &&
-        lastHalt.loc.coordinates[0] === bike.longitude &&
-        lastHalt.loc.coordinates[1] === bike.latitude
+        lastHalt.longitude === bike.longitude &&
+        lastHalt.latitude === bike.latitude
       ) {
         this.updateHalt({
           lastHalt: lastHalt,

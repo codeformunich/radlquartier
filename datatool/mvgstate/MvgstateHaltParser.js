@@ -25,8 +25,8 @@ class MvgstateHaltParser extends HaltParser {
 
       if (
         lastHalt &&
-        lastHalt.loc.coordinates[0] === addedBike.longitude &&
-        lastHalt.loc.coordinates[1] === addedBike.latitude
+        lastHalt.longitude === addedBike.longitude &&
+        lastHalt.latitude === addedBike.latitude
       ) {
         this.updateHalt({
           lastHalt: lastHalt,

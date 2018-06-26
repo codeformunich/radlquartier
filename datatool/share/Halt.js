@@ -18,10 +18,12 @@ class Halt {
   ) {
     this.id = uuidv4();
     this.bikeNumber = bikeNumber;
-    this.loc = {
-      type: 'Point',
-      coordinates: [longitude, latitude]
-    };
+    this.longitude = longitude;
+    this.latitude = latitude;
+    // this.loc = {
+    //   type: 'Point',
+    //   coordinates: [longitude, latitude]
+    // };
     this.startDate = startDate;
     this.endDate = endDate;
     this.additionalData = {

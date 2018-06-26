@@ -71,9 +71,9 @@ const newGeojsonLineString = function(halt) {
       type: 'LineString',
       // check coordinates if zero and skip those
       coordinates:
-        halt.loc.coordinates[0] === 0 && halt.loc.coordinates[1] === 0
+        halt.longitude === 0 && halt.latitude === 0
           ? []
-          : [halt.loc.coordinates]
+          : [halt.longitude, halt.latitude]
       // coordinates: [halt.loc.coordinates]
     },
     properties: {
@@ -93,8 +93,8 @@ const updateGeojsonLineString = function(geojsonFeature, halt) {
   // console.log('updateGeojsonLineString, geojsonFeature:', geojsonFeature);
 
   // check coordinates if zero and skip those
-  if (halt.loc.coordinates[0] !== 0 && halt.loc.coordinates[1] !== 0) {
-    geojsonFeature.geometry.coordinates.push(halt.loc.coordinates);
+  if (halt.longitude !== 0 && halt.latitude !== 0) {
+    geojsonFeature.geometry.coordinates.push([halt.longitude, halt.latitude]);
   }
   geojsonFeature.properties.endDate = halt.endDate;
   geojsonFeature.properties.driveStartDates.push(halt.endDate);

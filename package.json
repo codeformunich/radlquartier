@@ -18,7 +18,7 @@
   "homepage": "https://github.com/bAckmumu/radlquartier#readme",
   "dependencies": {
     "@asymmetrik/leaflet-d3": "^3.1.0",
-    "@turf/points-within-polygon": "^5.1.5",
+    "@turf/turf": "^5.1.6",
     "bootstrap": "^3.3.7",
     "cli-progress": "^1.8.0",
     "commander": "^2.15.1",

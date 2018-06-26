@@ -22,9 +22,9 @@ class CountHalts extends DataParserJson {
       const key =
         this.floorDateToHour(halt.endDate) +
         '_' +
-        halt.loc.coordinates[0] +
+        halt.longitude +
         '_' +
-        halt.loc.coordinates[1];
+        halt.latitude;
 
       if (this.outputData.has(key)) {
         let count = this.outputData.get(key);
