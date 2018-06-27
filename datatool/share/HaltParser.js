@@ -94,7 +94,7 @@ class HaltParser extends DataParserJson {
     }
 
     halt.endDate = endDate;
-    halt.additionalData.count = halt.additionalData.count + 1;
+    halt.count = halt.count + 1;
 
     this.outputData.set(halt.id, halt); // necessaire?
     this.tempData.set(halt.bikeNumber, halt);

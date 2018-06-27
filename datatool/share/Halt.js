@@ -26,14 +26,12 @@ class Halt {
     // };
     this.startDate = startDate;
     this.endDate = endDate;
-    this.additionalData = {
-      provider: provider,
-      count: count
-    };
+    this.provider = provider;
+    this.count = count;
 
     if (additionalData) {
       additionalData.forEach(element => {
-        this.additionalData[element[0]] = element[1];
+        this[element[0]] = element[1];
       });
     }
   }
