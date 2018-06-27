@@ -16,5 +16,8 @@
 # echo "creating json counting halts"
 # node ./../../../datatool/preprocess/preprocess.js counthalts ./output/halt
 
-echo "creating rides from halts"
-node ./../../../datatool/preprocess/preprocess.js halttoride ./output/halt
+# echo "creating rides from halts"
+# node ./../../../datatool/preprocess/preprocess.js halttoride ./output/halt
+
+echo "creating rides csv"
+node ./../../../datatool/preprocess/preprocess.js tocsv ./output/mvgRides.json

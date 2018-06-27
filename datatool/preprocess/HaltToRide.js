@@ -30,6 +30,10 @@ class HaltToRide extends DataParserJson {
       }
     }
 
+    let zeroCount = 0;
+    let distanceCount = 0;
+    let durationCount = 0;
+    let rideCount = 0;
     for (const bikeHalts of bikesHalts.values()) {
       // console.log('bikeHalts',bikeHalts);
 
@@ -37,13 +41,17 @@ class HaltToRide extends DataParserJson {
 
       // filter 0,0 coordinates
       const halts = bikeHalts.filter(function(halt) {
-        return halt.longitude !== 0 && halt.longitude !== 0;
+        if (halt.longitude !== 0 && halt.longitude !== 0) {
+          return true;
+        }
+
+        zeroCount += 1;
+        return false;
       });
 
-
-      // halts.sort(function(a, b) {
-      //   return new Date(a.startDate) - new Date(b.startDate);
-      // });
+      halts.sort(function(a, b) {
+        return new Date(a.startDate) - new Date(b.startDate);
+      });
 
       for (let index = 0; index < halts.length; index++) {
         if (index + 1 === halts.length) {
@@ -68,32 +76,25 @@ class HaltToRide extends DataParserJson {
 
         // filter rides with no distance or negative duration
         // not quite sure where negative duration comes from
-        if ( ride.distance === 0 || ride.duration < 0 ) {
+        if (ride.distance === 0) {
+          distanceCount += 1;
+          continue;
+        }
+        if (ride.duration < 0) {
+          // console.log('ride.duration', ride.duration);
+          durationCount += 1;
           continue;
         }
 
+        rideCount += 1;
         this.outputData.set(ride.id, ride);
       }
     }
-    // const key =
-    //   this.floorDateToHour(halt.endDate) +
-    //   '_' +
-    //   halt.loc.coordinates[0] +
-    //   '_' +
-    //   halt.loc.coordinates[1];
-
-    // if (this.outputData.has(key)) {
-    //   let count = this.outputData.get(key);
-    //   this.outputData.set(key, count + 1);
-    // } else {
-    //   this.outputData.set(key, 1);
-    // }
+    console.log('zeroCount', zeroCount);
+    console.log('distanceCount', distanceCount);
+    console.log('durationCount', durationCount);
+    console.log('rideCount', rideCount);
   }
-
-  // floorDateToHour(date) {
-  //   const hourDate = date.slice(0, 13) + ':00:00.000Z';
-  //   return hourDate;
-  // }
 }
 
 module.exports = HaltToRide;

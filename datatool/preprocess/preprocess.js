@@ -32,6 +32,11 @@ program
     'halttoride',
     'create rides from halts: preprocess halttoride <directory>'
   )
+  .command(
+    'tocsv',
+    'create rides csv: preprocess tocsv <file>'
+  )
+
   // .command('coorswitch', 'switch coordinats in a geojson file')
   // .command(
   //   'linestring <bike>',

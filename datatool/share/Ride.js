@@ -30,13 +30,13 @@ class Ride {
     this.startDate = startDate;
     this.endDate = endDate;
     this.provider = provider;
-    this.duration = new Date(endDate) - new Date(startDate);
+    this.duration = (new Date(endDate) - new Date(startDate)) / 1000;
 
     const from = turf.point([startLongitude, startLatitude]);
     const to = turf.point([endLongitude, endLatitude]);
     const options = { units: 'kilometers' };
 
-    this.distance = turf.distance(from, to, options);
+    this.distance = Math.trunc(turf.distance(from, to, options) * 1000);
   }
 }
 

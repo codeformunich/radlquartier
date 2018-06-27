@@ -97,6 +97,8 @@ class DataParserJson {
       // start the progress bar with a total value of 200 and start value of 0
       this.processDirectoryBar.start(files.length, 0);
 
+      files.sort();
+
       files.forEach(function(filename, index) {
         // update the current value in your application..
         this.processDirectoryBar.update(index + 1);
