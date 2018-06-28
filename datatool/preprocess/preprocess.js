@@ -36,6 +36,14 @@ program
     'tocsv',
     'create rides csv: preprocess tocsv <file>'
   )
+  .command(
+    'countbyhour',
+    'create halts statistics count halts per hour of day: preprocess countbyhour <file>'
+  )
+  .command(
+    'countbyweekday',
+    'create halts statistics count halts per day of week: preprocess countbyweekday <file>'
+  )
 
   // .command('coorswitch', 'switch coordinats in a geojson file')
   // .command(

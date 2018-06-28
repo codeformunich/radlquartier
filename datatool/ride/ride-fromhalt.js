@@ -1,5 +1,5 @@
 /**
- * preprocess-halttoride
+ * ride-fromhalt
  *
  */
 'use strict';
@@ -12,8 +12,7 @@ const helper = require('./../share/helper');
 const Ride = require('./../share/Ride');
 
 const outputFolder = 'output';
-const outputFileJson = 'rides.json';
-const outputFileCsv = 'rides.csv';
+const outputFile = 'rides';
 // const provider = 'MVG_RAD';
 
 program.parse(process.argv);
@@ -109,10 +108,10 @@ helper.readJsonFile(input).then(json => {
   console.log('durationCount', durationCount);
   console.log('rideCount', rideCount);
 
-  const outputPathJson = path.join(outputFolder, outputFileJson);
+  const outputPathJson = path.join(outputFolder, outputFile + '.json');
   helper.writeJsonFile(outputPathJson, helper.MapToPairs(outputData));
 
   const csv = d3.csvFormat([...outputData.values()]);
-  const outputPathData = path.join(outputFolder, outputFileCsv);
-  helper.writeFile(outputPathData, csv);
+  const outputPathCsv = path.join(outputFolder, outputFile + '.csv');
+  helper.writeFile(outputPathCsv, csv);
 });
