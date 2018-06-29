@@ -91,7 +91,7 @@ class DataParserJson {
    */
   processDirectory(inputFolder) {
     return helper.readdir(inputFolder).then(files => {
-      let promises = [];
+      // let promises = [];
 
       console.log('process directory');
       // start the progress bar with a total value of 200 and start value of 0
@@ -99,6 +99,11 @@ class DataParserJson {
 
       files.sort();
 
+      // Create a new empty promise (don't do that with real people ;)
+      var sequence = Promise.resolve();
+
+      // Loop over each file, and add on a promise to the
+      // end of the 'sequence' promise.
       files.forEach(function(filename, index) {
         // update the current value in your application..
         this.processDirectoryBar.update(index + 1);
@@ -110,15 +115,20 @@ class DataParserJson {
         }
 
         const filePath = path.join(inputFolder, filename);
-        promises.push(
-          helper.readJsonFile(filePath).then(
-            json => {
+        const that = this;
+        // Chain one computation onto the sequence
+        sequence = sequence
+          .then(function() {
+            return helper.readJsonFile(filePath);
+          })
+          .then(
+            function(json) {
               // update the current value in your application..
-              this.processDataIndex += 1;
-              this.processDataBar.update(this.processDataIndex);
+              that.processDataIndex += 1;
+              that.processDataBar.update(that.processDataIndex);
 
               try {
-                this.processData(filename, json);
+                that.processData(filename, json);
               } catch (error) {
                 console.error(
                   `processDirectory, filePath: ${filePath} error:, ${
@@ -132,8 +142,7 @@ class DataParserJson {
               console.error('processDirectory, error:', error.message);
               return;
             }
-          )
-        );
+          );
       }, this);
 
       // stop the progress bar
@@ -143,7 +152,54 @@ class DataParserJson {
       // start the progress bar with a total value of 200 and start value of 0
       this.processDataBar.start(files.length, 0);
 
-      return Promise.all(promises);
+      // This will resolve after the entire chain is resolved
+      return sequence;
+
+      // files.forEach(function(filename, index) {
+      //   // update the current value in your application..
+      //   this.processDirectoryBar.update(index + 1);
+      //   // console.log('processDirectory, filename:', filename);
+
+      //   if (path.extname(filename) !== '.json') {
+      //     this.processDataIndex += 1;
+      //     return;
+      //   }
+
+      //   const filePath = path.join(inputFolder, filename);
+      //   promises.push(
+      //     helper.readJsonFile(filePath).then(
+      //       json => {
+      //         // update the current value in your application..
+      //         this.processDataIndex += 1;
+      //         this.processDataBar.update(this.processDataIndex);
+
+      //         try {
+      //           this.processData(filename, json);
+      //         } catch (error) {
+      //           console.error(
+      //             `processDirectory, filePath: ${filePath} error:, ${
+      //               error.message
+      //             }`
+      //           );
+      //           return;
+      //         }
+      //       },
+      //       error => {
+      //         console.error('processDirectory, error:', error.message);
+      //         return;
+      //       }
+      //     )
+      //   );
+      // }, this);
+
+      // // stop the progress bar
+      // this.processDirectoryBar.stop();
+
+      // console.log('process files');
+      // // start the progress bar with a total value of 200 and start value of 0
+      // this.processDataBar.start(files.length, 0);
+
+      // return Promise.all(promises);
     });
   }
 

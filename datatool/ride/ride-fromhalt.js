@@ -111,7 +111,41 @@ helper.readJsonFile(input).then(json => {
   const outputPathJson = path.join(outputFolder, outputFile + '.json');
   helper.writeJsonFile(outputPathJson, helper.MapToPairs(outputData));
 
-  const csv = d3.csvFormat([...outputData.values()]);
-  const outputPathCsv = path.join(outputFolder, outputFile + '.csv');
+  const values = [...outputData.values()];
+  values.sort(function(a, b) {
+    return new Date(a.startDate) - new Date(b.startDate);
+  });
+
+  const csv = d3.csvFormat(values);
+
+  const outputPathCsv = path.join(
+    outputFolder,
+    outputFile + '.csv'
+  );
   helper.writeFile(outputPathCsv, csv);
+
+  let ridesPerMonth = new Map();
+  for (const value of values) {
+    const keyDate = value.startDate.slice(0, 7);
+    // console.log('keyDate:', keyDate)
+
+    if (ridesPerMonth.has(keyDate)) {
+      let rides = ridesPerMonth.get(keyDate);
+      rides.push(value);
+      ridesPerMonth.set(keyDate, rides);
+    } else {
+      let rides = [value];
+      ridesPerMonth.set(keyDate, rides);
+    }
+  }
+
+  for (const iterator of ridesPerMonth) {
+    const csv = d3.csvFormat(iterator[1]);
+
+    const outputPathCsv = path.join(
+      outputFolder,
+      outputFile + '_' + iterator[0] + '.csv'
+    );
+    helper.writeFile(outputPathCsv, csv);
+  }
 });

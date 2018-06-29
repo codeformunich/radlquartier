@@ -21,8 +21,8 @@ class Ride {
   ) {
     this.id = uuidv4();
     this.bikeNumber = bikeNumber;
-    this.startId = startId;
-    this.endId = endId;
+    // this.startId = startId;
+    // this.endId = endId;
     this.startLongitude = startLongitude;
     this.startLatitude = startLatitude;
     this.endLongitude = endLongitude;
